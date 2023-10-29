@@ -17,6 +17,7 @@
 #define output(x) for(auto &i : x) coutS(i)
 #define inputD(x,a,b) FOR(i,0,a) FOR(j,0,b) cin >> x[i][j];
 #define YN(x) cout << (x ? "YES" : "NO") << "\n"
+#define yn(x) cout << (x ? "Yes" : "No") << "\n"
 #define SET(n) cout << fixed << setprecision(n)
 #define f first
 #define s second

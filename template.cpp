@@ -6,6 +6,7 @@
 #define str string
 #define pq priority_queue<int>
 #define pq_min priority_queue < int, vector<int>, greater<int> > 
+#define mmn int maxn = INT_MIN, minn = INT_MAX
 #define sz(x) ((ll)x.size())
 #define all(x) x.begin(), x.end()
 #define mp(a,b) mack_pair(a,b)

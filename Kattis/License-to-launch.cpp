@@ -9,7 +9,7 @@ int main()
 	for(int i=0;i<n;i++)
 	{
 		cin >> a[i];
-		if(c==-1 || a[i] < c) 
+		if(c == -1 || a[i] < c) 
 		{
 			c = a[i];
 			ans = i;

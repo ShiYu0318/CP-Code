@@ -28,6 +28,7 @@
 #define rt return
 #define ct continue
 #define bk break
+const double eps = 1e-8;
 
 using namespace std;
 

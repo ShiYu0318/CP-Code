@@ -21,5 +21,4 @@ signed main()
         }
     }
     cout << ans << "\n";
-    
 }

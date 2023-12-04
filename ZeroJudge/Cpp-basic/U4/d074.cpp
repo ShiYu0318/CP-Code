@@ -1,14 +1,14 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-	int n,tmp,ans = 0;
-	cin >> n;
-	for (int i = 0;i < n;i++)
+	int n; cin >> n;
+	int t, maxn = INT_MIN;
+	for (int i = 0; i < n; i++)
 	{
-		cin >> tmp;
-		if (tmp > ans) ans = tmp;
+		cin >> t;
+		maxn = max(maxn, t);
 	}
-	cout << ans << "\n";
+	cout << maxn << "\n";
 }

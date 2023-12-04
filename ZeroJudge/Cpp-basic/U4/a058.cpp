@@ -1,16 +1,18 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-	int n,tmp,m0=0,m1=0,m2=0;
+	int n, t, i, m[3] = {0};
 	cin >> n;
-	for (int i = 0;i < n;i++)
+	for(i = 0; i < n; i++)
 	{
-		cin >> tmp;
-		if (tmp % 3 == 0) m0++;
-		else if (tmp % 3 == 1) m1++;
-		else m2++;
+		cin >> t;
+		if (t % 3 == 0) m[0]++;
+		else if (t % 3 == 1) m[1]++;
+		else m[2]++;
 	}
-	cout << m0 << " " << m1 << " " << m2 << "\n";
+	for(i = 0; i < 3; i++) cout << m[i] << " ";
+	cout << "\n";
+	return 0;
 }

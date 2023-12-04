@@ -1,16 +1,19 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-	int t,n1,n2,n3,n4;
+	int t,n[4];
 	cin >> t;
-	for (int i = 0;i < t;i++)
+	while(t--)
 	{
-		cin >> n1 >> n2 >> n3 >> n4;
-		cout << n1 << " " << n2 << " " << n3 << " " << n4 << " ";
-		int d = n2 - n1;
-		if (n3 - n2 == d && n4 - n3 == d) cout << n4 + d << "\n";
-		else cout << n4 * (n2 / n1) << "\n";
+		for(int i = 0; i < 4; i++)
+		{
+			cin >> n[i];
+			cout << n[i] << " ";
+		}
+		int d = n[1] - n[0];
+		if (n[2] - n[1] == d && n[3] - n[2] == d) cout << n[3] + d << "\n";
+		else cout << n[3] * (n[1] / n[0]) << "\n";
 	}
 }

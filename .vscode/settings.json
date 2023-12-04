@@ -59,6 +59,8 @@
   "files.associations": {
     "iostream": "cpp",
     "ios": "cpp",
-    "random": "cpp"
+    "random": "cpp",
+    "queue": "cpp",
+    "deque": "cpp"
   }
 }

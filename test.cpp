@@ -1,17 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define FOR(i,a,b) for(int i=a; i<b; ++i)
 
-int main() {
-    int n, arr[1001];
-    while(cin >> n) {
-        for(int i = 0; i < n; i++) {
-            cin >> arr[i];
-        }
-        sort(arr, arr + n);
-        for(int i = 0; i < n; i++) {
-            cout <<  arr[i] << " ";
-        }
-        cout << "\n";
+
+
+int main(void)
+{
+    deque<int> dq;
+    dq.emplace_back(1);
+    dq.emplace_front(2);
+    dq.emplace_back(4);
+    dq.emplace_back(3);
+    while(!dq.empty())
+    {
+        cout << dq.front() << " ";
+        dq.pop_front();
     }
-    return 0;
 }

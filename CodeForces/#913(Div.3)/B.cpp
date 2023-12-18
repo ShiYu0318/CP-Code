@@ -40,13 +40,44 @@ using namespace std;
 
 void solve()
 {	
-	int a[3][3];
-	inputD(a,3,3);
-
+	string s; cin >> s;
+    string ans,ts;
+    FORn(i,s.size())
+    {
+        if(s[i] == 'b')
+        {
+            if(!ans.empty())
+            {
+                rFOR(j,ans.size())
+                {
+                    if('a' <= ans[j] && ans[j] <= 'z')
+                    {
+                        ts = ans.substr(0,j-1);
+                        ans.substr(i+1,ans.size()-i-1);
+                    }
+                }
+            }
+        } else if(s[i] == 'B')
+        {
+            if(!ans.empty())
+            {
+                rFOR(j,ans.size())
+                {
+                    if('A' <= ans[j] && ans[j] <= 'Z')
+                    {
+                        ans.erase(j,1);
+                        break;
+                    }
+                }
+            }
+        } else ans += s[i]; 
+    }
+    cout << ans << "\n";
 }
 
 signed main(void)
 {
 	ShiYu;
-	solve();
+	int t; cin >> t;
+	while(t--) solve();
 }

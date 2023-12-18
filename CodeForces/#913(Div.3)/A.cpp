@@ -23,7 +23,6 @@
 #define output(x) for(auto &i : x) coutS(i)
 #define inputD(x,a,b) FOR(i,0,a) FOR(j,0,b) cin >> x[i][j]
 #define outputD(x,a,b) FOR(i,0,a) FOR(j,0,b) cin >> x[i][j]
-#define dbg(x) cout << #x << "=" << x << " ";
 #define DB(x) cerr << #x << " " << x << endl
 #define YN(x) cout << (x ? "YES" : "NO") << "\n"
 #define Yn(x) cout << (x ? "Yes" : "No") << "\n"
@@ -40,13 +39,22 @@ using namespace std;
 
 void solve()
 {	
-	int a[3][3];
-	inputD(a,3,3);
-
+	string s; cin >> s;
+	FOR(i,1,9)
+	{
+		if(i == s[1] - '0') continue;
+		else cout << s[0] + to_string(i) << "\n";
+	}
+	FOR(i,0,8)
+	{
+		if(i == s[0] - 'a') continue;
+		cout << (char)('a'+ i) << s[1] << "\n";
+	}
 }
 
 signed main(void)
 {
 	ShiYu;
-	solve();
+	int t; cin >> t;
+	while(t--) solve();
 }

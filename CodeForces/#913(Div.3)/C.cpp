@@ -40,13 +40,44 @@ using namespace std;
 
 void solve()
 {	
-	int a[3][3];
-	inputD(a,3,3);
+	int n; cin >> n;
+    string s; cin >> s;
+    int t[26] = {0};
+    FORn(i,n) t[s[i] - 'a']++;
+    vector<int> v;
+    FORn(i,26)
+    {
+        if(t[i] != 0) v.emplace_back(t[i]);
+    }
+    // FORn(i,v.size()) cout << v[i] << " ";
+    // nl;
+    while(1)
+    {
+        int sum = 0;
+        FORn(i,v.size()) sum += v[i];
+        sort(all(v));
+        if(v[v.size()-1] >= sum - v[v.size()-1])
+        {
+            cout << v[v.size()-1] - (sum - v[v.size()-1]) << "\n";
+            break;
+        }
+        else if(sum == v[v.size()-1] * v.size())
+        {
+            cout << v[v.size()-1] % 2 << "\n";
+            break;
+        }
+        else
+        {
+            v[v.size()-1] -= v[v.size()-2];
+            v[v.size()-2] = 0;
+        }
+    }
 
 }
 
 signed main(void)
 {
 	ShiYu;
-	solve();
+	int t; cin >> t;
+	while(t--) solve();
 }

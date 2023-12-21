@@ -61,6 +61,7 @@
     "ios": "cpp",
     "random": "cpp",
     "queue": "cpp",
-    "deque": "cpp"
+    "deque": "cpp",
+    "istream": "cpp"
   }
 }

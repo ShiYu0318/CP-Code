@@ -6,7 +6,7 @@ using namespace std;
 
 int main(void)
 {
-    int a = 1;
-    if(not a) cout << "not a";
-    else cout << "a";
+    int c = 0;
+    if(c)  cout << "a";
+    else cout << "b";
 }

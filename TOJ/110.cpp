@@ -11,7 +11,7 @@ int main()
 		//   *
 		//  ***
 		// *****
-		for(i=1;i<=n-3;i++)
+		for(i=1;i<=n-3;i++) // 行數
 		{
 			for(j=n-i;j>0;j--) cout << " ";
 			for(j=0;j<2*i-1;j++) cout << "*";

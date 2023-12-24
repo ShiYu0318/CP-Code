@@ -40,8 +40,7 @@ using namespace std;
 
 void solve()
 {	
-	int a[3][3];
-	inputD(a,3,3);
+
 
 }
 

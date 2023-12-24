@@ -26,7 +26,7 @@ signed main()
 				break;
 			}
 		}
-		if(ans) cout << "SETUP! " + s << "\n";
+		if(ans) cout << "SETUP! " + s + "\n";
 		else cout << s << "\n";
 	}
 }

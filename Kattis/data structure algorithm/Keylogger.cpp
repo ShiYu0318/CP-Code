@@ -36,7 +36,6 @@ signed main()
                     if(capslock) ans += (char)('A' + i);
                     else ans += (char)('a' + i);
                 }
-                 
             }
         }
     }

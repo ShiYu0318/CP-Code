@@ -2,7 +2,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0)
-#define FOR(i,a,b) for(int i=a;i<b;++i)
 #define FORn(i,n) for(int i=0;i<n;++i)
 
 const string tb[] = {"clank","bong","click","tap","poing","clonk","clack","ping",
@@ -13,6 +12,7 @@ signed main()
 {
     ShiYu;
     int n; cin >> n;
+    // 利用程式幫忙建
     // string s;
     // while(n--)
     // {

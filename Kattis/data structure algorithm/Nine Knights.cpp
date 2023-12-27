@@ -1,7 +1,6 @@
 // 建表
 #include <bits/stdc++.h>
 using namespace std;
-#define FOR(i,a,b) for(int i=a;i<b;++i)
 #define FORn(i,n) for(int i=0;i<n;++i)
 
 const int mx[] = {1,2,2,1,-1,-2,-2,-1},

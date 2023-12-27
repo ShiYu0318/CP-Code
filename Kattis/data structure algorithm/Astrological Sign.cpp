@@ -8,11 +8,11 @@ const string MONTH[] = {"Jan","Feb","Mar","Apr",
                         "May","Jun","Jul","Aug",
                         "Sep","Oct","Nov","Dec"},
              NAME[] = {"Capricorn","Aquarius","Pisces","Aries",
-                        "Taurus","Gemini","Cancer","Leo",
-                        "Virgo","libra","Scorpio","Sagittarius","Capricorn"};
+                        "Taurus","Gemini","Cancer","Leo","Virgo",
+                        "libra","Scorpio","Sagittarius","Capricorn"};
 const int NUM[] = {120,219,320,420,
-                   520,621,722,822,
-                   921,1022,1122,1221,9999};
+                   520,621,722,822,921,
+                   1022,1122,1221,9999};
 
 
 int month_to_int(const string& s)
@@ -37,5 +37,4 @@ signed main()
         for(ans=0; n > NUM[ans]; ++ans);
         cout << NAME[ans] << "\n";
     }
-
 }

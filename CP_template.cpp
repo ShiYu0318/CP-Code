@@ -14,15 +14,14 @@
 #define sz(x) ((ll)x.size())
 #define all(x) x.begin(), x.end()
 #define mp(a,b) mack_pair(a,b)
+#define FOR(i,a,b) for(int i=a;i<b;++i)
 #define FORn(i,n) for(int i=0;i<n;++i)
 #define rFOR(i,n) for(int i=n-1;i>=0;--i)
-#define FOR(i,a,b) for(int i=a;i<b;++i)
 #define coutE(x) cout << x << "\n"
 #define coutS(x) cout << x << ' '
 #define input(x) for(auto &i : x) cin >> i
 #define output(x) for(auto &i : x) coutS(i)
 #define inputD(x,a,b) FOR(i,0,a) FOR(j,0,b) cin >> x[i][j]
-#define outputD(x,a,b) FOR(i,0,a) FOR(j,0,b) cin >> x[i][j]
 #define dbg(x) cout << #x << "=" << x << " ";
 #define DB(x) cerr << #x << " " << x << endl
 #define YN(x) cout << (x ? "YES" : "NO") << "\n"

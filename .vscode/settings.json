@@ -64,5 +64,6 @@
     "deque": "cpp",
     "istream": "cpp",
     "iosfwd": "cpp"
-  }
+  },
+  "C_Cpp.errorSquiggles": "disabled"
 }

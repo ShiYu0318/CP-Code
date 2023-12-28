@@ -63,7 +63,8 @@
     "queue": "cpp",
     "deque": "cpp",
     "istream": "cpp",
-    "iosfwd": "cpp"
+    "iosfwd": "cpp",
+    "ostream": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }

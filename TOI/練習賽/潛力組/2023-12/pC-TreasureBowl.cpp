@@ -1,3 +1,4 @@
+// 枚舉
 #include<bits/stdc++.h>
 #define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0)
 #define ll long long
@@ -15,8 +16,8 @@
 #define MMn maxn = INT_MIN, minn = INT_MAX
 #define max(a, b) (a > b ? a : b)
 #define min(a, b) (a < b ? a : b)
-#define remax(a, b) a = (a > b ? a : b)
-#define remin(a, b) a = (a < b ? a : b)
+#define remax(a, b) a = max(a,b)
+#define remin(a, b) a = min(a,b)
 #define coutE(x) cout << x << "\n"
 #define coutS(x) cout << x << ' '
 #define dbg(x) cerr << #x << "=" << x << "\n";
@@ -26,7 +27,7 @@
 #define input(x) for(auto &i : x) cin >> i
 #define inputn(x,n) FORn(i,n) cin >> x[i] 
 #define inputD(x,a,b) FORn(i,a) FORn(j,b) cin >> x[i][j]
-#define output(x) for(auto &i : x) dbg(i)
+#define output(x) for(auto &i : x) cerr << i << " ";
 #define YN(x) cout << (x ? "YES" : "NO") << "\n"
 #define Yn(x) cout << (x ? "Yes" : "No") << "\n"
 #define yn(x) cout << (x ? "yes" : "no") << "\n"
@@ -39,7 +40,32 @@ using namespace std;
 
 void solve()
 {
-    
+	vector<int> v;
+    int t,n; cin >> n;
+	FORn(i,n)
+	{
+		cin >> t;
+	 	v.pb(t);
+	}
+	sort(all(v));
+	// output(v);
+	int maxn = 0,p = 0; // 觀察出第一個起點為正數後總和會遞減 P 用來記錄
+	FORn(i,n)
+	{
+		// dbg(v[i]);
+		if(p) break; 
+		if(v[i] > 0) p++;
+		int d = 2,sum = 0;
+		FOR(j,i,n)
+		{
+			sum += v[j] * d;
+			d++;
+		}
+		// dbg(sum);
+		// nl(2);
+		remax(maxn,sum);
+	}
+	cout << maxn << "\n";
 }
 
 signed main(void)

@@ -1,4 +1,4 @@
-// 建表 模擬
+// 建表 模擬 10%
 #include<bits/stdc++.h>
 #define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0)
 #define ll long long
@@ -39,12 +39,19 @@ using namespace std;
 //==========================================================================================
 
 string t[7];
-const int mx[] = {2,1,-1,-2,-2,-1,1,2};
-const int my[] = {-1,-2,-2,-1,1,2,2,1};
+const int mx[] = {1,2,2,1,-1,-2,-2,-1},
+          my[] = {2,1,-1,-2,-2,-1,1,2};
+int r,c;
+
+
+bool in_range(int x, int y)
+{
+    return x >= 0 && x < r && y >= 0 && y < c; 
+}
 
 void solve()
 {
-    int r,c; cin >> r >> c;
+    cin >> r >> c;
     inputn(t,r);
     bool gg = false,rd = 0; // 0 = Charlie, 1 = Dave
     while(!gg)
@@ -58,7 +65,8 @@ void solve()
                 {
                     FORn(k,8)
                     {
-                        if(t[i + mx[k]][j + my[k]] == '@')
+                        int x = i + mx[k], y = j + my[k];
+                        if(in_range(x, y) && t[x][y] == '@')
                         {
                             t[i][j] = '#';
                             t[i + mx[k]][j + my[k]] = '#';
@@ -78,7 +86,7 @@ void solve()
             }
         }
     }
-    cout << (rd ? "Dave" : "Charlie") << "\n";
+    cout << (rd ? "Charlie" : "Dave") << "\n";
 }
 
 signed main(void)

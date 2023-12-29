@@ -1,15 +1,14 @@
 #include<bits/stdc++.h>
-#define ShiYu ios::sync_with_stdio(false),cin.tie(nullptr)
+#define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0)
 #define ll long long
 #define ull unsigned ll
 #define int ll
-#define pii pair< int, int >
-#define vii vector< pii >
+#define vii vector< pair<int, int> >
 #define pq priority_queue
 #define pq_min priority_queue < int, vector<int>, greater<int> > 
 #define F first
 #define S second
-#define eb emplace_back
+#define pb push_back
 #define mp(a,b) make_pair(a,b)
 #define sz(x) ((ll)x.size())
 #define all(x) x.begin(), x.end()
@@ -33,18 +32,44 @@
 #define yn(x) cout << (x ? "yes" : "no") << "\n"
 #define SET(n) cout << fixed << setprecision(n)
 #define nl(n) FORn(i,n) cout << "\n"
-const double eps = 1e-8;
 using namespace std;
 
 //==========================================================================================
 
 void solve()
 {
-    
+	int t; cin >> t;
+	int n;
+	string s;
+	while(t--)
+	{
+		cin >> n >> s;
+		string ans;
+		rFOR(i,n)
+		{
+			if(s[i] == 'a' || s[i] == 'e')
+			{
+				ans += s[i];
+				ans += s[i-1];
+				i--;
+				
+			}
+			else
+			{
+				ans += s[i];
+				ans += s[i-1];
+				ans += s[i-2];
+				i-=2;
+			}
+			if(i>0) ans += '.';
+		}
+		rFOR(i,sz(ans)) cout << ans[i];
+		nl(1);
+	}
 }
 
 signed main(void)
 {
 	ShiYu;
 	solve();
-}
+}	

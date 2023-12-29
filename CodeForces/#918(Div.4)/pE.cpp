@@ -1,15 +1,15 @@
+// WA
 #include<bits/stdc++.h>
-#define ShiYu ios::sync_with_stdio(false),cin.tie(nullptr)
+#define ShiYu ios::sync_with_stdio(0),cin.tie(0)
 #define ll long long
 #define ull unsigned ll
 #define int ll
-#define pii pair< int, int >
-#define vii vector< pii >
+#define vii vector< pair<int, int> >
 #define pq priority_queue
 #define pq_min priority_queue < int, vector<int>, greater<int> > 
 #define F first
 #define S second
-#define eb emplace_back
+#define pb push_back
 #define mp(a,b) make_pair(a,b)
 #define sz(x) ((ll)x.size())
 #define all(x) x.begin(), x.end()
@@ -33,18 +33,79 @@
 #define yn(x) cout << (x ? "yes" : "no") << "\n"
 #define SET(n) cout << fixed << setprecision(n)
 #define nl(n) FORn(i,n) cout << "\n"
-const double eps = 1e-8;
 using namespace std;
 
 //==========================================================================================
 
 void solve()
 {
-    
+	int t; cin >> t;
+	while(t--)
+	{
+		vector<int> p1,p2;
+		set<int> s1,s2;
+		p1.pb(0);p2.pb(0);
+		int x=0,y=0,n,a;
+		cin >> n;
+		FORn(i,n)
+		{
+			cin >> a;
+			if(i % 2)
+			{
+				p2.pb(p2[y] + a);
+				y++;
+			}
+			else
+			{
+				p1.pb(p1[x] + a);
+				x++;
+			}
+		}
+		
+		FORn(i,sz(p1)) cout << p1[i] << " ";
+		nl(1);
+		FORn(i,sz(p2)) cout << p2[i] << " ";
+		nl(2);
+		FORn(i,sz(p1)-1)
+		{
+			FOR(j,i+1,sz(p1))
+			{
+				cout << p1[j] - p1[i] << " ";
+				s1.insert(p1[j] - p1[i]);
+			}
+		}
+		nl(1);
+		FORn(i,sz(p2)-1)
+		{
+			FOR(j,i+1,sz(p2))
+			{
+				cout << p2[j] - p2[i] << " ";
+				s2.insert(p2[j] - p2[i]);
+			}
+		}
+		nl(2);
+		
+		bool ans = false;
+		
+	    for(const auto& i : s1) cout << i << " ";
+	    nl(1);
+	    for(const auto& i : s2) cout << i << " ";
+	    for(const auto& i : s1)
+	    {
+	    	
+	        if(s2.find(i) != s2.end()) 
+	        {
+	            ans = true;
+	            break;
+	        }
+	    }
+	    Yn(ans);
+	    nl(3);
+	}
 }
 
 signed main(void)
 {
 	ShiYu;
 	solve();
-}
+}	

@@ -1,15 +1,14 @@
 #include<bits/stdc++.h>
-#define ShiYu ios::sync_with_stdio(false),cin.tie(nullptr)
+#define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0)
 #define ll long long
 #define ull unsigned ll
 #define int ll
-#define pii pair< int, int >
-#define vii vector< pii >
+#define vii vector< pair<int, int> >
 #define pq priority_queue
 #define pq_min priority_queue < int, vector<int>, greater<int> > 
 #define F first
 #define S second
-#define eb emplace_back
+#define pb push_back
 #define mp(a,b) make_pair(a,b)
 #define sz(x) ((ll)x.size())
 #define all(x) x.begin(), x.end()
@@ -40,7 +39,15 @@ using namespace std;
 
 void solve()
 {
-    
+	int t; cin >> t;
+	int a,b,c;
+	while(t--)
+	{
+		cin >> a >> b >> c;
+		if(a == b) cout << c << "\n";
+		else if(a == c) cout << b << "\n";
+		else cout << a << "\n";
+	}
 }
 
 signed main(void)

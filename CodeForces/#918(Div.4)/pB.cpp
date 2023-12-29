@@ -1,15 +1,14 @@
 #include<bits/stdc++.h>
-#define ShiYu ios::sync_with_stdio(false),cin.tie(nullptr)
+#define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0)
 #define ll long long
 #define ull unsigned ll
 #define int ll
-#define pii pair< int, int >
-#define vii vector< pii >
+#define vii vector< pair<int, int> >
 #define pq priority_queue
 #define pq_min priority_queue < int, vector<int>, greater<int> > 
 #define F first
 #define S second
-#define eb emplace_back
+#define pb push_back
 #define mp(a,b) make_pair(a,b)
 #define sz(x) ((ll)x.size())
 #define all(x) x.begin(), x.end()
@@ -33,18 +32,33 @@
 #define yn(x) cout << (x ? "yes" : "no") << "\n"
 #define SET(n) cout << fixed << setprecision(n)
 #define nl(n) FORn(i,n) cout << "\n"
-const double eps = 1e-8;
 using namespace std;
 
 //==========================================================================================
 
 void solve()
 {
-    
+	int t; cin >> t;
+	string s;
+	while(t--)
+	{
+		int t[3] = {0};
+		FORn(j,3)
+		{
+			cin >> s;
+			FORn(i,3)
+			{
+				if(s[i] == 'A') t[0]++;
+				else if(s[i] == 'B') t[1]++;
+				else if(s[i] == 'C') t[2]++;
+			}
+		}
+		FORn(i,3) if(t[i] == 2) cout << (char)('A' + i) << "\n";
+	}
 }
 
 signed main(void)
 {
 	ShiYu;
 	solve();
-}
+}	

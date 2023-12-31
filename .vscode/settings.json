@@ -64,7 +64,9 @@
     "deque": "cpp",
     "istream": "cpp",
     "iosfwd": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "tuple": "cpp",
+    "vector": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled",
   "cmake.configureOnOpen": false

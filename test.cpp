@@ -6,10 +6,5 @@ using namespace std;
 
 int main(void)
 {
-	cout << __cplusplus << "\n";	
-	// pair<int, int> a, b;
-	// a = {1, 2};
-	// b = {1, 6};
-	// cout << (a < b) << "\n";
-//     
+	
 }

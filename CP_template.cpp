@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-#define ShiYu ios::sync_with_stdio(false),cin.tie(nullptr)
+#define ShiYu ios_base::sync_with_stdio(false),cin.tie(nullptr)
 #define ll long long
 #define ull unsigned ll
 #define int ll
@@ -21,18 +21,18 @@
 #define coutE(x) cout << x << "\n"
 #define coutS(x) cout << x << ' '
 #define dbg(x) cerr << #x << "=" << x << "\n";
+#define RPT(i,n) for(int i=0;i<n;++i)
 #define FOR(i,a,b) for(int i=a;i<b;++i)
-#define FORn(i,n) for(int i=0;i<n;++i)
 #define rFOR(i,n) for(int i=n-1;i>=0;--i)
 #define input(x) for(auto &i : x) cin >> i
-#define inputn(x,n) FORn(i,n) cin >> x[i] 
-#define inputD(x,a,b) FORn(i,a) FORn(j,b) cin >> x[i][j]
+#define inputn(x,n) RPT(i,n) cin >> x[i] 
+#define inputD(x,a,b) RPT(i,a) RPT(j,b) cin >> x[i][j]
 #define output(x) for(auto &i : x) dbg(i)
 #define YN(x) cout << (x ? "YES" : "NO") << "\n"
 #define Yn(x) cout << (x ? "Yes" : "No") << "\n"
 #define yn(x) cout << (x ? "yes" : "no") << "\n"
 #define SET(n) cout << fixed << setprecision(n)
-#define nl(n) FORn(i,n) cout << "\n"
+#define nl(n) RPT(i,n) cout << "\n"
 const double eps = 1e-8;
 using namespace std;
 
@@ -40,7 +40,9 @@ using namespace std;
 
 void solve()
 {
-    
+    priority_queue pp;
+	pp.e
+
 }
 
 signed main(void)

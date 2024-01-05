@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-#define ShiYu ios_base::sync_with_stdio(false),cin.tie(nullptr)
+#define ShiYu ios_base::sync_with_stdio(0);cin.tie(0)
 #define ll long long
 #define ull unsigned ll
 #define int ll
@@ -40,8 +40,7 @@ using namespace std;
 
 void solve()
 {
-    priority_queue pp;
-	pp.e
+    
 
 }
 

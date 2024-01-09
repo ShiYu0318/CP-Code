@@ -9,9 +9,9 @@
 #define pq_min priority_queue < int, vector<int>, greater<int> > 
 #define F first
 #define S second
-#define eb emplace_back
-#define mp(a,b) make_pair(a,b)
-#define sz(x) ((ll)x.size())
+#define EB emplace_back
+#define MP(a,b) make_pair(a,b)
+#define SZ(x) ((ll)x.size())
 #define all(x) x.begin(), x.end()
 #define MMn maxn = INT_MIN, minn = INT_MAX
 #define max(a, b) (a > b ? a : b)
@@ -21,9 +21,9 @@
 #define coutE(x) cout << x << "\n"
 #define coutS(x) cout << x << ' '
 #define dbg(x) cerr << #x << "=" << x << "\n";
-#define RPT(i,n) for(int i=0;i<n;++i)
 #define FOR(i,a,b) for(int i=a;i<b;++i)
 #define rFOR(i,n) for(int i=n-1;i>=0;--i)
+#define RPT(i,n) FOR(i,0,n)
 #define input(x) for(auto &i : x) cin >> i
 #define inputn(x,n) RPT(i,n) cin >> x[i] 
 #define inputD(x,a,b) RPT(i,a) RPT(j,b) cin >> x[i][j]

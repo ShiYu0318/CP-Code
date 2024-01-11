@@ -26,5 +26,4 @@ signed main()
         }
     }
     cout << maxn << "\n";
-    
 }

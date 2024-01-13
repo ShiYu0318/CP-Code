@@ -13,5 +13,7 @@ using namespace std;
 
 signed main(void)
 {
-
+    int a = 0;
+    if(1) a++, a+=3;
+    cout << a;
 }

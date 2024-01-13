@@ -1,1 +1,1 @@
-{"name":"Local: test","url":"/Users/shiyu./Desktop/CP-Code/test.cpp","tests":[{"id":1704529749214,"input":"janjasu","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/shiyu./Desktop/CP-Code/test.cpp","group":"local","local":true}
+{"name":"Local: test","url":"/Users/shiyu./Desktop/CP-Code/test.cpp","tests":[{"id":1705022744002,"input":"9 6 3 1 5 8 9 10 13 -1 77 100 -100","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/shiyu./Desktop/CP-Code/test.cpp","group":"local","local":true}

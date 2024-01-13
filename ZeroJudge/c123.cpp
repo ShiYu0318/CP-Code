@@ -17,8 +17,6 @@ signed main()
             cin >> a[0];
             if(a[0] == 0) break;
             FOR(i,1,n) cin >> a[i];
-            // FOR(i,0,n) cout << a[i] << " ";
-            // cout << "\n";
             stack<int> stk;
             int now = 0;
             FOR(i,1,n+1)

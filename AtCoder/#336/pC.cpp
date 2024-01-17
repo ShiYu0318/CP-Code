@@ -40,13 +40,23 @@ using namespace std;
 
 void solve()
 {
-    
-
+    ShiYu;
+    int n; cin >> n;
+    string s;
+    int k[5] = {0,2,4,6,8};
+    bool f = 1;
+    while(n!=0)
+    {
+        int t = n % 5;
+        if(f) t--,f=0;
+        s = to_string(k[t]) + s;
+        n /= 5;
+    }
+    cout << s;
 }
 
 signed main(void)
 {
 	ShiYu;
-	int t; cin >> t;
-	while(t--) solve();
+	solve();
 }

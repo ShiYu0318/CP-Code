@@ -40,7 +40,23 @@ using namespace std;
 
 void solve()
 {
-    
+    bool ans = true;
+    long double n,f,a,b; cin >> n >> f >> a >> b;
+    int t = 0,m;
+    while(n--)
+    {
+        cin >> m;
+        
+        if((m-t) <= b/a) f -= (m-t)*a;
+        else f -= b;
+        t = m;
+        // cout << f << " ";
+        if(f <= 0) 
+        {
+            ans = false;
+        }
+    }
+    YN(ans);
 
 }
 

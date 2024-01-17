@@ -40,13 +40,26 @@ using namespace std;
 
 void solve()
 {
-    
+    int t; cin >> t;
+    int n,x,y,z;
+    while(t--)
+    {
+        string a,b;
+        cin >> n >> a >> b;
+        x = 0; y = 0; z = 0;
+        RPT(i,n)
+        {
+            if(a[i] == '1') ++x;
+            if(b[i] == '1') ++y;
+            if(a[i] == b[i] && a[i] == '1') ++z;
+        }
+        cout << max(x,y) - z << "\n";
+    }
 
 }
 
 signed main(void)
 {
 	ShiYu;
-	int t; cin >> t;
-	while(t--) solve();
+	solve();
 }

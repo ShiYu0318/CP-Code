@@ -1,4 +1,4 @@
-// 
+// 前綴和
 #include <bits/stdc++.h>
 using namespace std;
 #define ShiYu ios_base::sync_with_stdio(0);cin.tie(0)
@@ -7,13 +7,25 @@ using namespace std;
 #define RPT(i,n) FOR(i,0,n)
 #define input(x) for(auto &i : x) cin >> i
 #define output(x) for(auto &i : x) cout << i << " "
-#define inputD(x,a,b) RPT(i,a) RPT(j,b) cin >> x[i][j]
-#define dbg(x) cout << #x << "=" << x << " ";
-#define Yn(x) cout << (x ? "Yes" : "No") << "\n";
-#define all(x) x.begin(),x.end()
 #define int long long
 
 signed main()
 {
     ShiYu;
+    int n; cin >> n;
+    
+    vector<int> a(n),b(n);
+    input(a);
+    b[0] = a[0];
+    FOR(i,1,n) b[i] = b[i-1] + a[i];
+    output(b);
+
+
+    // int t,sum = 0;
+    // RPT(i,n)
+    // {
+    //     cin >> t;
+    //     sum += t;
+    //     cout << sum << " ";
+    // }
 }

@@ -27,7 +27,7 @@
 #define input(x) for(auto &i : x) cin >> i
 #define inputn(x,n) RPT(i,n) cin >> x[i] 
 #define inputD(x,a,b) RPT(i,a) RPT(j,b) cin >> x[i][j]
-#define output(x) for(auto &i : x) dbg(i)
+#define output(x) for(auto &i : x) cout << i << " ";
 #define YN(x) cout << (x ? "YES" : "NO") << "\n"
 #define Yn(x) cout << (x ? "Yes" : "No") << "\n"
 #define yn(x) cout << (x ? "yes" : "no") << "\n"
@@ -40,8 +40,31 @@ using namespace std;
 
 void solve()
 {
-    
+    int a,b; cin >> a >> b;
+    vector<int> x(a),y(b);
+    input(x); input(y);
+    sort(all(x));sort(all(y));
 
+    output(x);cout << "\n";
+    output(y);cout << "\n\n";
+
+    int sz = y.size(), ans = 0;
+    int i=0,j = sz - 1;
+    rFOR(k,x.size())
+    {
+        if(abs(x[k] - y[i]) > abs(x[k] - y[j]))
+        {
+            ans += abs(x[k] - y[i]);
+            ++i;
+        }
+        else
+        {
+            ans += abs(x[k] - y[j]);
+            --j;
+        }
+    }
+    cout << ans << "\n";
+    
 }
 
 signed main(void)

@@ -16,4 +16,21 @@ using namespace std;
 signed main()
 {
     ShiYu;
+    int t; cin >> t;
+    int n,m;
+    while(t--)
+    {
+        cin >> n >> m;
+        vector<int> v(n*m); input(v);
+        bool ans = true;
+        for(int i=0;i<n*m/2;++i)
+        {
+            if(v[i] != v[n*m-1-i]) 
+            {
+                ans = false;
+                break;
+            }
+        }
+        cout << (ans ? "go forward" : "keep defending") << "\n";
+    }
 }

@@ -1,4 +1,3 @@
-// 
 #include <bits/stdc++.h>
 using namespace std;
 #define ShiYu ios_base::sync_with_stdio(0);cin.tie(0)
@@ -16,4 +15,10 @@ using namespace std;
 signed main()
 {
     ShiYu;
+    string s; cin >> s;
+    RPT(i,6)
+    {
+        cout << abs(s[i+1] - s[i]);
+    }
+    cout << "\n";
 }

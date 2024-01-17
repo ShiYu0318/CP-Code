@@ -1,4 +1,3 @@
-// 
 #include <bits/stdc++.h>
 using namespace std;
 #define ShiYu ios_base::sync_with_stdio(0);cin.tie(0)
@@ -16,4 +15,23 @@ using namespace std;
 signed main()
 {
     ShiYu;
+    int n,m; 
+    while(cin >> n >> m)
+    {
+        vector<int> b(n),q(m);
+        input(b); input(q);
+        vector<int> qs = q;
+        sort(all(b)); sort(all(qs));
+        map<int,int> tb;
+        bool ans = 0;
+        int i,j;
+        b.emplace_back(INT_MAX);
+        for(i=0,j=0;i<=n && j<m;)
+        {
+            if(qs[j] >= b[i]) ans = !ans, ++i;
+            else tb.insert(make_pair(qs[j],ans)), ++j;
+        }
+        tb.insert(make_pair(qs[j],ans));
+        RPT(i,m) cout << tb[q[i]] << "\n";
+    }
 }

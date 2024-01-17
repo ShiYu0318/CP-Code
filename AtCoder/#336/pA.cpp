@@ -40,13 +40,15 @@ using namespace std;
 
 void solve()
 {
-    
+    int n; cin >> n;
+    cout << "L";
+    RPT(i,n) cout << "o";
+    cout << "ng\n";
 
 }
 
 signed main(void)
 {
 	ShiYu;
-	int t; cin >> t;
-	while(t--) solve();
+	solve();
 }

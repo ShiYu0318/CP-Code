@@ -40,13 +40,26 @@ using namespace std;
 
 void solve()
 {
-    
+    int n; cin >> n;
+    string s;
+    while(n)
+    {
+        if(n % 2) s = "1" + s;
+        else s = "0" + s;
+        n /= 2;
+    }
+    int ans = 0;
+    rFOR(i,s.size())
+    {
+        if(s[i] != '0') break;
+        else ++ans;
+    }
+    cout << ans << "\n";
 
 }
 
 signed main(void)
 {
 	ShiYu;
-	int t; cin >> t;
-	while(t--) solve();
+	solve();
 }

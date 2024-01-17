@@ -40,13 +40,26 @@ using namespace std;
 
 void solve()
 {
-    
+    int t; cin >> t;
+    while(t--)
+    {
+        vector<pair<int,int>> v;
+        int a,b;
+        RPT(i,4)
+        {
+            cin >> a >> b;
+            v.emplace_back(a,b);
+        }
+        sort(all(v));
+        // for(auto &i : v) cout << i.F << " " << i.S << "\n";
+        // cout << "\n";
+        cout << (v[2].F-v[0].F) * (v[1].S-v[0].S) << "\n";
+    }
 
 }
 
 signed main(void)
 {
 	ShiYu;
-	int t; cin >> t;
-	while(t--) solve();
+	solve();
 }

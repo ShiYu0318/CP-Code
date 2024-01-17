@@ -38,15 +38,34 @@ using namespace std;
 
 //==========================================================================================
 
+
+bool check(int n)
+{
+    string s = to_string(n);
+    int sz = s.size();
+    int cnt = 0;
+    RPT(i,sz)
+    {
+        cnt += s[i] - '0';
+    }
+    return !(n % cnt);
+}
+
+
 void solve()
 {
-    
+    int n; cin >> n;
+    int ans = 0;
+    RPT(i,n)
+    {
+        if(check(i)) ++ans;
+    }
+    cout << ans << "\n";
 
 }
 
 signed main(void)
 {
 	ShiYu;
-	int t; cin >> t;
-	while(t--) solve();
+	solve();
 }

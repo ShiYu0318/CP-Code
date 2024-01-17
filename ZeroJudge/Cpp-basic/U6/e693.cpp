@@ -1,4 +1,4 @@
-// 
+// 前綴和
 #include <bits/stdc++.h>
 using namespace std;
 #define ShiYu ios_base::sync_with_stdio(0);cin.tie(0)
@@ -16,4 +16,19 @@ using namespace std;
 signed main()
 {
     ShiYu;
+    int n,m; 
+    while(cin >> n >> m)
+    {
+        vector<int> a(n),b(n+1);
+        input(a);
+        b[0] = 0;
+        FOR(i,0,n) b[i+1] = b[i] + a[i];
+        int l,r;
+        while(m--)
+        {
+            cin >> l >> r;
+            cout << b[r] - b[l-1] << "\n";
+        }
+
+    }
 }

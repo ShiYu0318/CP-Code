@@ -10,9 +10,23 @@ using namespace std;
 #define all(x) x.begin(),x.end()
 #define int long long
 
-// 
+// 大數字串
 
 signed main()
 {
     ShiYu;
+    string s; 
+    while(cin >> s)
+    {
+        if(s == "0") break;
+        int suma = 0, sumb = 0;
+        RPT(i,s.size())
+        {
+            if(i % 2) suma += s[i] - '0';
+            else sumb += s[i] - '0';
+        }
+        // cout << suma << " " << sumb << "\n";
+        int d = abs(suma - sumb);
+        cout << s << " is " << ((d % 11 == 0 || d == 0) ? "" : "not ") << "a multiple of 11.\n";
+    }
 }

@@ -15,8 +15,6 @@ int find_idx(char c)
     return -1;
 }
 
-
-
 signed main()
 {
     string s;

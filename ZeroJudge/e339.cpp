@@ -19,13 +19,4 @@ signed main()
     b[0] = a[0];
     FOR(i,1,n) b[i] = b[i-1] + a[i];
     output(b);
-
-
-    // int t,sum = 0;
-    // RPT(i,n)
-    // {
-    //     cin >> t;
-    //     sum += t;
-    //     cout << sum << " ";
-    // }
 }

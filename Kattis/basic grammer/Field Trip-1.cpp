@@ -2,7 +2,7 @@
 #define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
 using namespace std;
 #define FOR(i,a,b) for(int i=a;i<b;++i)
-// 此做法 TLE
+// 此(前綴和做法 TLE
 int a[1000000],b[1000001];
 
 signed main()

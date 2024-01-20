@@ -12,5 +12,5 @@ int NtoT(string s,int radix)
 
 // int num = 10;  
 // char str[100];  
-// itoa(num, str, 2);
+// iota(num, str, 2);
 

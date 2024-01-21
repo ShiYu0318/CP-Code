@@ -3,11 +3,10 @@
 #define coutS(x) cout << x << " ";
 #define ll long long
 using namespace std;
-#pragma GCC diagnostic ignored "-Wc++11-extensions"
-
 
 signed main()
 {
+    ShiYu
     multiset<int> p;
     ll n;
     while(cin >> n)

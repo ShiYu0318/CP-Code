@@ -27,9 +27,6 @@ signed main()
         {
             cout << "majority winner " << p.second+1 << "\n";
         }
-        else
-        {
-            cout << "minority winner " << p.second+1 << "\n";
-        }
+        else cout << "minority winner " << p.second+1 << "\n";
     }
 }

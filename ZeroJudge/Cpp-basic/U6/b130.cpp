@@ -12,5 +12,5 @@ int main()
         s.insert(t);
     }
     cout << s.size() << "\n";    
-    for(auto &i : s) cout << i << " ";
+    for(auto i : s) cout << i << " ";
 }

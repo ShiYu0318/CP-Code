@@ -1,32 +1,31 @@
 #include <bits/stdc++.h>
-#define ShiYu ios::sync_with_stdio(0),cin.tie(0);
+#define ShiYu ios::sync_with_stdio(0),cin.tie(0)
 #define FOR(i,a,b) for(int i=a;i<b;++i)
 #define all(x) x.begin(),x.end()
-#define str string
-#define ll long long
+#define int long long
 using namespace std;
+
+// WA
 
 signed main()
 {
-    ShiYu
-    
-    ll n; 
-    while(cin >> n)
+    ShiYu;
+    int n; 
+    while(cin >> n && n)
     {
-        if(n == 0) break;
-        str s,c;
-        map<str,vector<str>> m;
+        string s,c;
+        map<string,vector<string>> m;
         while(n--)
         {
             cin >> s;
             c = s;
             sort(all(s));
-            m[s].push_back(c);
+            m[s].emplace_back(c);
         }
         bool no_answer = 1;
         for(auto &i : m)
         {
-            vector<str> v = i.second;
+            vector<string> v = i.second;
             if(v.size() == 1) continue;
             no_answer = 0;
             sort(all(v));
@@ -39,5 +38,4 @@ signed main()
         }
         if(no_answer) cout << "No Answer\n";
     }
-
 }

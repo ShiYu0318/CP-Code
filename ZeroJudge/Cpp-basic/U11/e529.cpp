@@ -21,14 +21,12 @@ signed main()
         string a,b; 
         getline(cin,a); getline(cin,a);
         getline(cin,b);
-        //cout << a << "\n" << b << "\n";
         stringstream ssa(a),ssb(b);
         vector<pair<int,string>> v;
         string idx,s;
         while(ssa >> idx)
         {
             ssb >> s;
-            //cout << s << " ";
             v.emplace_back(stoi(idx),s);
         }
         sort(all(v));

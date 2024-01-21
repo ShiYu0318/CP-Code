@@ -10,7 +10,7 @@ using namespace std;
 #define all(x) x.rbegin(),x.rend()
 #define int long long
 
-// 貪心 WA
+// 貪心 WA 要遞迴枚舉
 
 signed main()
 {

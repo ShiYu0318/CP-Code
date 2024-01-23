@@ -17,16 +17,6 @@ signed main()
     ShiYu;
     int n; cin >> n;
     vector<int> v(n); input(v);
-    int ans = INT_MAX;
-    for(int i=0; i < (1 << n); ++i)
-    {
-        int a = 0, b = 0;
-        for(int j=0; j < n; ++j)
-        {
-            if(i & (1 << j)) a += v[j];
-            else b += v[j];
-        }
-        ans = min(ans,abs(a-b));
-    }
-    cout << ans << "\n";
+    sort(all(v));
+    output(v);
 }

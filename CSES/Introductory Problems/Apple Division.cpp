@@ -12,6 +12,8 @@ using namespace std;
 #define F first
 #define S second
 
+// 位元枚舉
+
 signed main()
 {
     ShiYu;

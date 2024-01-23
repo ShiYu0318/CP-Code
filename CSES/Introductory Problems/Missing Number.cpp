@@ -18,3 +18,15 @@ signed main()
 	}
 	cout << i+1 << "\n";
 }
+
+/*
+法二：數學解
+int n; cin >> n;
+int sum = n * (n + 1) / 2, x;
+while(n--)
+{
+	cin> >> x;
+	sum -= x;
+}
+cout << sum << "\n";
+*/

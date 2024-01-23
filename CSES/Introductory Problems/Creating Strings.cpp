@@ -5,6 +5,8 @@ using namespace std;
 #define eb emplace_back
 #define all(x) x.begin(),x.end()
 
+// 全排列
+
 signed main()
 {
     ShiYu;

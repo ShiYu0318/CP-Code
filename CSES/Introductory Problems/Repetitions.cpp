@@ -5,6 +5,8 @@ using namespace std;
 #define FOR(i,a,b) for(int i=a;i<b;++i)
 #define RPT(i,n) FOR(i,0,n)
 
+// 最長連續字串
+
 signed main()
 {
     ShiYu;

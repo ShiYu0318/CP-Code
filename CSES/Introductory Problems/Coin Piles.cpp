@@ -4,6 +4,8 @@ using namespace std;
 #define ShiYu ios_base::sync_with_stdio(0);cin.tie(0)
 #define YN(x) cout << (x ? "YES" : "NO") << "\n"
 
+// 數學推導
+
 signed main()
 {
     ShiYu;

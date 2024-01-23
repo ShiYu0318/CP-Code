@@ -7,6 +7,8 @@ using namespace std;
 #define RPT(i,n) FOR(i,0,n)
 #define all(x) x.begin(),x.end()
 
+// 迴文 字元處理
+
 signed main()
 {
     ShiYu;

@@ -3,6 +3,8 @@ using namespace std;
 #define int long long
 #define ShiYu ios_base::sync_with_stdio(0);cin.tie(0) 
 
+// 思考規律
+
 signed main()
 {
     ShiYu;

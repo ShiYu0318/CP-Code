@@ -7,6 +7,8 @@ using namespace std;
 #define rFOR(i,n) for(int i=n-1;i>=0;--i)
 #define RPT(i,n) FOR(i,0,n)
 
+// 位元思考
+
 signed main()
 {
     ShiYu;

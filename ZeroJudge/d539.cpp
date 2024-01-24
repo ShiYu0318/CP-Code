@@ -6,14 +6,14 @@ using namespace std;
 #define ls (x << 1)
 #define rs ((x << 1) | 1)
 
-// RMQ
+// 線段樹 RMQ(max)
 
-const int MAXN = 2e5+5;
+const int MAXN = 5e5+5;
 int seg[MAXN << 2], arr[MAXN], n;
 
 void pull(int x)
 {
-    seg[x] = min(seg[ls],seg[rs]);
+    seg[x] = max(seg[ls],seg[rs]);
 }
 
 void build(int x, int l ,int r)
@@ -29,23 +29,25 @@ void build(int x, int l ,int r)
 
 int query(int x, int l, int r, int ql, int qr)
 {
-    if(qr < l || r < ql) return INT_MAX;
+    if(qr < l || r < ql) return INT_MIN;
     if(ql <= l && r <= qr) return seg[x];
     int lq = query(ls, l, mid, ql, qr);
     int rq = query(rs, mid + 1, r, ql, qr);
-    return min(lq, rq);
+    return max(lq, rq);
 }
 
 signed main()
 {
     ShiYu
-    int n,q; cin >> n >> q;
+    int n; cin >> n;
     for(int i = 1; i <= n; ++i) cin >> arr[i];
     build(1,1,n);
-    int a,b;
+    for(int i=0;i<4*n;++i) cout << seg[i] << " ";
+    int q,a,b; cin >> q;
     while(q--)
     {
         cin >> a >> b;
+        if(a > b) swap(a,b);
         cout << query(1,1,n,a,b) << "\n";
     }
 }

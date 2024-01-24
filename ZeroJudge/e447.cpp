@@ -12,10 +12,24 @@ using namespace std;
 #define F first
 #define S second
 
-// 
-
 signed main()
 {
     ShiYu;
-    
+    int n; cin >> n;
+    int t,x;
+    queue<int> q;
+    while(n--)
+    {
+        cin >> t;
+        if(t == 1)
+        {
+            cin >> x;
+            q.emplace(x);
+        }
+        else if(t == 2)
+        {
+            cout << (q.empty() ? -1 : q.front()) << "\n";
+        } 
+        else if(!q.empty()) q.pop();
+    }
 }

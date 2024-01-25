@@ -3,10 +3,10 @@
 #define ll long long
 #define ull unsigned ll
 #define int ll
-#define pii pair< int, int >
-#define vii vector< pii >
+#define pii pair<int,int>
+#define vii vector<pii>
 #define pq priority_queue
-#define pq_min priority_queue < int, vector<int>, greater<int> > 
+#define pq_min priority_queue<int,vector<int>,greater<int>> 
 #define F first
 #define S second
 #define EB emplace_back
@@ -47,6 +47,6 @@ void solve()
 signed main(void)
 {
 	ShiYu;
-	int t; cin >> t;
+	int t = 1; // cin >> t;
 	while(t--) solve();
 }

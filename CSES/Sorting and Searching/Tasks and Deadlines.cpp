@@ -13,10 +13,20 @@ using namespace std;
 #define F first
 #define S second
 
-// 
+// greedy
 
 signed main()
 {
     ShiYu;
-    
+    int n; cin >> n;
+    vector<pii> v(n);
+    for(auto &i : v) cin >> i.F >> i.S;
+    sort(all(v));
+    int t=0,ans=0;
+    for(auto i:v)
+    {
+        t += i.F;
+        ans += i.S - t;
+    }
+    cout << ans << "\n";
 }

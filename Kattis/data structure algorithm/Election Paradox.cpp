@@ -7,16 +7,24 @@ using namespace std;
 #define input(x) for(auto &i : x) cin >> i
 #define output(x) for(auto i : x) cout << i << " "
 #define Yn(x) cout << (x ? "Yes" : "No") << "\n";
-#define all(x) x.begin(),x.end()
+#define all(x) x.rbegin(),x.rend()
 #define int long long
-#define pii pair<int,int>
 #define F first
 #define S second
 
-// 
+// greedy
 
 signed main()
 {
     ShiYu;
-    
+    int n; cin >> n;
+    vector<int> v(n); input(v);
+    sort(all(v));
+    int ans = 0, t = n / 2;
+    RPT(i,n)
+    {
+        if(i<t) ans += v[i];
+        else ans += v[i] / 2;
+    }
+    cout << ans << "\n";
 }

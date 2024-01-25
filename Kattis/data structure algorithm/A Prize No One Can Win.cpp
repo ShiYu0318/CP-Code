@@ -9,14 +9,23 @@ using namespace std;
 #define Yn(x) cout << (x ? "Yes" : "No") << "\n";
 #define all(x) x.begin(),x.end()
 #define int long long
-#define pii pair<int,int>
 #define F first
 #define S second
 
-// 
+// greedy
 
 signed main()
 {
     ShiYu;
-    
+    int n,x; cin >> n >> x;
+    vector<int> v(n); input(v);
+    if(n == 1) 
+    {
+        cout << 1 << "\n";
+        return 0;
+    }
+    sort(all(v));
+    int i=1;
+    for(;v[i-1] + v[i] <= x && i < n;++i);
+    cout << i << "\n";
 }

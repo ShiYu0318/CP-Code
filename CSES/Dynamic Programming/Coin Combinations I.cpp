@@ -13,33 +13,23 @@ using namespace std;
 #define F first
 #define S second
 
-const int MOD = 1e9+7;
-int dp[1e6+5];
-vector<int> v;
-
-int dp(int n)
-{
-    dp[0] = 1;
-    FOR(i,1,n+1)
-    {
-        for(auto j:v)
-        {
-            if(j > i || !j) continue;
-            dp[i] += dp[i-j];
-            dp[i] %= MOD;
-        }
-    }
-    return dp[n];
-}
+const int MOD = 1e9+7,MAXN=1e6+5;
+int dp[MAXN];
 
 signed main()
 {
     ShiYu;
-    int t,x; cin >> n >> x;
-    while(n--)
+    int n,x; cin >> n >> x;
+    vector<int> v(n); input(v);
+    dp[0] = 1;
+    FOR(i,1,x+1)
     {
-        cin >> t;
-        v.emplace_back(t);
+        for(auto j:v)
+        {
+            if(j > i) continue;
+            dp[i] += dp[i-j];
+            dp[i] %= MOD;
+        }
     }
-    cout << dp(x) << "\n";
+    cout << dp[x] << "\n";
 }

@@ -31,6 +31,9 @@
 #define YN(x) cout << (x ? "YES" : "NO") << "\n"
 #define Yn(x) cout << (x ? "Yes" : "No") << "\n"
 #define yn(x) cout << (x ? "yes" : "no") << "\n"
+#define islower(x) ((x) >= 'a' && (x) <= 'z')
+#define isupper(x) ((x) >= 'A' && (x) <= 'Z')
+#define isletter(x) (islower(x) || isupper(x))
 #define SET(n) cout << fixed << setprecision(n)
 #define nl(n) RPT(i,n) cout << "\n"
 const double eps = 1e-8;

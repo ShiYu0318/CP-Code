@@ -12,6 +12,8 @@ using namespace std;
 #define F first
 #define S second
 
+// 逆序數對 合併排序
+
 int ans;
 vector<int> v; 
 

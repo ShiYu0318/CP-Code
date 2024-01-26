@@ -12,6 +12,8 @@ using namespace std;
 #define F first
 #define S second
 
+// 自訂排序
+
 string tb[8] = {"elder","nursy","kit","warrior","appentice","medicent","deputy","leader"};
 
 struct st

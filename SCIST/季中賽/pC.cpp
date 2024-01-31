@@ -44,13 +44,25 @@ using namespace std;
 
 void solve()
 {
-    
-
+    int n,m; cin >> n >> m;
+    vector<int> a(n),b(m); input(a); input(b);
+    set<int> st;
+    sort(all(a));
+    RPT(i,n-1) st.insert(a[n-1] - a[i]);
+    RPT(i,m-1)
+    {
+        FOR(j,i+1,m)
+        {
+            int d = abs(b[j] - b[i]); 
+            if(st.count(d)) st.erase(st.find(d));
+        }
+    }
+    YN(st.empty());
 }
 
 signed main(void)
 {
-	ShiYu;
-	int t = 1; // cin >> t;
-	while(t--) solve();
+    ShiYu;
+    int t = 1; // cin >> t;
+    while(t--) solve();
 }

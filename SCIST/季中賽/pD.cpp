@@ -44,13 +44,36 @@ using namespace std;
 
 void solve()
 {
-    
+    int n; cin >> n;
+    set<pii> st;
+    int x,y;
+    RPT(i,n)
+    {
+        RPT(j,n)
+        {
+            cin >> x >> y;
+            st.insert(MP(x,y));
+        }
+    }
+
+    RPT(i,n)
+    {
+        RPT(j,n)
+        {
+            pii xy = {i+1,j+1};
+            if(!st.count(xy))
+            {
+                cout << xy.F << " " << xy.S << "\n";
+                return;
+            }
+        }
+    }
 
 }
 
 signed main(void)
 {
-	ShiYu;
-	int t = 1; // cin >> t;
-	while(t--) solve();
+    ShiYu;
+    int t = 1; // cin >> t;
+    while(t--) solve();
 }

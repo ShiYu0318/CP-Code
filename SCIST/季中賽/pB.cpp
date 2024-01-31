@@ -37,20 +37,68 @@
 #define nl(n) RPT(i,n) cout << "\n"
 const double eps = 1e-8;
 using namespace std;
-
-// 
-
+ 
+// 模擬
+ 
 //==========================================================================================
-
+ 
+vector<string> tb;
+int top[100];
+ 
 void solve()
 {
-    
-
+    int n,m,q; cin >> n >> m >> q;
+    string ts;
+    RPT(i,m) ts += "0";
+    RPT(i,n) tb.EB(ts);
+    int h,w,p,ans = 0;
+    RPT(i,q)
+    {
+        cin >> h >> w >> p;
+        int maxtop = -1;
+        FOR(j,p,p+w) maxtop = max(maxtop,top[j-1]); // 找最高卡點
+        int newtop = maxtop + h; // 紀錄新高點
+        if(newtop > n) // GG
+        {
+            cout << "Game Over\n";
+            return;
+        }
+        FOR(j,maxtop,newtop) // 放置
+        {
+            FOR(k,p,p+w) tb[j][k-1] = '1';
+        }
+        rFOR(j,n)   // 判斷消除
+        {
+            bool remove = true;
+            RPT(k,m)
+            {
+                if(tb[j][k] == '0') remove = false;
+            }
+            if(remove)
+            {
+                --newtop;
+                ++ans;
+                tb.erase(tb.begin()+j);
+                tb.EB(ts);
+            }
+        }
+        FOR(j,p,p+w) top[j-1] = newtop; // 更新最高點
+    }
+    cout << ans << "\n";
+    rFOR(i,n)
+    {
+        RPT(j,m)
+        {
+            if(tb[i][j] == '0') cout << '.';
+            else cout << '#';
+        }
+        cout << "\n";
+    }
 }
-
+ 
 signed main(void)
 {
-	ShiYu;
-	int t = 1; // cin >> t;
-	while(t--) solve();
+    ShiYu;
+    int t = 1; // cin >> t;
+    while(t--) solve();
 }

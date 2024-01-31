@@ -38,19 +38,32 @@
 const double eps = 1e-8;
 using namespace std;
 
-// 
+// 數學
 
 //==========================================================================================
 
+bool isPrime(int n) {
+    if (n <= 1) return false;
+    for (int i = 2; i*i <= n; ++i) 
+    {
+        if (n % i == 0) return false;
+    }
+    return true;
+}
+
+
 void solve()
 {
-    
-
+    int n; cin >> n;
+    if(n == 1) cout << 1 << "\n";
+    else if(n == 4) cout << 2 << "\n";
+    else if(isPrime(n)) cout << n-1 << "\n";
+    else cout << 0 << "\n";
 }
 
 signed main(void)
 {
-	ShiYu;
-	int t = 1; // cin >> t;
-	while(t--) solve();
+    ShiYu;
+    int t = 1; // cin >> t;
+    while(t--) solve();
 }

@@ -4,13 +4,7 @@ using namespace std;
 
 int main()
 {
-    map<int,queue<int>> mq;
-    mq[0].emplace(35);
-    mq[1].emplace(10);
-    mq[0].emplace(25);
-    for (auto it = mq.begin(); it != mq.end(); ++it)
-    {
-        cout << it->second.front() << "\n";
-
-    }
+    vector<int> v = {1,3,6,8,3,3};
+    v.erase(v.begin()+2);
+    for(auto i:v) cout << i << " ";
 }

@@ -44,13 +44,32 @@ using namespace std;
 
 void solve()
 {
-    
+    int n; cin >> n;
+    string a,b;
+    int c,d,x=0,y=0;
+    while(n--)
+    {
+        cin >> a >> b;
+        if(a == "J") c = 11;
+        else if(a == "Q") c = 12;
+        else if(a == "K") c = 13;
+        else c = stoi(a);
+
+        if(b == "J") d = 11;
+        else if(b == "Q") d = 12;
+        else if(b == "K") d = 13;
+        else d = stoi(b);
+
+        if(c < d) x += d - c;
+        else y += c - d; 
+    }
+    cout << x << " " << y << "\n";
 
 }
 
 signed main(void)
 {
-	ShiYu;
-	int t = 1; // cin >> t;
-	while(t--) solve();
+    ShiYu;
+    int t = 1; // cin >> t;
+    while(t--) solve();
 }

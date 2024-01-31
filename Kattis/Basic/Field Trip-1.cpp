@@ -16,7 +16,6 @@ signed main()
         cin >> a[i];
         b[i+1] = b[i] + a[i];
     }
-    // FOR(i,0,n+1) cout << b[i] << " ";
     cout << "\n";
     FOR(i,1,n-1)
     {

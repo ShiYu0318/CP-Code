@@ -1,8 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
-
 int main()
 {
 	ios::sync_with_stdio(0);
@@ -20,12 +18,8 @@ int main()
 			d[i] = abs(b - a);
 			if(d[i] > l) l = d[i];
 			a = b;
-			// cout << d[i] << " ";
 			t[d[i]] = 1;
 		}
-		// cout << "\n";
-		// for(i=1;i<=n-1;i++) cout << t[i] << " ";
-		// cout << "\n";
 		for(i=1;i<=n-1;i++)
 		{
 			if(t[i] != 1)

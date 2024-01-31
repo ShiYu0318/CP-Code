@@ -11,7 +11,6 @@ signed main()
     while(h--)
     {
         cin >> p;
-        // cout << p << "\n";
         c = false;
         FOR(i,w)
         {
@@ -20,7 +19,6 @@ signed main()
             if(n <= a && n * p <= b)
             {
                 minn = min(n * p, minn);
-                // cout << minn << "\n";
                 c = true;
                 k = true;
             }

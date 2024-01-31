@@ -19,11 +19,9 @@ signed main()
 				s[j] = s[j] + ('a' - 'A');
 			}
 		}
-		// cout << s << "\n";
 		for(int j=0;j<s.size()-3;j++)
 		{
 			c = s.substr(j,4);
-			// cout << c << "\n";
 			if(c == "rose" || c == "pink")
 			{
 				ans++;

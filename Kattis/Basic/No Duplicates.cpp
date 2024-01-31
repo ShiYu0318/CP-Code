@@ -6,7 +6,6 @@ int main()
 	string s,words[80];
 	int n=0,l=0,r=0;
 	getline(cin,s);
-	// cout << s.size() << "\n";
 	for(int i=0;i<s.size();i++)
 	{
 		if(s[i] == ' ' || i == s.size()-1)
@@ -27,9 +26,4 @@ int main()
 		}
 	}
 	cout << "yes\n";
-	
-	// for(int i=0;i<=n;i++)
-	// {
-		// cout << words[i] << "\n";
-	// }
 }

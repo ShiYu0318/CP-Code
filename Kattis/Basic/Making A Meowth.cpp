@@ -24,7 +24,6 @@ int main()
             }
             break;
         }
-        // cout << ans << ' ' << m << "\n";
     }
     cout << ans << "\n";
 }

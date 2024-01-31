@@ -21,7 +21,6 @@ signed main()
         }
         else
         {
-            // cout << "a=" << a << " b=" << b << "\n";
             if(a - b >= now)
             {
                 now = 0;
@@ -31,7 +30,6 @@ signed main()
                 now -= (a - b);
             }
             now = s - now;
-            // cout << s << " " << now << " " << t << " "<< a << " " << b << "\n";
         }
         b = a;
     }

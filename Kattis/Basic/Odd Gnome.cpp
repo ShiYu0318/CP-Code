@@ -18,11 +18,7 @@ signed main()
                 b = k;
                 continue;
             }
-            // cout << i << " " << k << " " << b << "\n";
-            if(k - b != 1)
-            {
-                ans = i + 1;
-            }
+            if(k - b != 1) ans = i + 1;
             b = k;
         }
         cout << ans << "\n";

@@ -14,12 +14,10 @@ signed main()
         v.push_back(t);
         sum += t;
     }
-    // cout << sum << "\n";
     if(sum % 3 != 0) cout << -1 << "\n";
     else
     {
         sum /= 3;
-        // cout << sum << "\n";
         t = 0;
         int a=-1,b=-1;
         FOR(i,0,n)

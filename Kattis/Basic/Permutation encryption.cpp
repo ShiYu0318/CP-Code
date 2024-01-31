@@ -12,7 +12,6 @@ signed main()
 		string s;
 		getline(cin,s);
 		getline(cin,s);
-		//cout << s << "\n";
 		string tmp,c="'";
 		int len=s.size(),t = len/n;
 		if(len % n != 0)

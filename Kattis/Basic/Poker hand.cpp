@@ -15,10 +15,7 @@ signed main()
 			else if(c[0] == 'Q') t[11]++;
 			else if(c[0] == 'K') t[12]++;
 		}
-		else
-		{
-			t[c[0] - '0' - 1]++;
-		}
+		else t[c[0] - '0' - 1]++;
 	}
 	for(int i=0;i<13;i++)
 	{

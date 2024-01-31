@@ -72,13 +72,6 @@ void solve()
                             t[i + mx[k]][j + my[k]] = '#';
                             rd = 1 - rd;
                             gg = false;
-                            // nl;nl;nl;
-                            // dbg(rd);
-                            // FORn(q,r)
-                            // {
-                            //     dbg(t[q]);
-                            // }
-                            // nl;nl;nl;
                             break;
                         }
                     }

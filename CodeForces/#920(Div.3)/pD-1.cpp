@@ -57,16 +57,14 @@ void solve()
                 {
                     maxn = abs(x[i] - y[j]);
                     mi = i;mj=j;
-                }
-                
+                }         
             }
         }
         x[mi] = -1;
         y[mj] = -1;
         ans += maxn;
     }
-    cout << ans << "\n";
-    
+    cout << ans << "\n"; 
 }
 
 signed main(void)

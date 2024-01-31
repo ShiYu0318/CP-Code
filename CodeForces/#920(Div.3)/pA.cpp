@@ -51,11 +51,8 @@ void solve()
             v.emplace_back(a,b);
         }
         sort(all(v));
-        // for(auto &i : v) cout << i.F << " " << i.S << "\n";
-        // cout << "\n";
         cout << (v[2].F-v[0].F) * (v[1].S-v[0].S) << "\n";
     }
-
 }
 
 signed main(void)

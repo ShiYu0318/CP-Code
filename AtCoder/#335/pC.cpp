@@ -1,4 +1,3 @@
-// 
 #include <bits/stdc++.h>
 using namespace std;
 #define RPT(i,n) for(int i=0;i<n;++i)
@@ -34,8 +33,6 @@ signed main(void)
         }
         else
         {
-            // for(auto &i : v) cout << i.first << " " << i.second << "\n";
-            // cout << "\n\n\n";
             cin >> x;
             cout << v[(v.size()-x)].first << " " << v[(v.size()-x)].second << "\n";
         }

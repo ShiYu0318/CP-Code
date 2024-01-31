@@ -49,8 +49,6 @@ void solve()
     {
         if(t[i] != 0) v.emplace_back(t[i]);
     }
-    // FORn(i,v.size()) cout << v[i] << " ";
-    // nl;
     while(1)
     {
         int sum = 0;

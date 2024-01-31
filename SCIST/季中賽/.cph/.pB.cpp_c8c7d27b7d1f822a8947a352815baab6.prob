@@ -1,1 +1,0 @@
-{"name":"Local: pB","url":"/Users/shiyu./Desktop/CP-Code/SCIST/季中賽/pB.cpp","tests":[{"id":1706691976224,"input":"5 4 4\n2 3 1\n1 3 2\n1 1 4\n3 2 1\n","output":""},{"id":1706691992333,"input":"5 4 3\n2 3 1\n2 2 2\n3 1 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/shiyu./Desktop/CP-Code/SCIST/季中賽/pB.cpp","group":"local","local":true}

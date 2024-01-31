@@ -17,7 +17,6 @@ int main()
 			n[i][p[j]-1] = s[j];
 		}
 		s = n[i];
-		// cout << s << "\n";
 	}
 	for(int i=0;i<r;i++)
 	{

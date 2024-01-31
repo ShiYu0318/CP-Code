@@ -3,7 +3,6 @@
 using namespace std;
 #define FOR(i,n) for(int i=0;i<n;++i)
 
-
 signed main()
 {
     ShiYu
@@ -20,5 +19,4 @@ signed main()
         if(ans == "") cout << "None\n";
         else cout << ans << "\n";
     }
-    
 }

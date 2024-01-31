@@ -4,13 +4,15 @@ using namespace std;
 
 // 建表 AC
 
-vector<vector<int>> tb = {
-                            {1,1,1,1},
-                            {3},
-                            {2,2},
-                            {1,3},
-                            {1,2,2},
-                         };
+vector<vector<int>> tb = 
+{
+    {1,1,1,1},
+    {3},
+    {2,2},
+    {1,3},
+    {1,2,2},
+};
+
 const int sz[5] = {4,3,4,4,5};
 int LL[30] = {0};
 

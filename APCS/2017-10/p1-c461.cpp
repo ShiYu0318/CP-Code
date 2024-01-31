@@ -9,7 +9,6 @@ signed main(void)
     int a,b,c; cin >> a >>  b >> c;
     if(a > 0) a = 1;
     if(b > 0) b = 1;
-    // cout << (a & b) << "git push origin master --force " << (a | b) << " " << (a ^ b) << '\n';
     if((a & b) == c) cout << "AND\n";
     if((a | b) == c) cout << "OR\n";
     if((a ^ b) == c) cout << "XOR\n";

@@ -18,16 +18,12 @@ signed main()
 				
 				FOR(d,m)
 				{
-					// if(a == c && b == d) continue;
 					int t = abs(a-c)+abs(b-d);
-					// cout << t << " ";
 					if(t <= A[a][b])
 					{
 						sum += A[c][d];
 					}
 				}
-				
-				// cout << sum << "\n";
 			}
 			if(sum % 10 == A[a][b])
 			{

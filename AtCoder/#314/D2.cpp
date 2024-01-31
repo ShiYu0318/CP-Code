@@ -52,8 +52,6 @@ void solve()
         }
     }
     for(auto& i : m) s[i.f-1] = i.s;
-
-
 }
 
 signed main()

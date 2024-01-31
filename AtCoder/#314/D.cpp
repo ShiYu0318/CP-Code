@@ -1,5 +1,4 @@
 #include<bits/stdc++.h>
-
 #define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
 #define ll long long
 #define ull unsigned long long
@@ -46,10 +45,6 @@ void solve()
             for(int i=0;i<n;++i)
             {
                 s[i] = tolower(s[i]);
-                // if('A' <= s[i] && s[i] <= 'Z')
-                // {
-                //     s[i] += 'a' - 'A';
-                // }
             }
         }
         else
@@ -57,10 +52,6 @@ void solve()
             for(int i=0;i<n;++i)
             {
                 s[i] = toupper(s[i]);
-                // if('a' <= s[i] && s[i] <= 'z')
-                // {
-                //     s[i] -= 'a' - 'A';
-                // }
             }
         }
     }

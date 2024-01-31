@@ -48,7 +48,6 @@ void solve()
 	 	v.pb(t);
 	}
 	sort(all(v));
-	// output(v);
 	int maxn = 0,p = 0; // 觀察出第一個起點為正數後總和會遞減 P 用來記錄
 	FORn(i,n)
 	{
@@ -61,8 +60,6 @@ void solve()
 			sum += v[j] * d;
 			d++;
 		}
-		// dbg(sum);
-		// nl(2);
 		remax(maxn,sum);
 	}
 	cout << maxn << "\n";

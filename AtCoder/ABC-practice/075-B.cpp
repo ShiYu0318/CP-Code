@@ -24,7 +24,6 @@ signed main()
         tb[i] = ms;
     }
     tb[h+1] = as;
-    // FORn(i,h+2) cout << tb[i] << "\n";
 
     // 跑八方檢查
     FOR(i,1,h+1)

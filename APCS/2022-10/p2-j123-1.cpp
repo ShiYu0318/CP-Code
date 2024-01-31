@@ -4,7 +4,7 @@ using namespace std;
 #define F first
 #define S second
 
-// 有畫面的模擬 Not finish 75%
+// 有畫面的模擬 NA75%
 
 const int LW[5][2] = {{4,1},{1,3},{2,2},{2,3},{3,2}};
 

@@ -1,5 +1,4 @@
 #include<bits/stdc++.h>
-
 #define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
 #define ll long long
 #define ull unsigned long long
@@ -25,7 +24,6 @@
 #define rt return
 #define ct continue
 #define bk break
-
 using namespace std;
 
 void solve()
@@ -37,11 +35,6 @@ void solve()
 		cin >> x;
 		q.push(x);
 	}
-	
-	
-    
-
-
 }
 
 signed main()

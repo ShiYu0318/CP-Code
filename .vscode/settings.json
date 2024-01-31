@@ -79,7 +79,19 @@
     "array": "cpp",
     "string": "cpp",
     "string_view": "cpp",
-    "filesystem": "cpp"
+    "filesystem": "cpp",
+    "bitset": "cpp",
+    "complex": "cpp",
+    "ctime": "cpp",
+    "exception": "cpp",
+    "functional": "cpp",
+    "iterator": "cpp",
+    "fstream": "cpp",
+    "limits": "cpp",
+    "locale": "cpp",
+    "memory": "cpp",
+    "new": "cpp",
+    "sstream": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled",
   "cmake.configureOnOpen": false

@@ -15,7 +15,6 @@ signed main()
 		if(c[i] == q) b = i;
 	}
 	if(a > b) swap(a,b);
-	// cout << a << " " << b << "\n";
 	for(int i=a;i<b;i++) ans += d[i];
 	cout << ans << "\n";
 }

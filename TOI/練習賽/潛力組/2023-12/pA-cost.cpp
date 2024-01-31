@@ -56,10 +56,6 @@ void solve()
 {	
     int n; cin >> n;
     FORn(i,n) cin >> p[i];
-    // FORn(i,n)
-    // {
-    //     dbg(p[i]);
-    // }
     int m,s,a;
     FORn(i,n)
     {
@@ -72,20 +68,8 @@ void solve()
         }
         v.pb(vt);
     }
-    // FORn(i,v.size())
-    // {
-    //     cout << "i=" << i << "\n";
-    //     FORn(j,v[i].size())
-    //     {
-    //         cout << v[i][j].F << " " << v[i][j].S <<"\n";
-    //     }
-    //     nl;
-    // }
-    FORn(i,n)
-    {
-        // dbg(i);
-        cout << get_cost(i,1) << "\n";
-    }
+
+    FORn(i,n) cout << get_cost(i,1) << "\n";
 }
 
 signed main(void)

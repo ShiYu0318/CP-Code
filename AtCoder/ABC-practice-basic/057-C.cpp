@@ -13,7 +13,6 @@ signed main()
     {
         if(n % i == 0)
         {
-            // cout << i << " " << n/i << "\n";
             a = n / i; q = 0;
             while(a != 0)
             {

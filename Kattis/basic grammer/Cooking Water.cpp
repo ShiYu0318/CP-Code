@@ -15,14 +15,12 @@ signed main()
         FOR(j,a,b)
         {
             t[j]++;
-            // cout << j << " " << t[j] << "\n";
             if(t[j] == n)
             {
                 cout << "gunilla has a point\n";
                 return 0;
             }
         }
-        // cout << "\n\n\n";
     }
     cout << "edward is right\n";
     return 0;

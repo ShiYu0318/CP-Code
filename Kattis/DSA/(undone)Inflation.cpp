@@ -20,7 +20,7 @@ signed main()
     ShiYu;
     int n; cin >> n;
     vector<int> v(n); input(v);
-    sort(all(v)); //output(v); cout << "\n";
+    sort(all(v));
     double ans = INT_MAX;
     RPT(i,n)
     {
@@ -35,12 +35,7 @@ signed main()
             ans = -1;
             break;
         }
-        else
-        {
-            //cout << v[i] << " " << i+1 << " " << (double)v[i]/(i+1) << "\n";
-            ans = min(ans,(double)(v[i])/(i+1));
-            //cout << ans << "\n";
-        }
+        else ans = min(ans,(double)(v[i])/(i+1));
     }
     if(ans == -1) cout << "impossible\n";
     else cout << ans << "\n";

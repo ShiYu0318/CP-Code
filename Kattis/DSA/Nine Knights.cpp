@@ -4,7 +4,7 @@ using namespace std;
 #define FORn(i,n) for(int i=0;i<n;++i)
 
 const int mx[] = {1,2,2,1,-1,-2,-2,-1},
-          my[] = {2,1,-1,-2,-2,-1,1,2};
+        my[] = {2,1,-1,-2,-2,-1,1,2};
 
 bool in_range(int x,int y)
 {

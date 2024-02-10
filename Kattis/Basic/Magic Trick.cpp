@@ -16,24 +16,17 @@ using namespace std;
 signed main()
 {
     ShiYu;
+    set<char> st;
     string s; cin >> s;
-    int sz = s.size();
-    if(sz % 2) cout << "fix\n";
-    else
+    bool ans = true;
+    RPT(i,s.size())
     {
-        bool ans = true;
-        RPT(i,sz / 2 - 1)
+        if(st.count(s[i]))
         {
-            if(s[i] != s[sz-1-i] || s[i] != '|' || s[sz-1-i] != '|')
-            {
-                ans = false;
-                break;
-            }
+            ans = false;
+            break;
         }
-        if(ans)
-        {
-            if(s[sz / 2 - 1] == '|' || s[sz / 2] == '|') ans = false;
-        }
-        cout << (ans ? "correct" : "fix") << "\n";
+        else st.insert(s[i]);
     }
+    cout << (ans ? 1 : 0) << "\n";
 }

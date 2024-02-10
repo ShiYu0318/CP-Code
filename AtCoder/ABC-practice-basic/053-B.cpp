@@ -17,23 +17,22 @@ signed main()
 {
     ShiYu;
     string s; cin >> s;
-    int sz = s.size();
-    if(sz % 2) cout << "fix\n";
-    else
+    int a,b;
+    RPT(i,s.size())
     {
-        bool ans = true;
-        RPT(i,sz / 2 - 1)
+        if(s[i] == 'A') 
         {
-            if(s[i] != s[sz-1-i] || s[i] != '|' || s[sz-1-i] != '|')
-            {
-                ans = false;
-                break;
-            }
+            a = i;
+            break;
         }
-        if(ans)
-        {
-            if(s[sz / 2 - 1] == '|' || s[sz / 2] == '|') ans = false;
-        }
-        cout << (ans ? "correct" : "fix") << "\n";
     }
+    rFOR(i,s.size())
+    {
+        if(s[i] == 'Z') 
+        {
+            b = i;
+            break;
+        }
+    }
+    cout << b - a + 1 << "\n";
 }

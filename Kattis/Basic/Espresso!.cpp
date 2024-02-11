@@ -16,30 +16,20 @@ using namespace std;
 signed main()
 {
     ShiYu;
-    int n,m; cin >> n >> m;
-    vector<string> v(m);
-    RPT(i,m)
+    int n,s; cin >> n >> s;
+    string x;
+    int now = s,t,ans = 0;
+    while(n--)
     {
-        if((i+1) % 3 == 0 && (i+1) % 5 == 0) v[i] = "fizzbuzz";
-        else if((i+1) % 3 == 0) v[i] = "fizz";
-        else if((i+1) % 5 == 0) v[i] = "buzz";
-        else v[i] = to_string(i+1);
-    }
-    string s;
-    int ans=-1, maxn = -1,t;
-    RPT(i,n)
-    {
-        t = 0;
-        RPT(j,m)
+        cin >> x;
+        t = x[0] - '0';
+        if(x[x.size()-1] == 'L') ++t;
+        if(now < t)
         {
-            cin >> s;
-            if(v[j] == s) ++t;
+            now = s;
+            ++ans;
         }
-        if(t > maxn)
-        {
-            maxn = t;
-            ans = i;
-        }
+        now -= t;
     }
-    cout << ans+1 << "\n";  
+    cout << ans << "\n";
 }

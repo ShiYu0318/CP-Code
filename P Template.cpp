@@ -17,7 +17,6 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
-    cout << "hello\n";
+    ShiYu
     
 }

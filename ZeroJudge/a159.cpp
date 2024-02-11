@@ -13,33 +13,27 @@ using namespace std;
 #define F first
 #define S second
 
+int f(int n)
+{
+    if(n < 5) return n * 2;
+    return n * 2 % 10 + 1;
+}
+
 signed main()
 {
     ShiYu;
-    int n,m; cin >> n >> m;
-    vector<string> v(m);
-    RPT(i,m)
-    {
-        if((i+1) % 3 == 0 && (i+1) % 5 == 0) v[i] = "fizzbuzz";
-        else if((i+1) % 3 == 0) v[i] = "fizz";
-        else if((i+1) % 5 == 0) v[i] = "buzz";
-        else v[i] = to_string(i+1);
-    }
+    int n; cin >> n;
     string s;
-    int ans=-1, maxn = -1,t;
-    RPT(i,n)
+    while(n--)
     {
-        t = 0;
-        RPT(j,m)
+        int a=0,b=0;
+        RPT(i,4)
         {
             cin >> s;
-            if(v[j] == s) ++t;
+            a += f(s[0] - '0') + f(s[2] - '0');
+            b += (s[1] - '0') + (s[3] - '0');
         }
-        if(t > maxn)
-        {
-            maxn = t;
-            ans = i;
-        }
+        cout << ((a + b) % 10 ? "Invalid" : "Valid") << "\n";
     }
-    cout << ans+1 << "\n";  
+    
 }

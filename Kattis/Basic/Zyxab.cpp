@@ -16,30 +16,31 @@ using namespace std;
 signed main()
 {
     ShiYu;
-    int n,m; cin >> n >> m;
-    vector<string> v(m);
-    RPT(i,m)
+    int n; cin >> n;
+    string s,ans = "Neibb";
+    int maxl = 21;
+    while(n--)
     {
-        if((i+1) % 3 == 0 && (i+1) % 5 == 0) v[i] = "fizzbuzz";
-        else if((i+1) % 3 == 0) v[i] = "fizz";
-        else if((i+1) % 5 == 0) v[i] = "buzz";
-        else v[i] = to_string(i+1);
-    }
-    string s;
-    int ans=-1, maxn = -1,t;
-    RPT(i,n)
-    {
-        t = 0;
-        RPT(j,m)
+        cin >> s;
+        int sz = s.size();
+        set<char> st;
+        bool rep = false;
+        RPT(i,sz)
         {
-            cin >> s;
-            if(v[j] == s) ++t;
+            if(st.count(s[i]))
+            {
+                rep = true;
+                break;
+            }
+            else st.insert(s[i]);
         }
-        if(t > maxn)
+        if(rep || sz < 5) continue;
+        else if(sz < maxl)
         {
-            maxn = t;
-            ans = i;
+            maxl = sz;
+            ans = s;
         }
-    }
-    cout << ans+1 << "\n";  
+        else if(sz == maxl) ans = max(ans,s);
+    }   
+    cout << ans << "\n";
 }

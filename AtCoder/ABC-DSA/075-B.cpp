@@ -7,7 +7,7 @@ using namespace std;
 
 string tb[55],ans[50];
 const int mx[] = {0,1,1,1,0,-1,-1,-1},
-          my[] = {1,1,0,-1,-1,-1,0,1};
+        my[] = {1,1,0,-1,-1,-1,0,1};
 
 signed main()
 {

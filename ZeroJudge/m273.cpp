@@ -16,5 +16,28 @@ using namespace std;
 signed main()
 {
     ShiYu
-    
+    int n; cin >> n; cin.ignore();
+    string a,b,ans;
+    while(n--)
+    {
+        vector<int> p;
+        getline(cin,a); getline(cin,b);
+        RPT(i,a.size())
+        {
+            if(a[i] == '<' || a[i] == '>') p.emplace_back(i);
+            else cout << a[i];
+        }
+        cout << "\n";
+        ans = a.substr(p[2]+1,p[3]-p[2]-1) + a.substr(p[1]+1,p[2]-p[1]-1) + a.substr(p[0]+1,p[1]-p[0]-1) + a.substr(p[3]+1);
+        
+        RPT(i,b.size())
+        {
+            if(b[i] == '.')
+            {
+                cout << ans << "\n";
+                break;
+            }
+            else cout << b[i];
+        }
+    }
 }

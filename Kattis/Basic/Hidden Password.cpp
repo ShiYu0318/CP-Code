@@ -22,7 +22,6 @@ signed main()
     bool ans = true;
     for(int i=0, j=0; i<a.size() && j < b.size(); ++j)
     {
-        // cout << a[i] << " " << b[j] << "\n";
         if(a[i] != b[j] && ms.count(b[j]))
         {
             ans = false;

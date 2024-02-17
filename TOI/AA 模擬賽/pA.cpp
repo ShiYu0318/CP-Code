@@ -37,19 +37,94 @@
 const double eps = 1e-8;
 using namespace std;
 
-// 
+
 
 //==========================================================================================
+
+// 1:a>b, -1:a<b, 0:a==b
+int cmp(string a, string b) 
+{
+    if(a.size() > b.size()) return 1;
+    if(a.size() < b.size()) return -1;
+    RPT(i,a.size())
+    {
+        if(a[i] > b[i]) return 1;
+        if(a[i] < b[i]) return -1;
+    }
+    return 0;
+}
+
+string dis(string a, string b)
+{
+    string s;
+    bool tmp = false;
+    rFOR(i,a.size())
+    {
+        int t;
+        if(tmp)
+        {
+            if(b[i] != '0')
+            {
+                --b[i];
+                tmp = false;
+            }
+            else
+            {
+                s += "0"+(10 - (a[i]-'0') - 1);
+                continue;
+            }
+        }
+        if(a[i] <= b[i]) t = b[i] - a[i];
+        else
+        {
+            t = 10 - (a[i]-'0') + (b[i]-'0');
+            tmp = true;
+        }
+        s += (char)('0'+t);
+    }
+    while(s.back() == '0') s.pop_back();
+    reverse(all(s));
+    return s;
+}
+
+// bool GG(string a, string b)
+// {
+//     sort(all(a)); sort(all(b));
+//     reverse(all(a)); reverse(all(b));
+//     if(cmp(a,b) == 1) return true;
+//     else return false;
+// }
 
 void solve()
 {
     
-
+    string a,b; cin >> a >> b;
+    if(cmp(a,b) == 0) cout << 0 << "\n";
+    else
+    {
+        sort(all(b));
+        string ans = "-1";
+        do
+        {
+            if(a == b) // 重排列跟原數一樣
+            {
+                ans = "0";
+                break;
+            }
+            else if(b[0] == '0' || cmp(a,b) == 1) continue; // 有前綴 0 或 a > b 跳過 
+            else
+            {
+                string ts = dis(a,b);
+                if(ans == "-1") ans = ts; 
+                if(cmp(ans,ts) == 1) ans = ts;;
+            }
+        } while(next_permutation(all(b)));
+        cout << ans << "\n";
+    }
 }
 
 signed main(void)
 {
     ShiYu;
-    int t = 1; // cin >> t;
-    while(t--) solve();
+    solve();
 }

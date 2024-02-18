@@ -17,7 +17,7 @@
 #define min(a, b) (a < b ? a : b)
 #define remax(a, b) a = (a > b ? a : b)
 #define remin(a, b) a = (a < b ? a : b)
-#define coutE(x) cout << x << "\n"
+#define coutN(x) cout << x << "\n"
 #define coutS(x) cout << x << ' '
 #define dbg(x) cerr << #x << "=" << x << "\n";
 #define FOR(i,a,b) for(int i=a;i<b;++i)
@@ -44,13 +44,13 @@ using namespace std;
 
 void solve()
 {
-    
-
+    int n; cin >> n;
+	
 }
 
 signed main(void)
 {
-	ShiYu;
-	int t = 1; // cin >> t;
+	ShiYu
+	int t; cin >> t;
 	while(t--) solve();
 }

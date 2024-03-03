@@ -1,9 +1,0 @@
-2 6 5
-koying
-colten
-koying 1 WA
-koying 1 AC
-colten 1 AC
-koying 2 AC
-colten 3 WA
-view

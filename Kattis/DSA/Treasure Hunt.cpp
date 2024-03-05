@@ -13,6 +13,8 @@ using namespace std;
 #define F first
 #define S second
 
+// 模擬 or 建表
+
 int main()
 {
     ShiYu

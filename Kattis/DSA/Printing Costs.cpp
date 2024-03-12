@@ -35,7 +35,6 @@ map<char,int> tb = {{'!',9},{'"',6},{'#',24},{'$',29},{'%',22},
                 {'v',13},{'w',19},{'x',13},{'y',24},{'z',19},
                 {'{',18},{'|',12},{'}',18},{'~',9}};
 
-
 signed main()
 {
     ShiYu;
@@ -45,7 +44,7 @@ signed main()
     // {
     //     cout << "{'" << c << "'," << n << "}" << ",";
     // }
-    string s; 
+    string s;
     while(getline(cin,s))
     {
         int ans = 0;
@@ -55,5 +54,4 @@ signed main()
         }
         cout << ans << "\n";
     }
-
 }

@@ -23,7 +23,7 @@ int main()
     vector<string> v(r); input(v);
     while(v[x][y] != 'T')
     {
-        if(ans > r * c * 2)
+        if(ans > r * c + 1)
         {
             cout << "Lost\n";
             return 0;

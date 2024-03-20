@@ -20,6 +20,5 @@ signed main()
         }
         if(c) cout << "KEEP\n";
         else cout << "REMOVE\n";
-    }
-    
+    } 
 }

@@ -12,13 +12,13 @@ int main()
         {
             for(int k=0;k <= l-b*i-d*j;k++)
             {
-            	s = b*i + d*j + c*k;
-            	if(s>l) break;
-            	else if(s==l)
-            	{
-            		impossible = false;
-            		cout << i << " " << j << " " << k << "\n";
-            	}
+                s = b*i + d*j + c*k;
+                if(s>l) break;
+                else if(s==l)
+                {
+                    impossible = false;
+                    cout << i << " " << j << " " << k << "\n";
+                }
             }
         }
     }

@@ -7,7 +7,7 @@ signed main()
     int r,c,test=1;
     while(t--)
     {
-    	cout << "Test " << test << "\n"; test++;
+        cout << "Test " << test << "\n"; test++;
         cin >> r >> c;
         char tb[r][c];
         for(int i=0;i<r;++i) for(int j=0;j<c;++j) cin >> tb[i][j];

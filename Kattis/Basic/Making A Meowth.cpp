@@ -11,17 +11,13 @@ int main()
         if(i % n == 0)
         {
             ans += y;
-            
             continue;
         }
         m++;
         ans += x;
         if(m == p)
         {
-            if((i + 1) % n == 0)
-            {
-                ans += y;
-            }
+            if((i + 1) % n == 0) ans += y;
             break;
         }
     }

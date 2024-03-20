@@ -2,6 +2,7 @@
 using namespace std;
 #define FOR(i,a,b) for(int i=a;i<b;++i)
 /*
+模擬
 思路：窮舉每個格子 當作 2x2 正方形的左上角 
 檢查 2x2 正方形 如果任意一格有壓到建築 這格就不要算
 順便紀錄壓到幾台車

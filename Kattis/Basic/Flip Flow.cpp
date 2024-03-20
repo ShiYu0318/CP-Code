@@ -21,14 +21,8 @@ signed main()
         }
         else
         {
-            if(a - b >= now)
-            {
-                now = 0;
-            }
-            else
-            {
-                now -= (a - b);
-            }
+            if(a - b >= now) now = 0;
+            else now -= (a - b);
             now = s - now;
         }
         b = a;

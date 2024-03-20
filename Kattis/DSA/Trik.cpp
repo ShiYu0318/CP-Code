@@ -1,4 +1,4 @@
-// 建表
+// 建表 資料邏輯分開 增加擴充性
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long

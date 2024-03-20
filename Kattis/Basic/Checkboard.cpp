@@ -70,6 +70,5 @@ signed main()
 			}
 		}
 	}
-	if(ans) cout << 1 << "\n";
-	else cout << 0 << "\n";
+	cout << ans << "\n";
 }

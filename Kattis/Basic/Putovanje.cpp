@@ -15,7 +15,6 @@ signed main()
         int sum = 0,t=0;
         FOR(j,i,n)
         { 
-
             if(sum + w[j] <= c)
             {
                 t++;

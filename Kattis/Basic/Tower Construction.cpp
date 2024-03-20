@@ -8,10 +8,7 @@ signed main(void)
     while(t--)
     {
         cin >> h;   
-        if(h > b)
-        {
-            ans++;
-        }
+        if(h > b) ans++;
         b = h;
     }
     cout << ans << "\n";

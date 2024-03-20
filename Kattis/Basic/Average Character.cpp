@@ -8,5 +8,4 @@ signed main()
     int sum = 0; 
     FOR(i,s.size()) sum += int(s[i]);
     cout << (char)(sum / s.size()) << "\n";
-
 }

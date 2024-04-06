@@ -8,12 +8,7 @@ using namespace std;
 signed main()
 {
     ShiYu;
-    int n; cin >> n;
-    int ans = 0;
-    while(n)
-    {
-        ans += n / 5;
-        n /= 5;
-    }
+    int n, ans = 0; cin >> n;
+    while(n) ans += n /= 5;
     cout << ans << "\n";
 }

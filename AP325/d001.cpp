@@ -17,17 +17,18 @@ using namespace std;
 
 int eval()
 {
-    string x,y,t; int a,b; cin >> t;
-    if(t == "f")
+    char t; cin >> t;
+    int x,y;
+    if(t == 'f')
     {
-        a = eval();
-        return 2 * a - 1;
+        x = eval();
+        return 2 * x - 1;
     }
-    else if(t == "g")
+    else if(t == 'g')
     {
-        a = eval();
-        b = eval();
-        return a + 2 * b - 3;
+        x = eval();
+        y = eval();
+        return x + 2 * y - 3;
     }
     else return stol(t);
 }

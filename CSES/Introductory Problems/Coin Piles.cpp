@@ -9,8 +9,7 @@ using namespace std;
 signed main()
 {
     ShiYu;
-    int t; cin >> t;
-    int a,b;
+    int a, b, t; cin >> t;
     while(t--)
     {
         cin >> a >> b;

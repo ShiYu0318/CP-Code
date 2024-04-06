@@ -13,6 +13,7 @@ using namespace std;
 #define F first
 #define S second
 
+// 例題 P-1-1. 合成函數(1) 
 // 遞迴
 
 int eval()

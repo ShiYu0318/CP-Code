@@ -13,6 +13,7 @@ using namespace std;
 #define F first
 #define S second
 
+// 例題 P-1-3. 棍子中點切割
 // 遞迴
 
 const int SIZE = 5e4+5;

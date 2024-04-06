@@ -13,6 +13,9 @@ using namespace std;
 #define F first
 #define S second
 
+// 習題 Q-1-10. 最多得分的皇后 
+// 遞迴
+
 int n, ans, tb[14][14];
 
 void msq(int k, int p[], int s)

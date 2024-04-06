@@ -13,6 +13,7 @@ using namespace std;
 #define F first
 #define S second
 
+// 習題 Q-1-8. 子集合的和 (APCS201810, subtask) 
 // 遞迴
 
 int n, ans, a[26], p;

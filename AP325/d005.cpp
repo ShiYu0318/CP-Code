@@ -13,6 +13,7 @@ using namespace std;
 #define F first
 #define S second
 
+// 習題 Q-1-5. 二維黑白影像編碼 (APCS201810) 
 // 遞迴 同 (APCS 2018 03 p3)(ZJ f637)
 
 string s;

@@ -13,6 +13,7 @@ using namespace std;
 #define F first
 #define S second
 
+// 例題 P-1-7. 子集合乘積 
 // 遞迴
 
 const int P = 1e4+9;

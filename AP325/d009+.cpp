@@ -20,8 +20,9 @@ int tb[13][13];
 // remove frame
 int rmf(int ax, int ay, int bx, int by)
 {
-    if(ax == bx || ay == by) return 0;
-    int u = 0, d = 0, l = 0, r = 0;
+    if(ax == bx || ay == by) return 0;  // 剩一行或一列
+    // 找上下左右的值
+    int u = 0, d = 0, l = 0, r = 0; 
     FOR(j,ay,by+1)
     {
         u += tb[ax][j];
@@ -38,6 +39,7 @@ int rmf(int ax, int ay, int bx, int by)
     d = min(d, m - d);
     l = min(l, n - l);
     r = min(r, n - r);
+    // 刪掉邊後遞迴
     int w = u + rmf(ax+1, ay, bx, by),
         x = d + rmf(ax, ay, bx-1, by),
         y = l + rmf(ax, ay+1, bx, by),

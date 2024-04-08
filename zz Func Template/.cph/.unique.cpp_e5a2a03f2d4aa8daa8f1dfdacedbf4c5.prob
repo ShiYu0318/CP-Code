@@ -1,0 +1,1 @@
+{"name":"Local: unique","url":"/Users/shiyu./Desktop/CP-Code/zz Func Template/unique.cpp","tests":[{"id":1712570461891,"input":"7\n0 3 9 3 3 -1 0","output":"1 2 3 2 2 0 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/shiyu./Desktop/CP-Code/zz Func Template/unique.cpp","group":"local","local":true}

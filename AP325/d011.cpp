@@ -3,7 +3,9 @@
 #define all(x) x.begin(), x.end()
 #define RPT(i,n) for(int i=0;i<n;++i)
 using namespace std;
+
 // 離散化
+
 signed main()
 {
     int n; cin >> n;

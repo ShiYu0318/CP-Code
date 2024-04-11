@@ -9,6 +9,7 @@ using namespace std;
 #define Yn(x) cout << (x ? "Yes" : "No") << "\n"
 #define all(x) x.begin(),x.end()
 #define int long long
+#define vi vector<int>
 #define pii pair<int,int>
 #define F first
 #define S second
@@ -33,5 +34,5 @@ signed main()
         x = (x + (s[i]-'0') * fpow(10,t)) % p;
         ++t;
     }
-    cout << fpow(x,y) << "\n";
+    cout << fpow(x,y) << '\n';
 }

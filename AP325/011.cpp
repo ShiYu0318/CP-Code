@@ -4,6 +4,7 @@
 #define RPT(i,n) for(int i=0;i<n;++i)
 using namespace std;
 
+// 例題 P-2-2. 離散化 – sort
 // 離散化
 
 signed main()

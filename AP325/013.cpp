@@ -13,7 +13,8 @@ using namespace std;
 #define F first
 #define S second
 
-// 
+// 習題 Q-2-4. 快速冪--200 位整數
+
 int p;
 
 int fpow(int x, int y)

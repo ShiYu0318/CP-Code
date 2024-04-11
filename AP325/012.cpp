@@ -13,7 +13,8 @@ using namespace std;
 #define F first
 #define S second
 
-// 
+// 例題 P-2-3. 快速冪
+
 int p;
 
 int fpow(int x, int y)

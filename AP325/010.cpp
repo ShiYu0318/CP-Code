@@ -13,7 +13,7 @@ using namespace std;
 #define F first
 #define S second
 
-// 
+// 例題 P-2-1. 不同的數—排序
 
 signed main()
 {

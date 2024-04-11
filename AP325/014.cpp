@@ -14,7 +14,8 @@ using namespace std;
 #define S second
 #define vi vector<int>
 
-// 
+// 習題 Q-2-5. 快速計算費式數列第 n 項
+// 矩陣快速冪
 
 const int p = 1e9+7;
 vi mt = {1,1,1,0};

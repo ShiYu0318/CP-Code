@@ -13,6 +13,7 @@ using namespace std;
 #define F first
 #define S second
 
+// 習題 Q-1-11. 刪除矩形邊界 — 遞迴 (APCS201910, subtask) 
 // 遞迴
 
 int tb[13][13];

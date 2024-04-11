@@ -14,46 +14,33 @@ using namespace std;
 #define S second
 #define vi vector<int>
 
-// 
+// 習題 Q-2-5. 快速計算費式數列第 n 項
+// 矩陣快速冪 struct 版
 
 const int p = 1e9+7;
-vi mt = {1,1,1,0};
 
 struct matrix
 {
-    int A[2][2]={{1,1},{1,0}};
-    matrix operator * (matrix &B){
+    int A[2][2] = {{0,0},{0,0}};
+    matrix operator * (matrix &B)
+    {
         matrix res;
         RPT(i,2) RPT(j,2) RPT(k,2) res.A[i][j] += A[i][k] * B.A[k][j];
+        RPT(i,2) RPT(j,2) res.A[i][j] %= p;
         return res;
     }
-};
+} M = {1,1,1,0};
 
-
-vi matrix_multi(vi a, vi b)
+matrix fpow(int n)
 {
-    return {
-        (a[0]*b[0] + a[1]*b[2]) % p,
-        (a[0]*b[1] + a[1]*b[3]) % p,
-        (a[2]*b[0] + a[3]*b[2]) % p,
-        (a[2]*b[1] + a[3]*b[3]) % p
-    };
-}
-
-vi fpow(int n)
-{
-    if(n == 0 || n == 1) return mt;
-    vi t = fpow(n/2), tt = matrix_multi(t,t);
-    return (n & 1 ? matrix_multi(mt, tt) : tt);
+    if(n == 0 || n == 1) return M;
+    matrix t = fpow(n/2), tt = t * t;
+    return (n & 1 ? M * tt : tt);
 }
 
 signed main()
 {
     ShiYu
     int n;
-    while(cin >> n && n != -1)
-    {
-        vi m = fpow(n-1);
-        cout << m[0] << '\n';
-    }
+    while(cin >> n && n != -1) cout << fpow(n-1).A[0][0] << '\n';
 }

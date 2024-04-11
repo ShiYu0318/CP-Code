@@ -34,13 +34,12 @@ struct matrix
 matrix fpow(int n)
 {
     if(n == 0 || n == 1) return M;
-    matrix t = fpow(n/2), tt = t * t;
+    matrix t = fpow(n / 2), tt = t * t;
     return (n & 1 ? M * tt : tt);
 }
 
 signed main()
 {
-    ShiYu
-    int n;
+    ShiYu; int n;
     while(cin >> n && n != -1) cout << fpow(n-1).A[0][0] << '\n';
 }

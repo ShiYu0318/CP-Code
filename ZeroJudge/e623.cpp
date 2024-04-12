@@ -16,7 +16,7 @@ signed main(void)
             a = b;
         }
     }
-    if((n - a) % t == 0) cout << w[(n - a) / t - 1] << "\n";
-    else cout << w[(n - a) / t] << "\n";
+    if((n - a) % t == 0) cout << w[(n - a) / t - 1] << '\n';
+    else cout << w[(n - a) / t] << '\n';
 
 }

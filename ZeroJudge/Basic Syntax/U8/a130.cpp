@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long
-#define ShiYu ios_base::sync_with_stdio(0);cin.tie(0)
+#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0)
 #define F first
 #define S second
 
@@ -23,7 +23,7 @@ signed main()
         }
         for(auto &i : v)
         {
-            if(i.S == maxn) cout << i.F << "\n";
+            if(i.S == maxn) cout << i.F << '\n';
         }
     }
 }

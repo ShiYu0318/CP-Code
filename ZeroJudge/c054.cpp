@@ -26,6 +26,6 @@ signed main()
             if(s[i] == ' ') ans += ' ';
             else ans += ks[find_idx(s[i])-1];
         }
-        cout << ans << "\n";
+        cout << ans << '\n';
     }
 }

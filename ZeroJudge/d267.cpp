@@ -23,6 +23,6 @@ signed main()
         {
             if(c[i] == max) cout << char('a' + i);
         }
-        cout << "\n";
+        cout << '\n';
     }
 }

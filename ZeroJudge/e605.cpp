@@ -36,10 +36,10 @@ signed main()
 					if(ip[i-1][j-1] == '*') cout << '*';
 					else cout << tb[i][j];
 				}
-				cout << "\n";
+				cout << '\n';
 			}
 		}
-		cout << "\n";
+		cout << '\n';
 	}
 	return 0;
 }

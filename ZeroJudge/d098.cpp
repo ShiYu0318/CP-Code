@@ -29,7 +29,7 @@ signed main()
                 sum += p;
             }
         }
-        cout << sum << "\n";
+        cout << sum << '\n';
 
     }
 }

@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
-#define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
+#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0)
 using namespace std;
 
 signed main()
 {
-    ShiYu
+    ShiYu;
     int n;
     while(cin >> n)
     {
@@ -14,10 +14,10 @@ signed main()
         for(int i=1;i<=n;++i)
         {
             cin >> s;
-            if(mp.count(s)) cout << "Old! " << mp[s] << "\n";
+            if(mp.count(s)) cout << "Old! " << mp[s] << '\n';
             else
             {
-                cout << "New! " << now << "\n";
+                cout << "New! " << now << '\n';
                 mp[s] = now;
                 now++;
             }

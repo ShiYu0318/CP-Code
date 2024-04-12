@@ -8,6 +8,6 @@ int main()
     while(t--)
     {
         cin >> n >> m;
-        cout << (n / 3) *  (m / 3) << "\n";
+        cout << (n / 3) *  (m / 3) << '\n';
     }
 }

@@ -14,5 +14,5 @@ signed main()
         v.push_back(t);
     }
     sort(all(v));
-    cout << v[v.size()-1] - v[0] << "\n";
+    cout << v[v.size()-1] - v[0] << '\n';
 }

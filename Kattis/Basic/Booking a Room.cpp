@@ -18,7 +18,7 @@ signed main()
         cin >> t;
         b[t-1] = true;
     }
-    // FOR(i,0,n) cout << i << ' ' << b[i] << "\n";
+    // FOR(i,0,n) cout << i << ' ' << b[i] << '\n';
     bool ans = true;
     int i;
     for(i = 0; i < r; ++i)

@@ -39,5 +39,5 @@ signed main()
         if(s.size() > 1) v.push_back(s);
     }
     sort(v.begin(),v.end());
-    cout << v[0] << "\n";
+    cout << v[0] << '\n';
 }

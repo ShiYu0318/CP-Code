@@ -44,5 +44,5 @@ signed main()
         }
         ans[i-1] = cs;
     }
-    FORn(i,h) cout << ans[i] << "\n";
+    FORn(i,h) cout << ans[i] << '\n';
 }

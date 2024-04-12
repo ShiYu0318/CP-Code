@@ -38,5 +38,5 @@ signed main()
         }
         cout << '\n';
     }
-    FOR(i,0,5) cout << ans[i] << "\n";
+    FOR(i,0,5) cout << ans[i] << '\n';
 }

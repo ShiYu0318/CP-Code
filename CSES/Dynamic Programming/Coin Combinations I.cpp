@@ -31,5 +31,5 @@ signed main()
             dp[i] %= MOD;
         }
     }
-    cout << dp[x] << "\n";
+    cout << dp[x] << '\n';
 }

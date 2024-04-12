@@ -12,7 +12,7 @@ signed main()
     string s = "Scist";
     int n; cin >> n;
     if(!(n % 5)) cout << "t\n";
-    else cout << s[n % 5 -1] << "\n";
+    else cout << s[n % 5 -1] << '\n';
 	return 0;
 }
 

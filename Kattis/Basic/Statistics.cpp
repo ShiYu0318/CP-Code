@@ -15,7 +15,7 @@ signed main()
             v.push_back(t);
         }
         sort(all(v));
-        cout << "Case " << c << ": " << v[0] << ' ' << v[v.size()-1] << ' ' << v[v.size()-1] - v[0] << "\n";
+        cout << "Case " << c << ": " << v[0] << ' ' << v[v.size()-1] << ' ' << v[v.size()-1] - v[0] << '\n';
         c++;
     }
 }

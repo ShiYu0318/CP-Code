@@ -15,8 +15,8 @@ signed main()
         cout << fixed << setprecision(2) << d << ' ';
         for(int i=0;i<7;++i)
         {
-            if(m[i] <= d && d < m[i+1]) cout << c[i] << "\n";
-            else if(i==6 && m[i] <= d && d <= m[i+1]) cout << c[i] << "\n";
+            if(m[i] <= d && d < m[i+1]) cout << c[i] << '\n';
+            else if(i==6 && m[i] <= d && d <= m[i+1]) cout << c[i] << '\n';
         }
     }
 }

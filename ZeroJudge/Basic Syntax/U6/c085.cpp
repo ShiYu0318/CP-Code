@@ -16,6 +16,6 @@ int main()
 			L = (Z * L + I) % M;
 			r++;
 		}
-		cout << "Case " << c++ << ": " << r - a[L] << "\n";
+		cout << "Case " << c++ << ": " << r - a[L] << '\n';
 	}
 }

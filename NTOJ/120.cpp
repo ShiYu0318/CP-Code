@@ -31,6 +31,6 @@ signed main()
     {
         cin >> l >> r;
         if(l > r) swap(l,r);
-        cout << v[r] - v[l-1] << "\n";
+        cout << v[r] - v[l-1] << '\n';
     }
 }

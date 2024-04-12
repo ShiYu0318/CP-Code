@@ -48,7 +48,7 @@ void solve()
 	FOR(i,0,8)
 	{
 		if(i == s[0] - 'a') continue;
-		cout << (char)('a'+ i) << s[1] << "\n";
+		cout << (char)('a'+ i) << s[1] << '\n';
 	}
 }
 

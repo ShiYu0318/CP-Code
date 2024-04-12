@@ -12,5 +12,5 @@ int main()
 		cin >> s >> p;
 		c[p-1] = s;
 	}
-	for(int i=0;i<10;i++) cout << c[i] << "\n";
+	for(int i=0;i<10;i++) cout << c[i] << '\n';
 }

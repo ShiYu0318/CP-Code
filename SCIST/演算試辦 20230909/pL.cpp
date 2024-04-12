@@ -17,7 +17,7 @@ signed main()
     while(q--)
     {
         cin >> l >> r;
-        cout << s[r] - s[l -1] << "\n";
+        cout << s[r] - s[l -1] << '\n';
     }
 	return 0;
 }

@@ -20,6 +20,6 @@ signed main()
             dp[i] = dp[i-3] + dp[i-2] + dp[i-1];
         }
     }
-    cout << dp[n] << "\n";
+    cout << dp[n] << '\n';
 	return 0;
 }

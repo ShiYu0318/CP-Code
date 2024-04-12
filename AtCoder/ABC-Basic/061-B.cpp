@@ -17,5 +17,5 @@ signed main()
 		cin >> t;
 		tb[t-1]++;
 	}
-	FORn(i,n) cout << tb[i] << "\n";
+	FORn(i,n) cout << tb[i] << '\n';
 }

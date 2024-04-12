@@ -29,6 +29,6 @@ signed main()
     output(s);
     int ans = binary_search(0, n-1, 60, s);
     if (s[n - 1] < 60) cout << '\n' << s[ans] << "\nworst case\n";
-    else if (s[0] >= 60) cout << "\nbest case\n" << s[ans] << "\n";
-    else cout << '\n' << s[ans] << "\n" << s[ans+1] << "\n";
+    else if (s[0] >= 60) cout << "\nbest case\n" << s[ans] << '\n';
+    else cout << '\n' << s[ans] << '\n' << s[ans+1] << '\n';
 }

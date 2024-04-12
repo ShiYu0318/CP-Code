@@ -35,6 +35,6 @@ signed main()
         int n = month_to_int(m) * 100 + d;
         int ans;
         for(ans=0; n > NUM[ans]; ++ans);
-        cout << NAME[ans] << "\n";
+        cout << NAME[ans] << '\n';
     }
 }

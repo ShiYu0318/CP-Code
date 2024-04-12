@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ShiYu ios::sync_with_stdio(0); cin.tie(0)
+#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0)
 #define input(x) for(auto &i : x) cin >> i
 #define output(x) for(auto &i : x) cout << i << ' '
 

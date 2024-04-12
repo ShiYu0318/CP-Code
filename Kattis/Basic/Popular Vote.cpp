@@ -2,7 +2,7 @@
 using namespace std;
 #define FOR(i,n) for(i=0;i<n;++i)
 #define mmn int maxn = INT_MIN, minn = INT_MAX
-#define ShiYu ios::sync_with_stdio(0); cin.tie(0)
+#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0)
 
 signed main()
 {

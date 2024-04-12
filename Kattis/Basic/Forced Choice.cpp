@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#define ShiYu ios::sync_with_stdio(0); cin.tie(0)
+#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0)
 using namespace std;
 #define FOR(i,n) for(int i=0;i<n;++i)
 #define int long long

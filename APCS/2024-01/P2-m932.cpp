@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0)
+#define ShiYu; ios_base::sync_with_stdio(0); cin.tie(0)
 #define FOR(i,a,b) for(int i=a;i<b;++i)
 #define RPT(i,n) FOR(i,0,n) 
 #define all(x) x.begin(),x.end()
@@ -19,7 +19,7 @@ bool in_range(int x, int y)
 
 signed main()
 {
-    ShiYu
+    ShiYu;
     int k; cin >> m >> n >> k;
     vector<string> tb(m);
     for(auto &i : tb) cin >> i;

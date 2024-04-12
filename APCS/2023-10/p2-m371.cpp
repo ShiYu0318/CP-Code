@@ -1,13 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long
-#define ShiYu ios_base::sync_with_stdio(false),cin.tie(nullptr)
+#define ShiYu; ios_base::sync_with_stdio(false),cin.tie(nullptr)
 #define FOR(i,a,b) for(int i=a;i<b;++i)
 #define RPT(i,n) FOR(i,0,n)
 
 signed main()
 {
-    ShiYu
+    ShiYu;
     int n,m; cin >> n >> m;
     int t[40][40];
     RPT(i,n) RPT(j,m) cin >> t[i][j];

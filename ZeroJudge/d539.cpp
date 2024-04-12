@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long
-#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0)
+#define ShiYu; ios_base::sync_with_stdio(0); cin.tie(0)
 #define mid ((l + r) >> 1)
 #define ls (x << 1)
 #define rs ((x << 1) | 1)
@@ -38,7 +38,7 @@ int query(int x, int l, int r, int ql, int qr)
 
 signed main()
 {
-    ShiYu
+    ShiYu;
     int n; cin >> n;
     for(int i = 1; i <= n; ++i) cin >> arr[i];
     build(1,1,n);

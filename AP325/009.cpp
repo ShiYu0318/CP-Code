@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0)
+#define ShiYu; ios_base::sync_with_stdio(0); cin.tie(0)
 #define FOR(i,a,b) for(int i=a;i<b;++i)
 #define rFOR(i,n) for(int i=n-1;i>=0;--i)
 #define RPT(i,n) FOR(i,0,n)
@@ -57,7 +57,7 @@ int rmf(int ax, int ay, int bx, int by)
 
 signed main()
 {
-    ShiYu
+    ShiYu;
     int m, n; cin >> m >> n;
     // 輸入同時做前綴和預處理
     RPT(i,m)

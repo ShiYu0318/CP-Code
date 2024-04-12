@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long
-#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0) 
+#define ShiYu; ios_base::sync_with_stdio(0); cin.tie(0) 
 
 // 數學思考
 
@@ -13,7 +13,7 @@ int calculate(int n)
 
 signed main()
 {
-    ShiYu
+    ShiYu;
     int n; cin >> n;
     for(int i=1;i<=n;++i)
     {

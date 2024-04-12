@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
+#define ShiYu; ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
 #define input(x) for(auto &i : x) cin >> i
 #define output(x) for(auto &i : x) cout << i << ' '
 
@@ -22,7 +22,7 @@ int binary_search(int l, int r, int k, int arr[])
 
 signed main()
 {
-    ShiYu
+    ShiYu;
     int n; cin >> n;
     int s[n]; input(s);
     sort(s, s+n);

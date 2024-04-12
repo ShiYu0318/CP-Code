@@ -1,12 +1,12 @@
 #include <bits/stdc++.h>
-#define ShiYu ios::sync_with_stdio(0),cin.tie(0);
+#define ShiYu; ios::sync_with_stdio(0),cin.tie(0);
 #define FOR(i,a,b) for(int i=a;i<b;++i)
 #define ll long long
 using namespace std;
 
 signed main()
 {
-    ShiYu
+    ShiYu;
     ll n,m,q; cin >> n >> m >> q;
     set<pair<int,int>> s;
     pair<int,int> p;

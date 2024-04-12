@@ -1,12 +1,12 @@
 #include <bits/stdc++.h>
-#define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
+#define ShiYu; ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
 using namespace std;
 #define FOR(i,n) for(int i=0;i<n;++i)
 // 這題有嚴格比對 所以最後一個值輸出時不要有空格
 
 signed main()
 {
-    ShiYu
+    ShiYu;
     int n,m; cin >> n >> m;
     int t,ans=0;
     vector<int> v;

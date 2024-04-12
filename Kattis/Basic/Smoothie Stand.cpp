@@ -1,12 +1,12 @@
 #include <bits/stdc++.h>
-#define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
+#define ShiYu; ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
 using namespace std;
 #define int long long
 #define FOR(i,n) for(int i=0;i<n;++i)
 // 25 行要判斷 t 是不是 0 不然除以 0 會 RE
 signed main()
 {
-    ShiYu
+    ShiYu;
     int k,r; cin >> k >> r;
     vector<int> v;
     int a,q=k;

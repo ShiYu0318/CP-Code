@@ -2,11 +2,11 @@
 using namespace std;
 #define FOR(i,n) for(i=0;i<n;++i)
 #define mmn int maxn = INT_MIN, minn = INT_MAX
-#define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0)
+#define ShiYu; ios::sync_with_stdio(0),cin.tie(0),cout.tie(0)
 
 signed main()
 {
-    ShiYu
+    ShiYu;
     int t; cin >> t;
     int n,a,i,sum;
     while(t--)

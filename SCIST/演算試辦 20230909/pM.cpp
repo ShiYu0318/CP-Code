@@ -1,13 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
+#define ShiYu; ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
 #define ll long long
 #define FOR(i,a,b) for(int i=a;i<b;++i)
 
 
 signed main()
 {
-	ShiYu
+	ShiYu;
     int n; cin >> n;
     int dp[11]={};
     dp[1] = 1;

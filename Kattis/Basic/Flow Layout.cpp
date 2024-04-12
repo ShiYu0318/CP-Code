@@ -1,11 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define FOR(i,n) for(i=0;i<n;++i)
-#define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0)
+#define ShiYu; ios::sync_with_stdio(0),cin.tie(0),cout.tie(0)
 
 signed main()
 {
-    ShiYu
+    ShiYu;
     int n;
     while(cin >> n)
     {

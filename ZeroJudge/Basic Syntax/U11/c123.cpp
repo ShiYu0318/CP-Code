@@ -1,12 +1,12 @@
 #include <bits/stdc++.h>
-#define ShiYu ios_base::sync_with_stdio(0),cin.tie(0),cout.tie(0);
+#define ShiYu; ios_base::sync_with_stdio(0),cin.tie(0),cout.tie(0);
 #define YN(x) cout << (x ? "Yes" : "No") << "\n";
 #define FOR(i,a,b) for(int i=a;i<b;++i)
 using namespace std;
 
 signed main()
 {
-    ShiYu
+    ShiYu;
     while(1)
     {
         int n; cin >> n;

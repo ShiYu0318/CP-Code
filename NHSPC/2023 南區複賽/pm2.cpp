@@ -1,12 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ShiYu ios::sync_with_stdio(0),cin.tie(0)
+#define ShiYu; ios::sync_with_stdio(0),cin.tie(0)
 #define FOR(i,n) for(int i=0; i<n; ++i)
 #define vpii vector<pair<int,int> >
 
 signed main(void)
 {
-    ShiYu
+    ShiYu;
     int n; cin >> n;
     vpii v;
     int a,b;

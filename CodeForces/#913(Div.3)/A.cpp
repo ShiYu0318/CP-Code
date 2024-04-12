@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0)
+#define ShiYu; ios::sync_with_stdio(0),cin.tie(0),cout.tie(0)
 #define ll long long
 #define ull unsigned ll
 #define int ll
@@ -54,7 +54,7 @@ void solve()
 
 signed main(void)
 {
-	ShiYu
+	ShiYu;
 	int t; cin >> t;
 	while(t--) solve();
 }

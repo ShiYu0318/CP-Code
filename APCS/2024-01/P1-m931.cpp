@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0)
+#define ShiYu; ios_base::sync_with_stdio(0); cin.tie(0)
 #define FOR(i,a,b) for(int i=a;i<b;++i)
 #define RPT(i,n) FOR(i,0,n) 
 #define all(x) x.rbegin(),x.rend()
@@ -10,7 +10,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu
+    ShiYu;
     int n; cin >> n;
     vector<pair<int,pair<int,int>>> v;
     RPT(i,n)

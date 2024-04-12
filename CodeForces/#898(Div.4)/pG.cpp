@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
+#define ShiYu; ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
 #define FOR(i,n) for(int i=0;i<n;++i)
 #define input(x) for(auto &i : x) cin >> i
 #define output(x) for(auto &i : x) coutS(i)
@@ -43,7 +43,7 @@ void solve()
 
 signed main()
 {
-	ShiYu
+	ShiYu;
 	solve();
 	return 0;
 }

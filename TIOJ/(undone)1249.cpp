@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#define ShiYu ios::sync_with_stdio(0),cin.tie(0)
+#define ShiYu; ios::sync_with_stdio(0),cin.tie(0)
 #define FOR(i,a,b) for(int i=a;i<b;++i)
 #define all(x) x.begin(),x.end()
 #define int long long
@@ -9,7 +9,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu
+    ShiYu;
     int n; 
     while(cin >> n && n)
     {

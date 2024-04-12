@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0)
+#define ShiYu; ios_base::sync_with_stdio(0); cin.tie(0)
 #pragma GCC optimize("Ofast")
 using namespace std;
 // type --------------------------------------------------------------------
@@ -63,7 +63,7 @@ void solve()
 
 signed main()
 {
-	ShiYu
+	ShiYu;
 	int t = 1;
 	cin >> t; // 單筆測資時註解
 	while(t--) solve();

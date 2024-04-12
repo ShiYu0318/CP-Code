@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
+#define ShiYu; ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
 #define ll long long
 #define FOR(i,a,b) for(int i=a;i<b;++i)
 #define input(x) for(auto &i : x) cin >> i
@@ -8,7 +8,7 @@ using namespace std;
 
 signed main()
 {
-	ShiYu
+	ShiYu;
     string s = "Scist";
     int n; cin >> n;
     if(!(n % 5)) cout << "t\n";

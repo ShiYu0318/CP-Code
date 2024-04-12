@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
+#define ShiYu; ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
 #define FOR(i,a,b) for(int i=a;i<b;++i)
 
 signed main(void) {
-    ShiYu
+    ShiYu;
     int n, k, a, b; cin >> n >> k >> a >> b;
     int x = 0, y = 0, min = INT_MAX, d;
     FOR(i,0,11)

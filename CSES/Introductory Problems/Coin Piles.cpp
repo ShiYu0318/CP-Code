@@ -8,7 +8,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int a, b, t; cin >> t;
     while(t--)
     {

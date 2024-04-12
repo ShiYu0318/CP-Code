@@ -45,7 +45,7 @@ void MergeSort(int l, int r)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n; cin >> n;
     int x;
     RPT(i,n)

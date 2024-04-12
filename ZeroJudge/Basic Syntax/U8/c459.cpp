@@ -34,7 +34,7 @@ bool check(string s,int n)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int r,n,c = 1;
     while(cin >> r >> n)
     {

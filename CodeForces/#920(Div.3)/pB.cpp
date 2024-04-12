@@ -60,6 +60,6 @@ void solve()
 
 signed main(void)
 {
-	ShiYu;
+	ShiYu
 	solve();
 }

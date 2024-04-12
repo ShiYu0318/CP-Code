@@ -16,7 +16,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n; cin >> n;
     vector<int> v(n); input(v);
     int ans = INT_MAX;

@@ -16,7 +16,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n,x; cin >> n >> x;
     vector<int> v(n); input(v);
     sort(all(v));

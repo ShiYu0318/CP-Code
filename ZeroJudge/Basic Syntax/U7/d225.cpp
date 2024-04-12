@@ -11,7 +11,7 @@ int GCD(int a, int b)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int N; 
     while(cin >> N && N)
     {

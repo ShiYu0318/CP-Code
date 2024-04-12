@@ -19,7 +19,7 @@ bool in_range(int x, int y)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int k; cin >> m >> n >> k;
     vector<string> tb(m);
     for(auto &i : tb) cin >> i;

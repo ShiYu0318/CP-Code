@@ -10,7 +10,7 @@ const string tb[] = {"clank","bong","click","tap","poing","clonk","clack","ping"
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n; cin >> n;
     // 利用程式幫忙建
     // string s;

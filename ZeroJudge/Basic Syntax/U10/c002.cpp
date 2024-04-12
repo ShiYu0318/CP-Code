@@ -18,7 +18,7 @@ int f91(int n)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n;
     while(cin >> n && n)
     {

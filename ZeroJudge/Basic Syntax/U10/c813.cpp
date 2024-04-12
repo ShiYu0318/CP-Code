@@ -24,7 +24,7 @@ int f(int n)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n;
     while(cin >> n && n) cout << f(n) << "\n";
 }

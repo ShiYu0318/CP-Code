@@ -38,7 +38,7 @@ bool IsSumOfTwoPowerOfTwo(int n)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n; cin >> n;
     while(n--)
     {

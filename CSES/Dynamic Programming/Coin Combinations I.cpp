@@ -18,7 +18,7 @@ int dp[MAXN];
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n,x; cin >> n >> x;
     vector<int> v(n); input(v);
     dp[0] = 1;

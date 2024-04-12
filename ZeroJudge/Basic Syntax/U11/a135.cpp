@@ -14,7 +14,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     map<string,string> m = {
         {"HELLO","ENGLISH"},
         {"HOLA","SPANISH"},

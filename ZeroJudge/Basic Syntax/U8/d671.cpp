@@ -21,7 +21,7 @@ int check_perfect_squre_num(long double sz)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int t; cin >> t; cin.ignore();
     string ts;
     while(t--)

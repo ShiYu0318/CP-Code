@@ -35,7 +35,7 @@ int cut(int l, int r)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n, l; cin >> n >> l;
     p[0] = 0; p[n+1] = l;
     RPT(i,n) cin >> p[i+1];

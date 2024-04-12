@@ -37,6 +37,6 @@ int eval()
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     cout << eval() << '\n';
 }

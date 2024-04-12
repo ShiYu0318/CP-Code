@@ -7,7 +7,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n,m; cin >> n >> m;
     int t[40][40];
     RPT(i,n) RPT(j,m) cin >> t[i][j];

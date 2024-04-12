@@ -8,7 +8,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n; cin >> n;
     int sum = n * (1 + n) / 2, asum=0,bsum=0;
     if(sum % 2)

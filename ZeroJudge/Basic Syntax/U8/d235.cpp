@@ -14,7 +14,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     string s; 
     while(cin >> s)
     {

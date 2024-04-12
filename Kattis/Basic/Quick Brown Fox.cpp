@@ -15,7 +15,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     string s = "The quick brown fox jumps over the lazy dog.";
     set<char> st;
     RPT(i,s.size())

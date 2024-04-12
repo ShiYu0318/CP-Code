@@ -5,7 +5,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n,c=1; 
     while(cin >> n)
     {

@@ -50,7 +50,7 @@ void msq(int k, int p[], int s)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     cin >> n;
     RPT(i,n) RPT(j,n) cin >> tb[i][j];
     int p[15];  // 每列皇后放的行數

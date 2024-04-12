@@ -15,7 +15,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     string s; cin >> s;
     RPT(i,s.size())
     {

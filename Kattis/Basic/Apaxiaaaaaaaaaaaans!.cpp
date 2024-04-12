@@ -15,7 +15,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     string s,ans; cin >> s;
     ans += s[0];
     FOR(i,1,s.size())

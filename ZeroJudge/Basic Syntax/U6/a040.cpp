@@ -26,7 +26,7 @@ bool check(int n)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int a,b; cin >> a >> b;
     vector<int> v;
     FOR(i,a,b)

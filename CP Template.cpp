@@ -63,7 +63,7 @@ void solve()
 
 signed main()
 {
-	ShiYu;
+	ShiYu
 	int t = 1;
 	cin >> t; // 單筆測資時註解
 	while(t--) solve();

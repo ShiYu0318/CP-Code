@@ -9,7 +9,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n; 
     while(cin >> n && n)
     {

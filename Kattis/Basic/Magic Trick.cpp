@@ -15,7 +15,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     set<char> st;
     string s; cin >> s;
     bool ans = true;

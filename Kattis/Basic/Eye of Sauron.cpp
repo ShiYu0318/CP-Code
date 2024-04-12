@@ -15,7 +15,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     string s; cin >> s;
     int sz = s.size();
     if(sz % 2) cout << "fix\n";

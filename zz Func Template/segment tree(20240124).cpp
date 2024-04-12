@@ -35,7 +35,7 @@ int query(int x, int l, int r, int ql, int qr)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n,q; cin >> n >> q;
     for(int i = 1; i <= n; ++i) cin >> arr[i];
     build(1,1,n);

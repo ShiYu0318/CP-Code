@@ -39,7 +39,7 @@ vi fpow(int n)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n;
     while(cin >> n && n != -1)
     {

@@ -15,7 +15,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     string s; cin >> s;
     cout << (s[s.size()-1] == 'r' ? "er" : "ist") << "\n";
 }

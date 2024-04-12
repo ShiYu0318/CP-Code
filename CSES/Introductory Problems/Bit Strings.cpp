@@ -9,7 +9,7 @@ int MOD = 1e9+7;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n; cin >> n;
     int ans = 1;
     while(n--)

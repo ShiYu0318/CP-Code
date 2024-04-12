@@ -36,7 +36,7 @@ bool cmp(const st a, st b)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n,m; 
     while(cin >> n >> m)
     {

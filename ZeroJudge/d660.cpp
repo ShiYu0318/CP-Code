@@ -8,7 +8,7 @@ int l[100000];
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int t; cin >> t;
     FOR(i,t)
     {

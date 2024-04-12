@@ -6,7 +6,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int t; cin >> t;
     int n,a,i,sum;
     while(t--)

@@ -21,7 +21,7 @@ int f(int n)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n; cin >> n;
     string s;
     while(n--)

@@ -36,7 +36,7 @@ int f(string t)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     vector<string> v;
     string c;
     while(cin >> c) v.emplace_back(c);

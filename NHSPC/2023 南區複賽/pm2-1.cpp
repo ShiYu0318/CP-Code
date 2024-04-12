@@ -5,7 +5,7 @@ using namespace std;
 
 signed main(void)
 {
-    ShiYu;
+    ShiYu
     int n; cin >> n;
     vector<pair<pair<int,int>,bool> > v;
     int a,b;

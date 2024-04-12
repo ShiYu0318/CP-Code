@@ -9,7 +9,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     string s; cin >> s;
     char c = s[0];
     int temp=1,maxn=1;

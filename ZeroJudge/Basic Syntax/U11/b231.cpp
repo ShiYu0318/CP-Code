@@ -23,7 +23,7 @@ struct cmp
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n,p,b,ans,sum;
     while(cin >> n)
     {

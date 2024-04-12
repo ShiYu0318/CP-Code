@@ -11,7 +11,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n; cin >> n;
     
     vector<int> a(n),b(n);

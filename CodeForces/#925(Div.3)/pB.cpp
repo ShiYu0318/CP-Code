@@ -87,7 +87,7 @@ void solve()
 
 signed main(void)
 {
-    ShiYu;
+    ShiYu
     int t;  cin >> t;
     while(t--) solve();
 }

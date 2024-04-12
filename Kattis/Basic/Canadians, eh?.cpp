@@ -15,7 +15,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     string s; getline(cin,s);
     cout << (s.substr(s.size()-3) == "eh?" ? "Canadian!" : "Imposter!") << "\n";
 }

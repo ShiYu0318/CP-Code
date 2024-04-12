@@ -25,7 +25,7 @@ bool isReverse(int n)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int t; cin >> t;
     int n; string s;
     while(t--)

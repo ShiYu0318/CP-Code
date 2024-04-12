@@ -27,7 +27,7 @@ int fpow(int x, int y)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int x, y; cin >> x >> y >> p;
     cout << fpow(x,y) << '\n';
 }

@@ -18,7 +18,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n; cin >> n;
     RPT(k,n)
     {

@@ -17,7 +17,7 @@ struct Rec
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     char ch; 
     vector<Rec> v;
     while(cin >> ch)

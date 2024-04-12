@@ -37,7 +37,7 @@ map<char,int> tb = {{'!',9},{'"',6},{'#',24},{'$',29},{'%',22},
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     // 利用程式幫忙建
     // char c; int n;
     // while(cin >> c >> n)

@@ -7,7 +7,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n; cin >> n;
     if(n == 2 || n == 3) cout << "NO SOLUTION\n";
     else

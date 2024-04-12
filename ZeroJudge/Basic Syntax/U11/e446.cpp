@@ -37,7 +37,7 @@ void print_permutations(int n) {
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n; cin >> n;
     print_permutations(n);
 }

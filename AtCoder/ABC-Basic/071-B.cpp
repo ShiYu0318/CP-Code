@@ -15,7 +15,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     string s; cin >> s;
     set<char> st;
     RPT(i,s.size()) st.insert(s[i]);

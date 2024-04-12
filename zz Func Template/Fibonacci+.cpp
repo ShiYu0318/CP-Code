@@ -19,7 +19,7 @@ matrix fpow(int n)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n; cin >> n;
     cout << fpow(n-1).A[0][0] << '\n';
 }

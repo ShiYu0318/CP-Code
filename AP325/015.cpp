@@ -18,7 +18,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int m, n, k; cin >> m >> n >> k;
     unordered_set<int> st;
     int t, ans = 0;

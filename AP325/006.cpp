@@ -34,7 +34,7 @@ void sub(int t, int res)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     cin >> n;
     RPT(i,n) cin >> a[i];
     sub(0,1);

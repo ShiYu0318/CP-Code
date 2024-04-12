@@ -14,7 +14,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int t,n,x,c=1; 
     while(cin >> t && t)
     {

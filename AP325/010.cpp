@@ -17,7 +17,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n; cin >> n;
     set<int> s;
     for(int t; n >= 0; --n)

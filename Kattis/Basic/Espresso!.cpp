@@ -15,7 +15,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n,s; cin >> n >> s;
     string x;
     int now = s,t,ans = 0;

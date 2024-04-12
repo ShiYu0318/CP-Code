@@ -30,7 +30,7 @@ int f(int a)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n; cin >> s >> n;
     cout << f(n*n) << '\n';
 }

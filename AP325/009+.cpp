@@ -51,7 +51,7 @@ int rmf(int ax, int ay, int bx, int by)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int m, n; cin >> m >> n;
     RPT(i,m) RPT(j,n) cin >> tb[i][j];
     cout << rmf(0,0,m-1,n-1) << '\n';

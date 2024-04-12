@@ -9,7 +9,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     string s; cin >> s;
     sort(all(s));
     vector<string> ans;

@@ -5,7 +5,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n; cin >> n;
     int a[n]; FOR(i,n) cin >> a[i];
     vector<vector<int> > v;

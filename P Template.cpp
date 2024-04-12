@@ -23,6 +23,6 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     
 }

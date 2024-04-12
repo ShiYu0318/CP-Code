@@ -16,7 +16,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n,t,x; cin >> n >> t;
     priority_queue<int, vector<int>, greater<int>> pq;
     while(t--)

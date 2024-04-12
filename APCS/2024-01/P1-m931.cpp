@@ -10,7 +10,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n; cin >> n;
     vector<pair<int,pair<int,int>>> v;
     RPT(i,n)

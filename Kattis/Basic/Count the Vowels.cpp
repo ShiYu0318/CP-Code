@@ -15,7 +15,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     string s; getline(cin,s);
     int ans = 0;
     RPT(i,s.size())

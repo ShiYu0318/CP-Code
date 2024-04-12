@@ -30,7 +30,7 @@ bool check(int t)
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int t; cin >> t;
     int n;
     FOR(i,1,t+1)

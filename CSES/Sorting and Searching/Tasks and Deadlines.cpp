@@ -17,7 +17,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int n; cin >> n;
     vector<pii> v(n);
     for(auto &i : v) cin >> i.F >> i.S;

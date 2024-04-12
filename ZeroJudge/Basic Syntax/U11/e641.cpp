@@ -14,7 +14,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     string ss[] = {"", "BFPV", "CGJKQSXZ", "DT", "L", "MN", "R"};
     map<char,int> mp;
     FOR(i,1,7) RPT(j,ss[i].size()) mp[ss[i][j]] = i;

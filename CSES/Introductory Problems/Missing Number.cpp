@@ -7,7 +7,7 @@ using namespace std;
 
 signed main()
 {
-	ShiYu;
+	ShiYu
 	int n; cin >> n;
 	vector<int> v(n); input(v);
 	sort(all(v));

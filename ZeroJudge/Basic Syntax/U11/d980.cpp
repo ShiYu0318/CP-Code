@@ -14,7 +14,7 @@ using namespace std;
 
 signed main()
 {
-    ShiYu;
+    ShiYu
     int t; cin >> t;
     vector<int> v(3);
     FOR(i,1,t+1)

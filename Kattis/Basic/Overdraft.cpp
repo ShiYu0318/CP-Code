@@ -14,6 +14,6 @@ signed main(void)
             now += t;
             if(now < 0 && now < ans) ans = now;
         }
-        cout << 0 - ans << "\n";
+        cout << 0 - ans << '\n';
     }
 }

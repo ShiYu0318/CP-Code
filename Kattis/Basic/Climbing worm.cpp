@@ -12,5 +12,5 @@ int main()
 		if(n >= h) break;
 		n -= b;
 	}
-	cout << ans << "\n";
+	cout << ans << '\n';
 }

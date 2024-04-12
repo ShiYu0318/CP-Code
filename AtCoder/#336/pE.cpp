@@ -60,7 +60,7 @@ void solve()
     {
         if(check(i)) ++ans;
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 
 }
 

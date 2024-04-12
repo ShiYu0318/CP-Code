@@ -10,5 +10,5 @@ signed main()
     ShiYu;
     int n, ans = 0; cin >> n;
     while(n) ans += n /= 5;
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

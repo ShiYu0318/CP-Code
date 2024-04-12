@@ -37,7 +37,7 @@ signed main()
             }
         }
         if(!st.empty()) ans = 0;
-        cout << ans << "\n";
+        cout << ans << '\n';
     }
     
 }

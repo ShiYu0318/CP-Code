@@ -31,5 +31,5 @@ signed main()
         }
         else break;
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

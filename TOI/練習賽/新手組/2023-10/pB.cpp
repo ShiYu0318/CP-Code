@@ -16,6 +16,6 @@ signed main(void)
             break;
         }
     }
-    if(!c) cout << ans << ' ' << M-ans << "\n";
+    if(!c) cout << ans << ' ' << M-ans << '\n';
     else cout << "-1 -1\n";
 }

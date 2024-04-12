@@ -10,5 +10,5 @@ signed main()
     {
         ans += s[(int)(t[i] - '1')];
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

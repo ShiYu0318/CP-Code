@@ -27,6 +27,6 @@ signed main()
         cin >> p;
         ans = max(ans, minn * p);
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
     return 0;
 }

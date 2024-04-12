@@ -29,5 +29,5 @@ signed main()
         }
         if(c) ans++;
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

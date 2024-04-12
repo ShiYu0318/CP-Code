@@ -17,5 +17,5 @@ signed main()
         }
         if(buy == -1 && a <= sell - d) buy = a;
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

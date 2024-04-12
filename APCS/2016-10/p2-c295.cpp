@@ -21,7 +21,7 @@ signed main()
         v.push_back(maxn);
         ans += maxn;
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
     vector<int> v2;
     FOR(i,v.size())
     {

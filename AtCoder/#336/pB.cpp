@@ -54,7 +54,7 @@ void solve()
         if(s[i] != '0') break;
         else ++ans;
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 
 }
 

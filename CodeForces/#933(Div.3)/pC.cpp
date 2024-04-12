@@ -55,7 +55,7 @@ void solve()
             i += 3;
         } else i++;
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }
 
 

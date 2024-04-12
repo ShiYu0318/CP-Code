@@ -13,5 +13,5 @@ signed main()
         else if(s[i] == '9') ans += '6';
         else ans += s[i];
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

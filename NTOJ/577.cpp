@@ -18,6 +18,6 @@ int main()
 		{
 			ans *= a;
 		}
-		cout << ans << "\n";
+		cout << ans << '\n';
 	}
 }

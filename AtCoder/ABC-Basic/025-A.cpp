@@ -24,5 +24,5 @@ signed main()
         sum += digit(a); sum += digit(b);
         ans = min(sum,ans);
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

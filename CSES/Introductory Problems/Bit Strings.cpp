@@ -17,5 +17,5 @@ signed main()
         ans <<= 1;
         ans %= MOD;
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

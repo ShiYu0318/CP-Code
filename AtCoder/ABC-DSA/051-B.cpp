@@ -27,5 +27,5 @@ signed main()
             if(s - i - j <= k && i + j <= s) ++ans;
         }
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

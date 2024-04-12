@@ -30,6 +30,6 @@ int main()
 			c2 = (sum2 + iq1[i])/(n2+1);
 			if(c1 > ave1 && c2 > ave2) ans++;
 		}
-		cout << ans << "\n";
+		cout << ans << '\n';
 	}
 }

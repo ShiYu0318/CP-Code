@@ -44,7 +44,7 @@ void solve()
             }
         }
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }
 
 signed main()

@@ -14,6 +14,6 @@ int main()
 			ans++;
 			p *= r;
 		}
-		cout << ans << "\n";
+		cout << ans << '\n';
 	}
 }

@@ -15,5 +15,5 @@ int main()
 			ans = i;
 		}
 	}
-	cout << ans << "\n";
+	cout << ans << '\n';
 }

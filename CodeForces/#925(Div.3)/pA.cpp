@@ -64,7 +64,7 @@ void solve()
         else ans[1] += n;
     }
     else ans[2] += n;
-    cout << ans << "\n";
+    cout << ans << '\n';
 }
 
 signed main(void)

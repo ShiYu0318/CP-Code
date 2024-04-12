@@ -54,6 +54,6 @@ signed main()
         v.emplace_back(x);
     }
     MergeSort(0,v.size()-1);
-    cout << ans << "\n";
+    cout << ans << '\n';
     // output(v);
 }

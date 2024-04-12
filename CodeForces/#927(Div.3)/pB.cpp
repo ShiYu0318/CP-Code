@@ -51,7 +51,7 @@ void solve()
         if(ans == 0) ans = y;
         else ans = (ans / y + 1) * y;
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }
 
 signed main(void)

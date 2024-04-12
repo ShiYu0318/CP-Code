@@ -18,6 +18,6 @@ signed main()
                 if(tb[i][j] != '.') ans += tb[i][j];
             }
         }
-        cout << ans << "\n";
+        cout << ans << '\n';
     }
 }

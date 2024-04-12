@@ -21,6 +21,6 @@ signed main()
         }
         if(p.first && p.second) ans++;
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
     
 }

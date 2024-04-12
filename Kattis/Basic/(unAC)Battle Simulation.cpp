@@ -29,5 +29,5 @@ signed main()
         }
         else ans += m[s[i]];
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

@@ -42,5 +42,5 @@ signed main()
         }
         else if(sz == maxl) ans = max(ans,s);
     }   
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

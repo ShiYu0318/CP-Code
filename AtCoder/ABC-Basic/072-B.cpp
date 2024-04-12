@@ -21,5 +21,5 @@ signed main()
     {
         if(i % 2 == 0) ans += s[i];
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

@@ -60,7 +60,7 @@ void solve()
         }
         else cnt = 0;
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }
 
 signed main(void)

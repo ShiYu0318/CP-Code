@@ -33,5 +33,5 @@ signed main()
     if(n == 1) ans =  k % MOD;
     else if(n == 2) ans = k  * (k-1) % MOD;
     else ans = k * (k-1) % MOD * fpow(k-2,n-2) % MOD;
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

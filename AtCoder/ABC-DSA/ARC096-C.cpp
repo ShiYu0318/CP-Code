@@ -29,5 +29,5 @@ signed main()
         ans = min(n,m);
     }
     else ans = a * x + b * y;
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

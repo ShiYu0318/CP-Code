@@ -13,6 +13,6 @@ int main()
 		{
 			if (j % 2 == 1) ans += j;
 		}
-		cout << "Case " << i << ": " << ans << "\n";
+		cout << "Case " << i << ": " << ans << '\n';
 	}
 }

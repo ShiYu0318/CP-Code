@@ -13,6 +13,6 @@ int main()
 			n = n / 3 + n % 3;
 		}
 		ans += (n == 2);
-		cout << ans << "\n";
+		cout << ans << '\n';
 	}
 }

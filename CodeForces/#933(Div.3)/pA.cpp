@@ -58,7 +58,7 @@ void solve()
             else break;
         }
     }
-	cout << ans << "\n";
+	cout << ans << '\n';
 }
 
 signed main(void)

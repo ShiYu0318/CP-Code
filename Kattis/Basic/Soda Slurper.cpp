@@ -11,5 +11,5 @@ int main()
 		ans += n / c;
 		n = (n / c) + (n % c);
 	}
-	cout << ans << "\n";
+	cout << ans << '\n';
 }

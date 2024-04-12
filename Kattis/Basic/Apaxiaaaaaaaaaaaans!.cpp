@@ -22,5 +22,5 @@ signed main()
     {
         if(s[i] != s[i-1]) ans += s[i];
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

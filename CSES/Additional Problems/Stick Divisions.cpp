@@ -33,5 +33,5 @@ signed main()
         ans += c;
         pq.emplace(c);
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

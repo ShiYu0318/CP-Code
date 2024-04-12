@@ -16,5 +16,5 @@ signed main()
 	}
 	if(a > b) swap(a,b);
 	for(int i=a;i<b;i++) ans += d[i];
-	cout << ans << "\n";
+	cout << ans << '\n';
 }

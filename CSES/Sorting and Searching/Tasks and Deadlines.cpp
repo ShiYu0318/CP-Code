@@ -28,5 +28,5 @@ signed main()
         t += i.F;
         ans += i.S - t;
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

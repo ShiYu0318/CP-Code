@@ -17,5 +17,5 @@ signed main(void)
         }
         if(a <= sum && sum <= b) ans += i;
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

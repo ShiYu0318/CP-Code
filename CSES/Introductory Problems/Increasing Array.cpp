@@ -22,5 +22,5 @@ signed main()
             v[i] += d;
         }
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

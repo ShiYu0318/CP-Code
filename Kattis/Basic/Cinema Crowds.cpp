@@ -14,5 +14,5 @@ signed main()
             sum += t;
         }
     }
-    cout << k - ans << "\n";
+    cout << k - ans << '\n';
 }

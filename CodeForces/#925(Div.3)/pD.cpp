@@ -55,7 +55,7 @@ void solve()
             if((v[i] + v[j]) % x == 0 && (v[i] - v[j]) % y == 0) ++ans;
         }
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }
 
 signed main(void)

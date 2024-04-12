@@ -55,7 +55,7 @@ int main()
             return 0;
         }
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }
 
 // int r,c;
@@ -99,5 +99,5 @@ int main()
 //             return 0;
 //         }
 //     }
-//     cout << ans << "\n";
+//     cout << ans << '\n';
 // }

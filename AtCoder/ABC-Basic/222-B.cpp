@@ -10,5 +10,5 @@ signed main()
         cin >> t;
         if(t < p) ans++;
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

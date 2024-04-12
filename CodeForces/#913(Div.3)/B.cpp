@@ -72,7 +72,7 @@ void solve()
             }
         } else ans += s[i]; 
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }
 
 signed main(void)

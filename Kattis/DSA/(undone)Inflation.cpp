@@ -38,5 +38,5 @@ signed main()
         else ans = min(ans,(double)(v[i])/(i+1));
     }
     if(ans == -1) cout << "impossible\n";
-    else cout << ans << "\n";
+    else cout << ans << '\n';
 }

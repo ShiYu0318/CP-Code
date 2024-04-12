@@ -15,6 +15,6 @@ int main()
 			cin >> a >> b >> c;
 			ans += a * c;
 		}
-		cout << ans << "\n";
+		cout << ans << '\n';
 	}
 }

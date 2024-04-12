@@ -37,7 +37,7 @@ void solve()
             }
             if(!c) break;
         }
-        cout << ans << "\n";
+        cout << ans << '\n';
     }
 }
 

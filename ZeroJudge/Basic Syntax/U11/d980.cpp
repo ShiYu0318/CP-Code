@@ -26,6 +26,6 @@ signed main()
         else if(v[0] == v[1] && v[1] == v[2]) ans = "Equilateral";
         else if(v[0] == v[1] || v[1] == v[2]) ans = "Isosceles";
         else if(v[0] != v[1] && v[1] != v[2] && v[2] != v[0]) ans = "Scalene";
-        cout << "Case " << i << ": " << ans << "\n";
+        cout << "Case " << i << ": " << ans << '\n';
     }     
 }

@@ -15,5 +15,5 @@ int main()
             else ans += min(h[i-1], h[i+1]);
         }
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

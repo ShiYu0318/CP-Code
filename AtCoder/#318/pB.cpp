@@ -37,7 +37,7 @@ void solve()
         FOR(i,c,d) FOR(j,a,b) t[i][j] = 1;
     }
     FOR(i,0,100) FOR(j,0,100) if(t[i][j] == 1) ans++;
-    cout << ans << "\n";
+    cout << ans << '\n';
 }
 
 signed main()

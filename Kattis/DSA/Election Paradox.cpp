@@ -26,5 +26,5 @@ signed main()
         if(i<t) ans += v[i];
         else ans += v[i] / 2;
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

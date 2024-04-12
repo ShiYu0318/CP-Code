@@ -21,5 +21,5 @@ int main()
             break;
         }
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

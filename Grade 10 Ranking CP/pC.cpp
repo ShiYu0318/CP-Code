@@ -33,5 +33,5 @@ int main()
 		//for(int j=0;j<ans;++j) cout << c[j] << ' ';
 		//cout << '\n';
 	}
-	cout << ans << "\n";
+	cout << ans << '\n';
 }

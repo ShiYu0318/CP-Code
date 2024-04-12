@@ -84,7 +84,7 @@ void solve()
         }
         FOR(j,p,p+w) top[j-1] = newtop; // 更新最高點
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
     rFOR(i,n)
     {
         RPT(j,m)

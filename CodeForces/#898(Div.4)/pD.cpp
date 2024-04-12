@@ -23,7 +23,7 @@ void solve()
                 i += k-1;
             }
         }
-        cout << ans << "\n";
+        cout << ans << '\n';
     }
 }
 

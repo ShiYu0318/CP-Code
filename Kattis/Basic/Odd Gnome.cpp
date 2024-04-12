@@ -21,6 +21,6 @@ signed main()
             if(k - b != 1) ans = i + 1;
             b = k;
         }
-        cout << ans << "\n";
+        cout << ans << '\n';
     }
 }

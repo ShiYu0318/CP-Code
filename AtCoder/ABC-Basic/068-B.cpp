@@ -11,5 +11,5 @@ signed main()
         i++;
         sum = pow(2,i);
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

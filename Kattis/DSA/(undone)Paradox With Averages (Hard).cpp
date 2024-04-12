@@ -41,5 +41,5 @@ signed main()
             ++ans;
         }
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

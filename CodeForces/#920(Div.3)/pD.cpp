@@ -63,7 +63,7 @@ void solve()
             --j;
         }
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
     
 }
 

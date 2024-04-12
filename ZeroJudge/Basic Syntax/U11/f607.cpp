@@ -32,5 +32,5 @@ signed main()
         auto it = s.find(i);
         ans += *next(it) - *prev(it);
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

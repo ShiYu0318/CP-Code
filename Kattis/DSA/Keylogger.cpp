@@ -39,5 +39,5 @@ signed main()
             }
         }
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

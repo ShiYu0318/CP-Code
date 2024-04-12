@@ -52,6 +52,6 @@ signed main()
         {
             if(s[i] != ' ') ans += tb[s[i]];
         }
-        cout << ans << "\n";
+        cout << ans << '\n';
     }
 }

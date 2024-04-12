@@ -15,6 +15,6 @@ signed main()
         int t = max(i,j), minn = (t-1) * (t-1), maxn = t * t, ans;
         if(t % 2) ans = (i >= j ? minn + j : maxn - i + 1);
         else ans = (i >= j ? maxn - j + 1 : minn + i);
-        cout << ans << "\n";
+        cout << ans << '\n';
     }    
 }

@@ -53,5 +53,5 @@ signed main()
             c[ a[i] ] += b[ mv[a[i]][j] ];
         }
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

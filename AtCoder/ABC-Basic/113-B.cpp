@@ -17,6 +17,6 @@ signed main()
             ans = i+1;
         }
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
     return 0;
 }

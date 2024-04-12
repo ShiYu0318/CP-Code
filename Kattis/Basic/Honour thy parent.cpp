@@ -17,5 +17,5 @@ signed main()
 	}
 	else if(y[y.size()-2] == 'e' && c == 'x') ans = y + p;
 	else ans = y + "ex" + p;
-	cout << ans << "\n";
+	cout << ans << '\n';
 }

@@ -30,5 +30,5 @@ signed main()
         }
         ans = min(ans,abs(a-b));
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

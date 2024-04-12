@@ -64,7 +64,7 @@ void solve()
         y[mj] = -1;
         ans += maxn;
     }
-    cout << ans << "\n"; 
+    cout << ans << '\n'; 
 }
 
 signed main(void)

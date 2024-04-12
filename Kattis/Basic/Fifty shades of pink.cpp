@@ -30,5 +30,5 @@ signed main()
 		}
 	}
 	if(ans == 0) cout << "I must watch Star Wars with my daughter\n";
-	else cout << ans << "\n";
+	else cout << ans << '\n';
 }

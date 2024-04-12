@@ -11,5 +11,5 @@ signed main(void)
         if(h > b) ans++;
         b = h;
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

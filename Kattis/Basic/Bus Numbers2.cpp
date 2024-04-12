@@ -23,6 +23,6 @@ int main()
         if(i + 1 < v.size() && v[i] == v[i + 1]) ans = v[i];
     }
     if(ans == -1) cout << "none\n";
-    else cout << ans << "\n";
+    else cout << ans << '\n';
     return 0;
 }

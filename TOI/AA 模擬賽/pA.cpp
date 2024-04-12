@@ -119,7 +119,7 @@ void solve()
                 if(cmp(ans,ts) == 1) ans = ts;;
             }
         } while(next_permutation(all(b)));
-        cout << ans << "\n";
+        cout << ans << '\n';
     }
 }
 

@@ -15,5 +15,5 @@ int main()
 	{
 		if(d[i]!=0) ans++;
 	}
-	cout << ans << "\n";
+	cout << ans << '\n';
 }

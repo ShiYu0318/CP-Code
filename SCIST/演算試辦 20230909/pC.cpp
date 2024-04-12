@@ -17,7 +17,7 @@ signed main()
     a[a[n % 5] % 5] += n;
     int ans = a[0];
     FOR(i,1,5) ans *= a[i];
-    cout << ans << "\n";
+    cout << ans << '\n';
 	return 0;
 }
 

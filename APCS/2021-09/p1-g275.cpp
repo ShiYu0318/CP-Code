@@ -17,6 +17,6 @@ signed main()
         if(a[6] != 1 || b[6] != 0) ans += 'B';
         if(a[1] == b[1] || a[3] == b[3] || a[5] == b[5]) ans += 'C';
         if(ans == "") cout << "None\n";
-        else cout << ans << "\n";
+        else cout << ans << '\n';
     }
 }

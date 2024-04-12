@@ -35,7 +35,7 @@ signed main()
             }
         }
         if(a == -1 || b == -1) cout << -1 << "\n";
-        else cout << a << " " << b << "\n";
+        else cout << a << ' ' << b << "\n";
     }
 
 }

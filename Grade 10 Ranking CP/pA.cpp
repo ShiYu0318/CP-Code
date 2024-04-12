@@ -17,7 +17,7 @@ int main()
 			if(s+1 == t) p += a;
 			sum += p;
 			s++;
-			// cout << s << " " << p << " " << sum << "\n";
+			// cout << s << ' ' << p << ' ' << sum << "\n";
 			if(sum >= c)
 			{
 				ans = true;

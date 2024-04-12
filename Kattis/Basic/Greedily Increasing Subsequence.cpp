@@ -17,6 +17,6 @@ signed main()
         }
     }
     cout << v.size() << "\n";
-    FOR(i,v.size()) cout << v[i] << " ";
+    FOR(i,v.size()) cout << v[i] << ' ';
     return 0;
 }

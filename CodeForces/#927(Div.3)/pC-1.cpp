@@ -25,7 +25,7 @@
 #define input(x) for(auto &i : x) cin >> i
 #define inputn(x,n) RPT(i,n) cin >> x[i] 
 #define inputD(x,a,b) RPT(i,a) RPT(j,b) cin >> x[i][j]
-#define output(x) for(auto i : x) cout << i << " "
+#define output(x) for(auto i : x) cout << i << ' '
 #define YN(x) cout << (x ? "YES" : "NO") << "\n"
 #define Yn(x) cout << (x ? "Yes" : "No") << "\n"
 #define yn(x) cout << (x ? "yes" : "no") << "\n"
@@ -67,7 +67,7 @@ void solve()
                 p *= v[j];
                 p %= m;
             }
-            cout << " " << p % m;
+            cout << ' ' << p % m;
         }
         else if(s[i] == 'R')
         {
@@ -78,7 +78,7 @@ void solve()
                 p *= v[j];
                 p %= m;
             }
-            cout << " " << p % m;
+            cout << ' ' << p % m;
         }
     }
     cout << "\n";

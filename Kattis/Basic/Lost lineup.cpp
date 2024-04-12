@@ -11,5 +11,5 @@ int main()
 		cin >> d;
 		p[d+1] = i;
 	}
-	for(i=0;i<n;i++) cout << p[i] << " ";
+	for(i=0;i<n;i++) cout << p[i] << ' ';
 }

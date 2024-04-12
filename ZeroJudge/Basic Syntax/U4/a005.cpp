@@ -10,7 +10,7 @@ int main()
 		for(int i = 0; i < 4; i++)
 		{
 			cin >> n[i];
-			cout << n[i] << " ";
+			cout << n[i] << ' ';
 		}
 		int d = n[1] - n[0];
 		if (n[2] - n[1] == d && n[3] - n[2] == d) cout << n[3] + d << "\n";

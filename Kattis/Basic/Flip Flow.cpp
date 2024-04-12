@@ -2,7 +2,7 @@
 #define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
 using namespace std;
 #define FOR(i,n) for(int i=0;i<n;++i)
-#define dbg(x) cout << #x << "=" << x << " "
+#define dbg(x) cout << #x << "=" << x << ' '
 
 signed main()
 {

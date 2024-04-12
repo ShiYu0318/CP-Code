@@ -6,7 +6,7 @@ int main()
 	int sumA=0,sumB=0;
 	string s;
 	cin >> s;
-	for(int i=0;i<s.size()/2;i++)// cout << s[i] << " ";
+	for(int i=0;i<s.size()/2;i++)// cout << s[i] << ' ';
 	{
 		if(s[2*i] == 'A')
 		{

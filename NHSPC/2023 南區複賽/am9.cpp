@@ -29,7 +29,7 @@ signed main()
     {
         FOR(j,v[i].size())
         {
-            cout << v[i][j] << " ";
+            cout << v[i][j] << ' ';
         }
         cout << "\n";
     }

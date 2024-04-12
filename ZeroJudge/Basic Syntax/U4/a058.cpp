@@ -12,7 +12,7 @@ int main()
 		else if (t % 3 == 1) m[1]++;
 		else m[2]++;
 	}
-	for(i = 0; i < 3; i++) cout << m[i] << " ";
+	for(i = 0; i < 3; i++) cout << m[i] << ' ';
 	cout << "\n";
 	return 0;
 }

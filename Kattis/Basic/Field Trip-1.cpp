@@ -23,7 +23,7 @@ signed main()
         {
             if(b[n] - b[j] == b[j] - b[i] && b[j] - b[i] == b[i] - b[0])
             {
-                cout << i << " " << j << "\n";
+                cout << i << ' ' << j << "\n";
                 return 0;
             }
         }

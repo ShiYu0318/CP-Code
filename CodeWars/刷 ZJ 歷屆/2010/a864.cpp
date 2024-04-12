@@ -10,9 +10,9 @@ signed main()
     double b,v;
     while(cin >> s >> b >> v)
     {
-        cout << s << " ";
+        cout << s << ' ';
         double d = b - v;
-        cout << fixed << setprecision(2) << d << " ";
+        cout << fixed << setprecision(2) << d << ' ';
         for(int i=0;i<7;++i)
         {
             if(m[i] <= d && d < m[i+1]) cout << c[i] << "\n";

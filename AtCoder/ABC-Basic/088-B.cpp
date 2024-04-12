@@ -4,7 +4,7 @@ using namespace std;
 #define FORn(i,n) for(int i=0;i<n;++i)
 #define rFOR(i,n) for(int i=n-1;i>=0;--i)
 #define input(x,n) FOR(i,0,n) cin >> x[i];
-#define dbg(x) cout << #x << "=" << x << " ";
+#define dbg(x) cout << #x << "=" << x << ' ';
 #define all(x) x.begin(),x.end()
 #define int long long
 #define nl cout << "\n";

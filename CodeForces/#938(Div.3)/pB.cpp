@@ -26,7 +26,7 @@
 #define input(x) for(auto &i : x) cin >> i
 #define inputn(x,n) RPT(i,n) cin >> x[i] 
 #define inputD(x,a,b) RPT(i,a) RPT(j,b) cin >> x[i][j]
-#define output(x) for(auto i : x) cout << i << " ";cout << '\n'
+#define output(x) for(auto i : x) cout << i << ' ';cout << '\n'
 #define outputn(x,n) RPT(i,n) cout << x[i] << " \n"[i == n-1];
 #define outputD(x,m,n) RPT(i,m) RPT(j,n) cout << x[i][j] << " \n"[j == n-1]
 #define YN(x) cout << (x ? "YES" : "NO") << "\n"
@@ -68,7 +68,7 @@ void solve()
             // cout << j << ' ';
             // cout << now << ' ';
             auto it = find(all(ms), now);
-            // cout << *it << " ";
+            // cout << *it << ' ';
             if(it != ms.end()) ms.erase(it);
             else
             {

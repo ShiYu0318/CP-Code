@@ -26,7 +26,7 @@
 #define input(x) for(auto &i : x) cin >> i
 #define inputn(x,n) RPT(i,n) cin >> x[i] 
 #define inputD(x,a,b) RPT(i,a) RPT(j,b) cin >> x[i][j]
-#define output(x) for(auto i : x) cout << i << " "
+#define output(x) for(auto i : x) cout << i << ' '
 #define YN(x) cout << (x ? "YES" : "NO") << "\n"
 #define Yn(x) cout << (x ? "Yes" : "No") << "\n"
 #define yn(x) cout << (x ? "yes" : "no") << "\n"
@@ -63,7 +63,7 @@ void solve()
             pii xy = {i+1,j+1};
             if(!st.count(xy))
             {
-                cout << xy.F << " " << xy.S << "\n";
+                cout << xy.F << ' ' << xy.S << "\n";
                 return;
             }
         }

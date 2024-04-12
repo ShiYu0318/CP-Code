@@ -12,8 +12,8 @@ signed main() {
 
     string s1, s2;
     cin >> s1 >> s2;
-    s1 = " " + s1;
-    s2 = " " + s2;
+    s1 = ' ' + s1;
+    s2 = ' ' + s2;
     for (int i = 1; i < s2.size(); i++)
         pre[i] = pre[i - 1] + (s1[i] == s2[i]);
 

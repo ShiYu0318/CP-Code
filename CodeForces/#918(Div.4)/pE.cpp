@@ -62,15 +62,15 @@ void solve()
 			}
 		}
 		
-		FORn(i,sz(p1)) cout << p1[i] << " ";
+		FORn(i,sz(p1)) cout << p1[i] << ' ';
 		nl(1);
-		FORn(i,sz(p2)) cout << p2[i] << " ";
+		FORn(i,sz(p2)) cout << p2[i] << ' ';
 		nl(2);
 		FORn(i,sz(p1)-1)
 		{
 			FOR(j,i+1,sz(p1))
 			{
-				cout << p1[j] - p1[i] << " ";
+				cout << p1[j] - p1[i] << ' ';
 				s1.insert(p1[j] - p1[i]);
 			}
 		}
@@ -79,7 +79,7 @@ void solve()
 		{
 			FOR(j,i+1,sz(p2))
 			{
-				cout << p2[j] - p2[i] << " ";
+				cout << p2[j] - p2[i] << ' ';
 				s2.insert(p2[j] - p2[i]);
 			}
 		}
@@ -87,9 +87,9 @@ void solve()
 		
 		bool ans = false;
 		
-	    for(const auto& i : s1) cout << i << " ";
+	    for(const auto& i : s1) cout << i << ' ';
 	    nl(1);
-	    for(const auto& i : s2) cout << i << " ";
+	    for(const auto& i : s2) cout << i << ' ';
 	    for(const auto& i : s1)
 	    {
 	    	

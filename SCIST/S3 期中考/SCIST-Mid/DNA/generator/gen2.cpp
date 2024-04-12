@@ -29,12 +29,12 @@ int main(int argc, char* argv[])
     while(q--){
         int l = rnd.next(1,ll);
         int r = rnd.next(l,ll);
-        cout<<l<<" "<<r<<"\n";
+        cout<<l<<' '<<r<<"\n";
     }
     for(int i=0;i<170000;i++){
         int l = rnd.next(1,6000);
         int r = rnd.next(ll-1000,ll);
-        cout<<l<<" "<<r<<"\n";
+        cout<<l<<' '<<r<<"\n";
     }
     
     return 0;

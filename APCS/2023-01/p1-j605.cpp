@@ -17,5 +17,5 @@ int main()
 	}
 	int sum = max - k  - (e * 2);
 	if(sum < 0) sum = 0;
-	cout << sum << " " << maxt << "\n";
+	cout << sum << ' ' << maxt << "\n";
 }

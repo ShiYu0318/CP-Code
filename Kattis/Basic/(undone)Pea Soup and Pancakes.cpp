@@ -3,7 +3,7 @@ using namespace std;
 #define int long long
 #define nl cout << "\n"
 #define FOR(i,a,b) for(int i=a;i<b;++i)
-#define dbg(x) cout << #x << " " <<  x << "\n"
+#define dbg(x) cout << #x << ' ' <<  x << "\n"
 
 signed main()
 {

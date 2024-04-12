@@ -5,7 +5,7 @@ using namespace std;
 #define rFOR(i,n) for(int i=n-1;i>=0;--i)
 #define RPT(i,n) FOR(i,0,n)
 #define input(x) for(auto &i : x) cin >> i
-#define output(x) for(auto i : x) cout << i << " "
+#define output(x) for(auto i : x) cout << i << ' '
 #define Yn(x) cout << (x ? "Yes" : "No") << "\n"
 #define all(x) x.begin(),x.end()
 #define int long long
@@ -26,7 +26,7 @@ void f(int n, int fst, int end, int tmp)
 {
     if(!n) return;
     f(n-1, fst, tmp, end);
-    cout << fst << " " << end << "\n";
+    cout << fst << ' ' << end << "\n";
     f(n-1, tmp, end, fst);
 }
 

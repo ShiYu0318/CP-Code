@@ -23,8 +23,8 @@
 #define output(x) for(auto &i : x) coutS(i)
 #define inputD(x,a,b) FOR(i,0,a) FOR(j,0,b) cin >> x[i][j]
 #define outputD(x,a,b) FOR(i,0,a) FOR(j,0,b) cin >> x[i][j]
-#define dbg(x) cout << #x << "=" << x << " ";
-#define DB(x) cerr << #x << " " << x << endl
+#define dbg(x) cout << #x << "=" << x << ' ';
+#define DB(x) cerr << #x << ' ' << x << endl
 #define YN(x) cout << (x ? "YES" : "NO") << "\n"
 #define Yn(x) cout << (x ? "Yes" : "No") << "\n"
 #define yn(x) cout << (x ? "yes" : "no") << "\n"

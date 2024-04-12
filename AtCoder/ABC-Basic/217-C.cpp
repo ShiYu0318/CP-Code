@@ -11,5 +11,5 @@ signed main()
         cin >> p[n];
         q[p[n]-1] = i+1;
     }
-    FOR(i,n) cout << q[i] << " ";
+    FOR(i,n) cout << q[i] << ' ';
 }

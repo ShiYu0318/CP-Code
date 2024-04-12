@@ -39,7 +39,7 @@ signed main()
     int n,q; cin >> n >> q;
     for(int i = 1; i <= n; ++i) cin >> arr[i];
     build(1,1,n);
-    for(int i=0;i<4*n;++i) cout << seg[i] << " ";
+    for(int i=0;i<4*n;++i) cout << seg[i] << ' ';
     int a,b;
     while(q--)
     {

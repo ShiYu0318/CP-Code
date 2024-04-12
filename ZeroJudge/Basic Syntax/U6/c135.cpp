@@ -16,11 +16,11 @@ void f1(int t)
 {
     RPT(i,sz)
     {
-        if(i) cout << " ";
+        if(i) cout << ' ';
         int k = s[i] - '0';
-        cout << " ";
+        cout << ' ';
         RPT(j,n) cout << LC[k][t];
-        cout << " ";
+        cout << ' ';
     }
     cout << "\n";
 }
@@ -30,10 +30,10 @@ void f2(int a, int b)
     string ts;
     RPT(i,sz)
     {
-        if(i) ts += " ";
+        if(i) ts += ' ';
         int k = s[i] - '0';
         ts += LC[k][a];
-        RPT(j,n) ts += " ";
+        RPT(j,n) ts += ' ';
         ts += LC[k][b];
     }
     RPT(i,n) cout << ts << "\n";

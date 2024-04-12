@@ -33,7 +33,7 @@ signed main()
     if(v2.empty()) cout << -1;
     else
     {
-        FOR(i,v2.size()-1) cout << v2[i] << " ";
+        FOR(i,v2.size()-1) cout << v2[i] << ' ';
         cout << v2[v2.size()-1];
     }
     cout << "\n";

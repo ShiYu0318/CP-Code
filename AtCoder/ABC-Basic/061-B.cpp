@@ -3,7 +3,7 @@ using namespace std;
 #define FOR(i,a,b) for(int i=a;i<b;++i)
 #define FORn(i,n) for(int i=0;i<n;++i)
 #define input(x,n) FOR(i,0,n) cin >> x[i];
-#define dbg(x) cout << #x << "=" << x << " ";
+#define dbg(x) cout << #x << "=" << x << ' ';
 #define int long long
 #define nl cout << "\n";
 #define Yn(x) cout << (x ? "Yes" : "No") << "\n";

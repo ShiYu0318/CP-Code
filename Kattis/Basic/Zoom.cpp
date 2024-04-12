@@ -12,7 +12,7 @@ signed main()
     while(n--)
     {
         cin >> t;
-        if(i % k == 0) cout << t << " ";
+        if(i % k == 0) cout << t << ' ';
         i++;
     }
     cout << "\n";

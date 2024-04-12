@@ -18,5 +18,5 @@ int main()
 			t = c;
 		}
 	}
-	cout << d << " " << t << "\n";
+	cout << d << ' ' << t << "\n";
 }

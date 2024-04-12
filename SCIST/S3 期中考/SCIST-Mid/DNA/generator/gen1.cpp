@@ -28,7 +28,7 @@ int main(int argc, char* argv[])
     while(q--){
         int l = rnd.next(1,ll);
         int r = rnd.next(l,ll);
-        cout<<l<<" "<<r<<"\n";
+        cout<<l<<' '<<r<<"\n";
     }
     return 0;
 }

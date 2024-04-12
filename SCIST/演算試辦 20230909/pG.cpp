@@ -13,7 +13,7 @@ signed main()
     int a[n],b[n];
     FOR(i,0,n) cin >> a[i];
     FOR(i,0,n) cin >> b[i];
-    FOR(i,0,n) cout << a[i] + b[i] << " ";
+    FOR(i,0,n) cout << a[i] + b[i] << ' ';
 	return 0;
 }
 

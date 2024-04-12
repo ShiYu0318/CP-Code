@@ -49,5 +49,5 @@ signed main()
 		a = x;
 		b = y;
 	}
-	cout << ans[0] << " " << ans[1] << " " << ans[2] << "\n";
+	cout << ans[0] << ' ' << ans[1] << ' ' << ans[2] << "\n";
 }

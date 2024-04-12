@@ -66,7 +66,7 @@ int create(int n)
     {
         x += mx[mi];
         y += my[mi];
-        // cout << x << " " << y << "\n";
+        // cout << x << ' ' << y << "\n";
         if(!in_range(x,y)) return 0;
         if(x == n/2 && y == n/2) continue;
         tb[x][y] = i;
@@ -97,7 +97,7 @@ void solve()
         RPT(j,n)
         {
             if(i == n/2 && j == n/2) cout << "T ";
-            else cout << tb[i][j] << " ";
+            else cout << tb[i][j] << ' ';
         }
         cout << "\n";
     }

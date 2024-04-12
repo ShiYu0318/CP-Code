@@ -8,7 +8,7 @@ int main(int argc, char* argv[]){
     cout<<n<<' '<<k<<endl;
     for(int i=0;i<n;i++){
         cout<<rnd.next((long long)4900,(long long)5000);
-        if(i!=n-1)cout<<" ";
+        if(i!=n-1)cout<<' ';
     }
     cout<<endl;
     return 0;

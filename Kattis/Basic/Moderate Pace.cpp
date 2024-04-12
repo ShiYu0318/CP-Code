@@ -5,7 +5,7 @@ using namespace std;
 #define rFOR(i,n) for(int i=n-1;i>=0;--i)
 #define RPT(i,n) FOR(i,0,n)
 #define input(x) for(auto &i : x) cin >> i
-#define output(x) for(auto i : x) cout << i << " "
+#define output(x) for(auto i : x) cout << i << ' '
 #define Yn(x) cout << (x ? "Yes" : "No") << "\n";
 #define all(x) x.begin(),x.end()
 #define int long long
@@ -21,6 +21,6 @@ signed main()
     input(a); input(b); input(c);
     RPT(i,n)
     {
-        cout << (a[i] + b[i] + c[i]) - (max(max(a[i],b[i]),c[i]) + min(min(a[i],b[i]),c[i])) << " ";
+        cout << (a[i] + b[i] + c[i]) - (max(max(a[i],b[i]),c[i]) + min(min(a[i],b[i]),c[i])) << ' ';
     }
 }

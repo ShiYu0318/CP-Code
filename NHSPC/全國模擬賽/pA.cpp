@@ -4,7 +4,7 @@ using namespace std;
 #define FOR(i,a,b) for(int i=a;i<b;++i)
 #define F first
 #define S second
-#define dbg(x) cout << #x << "=" << x << " "
+#define dbg(x) cout << #x << "=" << x << ' '
 #define nl cout << "\n"
 
 signed main()

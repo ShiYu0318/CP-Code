@@ -10,7 +10,7 @@ using namespace std;
 int main()
 {
 	int i;
-	for(i=1;i<=10;i++) cout << i << " ";
+	for(i=1;i<=10;i++) cout << i << ' ';
 	cout << "\n";
 	
 	int a,b,sum=0;
@@ -22,5 +22,5 @@ int main()
 	for(i=a;i<=b;i++) sum += pow(i,2);
 	cout << a << "^2+ ... +" << b << "^2 = " << sum;
 	
-	for(i=10;i<=1;i--) cout << i << " ";
+	for(i=10;i<=1;i--) cout << i << ' ';
 }

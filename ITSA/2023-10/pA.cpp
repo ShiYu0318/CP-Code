@@ -33,7 +33,7 @@ signed main(void)
             if(c > 2) a[9-c]++;
         }
     }
-    FOR(i,7) cout << a[i] << " "; 
+    FOR(i,7) cout << a[i] << ' '; 
     int sum = 0;
     FOR(i,7) sum += a[i] * m[i];
     cout << sum << "\n";

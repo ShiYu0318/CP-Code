@@ -17,7 +17,7 @@ signed main()
 			else if(s[i] >= 'a' && s[i] <= 'z') ns += s[i];
 		}
 		len = ns.size();
-		// cout << len << " " << ns << "\n";
+		// cout << len << ' ' << ns << "\n";
 		for(int i=0;i<=len/2;i++)
 		{
 			if(ns[i] != ns[len-i-1])

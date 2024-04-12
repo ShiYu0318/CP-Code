@@ -13,7 +13,7 @@ int main()
 			for(h=0;h<k;h++)// 每塊地板有幾個格
 			{
 				if(b==1) cout << "*";
-				else if(b==0) cout << " ";
+				else if(b==0) cout << ' ';
 			}
 			if(b==1) b--;
 			else if(b==0) b++;

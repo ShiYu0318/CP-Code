@@ -21,6 +21,6 @@ signed main()
             l++;
         }
     }
-    if(r > l) cout << r << " " << maxn << "\n";
-    else cout << l << " " << minn << "\n";
+    if(r > l) cout << r << ' ' << maxn << "\n";
+    else cout << l << ' ' << minn << "\n";
 }

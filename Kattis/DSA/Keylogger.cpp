@@ -24,7 +24,7 @@ signed main()
     while(n--)
     {
         cin >> s;
-        if(s == "whack") ans += " ";
+        if(s == "whack") ans += ' ';
         else if(s == "pop" && !ans.empty()) ans.pop_back();
         else if(s == "bump" || s == "dink" || s == "thumb") capslock = 1 - capslock;
         else

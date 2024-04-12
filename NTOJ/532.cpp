@@ -9,5 +9,5 @@ int main()
 	if(b % 2 == 0) x++;
 	if(a % 3 == 0) y++;
 	if(b % 3 == 0) y++;
-	cout << x << " " << y << "\n";
+	cout << x << ' ' << y << "\n";
 }

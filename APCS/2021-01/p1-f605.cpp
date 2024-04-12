@@ -24,5 +24,5 @@ signed main()
             m += sum / 3;
         }
     }
-    cout << k << " " << m << "\n";
+    cout << k << ' ' << m << "\n";
 }

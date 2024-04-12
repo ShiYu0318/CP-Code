@@ -25,7 +25,7 @@ signed main(void)
 	else if(x > y) sumC = y;
 	else // 相差一樣代表沒差
 	{
-		cout << 0 << " " << 0 << " " << 0 << "\n";
+		cout << 0 << ' ' << 0 << ' ' << 0 << "\n";
 		return 0; // 用到 early return 讓下方換算的事情不要做
 	}
 	// 把比較小的那個換算成時分秒
@@ -33,6 +33,6 @@ signed main(void)
 	sumC /= 60;
 	mc = sumC % 60;
 	hc = sumC / 60;
-	cout << hc << " " << mc << " " << sc << "\n";
+	cout << hc << ' ' << mc << ' ' << sc << "\n";
 	return 0;
 }

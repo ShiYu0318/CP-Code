@@ -25,7 +25,7 @@ int main()
 	// 檢查表中結果並輸出
 	for(i=0;i<=w;i++)
 	{
-		if(c[i] == 1) cout << i << " ";
+		if(c[i] == 1) cout << i << ' ';
 	}
 	cout << "\n";
 }

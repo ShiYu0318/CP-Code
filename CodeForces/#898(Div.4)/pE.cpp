@@ -30,7 +30,7 @@ void solve()
             {
                 if(h > a[i]) sum += h - a[i];
             }
-            // cout << h << " " << sum << "\n";
+            // cout << h << ' ' << sum << "\n";
             if(h == maxn)
             {
                 sum2 = sum;

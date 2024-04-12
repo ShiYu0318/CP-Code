@@ -50,7 +50,7 @@ signed main()
         {
             if(IsSumOfTwoPowerOfTwo(c))
             {
-                cout << q.front() << " ";
+                cout << q.front() << ' ';
                 q.pop();
             }
             else

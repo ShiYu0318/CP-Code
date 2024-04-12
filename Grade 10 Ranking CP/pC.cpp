@@ -30,7 +30,7 @@ int main()
 			ans++;
 			c[ans-1] = dif[i];
 		}
-		//for(int j=0;j<ans;++j) cout << c[j] << " ";
+		//for(int j=0;j<ans;++j) cout << c[j] << ' ';
 		//cout << "\n";
 	}
 	cout << ans << "\n";

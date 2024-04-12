@@ -2,10 +2,10 @@
 using namespace std;
 #define int long long
 #define FOR(i,a,b) for(int i=a; i<b; ++i)
-#define dbg(x) cout << #x << "=" << x << " "
+#define dbg(x) cout << #x << "=" << x << ' '
 #define vii vector<pair<int,int>>
 #define all(x) x.begin(), x.end()
-#define output(x) for(auto &i : x) cout << i.first << " " << i.second << "\n"
+#define output(x) for(auto &i : x) cout << i.first << ' ' << i.second << "\n"
 
 bool compare(const pair<int, int>& a, const pair<int, int>& b) {
     if (a.first != b.first) {

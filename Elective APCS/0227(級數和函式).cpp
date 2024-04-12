@@ -1,7 +1,7 @@
 #include <iostream>
 #include <math.h>
 using namespace std;
-#define ios_base ::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0)
 /* 
 級數和計算
 
@@ -29,6 +29,7 @@ int Geometric_series(int a1,int r,int n)
 
 int main()
 {
+	ShiYu;
 	int type,a1,d,r,n;
 	cout << "1.等差級數\n2.等比級數\n請選擇要進行的運算:\n";
 	cin >> type;

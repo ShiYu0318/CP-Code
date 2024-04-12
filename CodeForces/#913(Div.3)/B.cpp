@@ -26,7 +26,7 @@
 #define dbg(x) cout << #x << "=" << x << ' ';
 #define DB(x) cerr << #x << ' ' << x << endl
 #define YN(x) cout << (x ? "YES" : "NO") << "\n"
-#define Yn(x) cout << (x ? "Yes" : "No") << "\n"
+#define Yn(x) cout << (x ? "Yes" : "No") << '\n'
 #define yn(x) cout << (x ? "yes" : "no") << "\n"
 #define SET(n) cout << fixed << setprecision(n)
 #define F first

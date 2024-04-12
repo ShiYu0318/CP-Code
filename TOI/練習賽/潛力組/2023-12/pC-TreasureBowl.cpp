@@ -29,7 +29,7 @@
 #define inputD(x,a,b) FORn(i,a) FORn(j,b) cin >> x[i][j]
 #define output(x) for(auto &i : x) cerr << i << ' ';
 #define YN(x) cout << (x ? "YES" : "NO") << "\n"
-#define Yn(x) cout << (x ? "Yes" : "No") << "\n"
+#define Yn(x) cout << (x ? "Yes" : "No") << '\n'
 #define yn(x) cout << (x ? "yes" : "no") << "\n"
 #define SET(n) cout << fixed << setprecision(n)
 #define nl(n) FORn(i,n) cout << "\n"

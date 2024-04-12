@@ -6,7 +6,7 @@ using namespace std;
 #define RPT(i,n) FOR(i,0,n)
 #define input(x) for(auto &i : x) cin >> i
 #define output(x) for(auto i : x) cout << i << ' '
-#define Yn(x) cout << (x ? "Yes" : "No") << "\n";
+#define Yn(x) cout << (x ? "Yes" : "No") << '\n';
 #define all(x) x.begin(),x.end()
 #define int long long
 #define pii pair<int,int>

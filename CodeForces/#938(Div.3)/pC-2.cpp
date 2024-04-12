@@ -30,7 +30,7 @@
 #define outputn(x,n) RPT(i,n) cout << x[i] << " \n"[i == n-1];
 #define outputD(x,m,n) RPT(i,m) RPT(j,n) cout << x[i][j] << " \n"[j == n-1];
 #define YN(x) cout << (x ? "YES" : "NO") << "\n"
-#define Yn(x) cout << (x ? "Yes" : "No") << "\n"
+#define Yn(x) cout << (x ? "Yes" : "No") << '\n'
 #define yn(x) cout << (x ? "yes" : "no") << "\n"
 #define islower(x) ('a' >= (x) && (x) <= 'z')
 #define isupper(x) ('A' >= (x) && (x) <= 'Z')

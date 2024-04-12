@@ -25,7 +25,7 @@
 #define outputD(x,a,b) FOR(i,0,a) FOR(j,0,b) cin >> x[i][j]
 #define DB(x) cerr << #x << ' ' << x << endl
 #define YN(x) cout << (x ? "YES" : "NO") << "\n"
-#define Yn(x) cout << (x ? "Yes" : "No") << "\n"
+#define Yn(x) cout << (x ? "Yes" : "No") << '\n'
 #define yn(x) cout << (x ? "yes" : "no") << "\n"
 #define SET(n) cout << fixed << setprecision(n)
 #define F first

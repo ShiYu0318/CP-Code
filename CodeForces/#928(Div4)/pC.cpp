@@ -28,7 +28,7 @@
 #define inputD(x,a,b) RPT(i,a) RPT(j,b) cin >> x[i][j]
 #define output(x) for(auto i : x) cout << i << ' '
 #define YN(x) cout << (x ? "YES" : "NO") << "\n"
-#define Yn(x) cout << (x ? "Yes" : "No") << "\n"
+#define Yn(x) cout << (x ? "Yes" : "No") << '\n'
 #define yn(x) cout << (x ? "yes" : "no") << "\n"
 #define islower(x) ((x) >= 'a' && (x) <= 'z')
 #define isupper(x) ((x) >= 'A' && (x) <= 'Z')

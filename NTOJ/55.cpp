@@ -7,7 +7,7 @@ using namespace std;
 #define output(x) for(auto &i : x) cout << i << ' '
 #define inputD(x,a,b) FORn(i,a) FORn(j,b) cin >> x[i][j]
 #define dbg(x) cout << #x << "=" << x << ' ';
-#define Yn(x) cout << (x ? "Yes" : "No") << "\n";
+#define Yn(x) cout << (x ? "Yes" : "No") << '\n';
 #define all(x) x.begin(), x.end()
 #define int long long
 #pragma GCC diagnostic ignored "-Wc++11-extensions"

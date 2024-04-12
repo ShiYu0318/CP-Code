@@ -20,6 +20,6 @@ signed main()
             }
             else tmp = 0;
         }
-        cout << n - ans - 1 << "\n";
+        cout << n - ans - 1 << '\n';
     }
 }

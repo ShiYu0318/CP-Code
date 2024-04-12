@@ -19,7 +19,7 @@ void solve()
         a[0] += 1;
         int sum = a[0];
         for(int i=1;i<n;++i) sum *= a[i];
-        cout << sum << "\n";
+        cout << sum << '\n';
     }
 }
 

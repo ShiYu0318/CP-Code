@@ -14,5 +14,5 @@ signed main(void)
 {
     string s; cin >> s;
     s[s.size()-1] = '4';
-    cout << s << "\n";
+    cout << s << '\n';
 }

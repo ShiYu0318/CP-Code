@@ -67,7 +67,7 @@ signed main(void)
                 sum += maxn;
                 v[now].second = false;
             }
-            cout << sum << "\n";
+            cout << sum << '\n';
         }
     }
 }

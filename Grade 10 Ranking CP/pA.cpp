@@ -17,7 +17,7 @@ int main()
 			if(s+1 == t) p += a;
 			sum += p;
 			s++;
-			// cout << s << ' ' << p << ' ' << sum << "\n";
+			// cout << s << ' ' << p << ' ' << sum << '\n';
 			if(sum >= c)
 			{
 				ans = true;
@@ -26,7 +26,7 @@ int main()
 		}
 		if(ans) break;
 	}
-	if(ans) cout << s << "\n";
+	if(ans) cout << s << '\n';
 	else
 	{
 		while(sum < c)
@@ -34,6 +34,6 @@ int main()
 			sum += p;
 			s++;
 		}
-		cout << s << "\n";
+		cout << s << '\n';
 	}
 }

@@ -11,7 +11,7 @@ signed main()
 		else if(s[i] == 'B') swap(y,z);
 		else swap(x,z);
 	}
-	if(x == 1) cout << 1 << "\n";
-	else if(y == 1) cout << 2 << "\n";
-	else cout << 3 << "\n";
+	if(x == 1) cout << 1 << '\n';
+	else if(y == 1) cout << 2 << '\n';
+	else cout << 3 << '\n';
 }

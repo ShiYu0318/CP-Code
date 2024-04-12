@@ -26,5 +26,5 @@ signed main(){
     for(int i=1;i<=n;i++){
         ans=max(ans,ary[i+k]-ary[i]);
     }
-    cout<<ans+base<<"\n";
+    cout<<ans+base<<'\n';
 }

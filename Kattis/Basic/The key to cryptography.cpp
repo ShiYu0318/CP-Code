@@ -14,5 +14,5 @@ signed main()
 		m += t;
 		k += t;
 	}
-	cout << m << "\n";
+	cout << m << '\n';
 }

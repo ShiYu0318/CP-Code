@@ -11,5 +11,5 @@ signed main()
         t += q * q;
         q += 2;
     }
-    cout << ans-1 << "\n";
+    cout << ans-1 << '\n';
 }

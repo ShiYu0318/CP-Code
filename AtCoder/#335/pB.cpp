@@ -22,7 +22,7 @@ signed main(void)
             RPT(k,n+1)
             {
                 if(i+j+k>n) break;
-                cout << i << ' ' << j << ' ' << k <<"\n";
+                cout << i << ' ' << j << ' ' << k <<'\n';
             }
         }
     }

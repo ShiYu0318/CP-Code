@@ -29,7 +29,7 @@ signed main()
     		}
     		
     	}
-    	// cout << t << "\n";
+    	// cout << t << '\n';
     	if(t == "" || s == "")
     	{
     		ans += 'N';

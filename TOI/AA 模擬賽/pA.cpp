@@ -16,7 +16,7 @@
 #define min(a, b) (a < b ? a : b)
 #define remax(a, b) a = (a > b ? a : b)
 #define remin(a, b) a = (a < b ? a : b)
-#define coutE(x) cout << x << "\n"
+#define coutE(x) cout << x << '\n'
 #define coutS(x) cout << x << ' '
 #define dbg(x) cerr << #x << "=" << x << '\n';
 #define FOR(i,a,b) for(int i=a;i<b;++i)
@@ -99,7 +99,7 @@ void solve()
 {
     
     string a,b; cin >> a >> b;
-    if(cmp(a,b) == 0) cout << 0 << "\n";
+    if(cmp(a,b) == 0) cout << 0 << '\n';
     else
     {
         sort(all(b));

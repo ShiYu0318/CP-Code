@@ -30,6 +30,6 @@ signed main()
                 c = s[i];
             }
         }
-        cout << n << c << "\n";
+        cout << n << c << '\n';
     }
 }

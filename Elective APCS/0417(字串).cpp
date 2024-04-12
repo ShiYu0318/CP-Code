@@ -13,7 +13,7 @@ signed main()
     {
         for(int i=1;i<=29;i++)
         {
-            cout << i << "號成績：" << rand()%100 << "\n";
+            cout << i << "號成績：" << rand()%100 << '\n';
         }
         cout << "try_again? (y/n):";
         cin >> try_again;

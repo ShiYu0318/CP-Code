@@ -30,6 +30,6 @@ signed main()
             v.emplace_back(stoi(idx),s);
         }
         sort(all(v));
-        for(auto i : v) cout << i.S << "\n";
+        for(auto i : v) cout << i.S << '\n';
     }
 }

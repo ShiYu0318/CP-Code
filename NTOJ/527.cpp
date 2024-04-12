@@ -7,10 +7,10 @@ int main()
 	cin >> n;
 	if(n%9 == 0)
 	{
-		cout << n + 9 << "\n";
+		cout << n + 9 << '\n';
 	}
 	else
 	{
-		cout << (n / 9 + 1) * 9 << "\n";
+		cout << (n / 9 + 1) * 9 << '\n';
 	}
 }

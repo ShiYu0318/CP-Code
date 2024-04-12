@@ -27,5 +27,5 @@ signed main()
             temp = 1;
         }
     }
-    cout << maxn << "\n";
+    cout << maxn << '\n';
 }

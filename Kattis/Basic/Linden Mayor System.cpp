@@ -36,5 +36,5 @@ signed main()
         ts = ans;
         ans.clear();
     }
-    cout << ts << "\n";
+    cout << ts << '\n';
 }

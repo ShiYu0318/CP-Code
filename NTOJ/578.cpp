@@ -7,7 +7,7 @@ int main()
 	cin >> n;
 	while(i < n)
 	{
-		cout << i << "\n";
+		cout << i << '\n';
 		i += 2;
 	}
 }

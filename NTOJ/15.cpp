@@ -59,7 +59,7 @@ signed main()
         sort(arr,arr + n,cmp);
         RPT(i,min(n,m))
         {
-            cout << arr[i].name << "\n";
+            cout << arr[i].name << '\n';
         }
     }
 }

@@ -32,5 +32,5 @@ signed main()
             blank -= sz[x];
         }
     }
-    cout << blank << ' ' << del << "\n";
+    cout << blank << ' ' << del << '\n';
 }

@@ -11,6 +11,6 @@ signed main()
     {
         if(s[i] == '1') ans++;
     }
-    cout << ans <<"\n";
+    cout << ans <<'\n';
     
 }

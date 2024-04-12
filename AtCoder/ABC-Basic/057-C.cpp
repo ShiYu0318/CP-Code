@@ -22,5 +22,5 @@ signed main()
             minn = min(minn,q);
         }
     }
-    cout << minn << "\n";
+    cout << minn << '\n';
 }

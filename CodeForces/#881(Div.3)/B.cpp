@@ -51,6 +51,6 @@ signed main()
 				}
 			}
 		}
-		cout << sum << ' ' << step << "\n";
+		cout << sum << ' ' << step << '\n';
 	}
 }

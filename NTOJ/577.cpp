@@ -11,7 +11,7 @@ int main()
 		long long ans = a;
 		if(b == 0)
 		{
-			cout << 1 << "\n";
+			cout << 1 << '\n';
 			continue;
 		}
 		for(int i=1;i<b;i++)

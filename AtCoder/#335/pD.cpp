@@ -18,7 +18,7 @@
 #define min(a, b) (a < b ? a : b)
 #define remax(a, b) a = (a > b ? a : b)
 #define remin(a, b) a = (a < b ? a : b)
-#define coutE(x) cout << x << "\n"
+#define coutE(x) cout << x << '\n'
 #define coutS(x) cout << x << ' '
 #define dbg(x) cerr << #x << "=" << x << '\n';
 #define RPT(i,n) for(int i=0;i<n;++i)
@@ -61,12 +61,12 @@ int create(int n)
     */
     int x = n / 2, y = x;
     int mi=0,t=1,tt=0,r=2;
-    // cout << x << "=" << y << "\n";
+    // cout << x << "=" << y << '\n';
     FOR(i,1,n*n)
     {
         x += mx[mi];
         y += my[mi];
-        // cout << x << ' ' << y << "\n";
+        // cout << x << ' ' << y << '\n';
         if(!in_range(x,y)) return 0;
         if(x == n/2 && y == n/2) continue;
         tb[x][y] = i;

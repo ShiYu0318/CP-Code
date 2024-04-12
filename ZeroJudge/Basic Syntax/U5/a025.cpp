@@ -11,5 +11,5 @@ int main()
 		b = a % b;
 		a = tmp;
 	}
-	cout << a << "\n";
+	cout << a << '\n';
 }

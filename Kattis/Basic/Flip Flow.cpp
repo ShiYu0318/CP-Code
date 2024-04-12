@@ -27,6 +27,6 @@ signed main()
         }
         b = a;
     }
-    if(now - (t - b) <= 0) cout << 0 << "\n";
+    if(now - (t - b) <= 0) cout << 0 << '\n';
     else cout << now - (t - b) << '\n';
 }

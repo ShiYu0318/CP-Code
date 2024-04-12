@@ -17,7 +17,7 @@ int main()
 			for(int h=l-1;h<r;h++) b[h] = k;
 			for(int j=0;j<n;j++) cout << b[j] << ' ';
 			for(int g=0;g<n;g++) s += b[g];
-			cout << '\n' << s << "\n";
+			cout << '\n' << s << '\n';
 			if(s%2 == 1) cout << "YES\n";
 			else cout << "NO\n";
 		}

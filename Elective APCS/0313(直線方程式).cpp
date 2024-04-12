@@ -65,5 +65,5 @@ int main()
 	cin >> x4 >> y4;
 	cout << "D(" << x4 << "," << y4 << ")\n";
 	D = abs(a*x4 + b*y4 + c) / sqrt(pow(a,2) + pow(b,2));
-	cout << "d(D,L) = " << D << "\n";
+	cout << "d(D,L) = " << D << '\n';
 }

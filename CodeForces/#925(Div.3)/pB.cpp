@@ -16,7 +16,7 @@
 #define min(a, b) (a < b ? a : b)
 #define remax(a, b) a = (a > b ? a : b)
 #define remin(a, b) a = (a < b ? a : b)
-#define coutE(x) cout << x << "\n"
+#define coutE(x) cout << x << '\n'
 #define coutS(x) cout << x << ' '
 #define dbg(x) cerr << #x << "=" << x << '\n';
 #define FOR(i,a,b) for(int i=a;i<b;++i)
@@ -57,7 +57,7 @@ void solve()
     {
         if(i > avg) r += i - avg; 
     }
-    // cout << "avg:" << avg << "r:" << r << "\n";
+    // cout << "avg:" << avg << "r:" << r << '\n';
     int h = r, l = 0;
     rFOR(i,n)
     {
@@ -79,7 +79,7 @@ void solve()
                 break;
             }
         }
-        // cout << "h: " << h << ' ' << "l: " << l  << "\n";
+        // cout << "h: " << h << ' ' << "l: " << l  << '\n';
     }
     YN(ans);
 

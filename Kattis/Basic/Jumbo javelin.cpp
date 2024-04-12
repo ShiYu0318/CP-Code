@@ -12,5 +12,5 @@ int main()
 		sum += a[i];
 	}
 	sum -= n-1;
-	cout << sum << "\n";
+	cout << sum << '\n';
 }

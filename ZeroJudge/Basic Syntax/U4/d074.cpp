@@ -10,5 +10,5 @@ int main()
 		cin >> t;
 		maxn = max(maxn, t);
 	}
-	cout << maxn << "\n";
+	cout << maxn << '\n';
 }

@@ -17,7 +17,7 @@
 #define FORn(i,n) for(int i=0;i<n;++i)
 #define rFOR(i,n) for(int i=n-1;i>=0;--i)
 #define FOR(i,a,b) for(int i=a;i<b;++i)
-#define coutE(x) cout << x << "\n"
+#define coutE(x) cout << x << '\n'
 #define coutS(x) cout << x << ' '
 #define input(x) for(auto &i : x) cin >> i
 #define output(x) for(auto &i : x) coutS(i)

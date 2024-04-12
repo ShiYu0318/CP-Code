@@ -10,7 +10,7 @@ signed main()
 {
 	ShiYu;
 	int a,b; cin >> a >> b;
-    cout << a + b << ' ' << a - b << ' ' << a * b << ' ' << a / b << ' ' << a % b << ' ' << a * a + b * b << "\n";
+    cout << a + b << ' ' << a - b << ' ' << a * b << ' ' << a / b << ' ' << a % b << ' ' << a * a + b * b << '\n';
 	return 0;
 }
 

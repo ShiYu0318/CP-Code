@@ -16,5 +16,5 @@ signed main()
     ans.eb(s);
     while(next_permutation(all(s))) ans.eb(s);
     cout << ans.size() << '\n';
-    for(auto i : ans) cout << i << "\n";
+    for(auto i : ans) cout << i << '\n';
 }

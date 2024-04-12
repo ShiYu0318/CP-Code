@@ -25,8 +25,8 @@ signed main()
         if(p.first == pq.top().first) cout << "no winner\n";
         else if(p.first > (double)sum / 2)
         {
-            cout << "majority winner " << p.second+1 << "\n";
+            cout << "majority winner " << p.second+1 << '\n';
         }
-        else cout << "minority winner " << p.second+1 << "\n";
+        else cout << "minority winner " << p.second+1 << '\n';
     }
 }

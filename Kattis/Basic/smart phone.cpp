@@ -33,6 +33,6 @@ signed main()
 		{
 			if(ts[i] < max) max = ts[i];
 		}
-		cout << max << "\n";
+		cout << max << '\n';
 	}
 }

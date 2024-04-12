@@ -15,6 +15,6 @@ int main()
 			if(a[i] != b[i]) c += "*";
 			else c += ".";
 		}
-		cout << a << "\n" << b << "\n" << c << "\n\n";
+		cout << a << '\n' << b << '\n' << c << "\n\n";
 	}
 }

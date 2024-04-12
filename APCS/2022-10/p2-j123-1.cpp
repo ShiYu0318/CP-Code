@@ -40,7 +40,7 @@ void putinto(int t,int y,int top,int RL)
     }
     for(int i=0;i<r;++i) cout << LL[i] << ' ';
     cout << "\n\n";
-    cout << sum << ' ' << leave << "\n";
+    cout << sum << ' ' << leave << '\n';
     cout << "\n\n";
 }
 
@@ -99,5 +99,5 @@ signed main()
         // cin >> t >> y;
         if(!check(t - 'A',y)) leave++;
     }
-    cout << sum << ' ' << leave << "\n";
+    cout << sum << ' ' << leave << '\n';
 }

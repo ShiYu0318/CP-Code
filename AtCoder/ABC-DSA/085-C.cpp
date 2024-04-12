@@ -33,7 +33,7 @@ signed main()
                 {
                     if(i + j + temp / c == n)
                     {
-                        cout << i << ' ' << j << ' ' << temp / c << "\n";
+                        cout << i << ' ' << j << ' ' << temp / c << '\n';
                         find = true;
                     }
                 }

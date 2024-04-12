@@ -26,7 +26,7 @@ void f(int n, int fst, int end, int tmp)
 {
     if(!n) return;
     f(n-1, fst, tmp, end);
-    cout << fst << ' ' << end << "\n";
+    cout << fst << ' ' << end << '\n';
     f(n-1, tmp, end, fst);
 }
 
@@ -34,6 +34,6 @@ signed main()
 {
     ShiYu;
     int n; cin >> n;
-    cout << fpow(n) - 1 << "\n";
+    cout << fpow(n) - 1 << '\n';
     f(n,1,3,2);
 }

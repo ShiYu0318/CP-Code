@@ -18,7 +18,7 @@ signed main()
     int t,n,x,c=1; 
     while(cin >> t && t)
     {
-        cout << "Scenario #" << c << "\n"; ++c;
+        cout << "Scenario #" << c << '\n'; ++c;
         map<int,queue<int>> mq;
         vector<set<int>> vs(t);
         RPT(i,t)

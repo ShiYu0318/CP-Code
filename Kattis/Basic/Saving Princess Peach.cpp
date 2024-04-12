@@ -25,7 +25,7 @@ signed main()
             ans++;
             continue;
         }
-        cout << i << "\n";
+        cout << i << '\n';
         
     }
     cout << "Mario got " << ans << " of the dangerous obstacles.\n";

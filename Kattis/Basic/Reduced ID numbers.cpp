@@ -6,7 +6,7 @@ int main()
 {
 	int n;
 	cin >> n;
-	if(n==1) cout << 1 << "\n";	
+	if(n==1) cout << 1 << '\n';	
 	else
 	{
 		int s[n],m=1;
@@ -31,7 +31,7 @@ int main()
 			if(diff) break;
 			m++;
 		}
-		cout << m << "\n";
+		cout << m << '\n';
 	}
 	return 0;
 }

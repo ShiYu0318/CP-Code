@@ -9,19 +9,19 @@ int main()
 	switch (op)
 	{
 		case '+':
-			cout << a + b << "\n";
+			cout << a + b << '\n';
 			break;
 		case '-':
-			cout << a - b << "\n";
+			cout << a - b << '\n';
 			break;
 		case '*':
-			cout << a * b << "\n";
+			cout << a * b << '\n';
 			break;
 		case '/':
 			if (b == 0){
 				cout << "除法分母不能為0\n";
 			} else {
-				cout << (double)a / b << "\n";
+				cout << (double)a / b << '\n';
 			}
 			break;
 		default:

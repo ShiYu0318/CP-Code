@@ -13,5 +13,5 @@ int main()
 	else if(y2 == y3) y4 = y1;
 	else y4 = y2;
 	
-	cout << x4 << ' ' << y4 << "\n";
+	cout << x4 << ' ' << y4 << '\n';
 }

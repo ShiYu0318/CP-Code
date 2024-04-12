@@ -16,7 +16,7 @@ signed main()
         {
             if(a == -1 && b == -1)
             {
-                cout << ans1 << " x " << ans2 + y << "\n";
+                cout << ans1 << " x " << ans2 + y << '\n';
                 break;
             }
             if(x + a <= n)

@@ -17,7 +17,7 @@ signed main()
         
         if(t % f == 0)
         {
-            cout << t << "\n";
+            cout << t << '\n';
             f = -1;
         }
     }

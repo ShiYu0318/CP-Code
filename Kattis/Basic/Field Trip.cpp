@@ -14,7 +14,7 @@ signed main()
         v.push_back(t);
         sum += t;
     }
-    if(sum % 3 != 0) cout << -1 << "\n";
+    if(sum % 3 != 0) cout << -1 << '\n';
     else
     {
         sum /= 3;
@@ -34,8 +34,8 @@ signed main()
                 t = 0;
             }
         }
-        if(a == -1 || b == -1) cout << -1 << "\n";
-        else cout << a << ' ' << b << "\n";
+        if(a == -1 || b == -1) cout << -1 << '\n';
+        else cout << a << ' ' << b << '\n';
     }
 
 }

@@ -23,12 +23,12 @@ signed main()
         {
             if(s[i+1] == ')')
             {
-                cout << i << "\n";
+                cout << i << '\n';
                 ++i;
             }
             else if(s[i+1] == '-' && s[i+2] == ')')
             {
-                cout << i << "\n";
+                cout << i << '\n';
                 i += 2;
             }
         }

@@ -34,6 +34,6 @@ signed main()
 	if(!v.empty())
 	{
 		cout << v.size() << '\n';
-		FOR(i,v.size()) cout << v[i].first << ' ' << v[i].second << "\n";
+		FOR(i,v.size()) cout << v[i].first << ' ' << v[i].second << '\n';
 	}
 }

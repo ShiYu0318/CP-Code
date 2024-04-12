@@ -29,7 +29,7 @@ void solve()
                 }
             }
         }
-        cout << sum << "\n";
+        cout << sum << '\n';
     }
 }
 

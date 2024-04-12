@@ -14,6 +14,6 @@ int main()
 			cin >> a >> b;
 			sum += b - a;
 		}
-		cout << sum << "\n";
+		cout << sum << '\n';
 	}
 }

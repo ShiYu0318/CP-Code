@@ -41,5 +41,5 @@ signed main()
             ans = i;
         }
     }
-    cout << ans+1 << "\n";  
+    cout << ans+1 << '\n';  
 }

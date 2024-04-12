@@ -17,7 +17,7 @@ int main()
                 else if(s==l)
                 {
                     impossible = false;
-                    cout << i << ' ' << j << ' ' << k << "\n";
+                    cout << i << ' ' << j << ' ' << k << '\n';
                 }
             }
         }

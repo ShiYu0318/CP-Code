@@ -20,5 +20,5 @@ signed main()
         v.emplace_back(make_pair(sum,make_pair(a,b)));
     }
     sort(all(v));
-    cout << v[1].S.F << ' ' << v[1].S.S << "\n";
+    cout << v[1].S.F << ' ' << v[1].S.S << '\n';
 }

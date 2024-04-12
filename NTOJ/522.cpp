@@ -5,5 +5,5 @@ int main()
 {
 	int x;
 	cin >> x;
-	cout << x * x % 10 << "\n";
+	cout << x * x % 10 << '\n';
 }

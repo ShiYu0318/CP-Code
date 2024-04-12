@@ -14,5 +14,5 @@ signed main()
         }
         i++;
     }
-    cout << ans << ' ' << maxn << "\n";
+    cout << ans << ' ' << maxn << '\n';
 }

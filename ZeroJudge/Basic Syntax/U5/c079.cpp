@@ -14,6 +14,6 @@ int main()
 			n++;
 			sum++;
 		}
-		cout << sum << "\n";
+		cout << sum << '\n';
 	}
 }

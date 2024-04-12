@@ -5,5 +5,5 @@ int main()
 {
 	int x,y;
 	cin >> x >> y;
-	cout << "a: " << (x+y)/2 << ", b: "<< (x-y)/2 << "\n";
+	cout << "a: " << (x+y)/2 << ", b: "<< (x-y)/2 << '\n';
 }

@@ -17,6 +17,6 @@ signed main()
         else if(o == '*') q = (a * b) * (a * b);
         else q = (a % 2 ? (a + 1) / 2 : a / 2);
         p = q;
-        cout << p << "\n";
+        cout << p << '\n';
     }
 }

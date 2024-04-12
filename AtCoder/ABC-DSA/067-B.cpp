@@ -22,5 +22,5 @@ signed main()
     sort(all(v));
     int sum = 0;
     RPT(i,k) sum += v[i];
-    cout << sum << "\n";
+    cout << sum << '\n';
 }

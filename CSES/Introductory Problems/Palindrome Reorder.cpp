@@ -42,6 +42,6 @@ signed main()
         cout << ans;
         if(mid != -1) cout << (char)('A' + mid);
         reverse(all(ans));
-        cout << ans <<  "\n"; 
+        cout << ans <<  '\n'; 
     }
 }

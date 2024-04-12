@@ -40,5 +40,5 @@ signed main()
         ans += c;
         st.insert(c);
     }
-    cout << ans << "\n" << st.size() << '\n'; 
+    cout << ans << '\n' << st.size() << '\n'; 
 }

@@ -14,5 +14,5 @@ signed main()
 		}
 		else s[i] = char(s[i] - n);
 	}
-	cout << s << "\n";
+	cout << s << '\n';
 }

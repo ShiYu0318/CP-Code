@@ -11,7 +11,7 @@ int main()
 	}
 	for(int i = n; i > 0; i--)
 	{
-		if (a[i] == 0) cout << "No. " << i << "\n";
+		if (a[i] == 0) cout << "No. " << i << '\n';
 	}
 	return 0;
 }

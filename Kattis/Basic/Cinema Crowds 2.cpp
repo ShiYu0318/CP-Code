@@ -11,5 +11,5 @@ signed main()
         if(sum + t > n) break;
         sum += t;
     }
-    cout << m+1 << "\n";
+    cout << m+1 << '\n';
 }

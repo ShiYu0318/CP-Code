@@ -19,5 +19,5 @@ signed main()
         sum += a[n / 2];
     }
     FOR(i,s,n) sum += a[i] * 2;
-    cout << sum << "\n";
+    cout << sum << '\n';
 }

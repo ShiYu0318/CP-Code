@@ -8,7 +8,7 @@ signed main()
 	ShiYu;
 	int n;
 	cin >> n;
-	if(n % 5 == 0) cout << n << "\n";
+	if(n % 5 == 0) cout << n << '\n';
 	else
 	{
 		if(abs(5 * (n / 5) - n) < (5 * (n / 5 + 1) - n)) cout << 5 * (n / 5) << '\n';

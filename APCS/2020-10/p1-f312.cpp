@@ -18,5 +18,5 @@ signed main()
         y = a2 * j * j + b2 * j + c2;
         maxn = max(maxn, x + y);
     }
-    cout << maxn << "\n";
+    cout << maxn << '\n';
 }

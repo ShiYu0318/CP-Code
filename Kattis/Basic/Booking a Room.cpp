@@ -30,5 +30,5 @@ signed main()
         } 
     }
     if(ans) cout << "too late\n";
-    else cout << i+1 << "\n";
+    else cout << i+1 << '\n';
 }

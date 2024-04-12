@@ -7,7 +7,7 @@ int main()
 	cin >> m;
 	while (cin >> n && n)
 	{
-		if (n % m == 0) cout << n / m << "\n";
+		if (n % m == 0) cout << n / m << '\n';
 		else cout << m - (n % m) << '\n';
 	}
 }

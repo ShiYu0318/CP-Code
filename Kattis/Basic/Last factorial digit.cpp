@@ -10,6 +10,6 @@ int main()
 		cin >> n;
 		ans = 1;
 		for(int i=2;i<=n;i++) ans *= i;
-		cout << ans % 10 << "\n";
+		cout << ans % 10 << '\n';
 	}
 }

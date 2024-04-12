@@ -5,5 +5,5 @@ int main()
 {
 	int p,q;
 	cin >> p >> q;
-	cout << (p+q)/2 << "\n";
+	cout << (p+q)/2 << '\n';
 }

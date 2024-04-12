@@ -34,5 +34,5 @@ signed main()
             break;
         }
     }
-    cout << b - a + 1 << "\n";
+    cout << b - a + 1 << '\n';
 }

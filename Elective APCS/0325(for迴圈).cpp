@@ -16,7 +16,7 @@ int main()
 	int a,b,sum=0;
 	cin >> a >> b;
 	for(i=a;i<=b;i++) sum += i;
-	cout << a << "+ ... +" << b << " = " << sum << "\n";
+	cout << a << "+ ... +" << b << " = " << sum << '\n';
 	
 	sum = 0;
 	for(i=a;i<=b;i++) sum += pow(i,2);

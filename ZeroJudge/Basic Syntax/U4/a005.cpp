@@ -13,7 +13,7 @@ int main()
 			cout << n[i] << ' ';
 		}
 		int d = n[1] - n[0];
-		if (n[2] - n[1] == d && n[3] - n[2] == d) cout << n[3] + d << "\n";
+		if (n[2] - n[1] == d && n[3] - n[2] == d) cout << n[3] + d << '\n';
 		else cout << n[3] * (n[1] / n[0]) << '\n';
 	}
 }

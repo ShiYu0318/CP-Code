@@ -39,5 +39,5 @@ signed main()
         else ++times;
         v = d;
     }
-    cout << times << ' ' << next << "\n"; 
+    cout << times << ' ' << next << '\n'; 
 }

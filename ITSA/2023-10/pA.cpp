@@ -29,12 +29,12 @@ signed main(void)
                 }
                 else break;
             }
-            // cout << c << "\n";
+            // cout << c << '\n';
             if(c > 2) a[9-c]++;
         }
     }
     FOR(i,7) cout << a[i] << ' '; 
     int sum = 0;
     FOR(i,7) sum += a[i] * m[i];
-    cout << sum << "\n";
+    cout << sum << '\n';
 }

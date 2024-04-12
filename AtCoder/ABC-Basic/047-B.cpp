@@ -13,7 +13,7 @@ signed main()
         else if(t == 3) c = max(c,y);
         else d = min(d,y);
     }
-    if(a >= b || c >= d) cout << 0 << "\n";
+    if(a >= b || c >= d) cout << 0 << '\n';
     else cout << (b - a) * (d - c) << '\n';
     
 }

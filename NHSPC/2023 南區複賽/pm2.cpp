@@ -49,7 +49,7 @@ signed main(void)
                 int sum = v[i].first * x + v[i].second;
                 if(sum > maxn) maxn = sum;
             }
-            cout << maxn << "\n";
+            cout << maxn << '\n';
         }
     }
 }

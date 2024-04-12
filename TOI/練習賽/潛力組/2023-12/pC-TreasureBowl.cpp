@@ -18,7 +18,7 @@
 #define min(a, b) (a < b ? a : b)
 #define remax(a, b) a = max(a,b)
 #define remin(a, b) a = min(a,b)
-#define coutE(x) cout << x << "\n"
+#define coutE(x) cout << x << '\n'
 #define coutS(x) cout << x << ' '
 #define dbg(x) cerr << #x << "=" << x << '\n';
 #define FOR(i,a,b) for(int i=a;i<b;++i)
@@ -62,7 +62,7 @@ void solve()
 		}
 		remax(maxn,sum);
 	}
-	cout << maxn << "\n";
+	cout << maxn << '\n';
 }
 
 signed main(void)

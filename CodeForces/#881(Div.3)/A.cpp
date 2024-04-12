@@ -13,6 +13,6 @@ signed main()
 		sort(a,a+len);
 		int sum=0;
 		for(int i=0;i<len/2;i++) sum += a[len-i-1] - a[i];
-		cout << sum << "\n";
+		cout << sum << '\n';
 	}
 }

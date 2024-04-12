@@ -29,7 +29,7 @@ signed main()
     {
         int avg = sum / 3;
         sort(all(v));
-        output(v); cout << '\n' <<  sum << ' ' << avg << "\n";
+        output(v); cout << '\n' <<  sum << ' ' << avg << '\n';
         int a=avg,b=avg,c=avg;
         RPT(i,v.size())
         {
@@ -37,7 +37,7 @@ signed main()
             else if(b >= v[i]) b -= v[i];
             else c -= v[i];
         }
-        cout << a << ' ' << b << ' ' << c << "\n";
+        cout << a << ' ' << b << ' ' << c << '\n';
         YN(a == b && b == c && a == 0);
     }
 }

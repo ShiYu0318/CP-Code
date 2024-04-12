@@ -35,6 +35,6 @@ signed main()
                 break;
             }
         }
-        cout << l << "\n";
+        cout << l << '\n';
     }
 }

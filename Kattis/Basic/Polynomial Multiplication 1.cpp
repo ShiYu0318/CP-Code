@@ -35,7 +35,7 @@ signed main()
                 z[(a-i)+(b-j)] += x[i] * y[j];
             }
         }
-        cout << a + b << "\n";
+        cout << a + b << '\n';
         rFOR(i,a+b+1) cout << z[i] << ' ';
         cout << '\n';
     }

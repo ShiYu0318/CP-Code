@@ -14,5 +14,5 @@ signed main()
         else s = "0" + s;
         t /= 2;
     }
-    cout << s << "\n" << n << "\n";
+    cout << s << '\n' << n << '\n';
 }

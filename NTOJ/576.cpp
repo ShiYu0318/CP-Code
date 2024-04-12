@@ -10,5 +10,5 @@ int main()
 		n /= 10;
 		i++;
 	}
-	cout << i << "\n";
+	cout << i << '\n';
 }

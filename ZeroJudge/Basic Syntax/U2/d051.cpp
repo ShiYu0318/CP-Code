@@ -8,6 +8,6 @@ int main()
 	double t;
 	cin >> t;
 	// fixed 搭配 setprecision() 可指定小數位數
-	cout << fixed << setprecision(3) << (t - 32) * 5/9 << "\n";
+	cout << fixed << setprecision(3) << (t - 32) * 5/9 << '\n';
 	return 0;
 }

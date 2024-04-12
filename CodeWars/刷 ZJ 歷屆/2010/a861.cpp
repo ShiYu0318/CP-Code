@@ -6,6 +6,6 @@ signed main()
     int h,w; 
     while(cin >> h >> w)
     {
-        cout << (h + w) * 2 << "\n";
+        cout << (h + w) * 2 << '\n';
     }
 }

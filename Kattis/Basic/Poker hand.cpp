@@ -21,5 +21,5 @@ signed main()
 	{
 		if(t[i] > max) max = t[i];
 	}
-	cout << max << "\n";
+	cout << max << '\n';
 }

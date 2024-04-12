@@ -20,7 +20,7 @@ int main()
 			break;
 		}
 	}
-	cout << n << "\n";
+	cout << n << '\n';
 	
 	for(int i=d;i>=0;i--)
 	{
@@ -37,5 +37,5 @@ int main()
 			break;
 		}
 	}
-	cout << m << "\n";
+	cout << m << '\n';
 }

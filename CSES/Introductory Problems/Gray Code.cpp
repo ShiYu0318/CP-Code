@@ -22,5 +22,5 @@ signed main()
         RPT(j,i) ans[j] = '0' + ans[j];
         FOR(j,i,i*2) ans[j] = '1' + ans[j];
     }
-    for(auto &i : ans) cout << i << "\n";
+    for(auto &i : ans) cout << i << '\n';
 }

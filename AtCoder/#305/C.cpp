@@ -39,5 +39,5 @@ signed main()
 			break;
 		}
 	}
-	cout << l+1 << ' ' << i+1 << "\n";
+	cout << l+1 << ' ' << i+1 << '\n';
 }

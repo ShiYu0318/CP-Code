@@ -22,7 +22,7 @@ signed main()
                 }
             }
         }
-        cout << sum << "\n";
+        cout << sum << '\n';
     }
 
 }

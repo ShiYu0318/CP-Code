@@ -21,5 +21,5 @@ signed main()
 		s[x] = '.';
 		s[x+1] = 'P';
 	}
-	cout << s << "\n";
+	cout << s << '\n';
 }

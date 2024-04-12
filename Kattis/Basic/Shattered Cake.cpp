@@ -11,5 +11,5 @@ signed main()
         cin >> w >> l;
         sum += w * l;
     }
-    cout << sum / n << "\n";
+    cout << sum / n << '\n';
 }

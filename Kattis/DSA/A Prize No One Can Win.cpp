@@ -21,11 +21,11 @@ signed main()
     vector<int> v(n); input(v);
     if(n == 1) 
     {
-        cout << 1 << "\n";
+        cout << 1 << '\n';
         return 0;
     }
     sort(all(v));
     int i=1;
     for(;v[i-1] + v[i] <= x && i < n;++i);
-    cout << i << "\n";
+    cout << i << '\n';
 }

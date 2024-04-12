@@ -20,6 +20,6 @@ signed main()
     }
     FORn(i,3)
     {
-        if(CUP[i]) cout << i+1 << "\n"; 
+        if(CUP[i]) cout << i+1 << '\n'; 
     }
 }

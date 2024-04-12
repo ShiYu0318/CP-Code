@@ -24,5 +24,5 @@ signed main(void)
             mint = s[i];
         }
     }
-    cout << n << ' ' << mint << "\n";
+    cout << n << ' ' << mint << '\n';
 }

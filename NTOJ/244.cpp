@@ -11,5 +11,5 @@ signed main()
 		if(s[i] >= 'A' && s[i] <= 'Z') s[i] = char(s[i] + ('a'-'A'));
 		else s[i] = char(s[i] - ('a'-'A'));
 	}
-	cout << s << "\n";
+	cout << s << '\n';
 }

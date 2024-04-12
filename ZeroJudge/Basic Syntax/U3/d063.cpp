@@ -5,5 +5,5 @@ int main()
 {
 	int n;
 	cin >> n;
-	cout << 1 - n << "\n";
+	cout << 1 - n << '\n';
 }

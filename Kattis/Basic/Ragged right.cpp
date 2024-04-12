@@ -17,5 +17,5 @@ int main()
 	{
 		sum += pow(max - ls[j],2);
 	}
-	cout << sum << "\n";
+	cout << sum << '\n';
 }

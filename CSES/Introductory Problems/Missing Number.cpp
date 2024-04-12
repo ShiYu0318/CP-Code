@@ -16,7 +16,7 @@ signed main()
 	{
 		if(a[i] != i+1) break;
 	}
-	cout << i+1 << "\n";
+	cout << i+1 << '\n';
 }
 
 /*
@@ -28,5 +28,5 @@ while(n--)
 	cin> >> x;
 	sum -= x;
 }
-cout << sum << "\n";
+cout << sum << '\n';
 */

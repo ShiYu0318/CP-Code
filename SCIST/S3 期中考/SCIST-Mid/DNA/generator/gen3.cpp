@@ -22,13 +22,13 @@ int main(int argc, char* argv[])
             g2+=key[n];
         }
     }
-    cout<<g1<<"\n"<<g2<<"\n";
+    cout<<g1<<'\n'<<g2<<'\n';
     int q = MAXQ-5;
-    cout<<q<<"\n";
+    cout<<q<<'\n';
     while(q--){
         int l = rnd.next(1,ll-90000);
         int r = rnd.next(ll-200,ll);
-        cout<<l<<' '<<r<<"\n";
+        cout<<l<<' '<<r<<'\n';
     }
     return 0;
 }

@@ -13,5 +13,5 @@ int main()
 			sum += 0 - n;
 		}
 	}
-	cout << sum << "\n";
+	cout << sum << '\n';
 }

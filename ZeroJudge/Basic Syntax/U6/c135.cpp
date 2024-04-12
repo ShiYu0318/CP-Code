@@ -36,7 +36,7 @@ void f2(int a, int b)
         RPT(j,n) ts += ' ';
         ts += LC[k][b];
     }
-    RPT(i,n) cout << ts << "\n";
+    RPT(i,n) cout << ts << '\n';
 }
 
 signed main()

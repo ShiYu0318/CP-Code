@@ -34,7 +34,7 @@ signed main(void)
         else
         {
             cin >> x;
-            cout << v[(v.size()-x)].first << ' ' << v[(v.size()-x)].second << "\n";
+            cout << v[(v.size()-x)].first << ' ' << v[(v.size()-x)].second << '\n';
         }
 
     }

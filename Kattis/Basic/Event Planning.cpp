@@ -24,7 +24,7 @@ signed main()
             }
         }
     }
-    if(k) cout << minn << "\n";
+    if(k) cout << minn << '\n';
     else cout << "stay home\n";
 
     

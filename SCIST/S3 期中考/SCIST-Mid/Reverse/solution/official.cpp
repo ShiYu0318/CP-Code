@@ -46,5 +46,5 @@ int main(){
 	s+=' ';
 	recur(0,0,0);
 	for(int i=0;i<ed;i++)cout<<ary[i]<<' ';
-	cout<<"\n";
+	cout<<'\n';
 }	

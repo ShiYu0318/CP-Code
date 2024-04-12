@@ -15,6 +15,6 @@ int main()
 			if (x < min) min = x;
 			if (x > max) max = x;
 		}
-		cout << (max - min) * 2 << "\n";
+		cout << (max - min) * 2 << '\n';
 	}
 }

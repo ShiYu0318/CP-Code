@@ -39,5 +39,5 @@ signed main()
 		}
 		maxn = max(maxn,abs(sum));
 	}
-	cout << maxn * 2 << "\n";
+	cout << maxn * 2 << '\n';
 }

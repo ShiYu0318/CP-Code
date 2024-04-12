@@ -5,6 +5,6 @@ int main()
 {
 	int d;
 	cin >> d;
-	cout << d - 1911 << "\n";
+	cout << d - 1911 << '\n';
 	return 0;
 }

@@ -11,5 +11,5 @@ signed main()
     {
         if(s[i] == 'o') p++;
     }
-    cout << 700 + 100 * p << "\n";
+    cout << 700 + 100 * p << '\n';
 }

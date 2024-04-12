@@ -21,7 +21,7 @@ int main()
     {
         s = sum / 2;
         A = sqrt(s * (s-l[0]) * (s-l[1]) * (s-l[2]));
-        cout << "面積 = " << A << "\n";
+        cout << "面積 = " << A << '\n';
 
         for(int i=0;i<3;i++) l[i] *= l[i];
         if(l[0] + l[1] < l[2]) cout << "鈍角三角形\n";

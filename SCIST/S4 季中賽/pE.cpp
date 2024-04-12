@@ -17,7 +17,7 @@
 #define min(a, b) (a < b ? a : b)
 #define remax(a, b) a = (a > b ? a : b)
 #define remin(a, b) a = (a < b ? a : b)
-#define coutE(x) cout << x << "\n"
+#define coutE(x) cout << x << '\n'
 #define coutS(x) cout << x << ' '
 #define dbg(x) cerr << #x << "=" << x << '\n';
 #define FOR(i,a,b) for(int i=a;i<b;++i)
@@ -55,10 +55,10 @@ bool isPrime(int n) {
 void solve()
 {
     int n; cin >> n;
-    if(n == 1) cout << 1 << "\n";
-    else if(n == 4) cout << 2 << "\n";
-    else if(isPrime(n)) cout << n-1 << "\n";
-    else cout << 0 << "\n";
+    if(n == 1) cout << 1 << '\n';
+    else if(n == 4) cout << 2 << '\n';
+    else if(isPrime(n)) cout << n-1 << '\n';
+    else cout << 0 << '\n';
 }
 
 signed main(void)

@@ -20,5 +20,5 @@ signed main(void) {
             }
         }
     }
-    cout << x << ' ' << y << ' ' << min << "\n";
+    cout << x << ' ' << y << ' ' << min << '\n';
 }

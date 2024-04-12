@@ -3,7 +3,7 @@ using namespace std;
 #define int long long
 #define ll long long
 #define FOR(i,a,b) for(int i=a; i<b; ++i)
-#define ShiYu; ios::sync_with_stdio(0),cin.tie(0),cout.tie(0)
+#define ShiYu ios::sync_with_stdio(0),cin.tie(0),cout.tie(0)
 constexpr int mod = 1e9 + 7;
 
 ll fpow(ll i, int j) 

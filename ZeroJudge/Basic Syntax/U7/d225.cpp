@@ -1,7 +1,7 @@
 // 函式 GCD
 #include <bits/stdc++.h>
 using namespace std;
-#define ShiYu; ios_base::sync_with_stdio(0); cin.tie(0)
+#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0)
 #define int long long
 
 int GCD(int a, int b)

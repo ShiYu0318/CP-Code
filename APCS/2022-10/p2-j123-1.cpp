@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define dbg(x) cout << #x << "=" << x << "\n";
+#define dbg(x) cout << #x << "=" << x << '\n';
 #define F first
 #define S second
 

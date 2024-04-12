@@ -17,5 +17,5 @@ int main()
 		}
 		x = a;
 	}
-	cout << x << "\n";
+	cout << x << '\n';
 }

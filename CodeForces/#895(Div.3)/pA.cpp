@@ -11,7 +11,7 @@
 #define mp(a,b) mack_pair(a,b)
 #define FOR(i,a,b) for(int i=a;i<b;++i)
 #define rFOR(i,a,b) for(int i=a-1;i>=b;--i)
-#define coutE(x) cout << x << "\n";
+#define coutE(x) cout << x << '\n';
 #define coutS(x) cout << x << ' ';
 #define input(x) for(auto &i : x) cin >> i
 #define output(x) for(auto &i : x) coutS(i)

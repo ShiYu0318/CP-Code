@@ -10,7 +10,7 @@
 #define FOR(i,a,b) for(int i=a;i<b;++i)
 #define rFOR(i,a,b) for(int i=a-1;i>=b;--i)
 #define nl cout << '\n';
-#define coutE(x) cout << x << "\n";
+#define coutE(x) cout << x << '\n';
 #define coutS(x) cout << x << ' ';
 #define YN(x) cout << (x ? "NO" : "YES") << '\n';
 #define SET(n) cout << fixed << setprecision(n)

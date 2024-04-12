@@ -10,9 +10,6 @@ using namespace std;
 #define nl cout << '\n'
 #define SZ(x) ((int)x.size())
 #define all(x) x.begin(), x.end()
-#define sortall(x) sort(all(x))
-#define remax(a,b) a = (a > b ? a : b)
-#define remin(a,b) a = (a < b ? a : b)
 #define RPT(i,n) for(int i=0; i<n; ++i)
 #define FOR(i,a,b) for(int i=a; i<b; ++i)
 #define rFOR(i,n) for(int i=n-1; i>=0; --i)

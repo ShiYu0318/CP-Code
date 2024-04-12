@@ -1,18 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ShiYu ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
-#define FOR(i,a,b) for(int i=a;i<b;++i)
-#define rFOR(i,n) for(int i=n-1;i>=0;--i)
-#define RPT(i,n) FOR(i,0,n)
-#define input(x) for(auto &i : x) cin >> i
-#define output(x) for(auto i : x) cout << i << ' '
-#define Yn(x) cout << (x ? "Yes" : "No") << '\n'
-#define all(x) x.begin(),x.end()
 #define int long long
+#define vi vector<int>
 #define pii pair<int,int>
 #define F first
 #define S second
-#define vi vector<int>
+#define EB emplace_back
+#define nl cout << '\n'
+#define SZ(x) ((int)x.size())
+#define all(x) x.begin(), x.end()
+#define RPT(i,n) for(int i=0; i<n; ++i)
+#define FOR(i,a,b) for(int i=a; i<b; ++i)
+#define rFOR(i,n) for(int i=n-1; i>=0; --i)
+#define input(x) for(auto &i:x) cin >> i
+#define output(x) for(auto i:x) cout << i << ' '; nl
+#define outputN(x,n) RPT(i,n) cout << x[i] << " \n"[i == n-1];
+#define Yn(x) cout << (x ? "Yes" : "No") << '\n';
 
 // 習題 Q-2-5. 快速計算費式數列第 n 項
 // 矩陣快速冪
@@ -20,7 +24,7 @@ using namespace std;
 const int p = 1e9+7;
 vi mt = {1,1,1,0};
 
-vi matrix_multi(vi a, vi b)
+vi multi(vi a, vi b)
 {
     return {
         (a[0]*b[0] + a[1]*b[2]) % p,
@@ -33,8 +37,8 @@ vi matrix_multi(vi a, vi b)
 vi fpow(int n)
 {
     if(n == 0 || n == 1) return mt;
-    vi t = fpow(n/2), tt = matrix_multi(t,t);
-    return (n & 1 ? matrix_multi(mt, tt) : tt);
+    vi t = fpow(n/2), tt = multi(t,t);
+    return (n & 1 ? multi(mt, tt) : tt);
 }
 
 signed main()
@@ -44,6 +48,6 @@ signed main()
     while(cin >> n && n != -1)
     {
         vi m = fpow(n-1);
-        cout << m[0] << '\n';
+        cout << m[0]; nl;
     }
 }

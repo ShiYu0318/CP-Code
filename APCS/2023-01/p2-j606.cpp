@@ -24,6 +24,6 @@ int main()
 		{
 			cout << n[j][i];
 		}
-		cout << "\n";
+		cout << '\n';
 	}
 }

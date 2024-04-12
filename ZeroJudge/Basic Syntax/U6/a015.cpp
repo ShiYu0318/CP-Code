@@ -20,7 +20,7 @@ int main()
 			{
 				cout << a[j][i] << ' ';
 			}
-			cout << "\n";
+			cout << '\n';
 		}
 	}
 	return 0;

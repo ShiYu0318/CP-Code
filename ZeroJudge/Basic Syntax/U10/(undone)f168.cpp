@@ -29,7 +29,7 @@ signed main()
     {
         int avg = sum / 3;
         sort(all(v));
-        output(v); cout << "\n" <<  sum << ' ' << avg << "\n";
+        output(v); cout << '\n' <<  sum << ' ' << avg << "\n";
         int a=avg,b=avg,c=avg;
         RPT(i,v.size())
         {

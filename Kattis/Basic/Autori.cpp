@@ -9,5 +9,5 @@ int main()
 	{
 		if(s[i] >= 'A' && s[i]<= 'Z') cout << s[i];
 	}
-	cout << "\n";
+	cout << '\n';
 }

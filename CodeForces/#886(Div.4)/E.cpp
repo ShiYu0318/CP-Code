@@ -27,7 +27,7 @@ signed main()
                     break;
                 }
             }
-            cout << "\n";
+            cout << '\n';
             if(over) break;
             if(sum == c)
             {

@@ -33,6 +33,6 @@ signed main()
                 }
             } else p = 0;
         }
-        cout << "\n";
+        cout << '\n';
     }
 }

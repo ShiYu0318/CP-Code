@@ -25,6 +25,6 @@ int main()
 			else if(b==0) b++;
 		}
 		if(c==k) c = 0;
-		cout << "\n";
+		cout << '\n';
 	}
 }

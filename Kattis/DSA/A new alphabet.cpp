@@ -12,5 +12,5 @@ signed main()
 		else if(s[i] >= 'a' && s[i] <= 'z') cout << n[s[i] - 'a'];
 		else cout << s[i];
 	}
-	cout << "\n";
+	cout << '\n';
 }

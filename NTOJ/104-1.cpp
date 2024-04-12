@@ -8,6 +8,6 @@ signed main()
     {
         cout << setw(space) << setfill(' ') << ' ';
         cout << setw(star) << setfill('*') << ' ';
-        cout << "\n";
+        cout << '\n';
     }
 }

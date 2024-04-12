@@ -9,6 +9,6 @@ signed main(void)
     {
         int n; cin >> n;
         FOR(i,n) cout << 2 * i + 1 << ' ';
-        cout << "\n";
+        cout << '\n';
     }
 }

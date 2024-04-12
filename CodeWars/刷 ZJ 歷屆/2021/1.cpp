@@ -11,7 +11,7 @@ signed main()
         double bmi = w / (h * h);
         cout << (18.5 <= bmi && bmi <= 24 ? "H" : "A") << ' ';
         printf("%.2f",bmi);
-        cout << "\n";
+        cout << '\n';
     }
     return 0;
 }

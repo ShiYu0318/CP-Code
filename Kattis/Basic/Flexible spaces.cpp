@@ -27,5 +27,5 @@ int main()
 	{
 		if(c[i] == 1) cout << i << ' ';
 	}
-	cout << "\n";
+	cout << '\n';
 }

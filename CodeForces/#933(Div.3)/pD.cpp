@@ -34,7 +34,7 @@
 #define isupper(x) ('A' >= (x) && (x) <= 'Z')
 #define isletter(x) (islower(x) || isupper(x))
 #define SET(n) cout << fixed << setprecision(n)
-#define nl(n) RPT(i,n) cout << "\n"
+#define nl(n) RPT(i,n) cout << '\n'
 const double eps = 1e-8;
 using namespace std;
 
@@ -88,7 +88,7 @@ void solve()
     f(x,0);
     // cout << st.size() << "\n";
     // for(auto i:st) cout << i << ' ';
-    cout << "\n";
+    cout << '\n';
     st.clear();
     v.clear();
     used.clear();

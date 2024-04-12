@@ -14,7 +14,7 @@ signed main()
         for(int i=r-1;i>=0;--i)
         {
             for(int j=c-1;j>=0;--j) cout << tb[i][j];
-            cout << "\n";
+            cout << '\n';
         }
     }
 }

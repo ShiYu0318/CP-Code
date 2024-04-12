@@ -30,6 +30,6 @@ signed main()
             }
             YN(stk.empty())
         }
-        cout << "\n";
+        cout << '\n';
     }
 }

@@ -24,14 +24,14 @@ int main()
 				break;
 			}
 		}
-		//cout << "\n";
+		//cout << '\n';
 		if(!h)
 		{
 			ans++;
 			c[ans-1] = dif[i];
 		}
 		//for(int j=0;j<ans;++j) cout << c[j] << ' ';
-		//cout << "\n";
+		//cout << '\n';
 	}
 	cout << ans << "\n";
 }

@@ -67,6 +67,6 @@ signed main()
                 }
             }
         }
-        cout << "\n";
+        cout << '\n';
     }
 }

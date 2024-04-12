@@ -37,6 +37,6 @@ signed main()
         }
         cout << a + b << "\n";
         rFOR(i,a+b+1) cout << z[i] << ' ';
-        cout << "\n";
+        cout << '\n';
     }
 }

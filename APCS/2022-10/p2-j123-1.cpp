@@ -36,7 +36,7 @@ void putinto(int t,int y,int top,int RL)
     for(int i=0;i<r;++i)
     {
         for(int j=0;j<c;++j) cout << tb[i][j];
-        cout << "\n";
+        cout << '\n';
     }
     for(int i=0;i<r;++i) cout << LL[i] << ' ';
     cout << "\n\n";

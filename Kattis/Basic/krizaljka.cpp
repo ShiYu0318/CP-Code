@@ -30,6 +30,6 @@ signed main()
 			else if(j == x) cout << b[i];
 			else cout << '.';
 		}
-		cout << "\n";
+		cout << '\n';
 	}
 }

@@ -23,6 +23,6 @@ signed main()
         }
         maxn = max(maxn,t);
     }
-    cout << "\n" << maxn << "\n";
+    cout << '\n' << maxn << "\n";
     return 0;
 }

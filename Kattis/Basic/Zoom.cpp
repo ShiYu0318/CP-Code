@@ -15,6 +15,6 @@ signed main()
         if(i % k == 0) cout << t << ' ';
         i++;
     }
-    cout << "\n";
+    cout << '\n';
     
 }

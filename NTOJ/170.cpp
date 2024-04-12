@@ -13,7 +13,7 @@ void star(int n)
 		{
 			cout << "*";
 		}
-		cout << "\n";
+		cout << '\n';
 	}
 }
 

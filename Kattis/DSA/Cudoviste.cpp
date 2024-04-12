@@ -36,7 +36,7 @@ signed main()
             if(cancel) continue;
             else ans[tmp]++; // 用 ans 把這格壓到幾台車存下來
         }
-        cout << "\n";
+        cout << '\n';
     }
     FOR(i,0,5) cout << ans[i] << "\n";
 }

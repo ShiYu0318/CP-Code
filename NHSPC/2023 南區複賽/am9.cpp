@@ -31,7 +31,7 @@ signed main()
         {
             cout << v[i][j] << ' ';
         }
-        cout << "\n";
+        cout << '\n';
     }
     cout << v.size() << "\n";
 }

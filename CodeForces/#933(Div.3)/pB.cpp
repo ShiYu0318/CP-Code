@@ -34,7 +34,7 @@
 #define isupper(x) ('A' >= (x) && (x) <= 'Z')
 #define isletter(x) (islower(x) || isupper(x))
 #define SET(n) cout << fixed << setprecision(n)
-#define nl(n) RPT(i,n) cout << "\n"
+#define nl(n) RPT(i,n) cout << '\n'
 const double eps = 1e-8;
 using namespace std;
 
@@ -61,7 +61,7 @@ void solve()
             v[i] -= v[i-2];
             v[i-2] = 0;
         }
-        // output(v); cout << "\n";
+        // output(v); cout << '\n';
     }
     if(v[n-1] != 0 || v[n-2] != 0) ans = false;
     YN(ans);

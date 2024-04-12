@@ -15,19 +15,19 @@ int main()
 		{
 			for(j=n-i;j>0;j--) cout << ' ';
 			for(j=0;j<2*i-1;j++) cout << "*";
-			cout << "\n";
+			cout << '\n';
 		}
 		
 		// ***********
 		//  *********
 		// ***********
 		for(i=0;i<2*n-1;i++) cout << "*";
-		cout << "\n";
+		cout << '\n';
 		cout << ' ';
 		for(i=0;i<2*n-3;i++) cout << "*";
-		cout << "\n";
+		cout << '\n';
 		for(i=0;i<2*n-1;i++) cout << "*";
-		cout << "\n";
+		cout << '\n';
 		
 		// *****
 		//  ***
@@ -36,7 +36,7 @@ int main()
 		{
 			for(j=0;j<(n-i);j++) cout << ' ';
 			for(j=0;j<2*i-1;j++) cout << "*";
-			cout << "\n";
+			cout << '\n';
 		}
 		
 		

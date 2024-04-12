@@ -13,6 +13,6 @@ int main()
 		else m[2]++;
 	}
 	for(i = 0; i < 3; i++) cout << m[i] << ' ';
-	cout << "\n";
+	cout << '\n';
 	return 0;
 }

@@ -19,7 +19,7 @@
 #define f first
 #define s second
 #define pb push_back
-#define nl cout << "\n"
+#define nl cout << '\n'
 #define rt return
 #define ct continue
 #define bk break

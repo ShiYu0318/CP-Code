@@ -34,7 +34,7 @@
 #define isupper(x) ((x) >= 'A' && (x) <= 'Z')
 #define isletter(x) (islower(x) || isupper(x))
 #define SET(n) cout << fixed << setprecision(n)
-#define nl(n) RPT(i,n) cout << "\n"
+#define nl(n) RPT(i,n) cout << '\n'
 const double eps = 1e-8;
 using namespace std;
  
@@ -92,7 +92,7 @@ void solve()
             if(tb[i][j] == '0') cout << '.';
             else cout << '#';
         }
-        cout << "\n";
+        cout << '\n';
     }
 }
  

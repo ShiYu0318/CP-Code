@@ -43,7 +43,7 @@ signed main()
         }
         cout << "再一次？(y/n): ";
         cin >> try_again;
-        cout << "\n";
+        cout << '\n';
     }
     cout << "已結束程式，若要使用請執行\n";
 }

@@ -34,7 +34,7 @@ signed main()
                 cout << v[j];
                 if(j != v.size()-1) cout << ",";
             }
-            cout << "\n";
+            cout << '\n';
         }
         if(no_answer) cout << "No Answer\n";
     }

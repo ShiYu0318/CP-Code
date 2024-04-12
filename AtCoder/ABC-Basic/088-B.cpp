@@ -7,7 +7,7 @@ using namespace std;
 #define dbg(x) cout << #x << "=" << x << ' ';
 #define all(x) x.begin(),x.end()
 #define int long long
-#define nl cout << "\n";
+#define nl cout << '\n';
 #define Yn(x) cout << (x ? "Yes" : "No") << '\n';
 
 signed main()

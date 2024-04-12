@@ -35,9 +35,9 @@ signed main()
     {
         cout << "YES\n" << a.size() << "\n";
         for(auto &i : a) cout << i << ' ';
-        cout << "\n" << b.size() << "\n";
+        cout << '\n' << b.size() << "\n";
         for(auto &i : b) cout << i << ' ';
-        cout << "\n";
+        cout << '\n';
     }
     else cout << "NO\n";
     return 0;

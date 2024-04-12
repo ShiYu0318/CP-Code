@@ -31,7 +31,7 @@
 #define Yn(x) cout << (x ? "Yes" : "No") << '\n'
 #define yn(x) cout << (x ? "yes" : "no") << "\n"
 #define SET(n) cout << fixed << setprecision(n)
-#define nl(n) FORn(i,n) cout << "\n"
+#define nl(n) FORn(i,n) cout << '\n'
 using namespace std;
 
 //==========================================================================================

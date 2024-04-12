@@ -11,6 +11,6 @@ int main()
 			if (i % 7 == 0) continue;
 			else cout << i << ' ';
 		}
-		cout << "\n";
+		cout << '\n';
 	}
 }

@@ -15,6 +15,6 @@ int main()
 		{
 			cout << "*";
 		}
-		cout << "\n";
+		cout << '\n';
 	}
 }

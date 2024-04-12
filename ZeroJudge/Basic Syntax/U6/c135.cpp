@@ -22,7 +22,7 @@ void f1(int t)
         RPT(j,n) cout << LC[k][t];
         cout << ' ';
     }
-    cout << "\n";
+    cout << '\n';
 }
 
 void f2(int a, int b)
@@ -46,7 +46,7 @@ signed main()
     {
         if(n == 0 && s == 0) break;
         if(f) f = false; 
-        else cout << "\n";
+        else cout << '\n';
         sz = s.size();
         f1(0);
         f2(1,2);

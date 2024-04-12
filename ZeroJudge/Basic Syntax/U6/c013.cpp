@@ -18,7 +18,7 @@ int main()
 				{
 					cout << j;
 				}
-				cout << "\n";
+				cout << '\n';
 			}
 			for(j=a-1;j>0;j--)
 			{
@@ -26,9 +26,9 @@ int main()
 				{
 					cout << j;
 				}
-				cout << "\n";
+				cout << '\n';
 			}
-			cout << "\n";
+			cout << '\n';
 		}
 	}
 }

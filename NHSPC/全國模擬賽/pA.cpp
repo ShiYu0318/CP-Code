@@ -5,7 +5,7 @@ using namespace std;
 #define F first
 #define S second
 #define dbg(x) cout << #x << "=" << x << ' '
-#define nl cout << "\n"
+#define nl cout << '\n'
 
 signed main()
 {

@@ -32,7 +32,7 @@
 #define Yn(x) cout << (x ? "Yes" : "No") << '\n'
 #define yn(x) cout << (x ? "yes" : "no") << "\n"
 #define SET(n) cout << fixed << setprecision(n)
-#define nl(n) RPT(i,n) cout << "\n"
+#define nl(n) RPT(i,n) cout << '\n'
 const double eps = 1e-8;
 using namespace std;
 
@@ -99,7 +99,7 @@ void solve()
             if(i == n/2 && j == n/2) cout << "T ";
             else cout << tb[i][j] << ' ';
         }
-        cout << "\n";
+        cout << '\n';
     }
 }
 

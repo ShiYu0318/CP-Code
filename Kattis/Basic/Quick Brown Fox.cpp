@@ -39,7 +39,7 @@ signed main()
         {
             cout << "missing ";
             for(auto i:tst) cout << i;
-            cout << "\n";
+            cout << '\n';
         }
     }
     

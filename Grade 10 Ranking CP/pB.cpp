@@ -33,7 +33,7 @@ int main()
 				if(g[i] == 0) g[i] = 1;
 			}
 			for(int i=0;i<n;++i) cout << g[i] << ' ';
-			cout << "\n";
+			cout << '\n';
 		}
 	}
 }

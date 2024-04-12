@@ -30,5 +30,5 @@ int main()
 		j++;
 	}
 	for(int i=0;i<j;i++) cout << n[i];
-	cout << "\n";
+	cout << '\n';
 }

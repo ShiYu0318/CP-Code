@@ -31,7 +31,7 @@
 #define F first
 #define S second
 #define pb push_back
-#define nl cout << "\n"
+#define nl cout << '\n'
 const double eps = 1e-8;
 using namespace std;
 

@@ -54,5 +54,5 @@ signed main(void)
             minn = min(minn,n[i][j]);
         }
     }
-    cout << "\n" << minn << "\n" << maxn << "\n";
+    cout << '\n' << minn << "\n" << maxn << "\n";
 }

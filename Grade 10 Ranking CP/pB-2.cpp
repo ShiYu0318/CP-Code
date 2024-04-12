@@ -28,7 +28,7 @@ int main()
 			}
 	
 			//for(int i=0;i<n;++i) cout << g[i] << ' ';
-			//cout << "\n";
+			//cout << '\n';
 		}
 		else
 		{

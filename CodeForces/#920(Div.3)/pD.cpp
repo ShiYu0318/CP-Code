@@ -32,7 +32,7 @@
 #define Yn(x) cout << (x ? "Yes" : "No") << '\n'
 #define yn(x) cout << (x ? "yes" : "no") << "\n"
 #define SET(n) cout << fixed << setprecision(n)
-#define nl(n) RPT(i,n) cout << "\n"
+#define nl(n) RPT(i,n) cout << '\n'
 const double eps = 1e-8;
 using namespace std;
 
@@ -45,7 +45,7 @@ void solve()
     input(x); input(y);
     sort(all(x));sort(all(y));
 
-    output(x);cout << "\n";
+    output(x);cout << '\n';
     output(y);cout << "\n\n";
 
     int sz = y.size(), ans = 0;

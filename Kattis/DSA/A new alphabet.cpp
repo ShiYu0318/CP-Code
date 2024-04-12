@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 // 建表 注意：裡面的元素有'\'的話 要在'\'符號前面再用一個'\'把他跳脫出來
 signed main()

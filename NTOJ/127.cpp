@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 // 這題要注意不夠減要繞回Z
 signed main()

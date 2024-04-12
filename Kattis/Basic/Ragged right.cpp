@@ -1,5 +1,5 @@
 // 注意題目 是除了最後一行
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()

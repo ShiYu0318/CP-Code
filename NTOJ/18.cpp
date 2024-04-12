@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 // 思路：先篩選英文字母都變成小寫存進新的字串 再用迴圈判斷新的字串是否回文
 // 注意子母 大小寫也算相同

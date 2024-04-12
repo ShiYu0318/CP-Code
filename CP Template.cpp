@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 #define ShiYu ios_base::sync_with_stdio(0),cin.tie(0)
 #define int long long
 #define ull unsigned long long

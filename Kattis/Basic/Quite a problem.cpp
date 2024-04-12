@@ -1,5 +1,5 @@
 // 這題測資不會過的原因是因為 要先把文本都轉換成小寫 再找出有沒有problem
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()

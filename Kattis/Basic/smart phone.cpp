@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 // 思路：分別求出四個字串要成為目標字串需多少步驟存入陣列 再找最小值
 // 步驟算法：(字串長度-字串與目標字串相同的長度)+(目標字串長度-字串與目標字串相同的長度)

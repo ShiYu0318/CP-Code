@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 #define ShiYu ios_base::sync_with_stdio(0);cin.tie(0)
 #define FOR(i,a,b) for(int i=a;i<b;++i)

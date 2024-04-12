@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 #define int long long
 #define all(x) x.begin(), x.end()
 #define RPT(i,n) for(int i=0;i<n;++i)

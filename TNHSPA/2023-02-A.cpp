@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0)
+#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 /*
 思路：
 不想用條件慢慢判斷時分秒 所以直接把時間全部換成秒

@@ -5,7 +5,7 @@ using namespace std;
 
 signed main()
 {
-	IO;
+	ShiYu;
 	string y,p,ans;
 	cin >> y >> p;
 	char c = y[y.size()-1];

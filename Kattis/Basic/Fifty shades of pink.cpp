@@ -5,7 +5,7 @@ using namespace std;
 
 signed main()
 {
-	IO;
+	ShiYu;
 	int n,ans=0;
 	string s,c;
 	cin >> n;

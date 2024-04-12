@@ -5,7 +5,7 @@ using namespace std;
 
 signed main()
 {
-	IO;
+	ShiYu;
 	char c[7]={'A','B','C','D','E','F','G'},p,q;
 	int d[6]={3,1,4,1,5,9},a,b,ans=0;
 	cin >> p >> q;

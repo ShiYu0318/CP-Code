@@ -4,7 +4,7 @@ using namespace std;
 
 signed main()
 {
-    IO;
+    ShiYu;
     int t; cin >> t;
     while(t--)
     {

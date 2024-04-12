@@ -9,7 +9,7 @@ using namespace std;
 */
 signed main(void)
 {
-	IO;
+	ShiYu;
 	int ha,ma,sa,sumA; //資料A
 	int hb,mb,sb,sumB; //資料B
 	int x,y; //時間相差有可能是 x（大的時間-小的時間）或是 y（跨了半夜12點到隔天）

@@ -5,7 +5,7 @@ using namespace std;
 
 signed main()
 {
-	IO;
+	ShiYu;
 	int n;
 	cin >> n;
 	if(n % 5 == 0) cout << n << "\n";

@@ -5,7 +5,7 @@ using namespace std;
 
 signed main()
 {
-	IO;
+	ShiYu;
 	int n;
 	string a,b;
 	bool increasing=false,neither=false;

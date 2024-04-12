@@ -12,7 +12,7 @@
 #define rFOR(i,a,b) for(int i=a-1;i>=b;--i)
 #define coutE(x) cout << x << "\n";
 #define coutS(x) cout << x << ' ';
-#define YN(x) cout << (x ? "YES" : "NO") << "\n"
+#define YN(x) cout << (x ? "YES" : "NO") << '\n'
 #define SET(n) cout << fixed << setprecision(n)
 #define input(A) for(auto &x : A) cin >> x
 #define output(A) for(auto &x : A) coutS(x)

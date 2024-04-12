@@ -3,7 +3,7 @@
 #define FOR(i,n) for(int i=0;i<n;++i)
 #define input(x) for(auto &i : x) cin >> i
 #define output(x) for(auto &i : x) coutS(i)
-#define YN(x) cout << (x ? "YES" : "NO") << "\n"
+#define YN(x) cout << (x ? "YES" : "NO") << '\n'
 #define nl cout << '\n'
 using namespace std;
 

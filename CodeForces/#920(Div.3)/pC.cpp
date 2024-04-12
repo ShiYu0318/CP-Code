@@ -28,9 +28,9 @@
 #define inputn(x,n) RPT(i,n) cin >> x[i] 
 #define inputD(x,a,b) RPT(i,a) RPT(j,b) cin >> x[i][j]
 #define output(x) for(auto &i : x) dbg(i)
-#define YN(x) cout << (x ? "YES" : "NO") << "\n"
+#define YN(x) cout << (x ? "YES" : "NO") << '\n'
 #define Yn(x) cout << (x ? "Yes" : "No") << '\n'
-#define yn(x) cout << (x ? "yes" : "no") << "\n"
+#define yn(x) cout << (x ? "yes" : "no") << '\n'
 #define SET(n) cout << fixed << setprecision(n)
 #define nl(n) RPT(i,n) cout << '\n'
 const double eps = 1e-8;

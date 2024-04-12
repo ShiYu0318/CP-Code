@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define YN(x) cout << (x ? "YES" : "NO") << "\n"
+#define YN(x) cout << (x ? "YES" : "NO") << '\n'
 
 signed main(void)
 {

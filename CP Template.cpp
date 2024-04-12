@@ -31,14 +31,14 @@ using namespace std;
 #define FOR(i,a,b) for(int i=a; i<b; ++i)
 #define rFOR(i,n) for(int i=n-1; i>=0; --i)
 #define forit(it,x) for (auto it = x.begin(); it != x.end(); ++it)
-// IO ----------------------------------------------------------------------
+// I/O ----------------------------------------------------------------------
 #define sp << ' ' << 
 #define nl cout << '\n'
 #define coutS(x) cout << x << ' '
 #define coutN(x) cout << x << '\n'
 #define NL(n) RPT(i,n) cout << '\n'
 #define dbg(x) cerr << #x << " = " << x << '\n';
-// loop IO -----------------------------------------------------------------
+// loop I/O -----------------------------------------------------------------
 #define input(x) for(auto &i:x) cin >> i
 #define inputN(x,n) RPT(i,n) cin >> x[i]
 #define inputD(x,a,b) RPT(i,a) RPT(j,b) cin >> x[i][j]

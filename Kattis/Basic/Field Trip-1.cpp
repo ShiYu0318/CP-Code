@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
-#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 using namespace std;
+#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 #define FOR(i,a,b) for(int i=a;i<b;++i)
 // 此(前綴和做法 TLE
 int a[1000000],b[1000001];

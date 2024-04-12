@@ -1,10 +1,11 @@
 #include <bits/stdc++.h>
-#define IO ios_base::sync_with_stdio(0),cin.tie(0);
+#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0)
 #define int long long
 using namespace std;
 // not finish
 signed main()
 {
+    ShiYu;
     int t; cin >> t;
     while(t--)
     {

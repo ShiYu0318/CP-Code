@@ -17,5 +17,5 @@ signed main()
 {
     ShiYu;
     string s; cin >> s;
-    cout << (s[s.size()-1] == 'r' ? "er" : "ist") << "\n";
+    cout << (s[s.size()-1] == 'r' ? "er" : "ist") << '\n';
 }

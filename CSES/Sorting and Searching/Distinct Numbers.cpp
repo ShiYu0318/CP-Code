@@ -14,5 +14,5 @@ signed main()
         cin >> n;
         s.insert(n);
     }
-    cout << s.size() << "\n";
+    cout << s.size() << '\n';
 }

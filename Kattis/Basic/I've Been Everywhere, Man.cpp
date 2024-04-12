@@ -27,6 +27,6 @@ signed main()
             cin >> s;
             st.insert(s);
         }
-        cout << st.size() << "\n";
+        cout << st.size() << '\n';
     }
 }

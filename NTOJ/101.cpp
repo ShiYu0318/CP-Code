@@ -5,5 +5,5 @@ signed main()
 {
 	int n;
 	cin >> n;
-	cout << char('A'+ n - 1) << "\n";
+	cout << char('A'+ n - 1) << '\n';
 }

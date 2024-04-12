@@ -69,7 +69,7 @@ void solve()
         v.pb(vt);
     }
 
-    FORn(i,n) cout << get_cost(i,1) << "\n";
+    FORn(i,n) cout << get_cost(i,1) << '\n';
 }
 
 signed main(void)

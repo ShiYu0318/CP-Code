@@ -18,6 +18,6 @@ signed main()
         else if(a > max) max = a;
         sum += a;
     }
-    cout << (sum - min - max) / (n - 2) << "\n";
+    cout << (sum - min - max) / (n - 2) << '\n';
 	return 0;
 }

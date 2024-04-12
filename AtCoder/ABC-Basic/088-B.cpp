@@ -27,5 +27,5 @@ signed main()
 		s[now] += v[i];
 		now = 1 - now;
 	}
-	cout << abs(s[0] - s[1]) << "\n";
+	cout << abs(s[0] - s[1]) << '\n';
 }

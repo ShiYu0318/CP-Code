@@ -28,5 +28,5 @@ signed main()
         }
         else st.insert(s[i]);
     }
-    cout << (ans ? 1 : 0) << "\n";
+    cout << (ans ? 1 : 0) << '\n';
 }

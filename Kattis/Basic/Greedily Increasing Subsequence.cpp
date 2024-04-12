@@ -16,7 +16,7 @@ signed main()
             maxn = n;
         }
     }
-    cout << v.size() << "\n";
+    cout << v.size() << '\n';
     FOR(i,v.size()) cout << v[i] << ' ';
     return 0;
 }

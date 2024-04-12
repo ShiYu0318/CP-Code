@@ -33,9 +33,9 @@ signed main()
     }
     if(asum == bsum)
     {
-        cout << "YES\n" << a.size() << "\n";
+        cout << "YES\n" << a.size() << '\n';
         for(auto &i : a) cout << i << ' ';
-        cout << '\n' << b.size() << "\n";
+        cout << '\n' << b.size() << '\n';
         for(auto &i : b) cout << i << ' ';
         cout << '\n';
     }

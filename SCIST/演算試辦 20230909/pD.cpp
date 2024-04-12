@@ -10,7 +10,7 @@ signed main()
 {
 	ShiYu;
     int n; cin >> n;
-    cout << (n % 3 ? "Yes" : "No") << "\n"; 
+    cout << (n % 3 ? "Yes" : "No") << '\n'; 
 	return 0;
 }
 

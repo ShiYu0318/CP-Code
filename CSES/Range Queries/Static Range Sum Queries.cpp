@@ -44,6 +44,6 @@ signed main()
     while(q--)
     {
         cin >> a >> b;
-        cout << query(1,1,n,a,b) << "\n";
+        cout << query(1,1,n,a,b) << '\n';
     }
 }

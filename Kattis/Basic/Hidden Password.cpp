@@ -33,5 +33,5 @@ signed main()
             ++i;
         }
     }
-    cout << (ms.empty() ? "PASS" : "FAIL") << "\n";
+    cout << (ms.empty() ? "PASS" : "FAIL") << '\n';
 }

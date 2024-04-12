@@ -79,7 +79,7 @@ void solve()
             }
         }
     }
-    cout << (rd ? "Charlie" : "Dave") << "\n";
+    cout << (rd ? "Charlie" : "Dave") << '\n';
 }
 
 signed main(void)

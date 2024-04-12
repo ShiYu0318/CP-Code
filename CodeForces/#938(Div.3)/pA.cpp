@@ -47,7 +47,7 @@ using namespace std;
 void solve()
 {
     int a,b,c; cin >> a >> b >> c;
-    cout << min(a / 2 * c + (a % 2 * b), a * b) << "\n";
+    cout << min(a / 2 * c + (a % 2 * b), a * b) << '\n';
 }
 
 signed main(void)

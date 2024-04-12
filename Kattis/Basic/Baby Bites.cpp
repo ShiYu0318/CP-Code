@@ -31,5 +31,5 @@ signed main()
             }
         }
     }
-    cout << (ans ? "makes sense" : "something is fishy") << "\n";
+    cout << (ans ? "makes sense" : "something is fishy") << '\n';
 }

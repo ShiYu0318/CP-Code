@@ -7,5 +7,5 @@ signed main()
     string s; getline(cin,s);
     int sum = 0; 
     FOR(i,s.size()) sum += int(s[i]);
-    cout << (char)(sum / s.size()) << "\n";
+    cout << (char)(sum / s.size()) << '\n';
 }

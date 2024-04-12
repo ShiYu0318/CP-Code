@@ -33,5 +33,5 @@ signed main()
         }
         cout << '\n';
     }
-    cout << v.size() << "\n";
+    cout << v.size() << '\n';
 }

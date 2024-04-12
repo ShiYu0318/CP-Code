@@ -24,6 +24,6 @@ signed main(void)
     while(q--)
     {
         cin >> t;
-        cout << upper_bound(all(v),t) - lower_bound(all(v),t) << "\n";
+        cout << upper_bound(all(v),t) - lower_bound(all(v),t) << '\n';
     }
 }

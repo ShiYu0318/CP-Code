@@ -34,6 +34,6 @@ signed main()
         {
             if(s[sz / 2 - 1] == '|' || s[sz / 2] == '|') ans = false;
         }
-        cout << (ans ? "correct" : "fix") << "\n";
+        cout << (ans ? "correct" : "fix") << '\n';
     }
 }

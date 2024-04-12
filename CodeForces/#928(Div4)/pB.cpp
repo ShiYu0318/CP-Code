@@ -65,7 +65,7 @@ void solve()
             break;
         }
     }
-    cout << (ans ? "SQUARE" : "TRIANGLE") << "\n";
+    cout << (ans ? "SQUARE" : "TRIANGLE") << '\n';
 }
 
 signed main(void)

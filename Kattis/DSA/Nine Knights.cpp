@@ -39,5 +39,5 @@ signed main()
         }
         if(invalid) break;
     }
-    cout << (invalid || kn != 9 ? "invalid" : "valid") << "\n";
+    cout << (invalid || kn != 9 ? "invalid" : "valid") << '\n';
 }

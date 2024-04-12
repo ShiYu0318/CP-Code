@@ -10,6 +10,6 @@ int main()
 	while(n--)
 	{
 		cin >> s;
-		cout << s.length() << "\n";
+		cout << s.length() << '\n';
 	}	
 }

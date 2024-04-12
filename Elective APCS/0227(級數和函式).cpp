@@ -37,12 +37,12 @@ int main()
 	{
 		cout << "請依序輸入 a1首項 d公差 n項次 用空白間隔開:\n";
 		cin >> a1 >> d >> n;
-		cout << "Sn = " << Arithmetic_series(a1,d,n) << "\n";
+		cout << "Sn = " << Arithmetic_series(a1,d,n) << '\n';
 	}
 	else
 	{
 		cout << "請依序輸入 a1首項 r公比 n項次 用空白間隔開:\n";
 		cin >> a1 >> r >> n;
-		cout << "Sn = " << Geometric_series(a1,r,n) << "\n";
+		cout << "Sn = " << Geometric_series(a1,r,n) << '\n';
 	}
 }

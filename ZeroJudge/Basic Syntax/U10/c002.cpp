@@ -22,6 +22,6 @@ signed main()
     int n;
     while(cin >> n && n)
     {
-        cout << "f91(" << n << ") = " << f91(n) << "\n";
+        cout << "f91(" << n << ") = " << f91(n) << '\n';
     }
 }

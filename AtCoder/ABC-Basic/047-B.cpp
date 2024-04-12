@@ -14,6 +14,6 @@ signed main()
         else d = min(d,y);
     }
     if(a >= b || c >= d) cout << 0 << "\n";
-    else cout << (b - a) * (d - c) << "\n";
+    else cout << (b - a) * (d - c) << '\n';
     
 }

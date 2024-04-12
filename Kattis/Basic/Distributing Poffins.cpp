@@ -4,5 +4,5 @@ using namespace std;
 int main()
 {
 	int a,b; cin >> a >> b;
-	cout << (b % a ? 1 : 0) << "\n";
+	cout << (b % a ? 1 : 0) << '\n';
 }

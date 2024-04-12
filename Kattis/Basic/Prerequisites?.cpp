@@ -9,7 +9,7 @@ using namespace std;
 #define int long long
 #define nl cout << '\n';
 #define Yn(x) cout << (x ? "Yes" : "No") << '\n';
-#define yn(x) cout << (x ? "yes" : "no") << "\n";
+#define yn(x) cout << (x ? "yes" : "no") << '\n';
 
 
 signed main()

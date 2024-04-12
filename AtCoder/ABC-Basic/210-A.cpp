@@ -6,6 +6,6 @@ using namespace std;
 signed main()
 {
     int n,a,x,y; cin >> n >> a >> x >> y;
-    cout << (n > a ? a * x + (n - a) * y : n * x) << "\n";
+    cout << (n > a ? a * x + (n - a) * y : n * x) << '\n';
     
 }

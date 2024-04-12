@@ -27,7 +27,7 @@ signed main()
     int c = 1;
     while(cin >> s && s != "#")
     {
-        cout << "Case " << c << ": " << (m.count(s) ? m[s] : "UNKNOWN") << "\n";
+        cout << "Case " << c << ": " << (m.count(s) ? m[s] : "UNKNOWN") << '\n';
         ++c;
     }
 }

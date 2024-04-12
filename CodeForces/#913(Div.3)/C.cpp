@@ -56,7 +56,7 @@ void solve()
         sort(all(v));
         if(v[v.size()-1] >= sum - v[v.size()-1])
         {
-            cout << v[v.size()-1] - (sum - v[v.size()-1]) << "\n";
+            cout << v[v.size()-1] - (sum - v[v.size()-1]) << '\n';
             break;
         }
         else if(sum == v[v.size()-1] * v.size())

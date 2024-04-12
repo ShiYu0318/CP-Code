@@ -17,6 +17,6 @@ signed main()
     int n; cin >> n;
     for(int i=1;i<=n;++i)
     {
-        cout << calculate(i) << "\n";
+        cout << calculate(i) << '\n';
     }
 }

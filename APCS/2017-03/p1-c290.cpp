@@ -23,5 +23,5 @@ signed main()
         if(i % 2) a += s[i] - '0';
         else b += s[i] - '0';
     }
-    cout << abs(a - b) << "\n";
+    cout << abs(a - b) << '\n';
 }

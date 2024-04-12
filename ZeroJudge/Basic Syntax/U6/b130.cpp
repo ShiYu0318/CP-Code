@@ -11,6 +11,6 @@ int main()
         cin >> t;
         s.insert(t);
     }
-    cout << s.size() << "\n";    
+    cout << s.size() << '\n';    
     for(auto i : s) cout << i << ' ';
 }

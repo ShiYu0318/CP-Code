@@ -23,7 +23,7 @@ signed main()
                 s.pop();
             }
         }
-        cout << a << (n == 1 ? " is a happy number" : " is an unhappy number") << "\n";
+        cout << a << (n == 1 ? " is a happy number" : " is an unhappy number") << '\n';
     }
     return 0;
 }

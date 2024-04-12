@@ -8,6 +8,6 @@ int main()
 	while (cin >> n && n)
 	{
 		if (n % m == 0) cout << n / m << "\n";
-		else cout << m - (n % m) << "\n";
+		else cout << m - (n % m) << '\n';
 	}
 }

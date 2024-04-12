@@ -31,6 +31,6 @@ signed main()
                 break;
             }
         }
-        cout << (ans ? "go forward" : "keep defending") << "\n";
+        cout << (ans ? "go forward" : "keep defending") << '\n';
     }
 }

@@ -86,7 +86,7 @@ void solve()
         v.EB(MP(r,c));
     }
     f(x,0);
-    // cout << st.size() << "\n";
+    // cout << st.size() << '\n';
     // for(auto i:st) cout << i << ' ';
     cout << '\n';
     st.clear();

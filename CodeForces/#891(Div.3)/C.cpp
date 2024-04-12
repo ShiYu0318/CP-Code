@@ -13,7 +13,7 @@
 #define nl cout << '\n';
 #define coutE(x) cout << x << "\n";
 #define coutS(x) cout << x << ' ';
-#define YN(x) cout << (x ? "NO" : "YES") << "\n";
+#define YN(x) cout << (x ? "NO" : "YES") << '\n';
 #define SET(n) cout << fixed << setprecision(n)
 #define input(A) for(auto &x : A) cin >> x;
 #define output(A) for(auto &x : A) coutS(x);

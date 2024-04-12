@@ -32,5 +32,5 @@ signed main()
         }
         if(st.empty()) break;
     }
-    cout << (ans ? "WIN" : "LOSE") << "\n";
+    cout << (ans ? "WIN" : "LOSE") << '\n';
 }

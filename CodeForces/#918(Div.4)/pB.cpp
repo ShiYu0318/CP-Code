@@ -53,7 +53,7 @@ void solve()
 				else if(s[i] == 'C') t[2]++;
 			}
 		}
-		FORn(i,3) if(t[i] == 2) cout << (char)('A' + i) << "\n";
+		FORn(i,3) if(t[i] == 2) cout << (char)('A' + i) << '\n';
 	}
 }
 

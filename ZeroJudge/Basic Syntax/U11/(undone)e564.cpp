@@ -56,7 +56,7 @@ signed main()
                     queue<int> &q = it->second;
                     if(!q.empty()) 
                     {
-                        cout << q.front() << "\n";
+                        cout << q.front() << '\n';
                         q.pop();
                         break;
                     }

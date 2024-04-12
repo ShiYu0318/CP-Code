@@ -30,7 +30,7 @@ using namespace std;
 void solve()
 {	
     int n,m,p; cin >> n >> m >> p;
-    cout << (n - m < 0 ? 0 : (n - m) / p + 1) << "\n";
+    cout << (n - m < 0 ? 0 : (n - m) / p + 1) << '\n';
 }
 
 signed main()

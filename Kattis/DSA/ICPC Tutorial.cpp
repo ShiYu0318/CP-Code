@@ -84,6 +84,6 @@ signed main()
         }
     }
     if((t == 1 || t == 2) && TLE) cout << "TLE\n";
-    else if(t == 6) cout << (m - sum >= eps && sum > 0 ? "AC" : "TLE") << "\n";
-    else cout << (n <= m && n > 0 ? "AC" : "TLE") << "\n";
+    else if(t == 6) cout << (m - sum >= eps && sum > 0 ? "AC" : "TLE") << '\n';
+    else cout << (n <= m && n > 0 ? "AC" : "TLE") << '\n';
 }

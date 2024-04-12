@@ -17,5 +17,5 @@ signed main()
 {
     ShiYu;
     string s; cin >> s;
-    cout << 2018 << s.substr(4) << "\n";
+    cout << 2018 << s.substr(4) << '\n';
 }

@@ -26,5 +26,5 @@ signed main()
 {
     ShiYu;
     int n;
-    while(cin >> n && n) cout << f(n) << "\n";
+    while(cin >> n && n) cout << f(n) << '\n';
 }

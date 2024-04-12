@@ -23,7 +23,7 @@ signed main()
         else if(t == 2)
         {
             cin >> a >> b;
-            cout << abs(l[a-1] - l[b-1]) << "\n";
+            cout << abs(l[a-1] - l[b-1]) << '\n';
         }
     }
 }

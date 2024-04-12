@@ -33,13 +33,13 @@ signed main()
         {
             cout << "請輸入Number: ";
             cin >> n;
-            cout << n << "! = " << factorial(n) << "\n";
+            cout << n << "! = " << factorial(n) << '\n';
         }
         else if(type == 2)
         {
             cout << "請輸入 n k : ";
             cin >> n >> k;
-            cout << "P " << n << " 取 " << k << " = " << P(n,k) << "\n";
+            cout << "P " << n << " 取 " << k << " = " << P(n,k) << '\n';
         }
         cout << "再一次？(y/n): ";
         cin >> try_again;

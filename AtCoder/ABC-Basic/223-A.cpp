@@ -9,5 +9,5 @@ signed main()
         cout << "No\n";
         return 0;
     }
-    cout << (n % 100 ? "No" : "Yes") << "\n";
+    cout << (n % 100 ? "No" : "Yes") << '\n';
 }

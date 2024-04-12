@@ -31,5 +31,5 @@ signed main()
     ShiYu;
     int n; cin >> s >> n;
     idx = -1;
-    cout << f(n*n) << "\n";
+    cout << f(n*n) << '\n';
 }

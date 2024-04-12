@@ -79,5 +79,5 @@ signed main()
     cout << "\n\n";
     RPT(i,m+1) RPT(j,n) cout << rps[i][j] << " \n"[j == n-1];
     cout << "\n\n";
-    cout << rmf(0,0,m,n) << "\n";
+    cout << rmf(0,0,m,n) << '\n';
 }

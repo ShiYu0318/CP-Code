@@ -38,7 +38,7 @@ void solve()
         int d;
         if(a > b) d = a - mid;
         else d = b - mid;
-        cout << (d % c != 0 ? d / c + 1 : d / c) << "\n";
+        cout << (d % c != 0 ? d / c + 1 : d / c) << '\n';
     }
 }
 

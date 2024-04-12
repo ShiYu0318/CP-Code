@@ -26,7 +26,7 @@ signed main()
         {
             if(!st.count((char)('a' + i)))
             {
-                cout << (char)('a' + i) << "\n";
+                cout << (char)('a' + i) << '\n';
                 break;
             }
         }

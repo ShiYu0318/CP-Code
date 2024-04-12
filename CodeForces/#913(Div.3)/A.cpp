@@ -43,7 +43,7 @@ void solve()
 	FOR(i,1,9)
 	{
 		if(i == s[1] - '0') continue;
-		else cout << s[0] + to_string(i) << "\n";
+		else cout << s[0] + to_string(i) << '\n';
 	}
 	FOR(i,0,8)
 	{

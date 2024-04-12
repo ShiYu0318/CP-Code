@@ -15,5 +15,5 @@ signed main(void)
         a[t]++;
         maxn = max(maxn,t);
     }
-    cout << (a[maxn] == 1 ? "impossible" : "possible") << "\n";
+    cout << (a[maxn] == 1 ? "impossible" : "possible") << '\n';
 }

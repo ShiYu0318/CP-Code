@@ -6,5 +6,5 @@ using namespace std;
 signed main()
 {
     string s; cin >> s;
-    cout << (s == "Hello,World!" ? "AC" : "WA") << "\n";
+    cout << (s == "Hello,World!" ? "AC" : "WA") << '\n';
 }

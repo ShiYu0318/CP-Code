@@ -30,6 +30,6 @@ signed main()
             q.pop();
             q.emplace(t);
         }
-        cout << '\n' << "Remaining card: " << q.front() << "\n"; 
+        cout << '\n' << "Remaining card: " << q.front() << '\n'; 
     }
 }

@@ -23,6 +23,6 @@ signed main()
         cin >> c >> d;
         if(c > d) swap(c,d);
         p = make_pair(c,d);
-        cout << (s.count(p) ? "yes" : "no") << "\n";
+        cout << (s.count(p) ? "yes" : "no") << '\n';
     }
 }

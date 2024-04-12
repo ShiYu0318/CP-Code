@@ -33,5 +33,5 @@ signed main()
     L[1] = 1;
     L[2] = 1;
     FOR(i,3,n) L[i] = min(MAXN, L[i-1] + L[i-2]);
-    cout << f(n,k) << "\n";
+    cout << f(n,k) << '\n';
 }

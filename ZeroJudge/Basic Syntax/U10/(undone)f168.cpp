@@ -6,7 +6,7 @@ using namespace std;
 #define RPT(i,n) FOR(i,0,n)
 #define input(x) for(auto &i : x) cin >> i
 #define output(x) for(auto &i : x) cout << i << ' '
-#define YN(x) cout << (x ? "YES" : "NO") << "\n";
+#define YN(x) cout << (x ? "YES" : "NO") << '\n';
 #define all(x) x.rbegin(),x.rend()
 #define int long long
 

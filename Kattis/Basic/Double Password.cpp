@@ -9,5 +9,5 @@ signed main(void)
     {
         if(a[i] != b[i]) p++;
     }
-    cout << pow(2,p) << "\n";
+    cout << pow(2,p) << '\n';
 }

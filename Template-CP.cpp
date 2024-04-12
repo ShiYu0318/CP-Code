@@ -1,16 +1,16 @@
 #include <bits/stdc++.h>
-#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
-#pragma GCC optimize("Ofast")
 using namespace std;
+#pragma GCC optimize("Ofast")
+#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 // type --------------------------------------------------------------------
 #define int long long
 #define ull unsigned long long
 #define pii pair<int,int>
 #define vi vector<int>
 #define vii vector<pair<int,int>>
+#define MM mx = INT_MIN, mi = INT_MAX
 #define pq priority_queue
 #define pq_min priority_queue<int,vector<int>,greater<int>>
-#define MM mx = INT_MIN, mi = INT_MAX
 // simple ------------------------------------------------------------------
 #define F first
 #define S second

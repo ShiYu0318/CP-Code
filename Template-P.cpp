@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+using namespace std;
 #define ShiYu ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 #define int long long
 #define vi vector<int>
@@ -19,7 +20,6 @@
 #define output(x) for(auto i:x) cout << i << ' '; nl
 #define outputN(x,n) RPT(i,n) cout << x[i] << " \n"[i == n-1];
 #define Yn(x) cout << (x ? "Yes" : "No") << '\n';
-using namespace std;
 
 signed main()
 {

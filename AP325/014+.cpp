@@ -47,6 +47,6 @@ signed main()
     ShiYu; int n;
     while(cin >> n && n != -1)
     {
-        cout << fpow(n-1).A[0][0] << '\n';
+        cout << fpow(n-1).A[0][0]; nl;
     }
 }

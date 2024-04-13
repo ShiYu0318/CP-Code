@@ -53,18 +53,31 @@ using namespace std;
 const double eps = 1e-8;
 
 // ==========================================================================================
-// 
+// AC
 // ==========================================================================================
 
 void solve()
 {
-	int n; cin >> n;
+    string a, b; cin >> a >> b;
+    bool less = false;
+    RPT(i,SZ(a))
+    {
+        int p = a[i] - '0', q = b[i] - '0';
+        if(p == q) continue;
+        else if(!less)
+        {
+            if(p > q) swap(a[i], b[i]);
+            less = true;
+        }
+        else if(less && p < q) swap(a[i], b[i]);
+    }
+    cout << a << '\n' << b << '\n';
 }
 
 signed main()
 {
-	ShiYu;
-	int t = 1;
-	cin >> t; // hide it when one case
-	while(t--) solve();
+    ShiYu;
+    int t = 1;
+    cin >> t; // hide it when one case
+    while(t--) solve();
 }

@@ -53,18 +53,32 @@ using namespace std;
 const double eps = 1e-8;
 
 // ==========================================================================================
-// 
+// WA
 // ==========================================================================================
 
-void solve()
+int solve()
 {
-	int n; cin >> n;
+    int n; cin >> n;
+    vi v(n); input(v);
+    if(n < 3) return -1;
+    int same = 0, mi = INT_MAX;
+    for(int i=n-1; i>0; --i)
+    {
+        if(v[i] == v[i-1]) ++same;
+        else
+        {
+            mi = min(mi, n - i - same);
+            same = 0;
+        }
+    }
+    if(same == n-1) return -1;
+    return mi;
 }
 
 signed main()
 {
-	ShiYu;
-	int t = 1;
-	cin >> t; // hide it when one case
-	while(t--) solve();
+    ShiYu;
+    int t = 1;
+    cin >> t; // hide it when one case
+    while(t--) cout << solve() << '\n';
 }

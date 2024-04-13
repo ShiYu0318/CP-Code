@@ -53,18 +53,20 @@ using namespace std;
 const double eps = 1e-8;
 
 // ==========================================================================================
-// 
+// AC
 // ==========================================================================================
 
 void solve()
 {
-	int n; cin >> n;
+    int n,m,k; cin >> n >> m >> k;
+    int t = n - n/m;
+    YN((n % m ? t - 1 : t) > k);
 }
 
 signed main()
 {
-	ShiYu;
-	int t = 1;
-	cin >> t; // hide it when one case
-	while(t--) solve();
+    ShiYu;
+    int t = 1;
+    cin >> t; // hide it when one case
+    while(t--) solve();
 }

@@ -22,7 +22,7 @@ void merge(int l, int r)
     int mid = (l+r)/2, tmp[r-l+1];
     for(int i=l,j=mid+1,k=0; i<=mid || j<=r; ++k)
     {
-        if((v[i] <= v[j] && i <= mid) || j > r) 
+        if(j > r || (v[i] <= v[j] && i <= mid)) 
         {
             tmp[k] = v[i++];
         }
@@ -32,7 +32,7 @@ void merge(int l, int r)
             ans += mid - i + 1;
         }
     }
-    for(int i=l,j=0; i<=r; ++i,++j) v[i] = tmp[j];
+    for(int i=l, j=0; i <= r; ++i, ++j) v[i] = tmp[j];
 }
 
 void MergeSort(int l, int r)

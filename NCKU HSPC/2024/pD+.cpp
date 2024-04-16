@@ -53,43 +53,54 @@ using namespace std;
 const double eps = 1e-8;
 
 // ==========================================================================================
-// 
+// subtask.2 15%
 // ==========================================================================================
 
 void solve()
 {
     int n, q; cin >> n >> q;
-    vi v(n-1,1);
-    for(int t,k,x,y; q > 0; --q)
+    vi v(n-1,1), qs;
+    int t,k,x,y;
+    RPT(i,q)
     {
         cin >> t;
-        if(t == 1)
-        {
-            cin >> k;
-            v[k-1] = 1;
-        }
-        else if(t == 2)
-        {
-            cin >> k;
-            if(k - 1 < n - 1) v[k-1] = 0;
-            if(k - 2 >= 0) v[k-2] = 0;
-        }
-        else if(t == 3)
+        if(t == 3)
         {
             cin >> x >> y;
-            bool ans = true;
-            for(int i=x-1; i <= y-2; ++i)
-            {
-                if(v[i] == 0)
-                {
-                    ans = false;
-                    break;
-                }
-            }
-            YN(ans);
+            cout << "YES\n";
         }
-        // output(v);
+        else cin >> k;
     }
+    // for(int t,k,x,y; q > 0; --q)
+    // {
+    //     cin >> t;
+    //     if(t == 1)
+    //     {
+    //         cin >> k;
+    //         v[k-1] = 1;
+    //     }
+    //     else if(t == 2)
+    //     {
+    //         cin >> k;
+    //         if(k - 1 < n - 1) v[k-1] = 0;
+    //         if(k - 2 >= 0) v[k-2] = 0;
+    //     }
+    //     else if(t == 3)
+    //     {
+    //         cin >> x >> y;
+    //         bool ans = true;
+    //         for(int i=x-1; i <= y-2; ++i)
+    //         {
+    //             if(v[i] == 0)
+    //             {
+    //                 ans = false;
+    //                 break;
+    //             }
+    //         }
+    //         YN(ans);
+    //     }
+    //     // output(v);
+    // }
 }
 
 signed main()

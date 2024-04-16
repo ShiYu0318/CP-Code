@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #pragma GCC optimize("Ofast")
-// #define ShiYu ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
+#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 // type --------------------------------------------------------------------
 #define int long long
 #define ull unsigned long long
@@ -53,28 +53,52 @@ using namespace std;
 const double eps = 1e-8;
 
 // ==========================================================================================
-// 
+// 前綴和 沒寫完
 // ==========================================================================================
 
-int t = 164250;
-int p[3] = {2,5,8};
+void solve()
+{
+    int n; cin >> n;
+    vi h(n+1), pf(n+2), w(n);
+    pf[0] = 0;
+    RPT(i,n+1)
+    {
+        cin >> h[i];
+        pf[i+1] = pf[i] + h[i];
+    }
+    // output(pf);
+    input(w);
+    int q; cin >> q;
+    int d,e,m,l;
+    RPT(i,q)
+    {
+        cin >> d >> e >> m >> l;
+        int ans = -1;
+        RPT(j,n)
+        {
+            if(l > w[j])
+            {
+                ans = j;
+                break;
+            }
+            if(d == 1) e = e + m * m * (h[j] - h[j+1]);
+            else e = e + m * (h[j] - h[j+1]);
+            // cout << "j=" << j+1 << " e=" << e << '\n';
+            if(e < 0)
+            {
+                ans = j;
+                break;
+            }
+        }
+        if(ans == -1) cout << "Yes\n";
+        else cout << "No\n" << ans + 1 << '\n';
+    }
+}
 
 signed main()
 {
-    // ShiYu;
-    vi v(8);
-    int i=0,j=0;
-    while(t--)
-    {
-        cout << p[i] << ' ' << p[j] << '\n' << flush;
-        j++;
-        if(j > 2)
-        {
-            j = 0;
-            i++;
-            if(i > 2) i = 0;
-        }
-        input(v);
-    }
-    cout << -1 << flush;
+    ShiYu;
+    int t = 1;
+    // cin >> t; // hide it when one case
+    while(t--) solve();
 }

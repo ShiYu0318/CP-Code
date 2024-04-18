@@ -64,7 +64,6 @@ void solve()
         else y += c - d; 
     }
     cout << x << ' ' << y << '\n';
-
 }
 
 signed main(void)

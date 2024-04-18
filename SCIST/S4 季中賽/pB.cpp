@@ -37,14 +37,14 @@
 #define nl(n) RPT(i,n) cout << '\n'
 const double eps = 1e-8;
 using namespace std;
- 
+
 // 模擬 20%
- 
+
 //==========================================================================================
- 
+
 vector<string> tb;
 int top[100];
- 
+
 void solve()
 {
     int n,m,q; cin >> n >> m >> q;
@@ -95,7 +95,7 @@ void solve()
         cout << '\n';
     }
 }
- 
+
 signed main(void)
 {
     ShiYu;

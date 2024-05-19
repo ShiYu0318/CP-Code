@@ -3,5 +3,5 @@ using namespace std;
 
 int main()
 {
-    if(-1) cout << 'h';
+    cout << (30 & 1);
 }

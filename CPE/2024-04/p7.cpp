@@ -19,21 +19,33 @@ using namespace std;
 #define outputN(x,n) RPT(i,n) cout << x[i] << " \n"[i == n-1];
 #define Yn(x) cout << (x ? "Yes" : "No") << '\n';
 
-const int N = 35;
+int MOD;
+// O(log n) 費氏數列 w/ 矩陣快速冪 + struct
+struct matrix
+{
+    int A[2][2] = {{0,0},{0,0}};
+    matrix operator * (matrix &B)
+    {
+        matrix res;
+        RPT(i,2) RPT(j,2) RPT(k,2) res.A[i][j] += A[i][k] * B.A[k][j] % MOD;
+        return res;
+    }
+} M = {1,1,1,0};
+
+matrix fpow(int n)
+{
+    if(n == 0 || n == 1) return M;
+    matrix t = fpow(n/2), tt = t * t;
+    return (n & 1 ? M * tt : tt);
+}
 
 signed main()
 {
     ShiYu;
-    int n, dp[N][3] = {0};
-    dp[0][0] = 1;
-    FOR(i,1,N)
+    int n,m; 
+    while(cin >> n >> m)
     {
-        dp[i][0] = dp[i-1][0] + dp[i-1][1] + dp[i-1][2];
-        dp[i][1] = dp[i-1][0];
-        dp[i][2] = dp[i-1][1];
+        MOD = (1 << m);
+        cout << fpow(n-1).A[0][0] % MOD << '\n';
     }
-    while(cin >> n && n)
-    {
-        cout << (1<<n) - dp[n][0] - dp[n][1] - dp[n][2] << endl;
-    }   
 }

@@ -19,8 +19,17 @@ using namespace std;
 #define outputN(x,n) RPT(i,n) cout << x[i] << " \n"[i == n-1];
 #define Yn(x) cout << (x ? "Yes" : "No") << '\n';
 
-const int N = 1001;
+const int N = 1005;
 int ans[N], guess[N];
+
+bool allzero(int n)
+{
+    RPT(i,n)
+    {
+        if(guess[i]) return false;
+    }
+    return true;
+}
 
 signed main()
 {
@@ -28,6 +37,7 @@ signed main()
     int n, t = 1;
     while(cin >> n && n)
     {
+        cout << "Game " << t++ << ":\n";
         set<int> st;
         int cnt_ans[10] = {0};
         RPT(i,n)
@@ -36,11 +46,10 @@ signed main()
             st.insert(ans[i]);
             cnt_ans[ans[i]]++;
         }
-        cout << "Game " << t++ << ":\n";
-        while(cin >> guess[0])
+        while(1)
         {
-            FOR(i,1,n) cin >> guess[i];
-            if(!guess[0]) break;
+            RPT(i,n) cin >> guess[i];
+            if(allzero(n)) break;
             int A = 0, B = 0, cnt_guess[10] = {0};
             RPT(i,n)
             {

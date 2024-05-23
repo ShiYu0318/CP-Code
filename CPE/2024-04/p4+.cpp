@@ -19,6 +19,8 @@ using namespace std;
 #define outputN(x,n) RPT(i,n) cout << x[i] << " \n"[i == n-1];
 #define Yn(x) cout << (x ? "Yes" : "No") << '\n';
 
+// 數學解
+
 signed main()
 {
     ShiYu;

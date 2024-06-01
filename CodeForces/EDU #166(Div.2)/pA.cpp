@@ -18,7 +18,7 @@ using namespace std;
 #define EB emplace_back
 // function ----------------------------------------------------------------
 #define SZ(x) (int)x.size()
-#define all(x) x.rbegin(), x.rend()
+#define all(x) x.begin(), x.end()
 #define sortall(x) sort(x.rbegin(), x.rend())
 #define remax(a,b) a = (a > b ? a : b)
 #define remin(a,b) a = (a < b ? a : b)
@@ -60,42 +60,9 @@ const double eps = 1e-8;
 void solve()
 {
     int n; cin >> n;
-    string s; cin >> s;
-    bool l = false, ans = true;
-    RPT(i,n-1)
-    {
-        if(islower(s[i]) && isnumber(s[i+1]))
-        {
-            cout << "NO\n";
-            return;
-        }
-    }
-    
-    string ss = s;
-    sort(all(ss));
-    if(isletter(ss[0]) && isletter(ss[n-1]) || isnumber(ss[0]) && isnumber(ss[n-1]))
-    {
-        YN(ss != s || ss[0] == ss[n-1]);
-        return;
-    }
-    // cout << ss << endl;
-
-    int f = 0;
-    RPT(i,n)
-    {
-        if(islower(s[i]))
-        {
-            f = i;
-            break;
-        }
-    }
-    string a = s.substr(0,f), b = s.substr(f),
-        c = ss.substr(0,n-f), d = ss.substr(n-f);
-    int t = 0;
-    if(a.size() <= 1 || d[0] == d[a.size()-1] || a != d) t++;
-    if(b.size() <= 1 || c[0] == c[a.size()-1] || b != c) t++;
-    YN(t == 2);
-    
+    string s,ss; cin >> s; ss = s;
+    sort(all(ss));    
+    YN(ss == s);
 }
 
 signed main()

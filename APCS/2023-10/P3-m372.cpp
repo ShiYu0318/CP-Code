@@ -11,7 +11,7 @@ using namespace std;
 #define RPT(i,n) for(int i=0; i<n; ++i)
 
 // 每種水管可以接的方向
-map<char,vector<int>> cnct = 
+map<char,vector<int>> cnct
 {     // 上 下 左 右
     {'F',{0,1,0,1}},
     {'H',{0,0,1,1}},

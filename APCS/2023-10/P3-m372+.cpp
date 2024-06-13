@@ -34,34 +34,33 @@ bool vis[N][N];
 
 // 判斷新座標是否在範圍內且未被走過
 // 得過一次 WA 原因在於未檢查原水管與新水管連接方向是否匹配
+// k ^ 1： 0 <-> 1 上下; 2 <-> 3 左右
 bool valid(int x, int y, int k)
 {
-    vi check = {1,0,3,2};
-    return ((0 <= x && x < n && 0 <= y && y < m) && !vis[x][y] && cnct[tb[x][y]][check[k]]);
+    return ((0 <= x && x < n && 0 <= y && y < m) && !vis[x][y] && cnct[tb[x][y]][k^1]);
 }
 
 int BFS(int i, int j)
 {
-    vector<pii> block;  // 這個連通塊的水管們
-    block.EB(i,j);      // 初始水管 會往四面擴散
+    vector<pii> pipe;  // 這個連通塊的水管們
+    pipe.EB(i,j);      // 初始水管 會往四面擴散
     vis[i][j] = true;   // 這行不能省 答案會多一
-    int now = 0;
-    while(now < block.size())
+    int now = 0,nx,ny;
+    while(now < pipe.size())
     {
-        auto [x,y] = block[now++];
-        vi tmp = cnct[tb[x][y]];    // 拿出這個水管所能連接的方向
-        RPT(k,4) if(tmp[k])
-        {   // 對 4 個方向的水管判斷是否連通
-            int nx = x + dx[k],
-                ny = y + dy[k];
+        auto [x,y] = pipe[now++];
+        RPT(k,4) if(cnct[tb[x][y]][k]) // 拿出這個水管所能連接的方向
+        {   // 對可連接的水管方向判斷是否連通
+            nx = x + dx[k];
+            ny = y + dy[k];
             if(valid(nx,ny,k))
             {
-                block.EB(nx,ny);
+                pipe.EB(nx,ny);
                 vis[nx][ny] = true;
             }
         }
-    }// 被加進去的水管都屬於同一個連通塊
-    return now;
+    }
+    return now; // 被加進去的水管都屬於同一個連通塊
 }
 
 signed main()
@@ -72,8 +71,8 @@ signed main()
     RPT(i,n) RPT(j,m)
     {   // 對每個沒被走過的水管做 BFS
         if(tb[i][j] == '0' || vis[i][j]) continue;
-        int sz = BFS(i,j);  // 計算這個水管所屬的連通塊大小
-        ans = max(ans,sz);  // 嘗試更新答案
+        int cnt = BFS(i,j);  // 計算這個水管所屬的連通塊大小
+        ans = max(ans,cnt);  // 嘗試更新答案
     }
     cout << ans << endl;
 }

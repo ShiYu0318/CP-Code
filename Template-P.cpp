@@ -14,12 +14,12 @@ using namespace std;
 #define FOR(i,a,b) for(int i=a; i<b; ++i)
 #define rFOR(i,n) for(int i=n-1; i>=0; --i)
 #define input(x) for(auto &i:x) cin >> i
-#define output(x) for(auto i:x) cout << i << ' '; nl
+#define output(x) for(auto i:x) cout << i << '\n'
 #define outputN(x,n) RPT(i,n) cout << x[i] << " \n"[i == n-1];
 #define Yn(x) cout << (x ? "Yes" : "No") << '\n';
 
 signed main()
 {
     ShiYu;
-    
+    int n; cin >> n;
 }

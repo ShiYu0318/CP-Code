@@ -27,10 +27,6 @@ int f(int n)
 
 signed main()
 {
-    ShiYu;
-    int n;
-    while(cin >> n)
-    {
-        cout << f(n) << '\n';
-    }
+    ShiYu; int n;
+    while(cin >> n) cout << f(n) << '\n';
 }

@@ -22,12 +22,12 @@ int fpow(int n)
     return (n % 2 ? 2 : 1) * t * t;
 }
 
-void f(int n, int fst, int end, int tmp)
+void f(int n, int fst, int tmp, int end)
 {
     if(!n) return;
-    f(n-1, fst, tmp, end);
+    f(n-1, fst, end, tmp);
     cout << fst << ' ' << end << '\n';
-    f(n-1, tmp, end, fst);
+    f(n-1, tmp, fst, end);
 }
 
 signed main()
@@ -35,5 +35,5 @@ signed main()
     ShiYu;
     int n; cin >> n;
     cout << fpow(n) - 1 << '\n';
-    f(n,1,3,2);
+    f(n,1,2,3);
 }

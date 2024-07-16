@@ -22,7 +22,7 @@ using namespace std;
 
 // 賓果遊戲 實作題
 
-int tb[5][5], vis[5][5];
+int tb[5][5], S[26];
 
 bool cmp(pii a, pii b)
 {
@@ -38,34 +38,24 @@ signed main()
         cin >> tb[i][j];
         pos[tb[i][j]] = {i,j};
     }
-    // RPT(i,5) RPT(j,5) cout << tb[i][j] << " \n"[j==4];cout << endl;
-    int n;
-    while(cin >> n && n != -1) vis[pos[n].F][pos[n].S] = true;
-    // RPT(i,5) RPT(j,5) cout << vis[i][j] << " \n"[j==4];cout << endl;
-    int r[5] = {0}, c[5] = {0}, a=0, b=0;
-    RPT(i,5) RPT(j,5)
+    int n, r[5] = {0}, c[5] = {0}, a=0, b=0;
+    while(cin >> n && n != -1)
     {
-        r[i] += vis[i][j];
-        c[i] += vis[j][i];
-        if(i == j) a += vis[i][j];
-        if(i+j == 4) b += vis[i][j];
+        int i = pos[n].F, j = pos[n].S;
+        S[n] = -1;
+        ++r[i]; ++c[j];
+        if(i == j) ++a;
+        if(i+j == 4) ++b;
     }
-    // cout << a << ' ' << b << '\n';output(r);output(c);cout << endl;
-
-    RPT(i,5) RPT(j,5)
+    int maxn = 0;
+    RPT(k,25)
     {
-        int p = 0;
-        if(!vis[i][j])
+        int i = pos[k+1].F, j = pos[k+1].S;
+        if(S[k+1] != -1)
         {
-            if(r[i] == 4) ++p;
-            if(c[j] == 4) ++p;
-            if(i == j && a == 4) ++p;
-            if(i + j == 4 && b == 4) ++p;
+            S[k+1] += (r[i] == 4) + (c[j] == 4) + (i == j && a == 4) + (i + j == 4 && b == 4);
         }
-        // if(p) ans.EB(make_pair(p, tb[i][j])); 此行在 ZJ 可過 而 apcsclass 只拿 45% 有可能不會得分 所以不用判斷
-        ans.EB(make_pair(p, tb[i][j])); // 所以選數字最小的 改成此行拿 90% 2 個測資 WA
+        maxn = max(maxn, S[k+1]);
     }
-    sort(all(ans), cmp);
-    // for(auto i:ans) cout << i.F << ' ' << i.S << '\n';
-    cout << ans[0].S << endl;
+    RPT(k,25) if(S[k+1] == maxn) {cout << k+1 << '\n'; break;}
 }

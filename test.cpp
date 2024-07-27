@@ -1,44 +1,25 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define RPT(i,n) for(int i=0;i<n;++i)
+#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
+#define int long long
+#define vi vector<int>
+#define pii pair<int,int>
+#define F first
+#define S second
+#define EB emplace_back
+#define endl '\n'
+#define nl cout << '\n'
+#define SZ(x) ((int)x.size())
+#define all(x) x.begin(), x.end()
+#define RPT(i,n) for(int i=0; i<n; ++i)
+#define FOR(i,a,b) for(int i=a; i<b; ++i)
+#define rFOR(i,n) for(int i=n-1; i>=0; --i)
+#define input(x) for(auto &i:x) cin >> i
+#define output(x) for(auto i:x) cout << i << ' '; nl
+#define outputN(x,n) RPT(i,n) cout << x[i] << " \n"[i == n-1];
+#define Yn(x) cout << (x ? "Yes" : "No") << '\n';
 
-bool check(vector<string> v, int n)
+signed main()
 {
-    vector<int> r(n,0), c(n,0);
-    // 跑過整個棋盤 計算每行每列白色個數
-    RPT(i,n) RPT(j,n)
-    {
-        if(v[i][j] == 'W') 
-        {
-            ++r[i]; ++c[j];
-        }
-    }
-    // 判斷每行每列白色跟黑色是不是一樣
-    RPT(i,n)
-    {
-        if(r[i] != n - r[i] || c[i] != n - c[i]) return false;
-    }
-    // 開始算是不是有連續 3 個的
-    RPT(i,n)
-    {
-        int r = 1, c = 1;
-        RPT(j,n-1)
-        {
-            if(v[i][j] == v[i][j+1]) ++r;
-            else r = 1;
-            if(v[j][i] == v[j+1][i]) ++c;
-            else c = 1;
-            if(r >= 3 || c >= 3) return false;
-        }
-    }
-    // 以上都通過了才算正確
-    return true;
-}
-
-signed main() 
-{
-    int n; cin >> n;
-    vector<string> v(n);
-    for(auto &i:v) cin >> i;
-    cout << check(v,n) << '\n';
+    ShiYu;
 }

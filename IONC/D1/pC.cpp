@@ -28,9 +28,8 @@ bool cmp(pii a, pii b)
 signed main()
 {
     ShiYu;
-    int n,x;
-    cin >> n >> x;
-    vector<pair<int,int>> v(n);
+    int n,x; cin >> n >> x;
+    vector<pii> v(n);
     RPT(i,n)
     {
         cin >> v[i].F;

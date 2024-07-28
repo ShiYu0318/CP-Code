@@ -19,18 +19,17 @@ using namespace std;
 #define outputN(x,n) RPT(i,n) cout << x[i] << " \n"[i == n-1];
 #define Yn(x) cout << (x ? "Yes" : "No") << '\n';
 
-bool check(vector<int> v, int k, int maxSum) 
+bool check(vi v, int k, int maxsum) 
 {
-    int count = 1;
-    int currentSum = 0;
+    int count = 1, now = 0;
     for(int num : v) 
     {
-        if(currentSum + num > maxSum) 
+        if(now + num > maxsum) 
         {
             count++;
-            currentSum = num;
-        } else currentSum += num;
-        if (count > k) return false;
+            now = num;
+        } else now += num;
+        if(count > k) return false;
     }
     return true;
 }
@@ -43,7 +42,7 @@ int maxsum(vi v, int k)
     while(left < right) 
     {
         int mid = left + (right - left) / 2;
-        if (check(v, k, mid)) right = mid;
+        if(check(v, k, mid)) right = mid;
         else left = mid + 1;
     }
     return left;
@@ -54,5 +53,5 @@ signed main()
     ShiYu;
     int n, k; cin >> n >> k;
     vi v(n); input(v);
-    cout << maxsum(v, k) << endl;
+    cout << maxsum(v,k) << endl;
 }

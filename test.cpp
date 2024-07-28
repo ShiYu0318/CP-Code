@@ -1,25 +1,29 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
-#define int long long
-#define vi vector<int>
-#define pii pair<int,int>
-#define F first
-#define S second
-#define EB emplace_back
-#define endl '\n'
-#define nl cout << '\n'
-#define SZ(x) ((int)x.size())
-#define all(x) x.begin(), x.end()
-#define RPT(i,n) for(int i=0; i<n; ++i)
-#define FOR(i,a,b) for(int i=a; i<b; ++i)
-#define rFOR(i,n) for(int i=n-1; i>=0; --i)
-#define input(x) for(auto &i:x) cin >> i
-#define output(x) for(auto i:x) cout << i << ' '; nl
-#define outputN(x,n) RPT(i,n) cout << x[i] << " \n"[i == n-1];
-#define Yn(x) cout << (x ? "Yes" : "No") << '\n';
+RPT(i,n) for(int i=0;i<n;++i)
+
+int A[15][105], B[15][105];
 
 signed main()
 {
-    ShiYu;
+    int s,t,n,m,r; cin >> s >> t >> n >> m >> r;
+    int sumA = 0;
+    RPT(i,s) RPT(j,t)
+    {
+        cin >> A[i][j];
+        sumA += A[i][j];
+    }
+    RPT(i,n) RPT(j,m) cin >> B[i][j];
+    int ans = 0, minn = INT_MAX;
+    RPT(i,n-s+1) RPT(j,m-t+1)
+    {
+        int cnt = 0; sum = 0;
+        RPT(k,s) RPT(l,t)
+        {
+            // cnt 計算相異個數
+            // sum 計算子矩陣總和
+            // 若 cnt <= r 更新 minn
+        }
+    }
+    cout << ans << '\n' << minn << '\n';
 }

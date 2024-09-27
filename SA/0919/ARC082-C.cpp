@@ -14,6 +14,6 @@ int main()
         cnt[t]++; cnt[t+1]++; cnt[t+2]++;
     }
     int mx = -1;
-    for(int i=0;i<=N;i++) mx = max(mx,cnt[i]);
+    for(int i=0; i<N; i++) mx = max(mx,cnt[i]);
     cout << mx << "\n";
 }

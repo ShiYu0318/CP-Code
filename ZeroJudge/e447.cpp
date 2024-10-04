@@ -33,3 +33,29 @@ signed main()
         else if(!q.empty()) q.pop();
     }
 }
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n,t,x; cin >> n;
+    queue<int> q;
+    while(n--)
+    {
+        cin >> t;
+        if(t == 1)
+        {
+            cin >> x;
+            q.emplace(x);
+        }
+        else if(t == 2)
+        {
+            if(q.empty()) cout << "-1\n";
+            else cout << q.front() << "\n";
+        } 
+        else if(!q.empty()) q.pop();
+    }
+}

@@ -4,7 +4,7 @@ using namespace std;
 signed main()
 {
 	int n,w,h; cin >> n >> w >> h;
-	int t,l = sqrt(pow(w,2) + pow(h,2));
+	int t,l = sqrt(w*w + h*h);
 	while(n--)
 	{
 		cin >> t;

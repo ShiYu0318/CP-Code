@@ -91,7 +91,14 @@
     "locale": "cpp",
     "memory": "cpp",
     "new": "cpp",
-    "sstream": "cpp"
+    "sstream": "cpp",
+    "__bit_reference": "cpp",
+    "__hash_table": "cpp",
+    "__tree": "cpp",
+    "forward_list": "cpp",
+    "initializer_list": "cpp",
+    "regex": "cpp",
+    "valarray": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled",
   "cmake.configureOnOpen": false

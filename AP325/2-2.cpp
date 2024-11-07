@@ -24,17 +24,17 @@ using namespace std;
 signed main()
 {
     int n; cin >> n;
-    int original[n], result[n]; vi discrete(n);
+    int ori[n], res[n]; vi d(n);
     RPT(i,n)
     {
-        cin >> original[i];
-        discrete[i] = original[i];
+        cin >> ori[i];
+        d[i] = ori[i];
     }
-    sort(all(discrete));
-    discrete.resize(unique(all(discrete)) - discrete.begin());
+    sort(all(d));
+    d.resize(unique(all(d)) - d.begin());
     RPT(i,n)
     {
-        result[i] = lower_bound(all(discrete), original[i]) - discrete.begin();
+        res[i] = lower_bound(all(d), ori[i]) - d.begin();
     }
-    outputN(result,n);
+    outputN(res,n);
 }

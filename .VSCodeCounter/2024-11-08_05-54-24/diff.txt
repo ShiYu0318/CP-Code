@@ -1,0 +1,159 @@
+Date : 2024-11-08 05:54:24
+Directory : /Users/shiyu./Desktop/CP-Code
+Total : 109 files,  2315 codes, 348 comments, 219 blanks, all 2882 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |        109 |      2,315 |        348 |        219 |      2,882 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                            | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                               |        109 |      2,315 |        348 |        219 |      2,882 |
+| . (Files)                                                                       |          2 |          1 |          0 |          3 |          4 |
+| AP325                                                                           |         35 |        -23 |          0 |         -2 |        -25 |
+| CSES                                                                            |          6 |        213 |          2 |         17 |        232 |
+| CSES/Graph Algorithm                                                            |          1 |         62 |          0 |          5 |         67 |
+| CSES/Mathematics                                                                |          4 |        129 |          2 |         11 |        142 |
+| CSES/Sorting and Searching                                                      |          1 |         22 |          0 |          1 |         23 |
+| CodeForces                                                                      |          5 |        358 |         58 |         17 |        433 |
+| CodeForces/#961(Div.2)                                                          |          1 |         86 |         11 |          4 |        101 |
+| CodeForces/#962(Div.3)                                                          |          4 |        272 |         47 |         13 |        332 |
+| IONC                                                                            |         22 |        977 |         66 |         84 |      1,127 |
+| IONC/D1                                                                         |          6 |        238 |         12 |         13 |        263 |
+| IONC/D2                                                                         |          5 |        252 |         24 |         14 |        290 |
+| IONC/D3                                                                         |          6 |        283 |         10 |         36 |        329 |
+| IONC/D4                                                                         |          5 |        204 |         20 |         21 |        245 |
+| SA                                                                              |         14 |        336 |          2 |         27 |        365 |
+| SA (Files)                                                                      |          1 |          6 |          0 |          2 |          8 |
+| SA/0912                                                                         |          3 |         69 |          0 |          4 |         73 |
+| SA/0919                                                                         |         10 |        261 |          2 |         21 |        284 |
+| YTP                                                                             |          3 |        151 |         16 |          9 |        176 |
+| YTP/2024_Pre                                                                    |          3 |        151 |         16 |          9 |        176 |
+| ZeroJudge                                                                       |         21 |        302 |        192 |         63 |        557 |
+| ZeroJudge (Files)                                                               |         17 |        304 |        128 |         55 |        487 |
+| ZeroJudge/Basic Syntax                                                          |          4 |         -2 |         64 |          8 |         70 |
+| ZeroJudge/Basic Syntax/U4                                                       |          1 |          8 |         33 |          4 |         45 |
+| ZeroJudge/Basic Syntax/U6                                                       |          3 |        -10 |         31 |          4 |         25 |
+| zz Func Template                                                                |          1 |          0 |         12 |          1 |         13 |
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                        | language | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /Users/shiyu./Desktop/CP-Code/AP325/001.cpp                                     | C++      |        -41 |         -2 |         -3 |        -46 |
+| /Users/shiyu./Desktop/CP-Code/AP325/002.cpp                                     | C++      |        -48 |         -2 |         -3 |        -53 |
+| /Users/shiyu./Desktop/CP-Code/AP325/003.cpp                                     | C++      |        -40 |         -3 |         -4 |        -47 |
+| /Users/shiyu./Desktop/CP-Code/AP325/005.cpp                                     | C++      |        -34 |         -2 |         -4 |        -40 |
+| /Users/shiyu./Desktop/CP-Code/AP325/006.cpp                                     | C++      |        -40 |         -2 |         -4 |        -46 |
+| /Users/shiyu./Desktop/CP-Code/AP325/007.cpp                                     | C++      |        -39 |         -2 |         -4 |        -45 |
+| /Users/shiyu./Desktop/CP-Code/AP325/008.cpp                                     | C++      |        -58 |         -2 |         -4 |        -64 |
+| /Users/shiyu./Desktop/CP-Code/AP325/009+.cpp                                    | C++      |        -53 |         -5 |         -4 |        -62 |
+| /Users/shiyu./Desktop/CP-Code/AP325/009.cpp                                     | C++      |        -63 |        -12 |        -13 |        -88 |
+| /Users/shiyu./Desktop/CP-Code/AP325/010.cpp                                     | C++      |        -31 |         -1 |         -2 |        -34 |
+| /Users/shiyu./Desktop/CP-Code/AP325/011+.cpp                                    | C++      |        -39 |         -2 |         -3 |        -44 |
+| /Users/shiyu./Desktop/CP-Code/AP325/011.cpp                                     | C++      |        -36 |         -2 |         -2 |        -40 |
+| /Users/shiyu./Desktop/CP-Code/AP325/012.cpp                                     | C++      |        -32 |         -1 |         -4 |        -37 |
+| /Users/shiyu./Desktop/CP-Code/AP325/013.cpp                                     | C++      |        -37 |         -1 |         -5 |        -43 |
+| /Users/shiyu./Desktop/CP-Code/AP325/014+.cpp                                    | C++      |        -45 |         -2 |         -5 |        -52 |
+| /Users/shiyu./Desktop/CP-Code/AP325/014.cpp                                     | C++      |        -46 |         -2 |         -6 |        -54 |
+| /Users/shiyu./Desktop/CP-Code/AP325/015.cpp                                     | C++      |        -37 |         -1 |         -2 |        -40 |
+| /Users/shiyu./Desktop/CP-Code/AP325/016.cpp                                     | C++      |        -23 |          0 |         -2 |        -25 |
+| /Users/shiyu./Desktop/CP-Code/AP325/1-1.cpp                                     | C++      |         41 |          2 |          3 |         46 |
+| /Users/shiyu./Desktop/CP-Code/AP325/1-10.cpp                                    | C++      |         58 |          2 |          4 |         64 |
+| /Users/shiyu./Desktop/CP-Code/AP325/1-11-.cpp                                   | C++      |         63 |         12 |         13 |         88 |
+| /Users/shiyu./Desktop/CP-Code/AP325/1-11.cpp                                    | C++      |         53 |          5 |          4 |         62 |
+| /Users/shiyu./Desktop/CP-Code/AP325/1-2.cpp                                     | C++      |         48 |          2 |          3 |         53 |
+| /Users/shiyu./Desktop/CP-Code/AP325/1-3.cpp                                     | C++      |         40 |          3 |          4 |         47 |
+| /Users/shiyu./Desktop/CP-Code/AP325/1-5.cpp                                     | C++      |         34 |          2 |          4 |         40 |
+| /Users/shiyu./Desktop/CP-Code/AP325/1-7.cpp                                     | C++      |         40 |          2 |          4 |         46 |
+| /Users/shiyu./Desktop/CP-Code/AP325/1-8.cpp                                     | C++      |         39 |          2 |          4 |         45 |
+| /Users/shiyu./Desktop/CP-Code/AP325/2-1.cpp                                     | C++      |         31 |          1 |          2 |         34 |
+| /Users/shiyu./Desktop/CP-Code/AP325/2-2+.cpp                                    | C++      |         39 |          2 |          3 |         44 |
+| /Users/shiyu./Desktop/CP-Code/AP325/2-2.cpp                                     | C++      |         36 |          2 |          2 |         40 |
+| /Users/shiyu./Desktop/CP-Code/AP325/2-3.cpp                                     | C++      |         32 |          1 |          4 |         37 |
+| /Users/shiyu./Desktop/CP-Code/AP325/2-4.cpp                                     | C++      |         37 |          1 |          5 |         43 |
+| /Users/shiyu./Desktop/CP-Code/AP325/2-5+.cpp                                    | C++      |         45 |          2 |          5 |         52 |
+| /Users/shiyu./Desktop/CP-Code/AP325/2-5.cpp                                     | C++      |         46 |          2 |          6 |         54 |
+| /Users/shiyu./Desktop/CP-Code/AP325/2-6.cpp                                     | C++      |         37 |          1 |          2 |         40 |
+| /Users/shiyu./Desktop/CP-Code/CSES/Graph Algorithm/Labyrinth.cpp                | C++      |         62 |          0 |          5 |         67 |
+| /Users/shiyu./Desktop/CP-Code/CSES/Mathematics/Common Divisors.cpp              | C++      |         36 |          0 |          2 |         38 |
+| /Users/shiyu./Desktop/CP-Code/CSES/Mathematics/Counting Divisors.cpp            | C++      |         17 |          1 |          2 |         20 |
+| /Users/shiyu./Desktop/CP-Code/CSES/Mathematics/Exponentiation II.cpp            | C++      |         38 |          1 |          4 |         43 |
+| /Users/shiyu./Desktop/CP-Code/CSES/Mathematics/Exponentiation.cpp               | C++      |         38 |          0 |          3 |         41 |
+| /Users/shiyu./Desktop/CP-Code/CSES/Sorting and Searching/Collecting Numbers.cpp | C++      |         22 |          0 |          1 |         23 |
+| /Users/shiyu./Desktop/CP-Code/CodeForces/#961(Div.2)/pC++.cpp                   | C++      |         86 |         11 |          4 |        101 |
+| /Users/shiyu./Desktop/CP-Code/CodeForces/#962(Div.3)/pA.cpp                     | C++      |         61 |         11 |          3 |         75 |
+| /Users/shiyu./Desktop/CP-Code/CodeForces/#962(Div.3)/pB.cpp                     | C++      |         64 |         12 |          4 |         80 |
+| /Users/shiyu./Desktop/CP-Code/CodeForces/#962(Div.3)/pC+.cpp                    | C++      |         75 |         13 |          3 |         91 |
+| /Users/shiyu./Desktop/CP-Code/CodeForces/#962(Div.3)/pC.cpp                     | C++      |         72 |         11 |          3 |         86 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D1/pA.cpp                                    | C++      |         57 |         12 |          3 |         72 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D1/pC.cpp                                    | C++      |         59 |          0 |          2 |         61 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D1/pD.cpp                                    | C++      |         53 |          0 |          4 |         57 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D1/pE.cpp                                    | C++      |          8 |          0 |          1 |          9 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D1/pF.cpp                                    | C++      |         26 |          0 |          1 |         27 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D1/pG.cpp                                    | C++      |         35 |          0 |          2 |         37 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D2/pA.cpp                                    | C++      |         38 |          1 |          0 |         39 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D2/pB.cpp                                    | C++      |         76 |          1 |          3 |         80 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D2/pC.cpp                                    | C++      |         40 |         22 |          5 |         67 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D2/pD.cpp                                    | C++      |         37 |          0 |          4 |         41 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D2/pE.cpp                                    | C++      |         61 |          0 |          2 |         63 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D3/pB.cpp                                    | C++      |         68 |          1 |          4 |         73 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D3/pC.cpp                                    | C++      |         36 |          1 |          4 |         41 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D3/pD.cpp                                    | C++      |         26 |          1 |          2 |         29 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D3/pE.cpp                                    | C++      |         50 |          2 |          5 |         57 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D3/pG.cpp                                    | C++      |         68 |          1 |         16 |         85 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D3/pJ.cpp                                    | C++      |         35 |          4 |          5 |         44 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D4/pC+.cpp                                   | C++      |         35 |          7 |          7 |         49 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D4/pJ.cpp                                    | C++      |         28 |          0 |          1 |         29 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D4/pN++.cpp                                  | C++      |         50 |         10 |          7 |         67 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D4/pN+.cpp                                   | C++      |         43 |          2 |          3 |         48 |
+| /Users/shiyu./Desktop/CP-Code/IONC/D4/pN.cpp                                    | C++      |         48 |          1 |          3 |         52 |
+| /Users/shiyu./Desktop/CP-Code/SA/0912/ABC220-C.cpp                              | C++      |         30 |          0 |          2 |         32 |
+| /Users/shiyu./Desktop/CP-Code/SA/0912/ABC353-C.cpp                              | C++      |         22 |          0 |          1 |         23 |
+| /Users/shiyu./Desktop/CP-Code/SA/0912/d193.cpp                                  | C++      |         17 |          0 |          1 |         18 |
+| /Users/shiyu./Desktop/CP-Code/SA/0919/ARC082-C.cpp                              | C++      |         17 |          0 |          2 |         19 |
+| /Users/shiyu./Desktop/CP-Code/SA/0919/Conformity.cpp                            | C++      |         33 |          1 |          2 |         36 |
+| /Users/shiyu./Desktop/CP-Code/SA/0919/Hot Springs.cpp                           | C++      |         16 |          1 |          2 |         19 |
+| /Users/shiyu./Desktop/CP-Code/SA/0919/Packagemanager.cpp                        | C++      |         39 |          0 |          3 |         42 |
+| /Users/shiyu./Desktop/CP-Code/SA/0919/Phone List.cpp                            | C++      |         24 |          0 |          1 |         25 |
+| /Users/shiyu./Desktop/CP-Code/SA/0919/Pivot.cpp                                 | C++      |         28 |          0 |          2 |         30 |
+| /Users/shiyu./Desktop/CP-Code/SA/0919/Streets Ahead.cpp                         | C++      |         26 |          0 |          3 |         29 |
+| /Users/shiyu./Desktop/CP-Code/SA/0919/UVa-p836.cpp                              | C++      |         30 |          0 |          2 |         32 |
+| /Users/shiyu./Desktop/CP-Code/SA/0919/typical90-058.cpp                         | C++      |         33 |          0 |          3 |         36 |
+| /Users/shiyu./Desktop/CP-Code/SA/0919/ Massive Card Game.cpp                    | C++      |         15 |          0 |          1 |         16 |
+| /Users/shiyu./Desktop/CP-Code/SA/test.cpp                                       | C++      |          6 |          0 |          2 |          8 |
+| /Users/shiyu./Desktop/CP-Code/YTP/2024_Pre/p0.cpp                               | C++      |         25 |          0 |          1 |         26 |
+| /Users/shiyu./Desktop/CP-Code/YTP/2024_Pre/p2.cpp                               | C++      |         77 |         14 |          3 |         94 |
+| /Users/shiyu./Desktop/CP-Code/YTP/2024_Pre/p8.cpp                               | C++      |         49 |          2 |          5 |         56 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/Basic Syntax/U4/a058.cpp                | C++      |          8 |         33 |          4 |         45 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/Basic Syntax/U6/a693.cpp                | C++      |         22 |         32 |          7 |         61 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/Basic Syntax/U6/b130.cpp                | C++      |         -1 |          0 |          0 |         -1 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/Basic Syntax/U6/e693.cpp                | C++      |        -31 |         -1 |         -3 |        -35 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/a694.cpp                                | C++      |         25 |         25 |         11 |         61 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/b304.cpp                                | C++      |        -16 |         45 |          3 |         32 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/b343.cpp                                | C++      |         45 |          1 |          5 |         51 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/c547.cpp                                | C++      |         17 |          0 |          3 |         20 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/d046.cpp                                | C++      |         14 |         15 |          4 |         33 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/d133.cpp                                | C++      |         22 |          0 |          3 |         25 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/d305.cpp                                | C++      |         17 |         15 |          6 |         38 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/d483.cpp                                | C++      |          6 |          0 |          1 |          7 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/d498.cpp                                | C++      |         10 |          4 |          1 |         15 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/e339.cpp                                | C++      |         -1 |         19 |          2 |         20 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/e447.cpp                                | C++      |         22 |          0 |          3 |         25 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/e575.cpp                                | C++      |         40 |          1 |          4 |         45 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/f345.cpp                                | C++      |         11 |          0 |          2 |         13 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/i213.cpp                                | C++      |         22 |          0 |          1 |         23 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/j057.cpp                                | C++      |         22 |          1 |          2 |         25 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/n130.cpp                                | C++      |         30 |          2 |          3 |         35 |
+| /Users/shiyu./Desktop/CP-Code/ZeroJudge/n369.cpp                                | C++      |         18 |          0 |          1 |         19 |
+| /Users/shiyu./Desktop/CP-Code/test-p.cpp                                        | C++      |         20 |          0 |          2 |         22 |
+| /Users/shiyu./Desktop/CP-Code/test.cpp                                          | C++      |        -19 |          0 |          1 |        -18 |
+| /Users/shiyu./Desktop/CP-Code/zz Func Template/fpow.cpp                         | C++      |          0 |         12 |          1 |         13 |
+| Total                                                                           |          |      2,315 |        348 |        219 |      2,882 |
++---------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

@@ -18,5 +18,6 @@ using namespace std;
 
 signed main()
 {
-    
+    int n, m; cin >> n >> m;
+    cout << min(n,m) * 2 << endl;
 }

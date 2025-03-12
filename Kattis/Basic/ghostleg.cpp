@@ -7,18 +7,24 @@ using namespace std;
 #define F first
 #define S second
 #define EB emplace_back
-#define nl cout << '\n'
+#define endl "\n"
 #define SZ(x) ((int)x.size())
 #define all(x) x.begin(), x.end()
 #define RPT(i,n) for(int i=0; i<n; ++i)
 #define FOR(i,a,b) for(int i=a; i<b; ++i)
 #define rFOR(i,n) for(int i=n-1; i>=0; --i)
 #define input(x) for(auto &i:x) cin >> i
-#define output(x) for(auto i:x) cout << i << '\n'
-#define outputN(x,n) RPT(i,n) cout << x[i] << " \n"[i == n-1];
-#define Yn(x) cout << (x ? "Yes" : "No") << '\n';
+#define output(x) for(auto i:x) cout << i << endl;
 
 signed main()
 {
-    ShiYu;
+    int n,m; cin >> n >> m;
+    vector<int> v(n);
+    RPT(i,n) v[i] = i+1;
+    RPT(i,m)
+    {
+        int t; cin >> t;
+        swap(v[t-1],v[t]);
+    }
+    output(v);
 }

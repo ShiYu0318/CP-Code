@@ -1,1 +1,0 @@
-{"name":"Local: pE","url":"/Users/shiyu./Desktop/CP-Code/IONC/D2/pE.cpp","tests":[{"id":1722252877032,"input":"5 3\n3 2 3 1 2\n1 3\n2 4\n1 5\n","output":"2\n3\n3\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/shiyu./Desktop/CP-Code/IONC/D2/pE.cpp","group":"local","local":true}

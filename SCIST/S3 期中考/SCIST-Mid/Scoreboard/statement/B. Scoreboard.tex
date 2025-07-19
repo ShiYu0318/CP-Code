@@ -1,0 +1,188 @@
+\documentclass[12pt]{article}
+\usepackage{xeCJK}
+\usepackage{fontspec}
+\usepackage[a4paper,top=2.8cm,bottom=2.8cm,left=2.3cm,right=2.3cm]{geometry}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{indentfirst}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{ulem}
+\usepackage{version}
+\usepackage{thmtools}
+\usepackage{qtree}
+\usepackage{algpseudocode}
+\usepackage{mathtools}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{ctable}
+\usepackage{totcount}
+\usepackage{textpos}
+
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+
+\setCJKmainfont[BoldFont={SourceHanSerifTC-SemiBold.otf},AutoFakeSlant]{SourceHanSerifTC-Regular.otf}
+\setmonofont{CascadiaCode-Regular.otf}
+\newfontfamily{\ProblemTitleMainFont}{SourceHanSerifTC-Bold.otf}
+\newCJKfontfamily{\ProblemTitleCJKFont}{SourceHanSerifTC-Bold.otf}
+\newcommand{\ProblemTitleFont}{\ProblemTitleMainFont\ProblemTitleCJKFont}
+
+\pagestyle{fancy}
+
+\lstset{
+basicstyle=\footnotesize\ttfamily
+}
+
+% \raggedcolumns
+
+\newcommand{\ProblemTitle}[2]{\noindent\Large{\ProblemTitleFont #1 (#2)}\normalsize\par}
+\newcommand{\ProblemSection}[1]{\vspace{0.6cm}\par\noindent\large{\ProblemTitleFont #1}\normalsize\par}
+\newcommand{\ProblemSubsection}[1]{\par\noindent{\ProblemTitleFont #1}\par}
+\newcommand{\ProblemStatement}{\ProblemSection{問題敘述}}
+\newcommand{\ProblemInput}{\ProblemSection{輸入說明}}
+\newcommand{\ProblemOutput}{\ProblemSection{輸出說明}}
+\newcommand{\ProblemConstraints}{\ProblemSection{測資限制}}
+
+\newcommand{\ProblemSampleTitle}{\ProblemSection{範例測資}}
+
+\newcounter{ProblemSample}
+\newcommand{\ProblemSample}[2]{
+    \stepcounter{ProblemSample}
+    \noindent
+    \begin{minipage}[t]{0.5\textwidth}
+        \ProblemSubsection{範例輸入 \theProblemSample}
+        \lstinputlisting{#1}
+    \end{minipage}
+    \begin{minipage}[t]{0.5\textwidth}
+        \ProblemSubsection{範例輸出 \theProblemSample}
+        \lstinputlisting{#2}
+    \end{minipage}
+}
+\newenvironment{ProblemSampleWithNote}[2]{
+    \stepcounter{ProblemSample}
+    \noindent
+    \begin{minipage}[t]{0.5\textwidth}
+        \ProblemSubsection{範例輸入 \theProblemSample}
+        \lstinputlisting{#1}
+    \end{minipage}
+    \begin{minipage}[t]{0.5\textwidth}
+        \ProblemSubsection{範例輸出 \theProblemSample}
+        \lstinputlisting{#2}
+    \end{minipage}
+    \vspace{-0.4cm}
+    \ProblemSubsection{範例說明 \theProblemSample}
+}{}
+
+\newcommand{\ProblemSubtaskTitle}{\ProblemSection{評分說明}}
+\newtotcounter{ProblemSubtask}
+\newenvironment{ProblemSubtaskTable}{
+    \begin{center}
+        \begin{tabular}{ccl}
+            \specialrule{1.3pt}{0pt}{1pt}
+            子任務 & 分數 & 額外輸入限制 \\
+            \specialrule{0.5pt}{1pt}{1pt}
+}
+{
+            \specialrule{1.3pt}{1pt}{0pt}
+        \end{tabular}
+    \end{center}
+}
+\newcommand{\ProblemSubtask}[2]{ \stepcounter{ProblemSubtask} \theProblemSubtask & #1 & #2 \\ }
+
+\setlist[enumerate]{itemsep=0pt, parsep=0pt, topsep=0pt}
+\setlist[itemize]{itemsep=0pt, parsep=0pt, topsep=0pt}
+
+\begin{document}
+
+
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\baselinestretch}{1.3}
+\pagenumbering{arabic}
+\setlength\parindent{24pt}
+\setlength\parskip{12pt}
+\cfoot{\thepage}
+\rhead{
+	\small{SCIST S3 演算法期中考}
+	
+}
+
+\ProblemTitle{B. YTP 的記分板}{YTP Scoreboard}
+
+\ProblemStatement
+
+一年一度的 YTP 少年圖靈計畫快要開始報名了！
+
+請你依照下面的規則寫出一個記分板吧！
+
+對於一道題目，若參賽者 $x$ 尚未傳送任何一筆程式碼，那麼記分板上將顯示為 $0$
+
+若參賽者 $x$ 在某一題獲得了 WA、TLE、MLE，記分板上該欄位的顯示數字便會 $-1$。
+
+若參賽者 $x$ 在該題獲得了 AC（Accepted），那麼該欄位的數字就會變成正的（後面數字不變），且之後的任何 submit 都不會影響計分板上，該參賽者該題的顯示數字。
+
+\textbf{比較特別的是，如果參賽者在第一次 Submit 就得到 AC，那記分板上會輸出} $+0$
+
+舉例：某參賽者在 $A$ 題獲得兩次 WA，兩次 TLE，最後得到 AC，那麼對應欄位便會顯示 $+4$（注意：$0$ 以外的數字，都需要在數字前加上正負號，如 $+2$、$-3$，至於 $0$ 則是如上所述，如果是有 AC 要顯示 $+0$，沒傳送過任何 Submit 則是顯示 $0$）
+
+請根據輸入的操作，寫一支程式模擬記分板吧！
+
+\ProblemInput
+
+輸入第一行有兩個正整數 $n, m, p$，代表參賽者人數、操作次數、題目數量
+
+接下來的 $n$ 行輸入，第 $i$ 行有一個字串 $s_i$，代表記分板上第 $i$ 行的參賽者
+
+最後 $m$ 行輸入將有幾種格式：
+
+\begin{enumerate}
+\item \{NAME\} \{PROBLEM\} \{RESULT\}：代表名字為 \{NAME\} 的參賽者，在第 \{PROBLEM\} 題傳了一次程式碼，得到的結果為 \{RESULT\}
+\item view：查看程式碼
+\end{enumerate}
+
+\clearpage
+
+\ProblemOutput
+
+對於每次輸入為 view 的操作，輸出 $n$ 行。
+
+每行包含 $p + 1$ 個字串，代表該行是哪位參賽者，以及該參賽者每題的結果，字串之間以空格隔開（輸出的參賽者順序要跟輸入的順序一樣）
+
+%\clearpage
+
+\ProblemConstraints
+
+\begin{itemize}
+\item $1 \le n, p \le 10$
+\item $1 \le m \le 100$
+\item $s_i$ 由小寫字母組成，長度不超過 $8$，且不會有名字叫做 view 或是有任兩個人的名字重複（意即出現 view 則一定是第二種操作）
+\item 第一種操作的輸入不會有不存在的名字或題目
+\item 提交程式碼得到的結果只有 AC、WA、TLE、MLE，只有 AC 被視為正確
+\end{itemize}
+
+
+\ProblemSampleTitle
+
+
+\ProblemSample{1in.txt}{1out.txt}
+\ProblemSample{2in.txt}{2out.txt}
+\ProblemSample{3in.txt}{3out.txt}
+
+
+\ProblemSubtaskTitle
+
+本題共有 2 組子任務，條件限制如下所示。
+
+\begin{ProblemSubtaskTable}
+    \ProblemSubtask{50}{\{RESULT\} 不包含 AC}
+    \ProblemSubtask{50}{無額外限制}
+\end{ProblemSubtaskTable}
+
+\end{document}

@@ -8,6 +8,8 @@ using namespace std;
 #define F first
 #define S second
 
+// 建表 多方向移動
+
 const int mv[6][2] = {{-1,0},{0,1},{1,1},{1,0},{0,-1},{-1,-1}};
 
 int n,m;

@@ -1,41 +1,56 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
+const int d=1e9;
+/*int fast(int a,int b)
+{
+    if(b==0)    return 1;
+    int c=fast(a,b/2)%d;
+    if(b%2==1)  return c*c%d*a%d;
+    return c*c%d;
+}
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    cout<<fast(a,b);
+}*/
+struct cat
+{
+    string name;
+    int age,job;
+};
 
-int cnt[30];
+bool cmp(cat a,cat b)//1職業 2歲數
+{//appentice
+    if(a.job==b.job&&a.job==4&&a.age==b.age)    return a.name<b.name;
+    else if(a.job==b.job&&a.job==4)     return a.age<b.age;
+    else if(a.job==b.job&&a.age!=b.age)   return a.age>b.age;
+    else if(a.job==b.job&&a.age==b.age)     return a.name<b.name;
+    else    return a.job<b.job;
+}
+const string nam[8]={"elder","nursy","kit","warrior","appentice","medicent","deputy","leader"};
 
 int main()
 {
-    string s;
-    while(cin >> s)
+    cat c[10005]={};
+    int n,m;
+    string j;
+    cin >> n >> m;
+    for(int i=0;i<n;i++)
     {
-        int a=-1,b=-1,c=-1;
-        for(int i=0;i<s.size();++i)
+        cin>>c[i].name>>j>>c[i].age;
+        for(int k=0;k<8;k++)
         {
-            if(s[i] == '/')
+            if(j==nam[k])
             {
-                if(a == -1) a = i+1;
-                else c = i+1;
+                c[i].job=k;
+                break;
             }
-            else if(s[i] == '-') b = i+1;
         }
-        if(b != -1)
-        {
-            a = stoi(s.substr(a, b-a));
-            c = stoi(s.substr(c));
-            // cout << a << " " << c << "\n";
-        }
-        else
-        {
-            a = stoi(s.substr(a));
-            // cout << a << "\n";
-        }
-        if(b != -1)
-        {
-            for(int i=a;i<=c;++i) cnt[i-1]++;
-        }
-        else cnt[a]++;
     }
-    cout << " Mon   Tue   Wed   Thu   Fri   Sat   Sun\n";
-    for(int i=0;i<18;++i) cout << " ";
-    for(int i=6;i<24;++i) cout << (to_string(i+1).size()==1 ? "0"+ to_string(i+1) : to_string(i+1)) << ":"  <<  (to_string(cnt[i]).size() == 1 ? "0" + to_string(cnt[i]) : to_string(cnt[i]))  << " \n"[(i+12)%7==0];
+    sort(c,c+n,cmp);
+    for(int i=0;i<m;i++)
+    {
+        cout<<c[i].name<<"\n";
+    }
 }

@@ -1,56 +1,128 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-const int d=1e9;
-/*int fast(int a,int b)
-{
-    if(b==0)    return 1;
-    int c=fast(a,b/2)%d;
-    if(b%2==1)  return c*c%d*a%d;
-    return c*c%d;
-}
-int main()
-{
-    int a,b;
-    cin>>a>>b;
-    cout<<fast(a,b);
-}*/
-struct cat
-{
-    string name;
-    int age,job;
-};
 
-bool cmp(cat a,cat b)//1職業 2歲數
-{//appentice
-    if(a.job==b.job&&a.job==4&&a.age==b.age)    return a.name<b.name;
-    else if(a.job==b.job&&a.job==4)     return a.age<b.age;
-    else if(a.job==b.job&&a.age!=b.age)   return a.age>b.age;
-    else if(a.job==b.job&&a.age==b.age)     return a.name<b.name;
-    else    return a.job<b.job;
-}
-const string nam[8]={"elder","nursy","kit","warrior","appentice","medicent","deputy","leader"};
+
+
 
 int main()
 {
-    cat c[10005]={};
-    int n,m;
-    string j;
-    cin >> n >> m;
-    for(int i=0;i<n;i++)
-    {
-        cin>>c[i].name>>j>>c[i].age;
-        for(int k=0;k<8;k++)
-        {
-            if(j==nam[k])
-            {
-                c[i].job=k;
-                break;
-            }
-        }
-    }
-    sort(c,c+n,cmp);
-    for(int i=0;i<m;i++)
-    {
-        cout<<c[i].name<<"\n";
-    }
+    // int arr[10][10];
+    // vector<型別> 名稱(a,b);
+    // a : 大小
+    // b : 每個元素 是什麼
+
+    // 1. 有給大小
+    // int n; cin >> n;
+    // vector<int> arr(n);
+    // for(int i=0; i<n; i++) cin >> arr[i];
+
+
+    // 2. 沒給大小 EOF
+    vector<int> arr;
+    int n;
+    while(cin >> n) arr.push_back(n);
+    cout << arr.size() << "\n";
+    for(int i=0; i < arr.size(); ++i) cout << arr[i] << " ";
+    cout << "\n";
+    arr.pop_back();
+    cout << arr.size() << "\n";
+    for(int i=0; i < arr.size(); ++i) cout << arr[i] << " ";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // arr.push_back(15);
+    // cout << arr.size() << "\n";
+
+    // arr.push_back(10);
+    // cout << arr.size() << "\n";
+
+    // arr.push_back(5);
+    // cout << arr.size() << "\n\n";
+
+
+    // // sort(arr, arr + n); // 陣列排序
+    // sort(arr.begin(), arr.end()); // vector 排序
+    
+    // for(int i=0; i < arr.size(); ++i) cout << arr[i] << " ";
+    // for(int i:arr) cout << i << " ";
+
+
+
+
+    // cout << arr[0] << "\n";
+    // cout << arr.front() << "\n\n";
+    // cout << *arr.begin() << "\n";
+    
+    
+    // cout << arr[arr.size()-1] << "\n";
+    // cout << arr.back() << "\n";
+    // cout << *(arr.end()-1) << "\n";
+
+
+
+
+    // arr.pop_back();
+    // cout << arr.size() << "\n";
+    // // 5,10
+
+
+
+
+
+
+
+
+
+
+
+    // cout << arr[1] + 1 << "\n";
+    // arr[0] = 4;
+    // cout << arr[0] << "\n";
+
+
+
+
+    // vector< vector<int> > brr(4, vector<int>(5,0));
+    //  , , , , 
+    //  , , , ,  
+    //  , , , , 
+    //  , , , , 
+    
+
+    
+
+
+
+
+
+
+
+    
+    
+    
+    
+    // 0 0 0 0 2 6 8 5 3 2 5
+    // 0 0 0 0 1 3 4
+    // 0 0 0 0 2 5 8 9
+    // 0 0 0 0 1 5 7 9 2 4
+
+    
 }

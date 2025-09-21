@@ -10,6 +10,7 @@ using namespace std;
 #define FOR(i,a,b) for(int i=a; i<b; ++i)
 
 // 拓墣排序 + DP（類似）
+// DAG DP
 
 signed main()
 {

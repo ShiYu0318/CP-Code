@@ -26,11 +26,7 @@ signed main()
         else if(!sk.empty())
         {
             if(((sk.top() == '(' && s[i] == ')') || (sk.top() == '[' && s[i] == ']'))) sk.pop();
-            else
-            {
-                ans = false;
-                break;
-            } 
+            else { ans = false; break; } 
         }
     }
     if(!sk.empty()) ans = false;

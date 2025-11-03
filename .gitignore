@@ -4,4 +4,5 @@
 .cph
 .ztest
 *.bin
+*.txt
 -Polygon

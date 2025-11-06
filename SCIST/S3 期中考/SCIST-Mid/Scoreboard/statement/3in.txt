@@ -1,8 +1,0 @@
-1 6 3
-koying
-koying 1 AC
-view
-koying 1 WA
-view
-koying 1 AC
-view

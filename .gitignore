@@ -2,7 +2,7 @@
 .vscode
 .VSCodeCounter
 .cph
-.ztest
+ztest
 *.bin
 *.txt
 -Polygon

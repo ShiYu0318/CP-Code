@@ -6,6 +6,7 @@ Course 2025-CE1003A-資工1A
 */
 #include <bits/stdc++.h>
 using namespace std;
+#define fio ios_base::sync_with_stdio(0); cin.tie(0)
 // #define int long long
 
 const int scores[9] = {10, 20, -15, -25, 15, -5, -6, -20, 25};
@@ -13,6 +14,7 @@ const string grades = "FDCBAA";
 
 signed main()
 {
+    fio;
     int N; cin >> N;
     int pass = 0, sum = 0, mx = -1, mi = 101, score, code;
     for(int i=0; i<N; ++i)

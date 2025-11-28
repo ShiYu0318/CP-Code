@@ -14,7 +14,7 @@ const vector<string> wk = {"Thursday", "Friday", "Saturday", "Sunday", "Monday",
 signed main()
 {
     fio; int T; cin >> T;
-    while(T--) 
+    while(T--)
     {
         int M, D; cin >> M >> D;
         int sum = D;

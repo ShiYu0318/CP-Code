@@ -9,7 +9,7 @@ using namespace std;
 #define int long long
 
 int A(int m, int n)
-{
+{   // 依據題目規則分開回傳 或繼續遞迴
     if(m == 0) return n+1;
     else if(m > 0 && n == 0) return A(m-1, 1);
     else if(m > 0 && n > 0) return A(m-1, A(m, n-1));
@@ -18,5 +18,5 @@ int A(int m, int n)
 signed main()
 {
     fio; int m, n; cin >> m >> n;
-    cout << A(m, n) << "\n";
+    cout << A(m, n) << "\n";    // 呼叫遞迴函數
 }

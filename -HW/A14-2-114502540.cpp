@@ -10,13 +10,13 @@ using namespace std;
 
 string S(int n)
 {
-    if(n == 1) return "A";
-    string s = S(n-1);
+    if(n == 1) return "A";  //  邊界條件
+    string s = S(n-1);  // 先存起來就不用在一個算式裡重複呼叫兩次
     return s + char('A' + (n-1)) + s;
 }
 
 signed main()
 {
     fio; int n; cin >> n;
-    cout << S(n) << "\n";
+    cout << S(n) << "\n";   // 呼叫遞迴函數
 }

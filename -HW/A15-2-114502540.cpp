@@ -1,3 +1,8 @@
+// Assignment A15-2
+// Name: 黃士育
+// Student Number: 114502540
+// Course 2025-CE1003A-資工1A
+
 #include <iostream>
 using std::cin;
 using std::cout;
@@ -12,8 +17,7 @@ void reverseCString(char *s)
 
    // write code
    // 平移到字串結尾
-   while (*right != '\0')
-      right++;
+   while (*right != '\0') right++;
    right--;
 
    // 對稱交換 往內收縮 直到相遇

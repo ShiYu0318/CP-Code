@@ -1,3 +1,8 @@
+// Assignment A15-1
+// Name: 黃士育
+// Student Number: 114502540
+// Course 2025-CE1003A-資工1A
+
 #include <iostream>
 using std::cin;
 using std::cout;

@@ -1,3 +1,9 @@
+'''
+Assignment A06
+Name: 黃士育
+Student Number: 114502540
+Course 2025-CE1003A-資工1A
+'''
 legend_states = {'Yasuo' : {'HP' : 87, 'AD' : 87}, 'Yone' : {'HP' : 100, 'AD' : 90}, 
                 'Teemo' : {'HP' : 80, 'AD' : 120}, 'Ahri' : {'HP' : 100, 'AD' : 110}, 
                 'Galio' : {'HP' : 120, 'AD' : 90}, 'Bard' : {'HP' : 999, 'AD' : 999}}

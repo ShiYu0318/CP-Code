@@ -1,10 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-
-int main()
-{
-    
-}#include <iostream>
+#include <iostream>
 #include <algorithm>
 
 using namespace std;
@@ -25,7 +19,6 @@ int main() {
 
     if (!(cin >> oldSize)) return 0;
 
-
     int* originalArray = nullptr;
     if (oldSize > 0) {
         originalArray = new int[oldSize];
@@ -34,15 +27,10 @@ int main() {
         }
     }
 
-
     cin >> newSize;
-
     cin >> startingIndex >> endingIndex;
-
     
     int* newArray = resizeArray(originalArray, oldSize, newSize, startingIndex, endingIndex);
-
-
 
     printArray(newArray, newSize);
 
@@ -63,5 +51,4 @@ int* resizeArray(int* arr, int oldSize, int newSize, int startingIndex, int endi
     delete[] arr;
 
     return outputArray;
-
 }

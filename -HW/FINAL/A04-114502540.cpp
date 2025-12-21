@@ -1,12 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
-// O(n)
+// O(n) 雙指標
 int main()
 {
     int n; cin >> n;
     vector<int> v(n);
-    int mx = INT_MIN;
     for(auto &i:v) cin >> i;
+    int mx = INT_MIN;
     for(int i=0, j=n-1; i<j;)
     {
         mx = max(mx, (j - i) * min(v[i],v[j]));

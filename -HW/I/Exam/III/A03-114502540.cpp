@@ -12,7 +12,7 @@ int main()
         for(int y=0; y <= n; ++y)
         {   // 轉移
             if(y > 0) dp[x][y][0] += dp[x][y-1][0] + dp[x][y-1][1];
-            if(y > 1) dp[x][y][0] += dp[x][y-2][1] + dp[x][y-2][0];
+            if(y > 1) dp[x][y][0] += dp[x][y-2][0] + dp[x][y-2][1];
             if(x > 0) dp[x][y][1] += dp[x-1][y][0];
         }
     }

@@ -16,6 +16,10 @@ using namespace std;
 #define input(x) for(auto &i:x) cin >> i
 #define output(x) for(auto i:x) cout << i << ' '; cout << endl;
 
+// 習題 Q-2-12. 最接近的子矩陣和 (108 高中全國賽) (*)
+// 動態維護 二維前綴和 
+// 限制版 二維壓一維 Kadane’s
+
 signed main()
 {
     int k,m,n; cin >> k >> m >> n;

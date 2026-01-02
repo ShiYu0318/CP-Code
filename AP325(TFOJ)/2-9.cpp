@@ -16,6 +16,7 @@ using namespace std;
 #define input(x) for(auto &i:x) cin >> i
 #define output(x) for(auto i:x) cout << i << ' '; cout << endl;
 
+// 例題 P-2-9. 子集合乘積(折半枚舉) (@@)
 // 遞迴枚舉子集合 費馬小定理 模逆元 快速冪 折半枚舉
 
 int p;

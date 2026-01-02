@@ -1,4 +1,4 @@
-// 2026-01-02
+//
 #include <bits/stdc++.h>
 using namespace std;
 #define ShiYu ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
@@ -18,29 +18,18 @@ using namespace std;
 #define input(x) for(auto &i:x) cin >> i
 #define output(x) for(auto i:x) cout << i << ' '; cout << endl;
 
-// 習題 Q-2-13. 無理數的快速冪 (108 高中全國賽, simplifed)
-// 快速冪 乘法展開
-
-const int p = 1e9+9;
-
-// ( a + b \sqrt{k} ) * ( c + d \sqrt{k}) = ( ac + bdk ) + ( ad + bc ) \sqrt{k}
-pii mt(pii a, pii b)
-{
-    int s = a.F * b.F %p + a.S * b.S %p * 2 %p;
-    int t = a.F * b.S %p + a.S * b.F %p;
-    return {s %p,t %p};
-}
-
-pii fpow(pii z, int n)
-{
-    if(n == 1) return z;
-    pii t = fpow(z, n/2), tt = mt(t,t);
-    return (n & 1 ? mt(tt, z) : tt);
-}
+// 例題 P-2-15. 圓環出口 (APCS202007)
+// 前綴和 二分搜 循環
 
 signed main()
 {
-    int x,y,n; cin >> x >> y >> n;
-    pii z = fpow(MP(x,y),n);
-    cout << z.F %p << " " << z.S %p << endl;
+    int n,m,t = 0; cin >> n >> m;
+    vi p(n), q(m), ps(n+1); input(p); input(q);
+    ps[0] = 0; RPT(i,n) ps[i+1] = ps[i] + p[i]; // 前綴和
+    for(int i:q)
+    {   // 不需循環則搜點數+目前和 否則搜剩餘點數
+        if(ps[n] - ps[t] > i) t = lower_bound(ps.begin()+t, ps.end(), i + ps[t]) - ps.begin();
+        else t = lower_bound(ps.begin(), ps.end(), i - (ps[n] - ps[t])) - ps.begin();
+    }
+    cout << t << "\n";
 }

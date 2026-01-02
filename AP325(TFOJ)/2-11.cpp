@@ -16,6 +16,10 @@ using namespace std;
 #define input(x) for(auto &i:x) cin >> i
 #define output(x) for(auto i:x) cout << i << ' '; cout << endl;
 
+// 例題 P-2-11. 最接近的區間和 (*)
+// 前綴和 動態維護
+// 限制版 Kadane’s
+
 signed main()
 {
     int n,k; cin >> n >> k;

@@ -1,4 +1,4 @@
-// 2026-01-02
+//
 #include <bits/stdc++.h>
 using namespace std;
 #define ShiYu ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
@@ -18,29 +18,7 @@ using namespace std;
 #define input(x) for(auto &i:x) cin >> i
 #define output(x) for(auto i:x) cout << i << ' '; cout << endl;
 
-// 習題 Q-2-13. 無理數的快速冪 (108 高中全國賽, simplifed)
-// 快速冪 乘法展開
-
-const int p = 1e9+9;
-
-// ( a + b \sqrt{k} ) * ( c + d \sqrt{k}) = ( ac + bdk ) + ( ad + bc ) \sqrt{k}
-pii mt(pii a, pii b)
-{
-    int s = a.F * b.F %p + a.S * b.S %p * 2 %p;
-    int t = a.F * b.S %p + a.S * b.F %p;
-    return {s %p,t %p};
-}
-
-pii fpow(pii z, int n)
-{
-    if(n == 1) return z;
-    pii t = fpow(z, n/2), tt = mt(t,t);
-    return (n & 1 ? mt(tt, z) : tt);
-}
-
 signed main()
 {
-    int x,y,n; cin >> x >> y >> n;
-    pii z = fpow(MP(x,y),n);
-    cout << z.F %p << " " << z.S %p << endl;
+    
 }

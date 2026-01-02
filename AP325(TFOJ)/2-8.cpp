@@ -16,11 +16,15 @@ using namespace std;
 #define input(x) for(auto &i:x) cin >> i
 #define output(x) for(auto i:x) cout << i << ' '; cout << endl;
 
+// 習題 Q-2-8. 模逆元 (*)
 // 模逆元 快速冪
 
 /*
-費馬小定理:
-若 P 為質數,對任意正整數 a,
+(a * b) % p = 1
+a 模 p 反元素：b
+
+費馬小定理：
+若 P 為質數, 對任意正整數 a,
 (a^(P-2) % P) 是 a 在 [1, P-1] 區間的唯一乘法反元素
 */
 

@@ -19,6 +19,7 @@ using namespace std;
 #define Yn(x) cout << (x ? "Yes" : "No") << '\n';
 
 // 例題 P-2-6. Two-Number problem
+// unordered_set count 平均 O(1)
 
 signed main()
 {

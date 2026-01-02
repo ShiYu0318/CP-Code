@@ -16,6 +16,7 @@ using namespace std;
 #define input(x) for(auto &i:x) cin >> i
 #define output(x) for(auto i:x) cout << i << ' '; cout << endl;
 
+// 例題 Q-2-10. 子集合的和 (折半枚舉)
 // 遞迴枚舉子集合 折半枚舉
 
 int p;

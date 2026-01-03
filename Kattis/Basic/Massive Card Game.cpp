@@ -2,6 +2,8 @@
 using namespace std;
 #define all(x) x.begin(), x.end()
 
+// 偏思考 + 優化技巧
+
 int main()
 {
     int n; cin >> n;

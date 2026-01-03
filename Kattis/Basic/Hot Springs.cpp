@@ -2,6 +2,8 @@
 using namespace std;
 #define ll long long
 
+// 波浪排列 奇偶性
+
 int main()
 {
     int n,t; cin >> n;

@@ -4,6 +4,8 @@ using namespace std;
 #define S second
 #define all(x) x.begin(), x.end()
 
+// 字串查找 + 二分搜
+
 vector< pair<string,int> > tt;
 int t;
 

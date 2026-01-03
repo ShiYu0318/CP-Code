@@ -2,6 +2,7 @@
 using namespace std;
 #define ll long long
 
+// 掃描 + bitset 優化
 const int N = 1e5;
 
 int main()

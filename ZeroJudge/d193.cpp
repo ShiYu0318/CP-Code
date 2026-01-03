@@ -3,6 +3,9 @@ using namespace std;
 #define ShiYu ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 #define ll long long
 
+// 偏思考 + 優化技巧
+// 根號 分塊
+
 signed main()
 {
     ShiYu;

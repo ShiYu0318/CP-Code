@@ -2,6 +2,8 @@
 using namespace std;
 #define ll long long
 
+// 遞迴迭代 循環檢測
+
 const int N = 1e5;
 ll rec[N];
 

@@ -2,7 +2,7 @@
 using namespace std;
 #define ll long long
 
-// 不用 map 的作法
+// 不用 map 的作法 多個數字壓成一個數字
 
 int main()
 {

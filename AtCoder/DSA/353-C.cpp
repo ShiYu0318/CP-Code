@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// 雙指針
+// 偏思考 + 優化技巧
+
 signed main()
 {
     int n; cin >> n;

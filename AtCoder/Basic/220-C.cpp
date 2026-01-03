@@ -2,6 +2,8 @@
 using namespace std;
 #define ll long long
 
+// 偏思考 + 優化技巧
+
 int main()
 {
     ll n; cin >> n;

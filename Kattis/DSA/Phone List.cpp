@@ -2,6 +2,8 @@
 using namespace std;
 #define ll long long
 
+// 前綴衝突
+
 int main()
 {
     int t; cin >> t;

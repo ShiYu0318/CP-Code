@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// 二維前綴和 區間子矩陣和
+
 int main()
 {
     int n; cin >> n;

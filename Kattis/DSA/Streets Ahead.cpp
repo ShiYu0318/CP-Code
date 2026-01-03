@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// 二分搜
+
 vector<string> v;
 int n;
 

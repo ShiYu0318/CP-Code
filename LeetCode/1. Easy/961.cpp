@@ -1,5 +1,4 @@
-// 2026-01-02 0ms
-class Solution {
+class Solution {    // 2026-01-02 0ms
 public:
     int repeatedNTimes(vector<int>& nums) {
         bitset<10005> bs;

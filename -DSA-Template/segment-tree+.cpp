@@ -38,7 +38,7 @@ signed main()
 {
     ShiYu;
     int n,q; cin >> n >> q;
-    for(int i = 1;i <= n; ++i) cin >> arr[i];
+    for(int i = 1; i <= n; ++i) cin >> arr[i];
     build(1,1,n);
     int a,b;
     while(q--)

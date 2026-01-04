@@ -54,7 +54,7 @@ int main()
         else if(t == 2)
         {
             if(q.empty()) cout << "-1\n";
-            else cout << q.front() << "\n";
+            else cout << q.front() << '\n';
         } 
         else if(!q.empty()) q.pop();
     }

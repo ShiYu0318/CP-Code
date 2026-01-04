@@ -37,6 +37,7 @@ struct sparse
 
 signed main()
 {
+    ShiYu;
     int n; cin >> n;
     vi data(n); input(data);
     sparse discrete(data);

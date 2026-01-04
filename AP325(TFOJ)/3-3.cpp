@@ -9,7 +9,7 @@ using namespace std;
 #define S second
 #define MP make_pair
 #define EB emplace_back
-#define endl "\n"
+#define endl '\n'
 #define SZ(x) ((int)x.size())
 #define all(x) x.begin(), x.end()
 #define RPT(i,n) for(int i=0; i<n; ++i)
@@ -23,6 +23,7 @@ using namespace std;
 
 signed main()
 {
+    ShiYu;
     queue<int> q;
     char a,b; cin >> a; q.push(a-'0');
     while(cin >> b >> a)
@@ -34,5 +35,5 @@ signed main()
     }
     int sum = 0;
     while(!q.empty()) { sum += q.front(); q.pop(); }
-    cout << sum << "\n"; 
+    cout << sum << endl; 
 }

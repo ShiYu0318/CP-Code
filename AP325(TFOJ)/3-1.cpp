@@ -9,7 +9,7 @@ using namespace std;
 #define S second
 #define MP make_pair
 #define EB emplace_back
-#define endl "\n"
+#define endl '\n'
 #define SZ(x) ((int)x.size())
 #define all(x) x.begin(), x.end()
 #define RPT(i,n) for(int i=0; i<n; ++i)
@@ -23,6 +23,7 @@ using namespace std;
 
 signed main()
 {
+    ShiYu;
     int n; cin >> n;
     vi pa(n,0), h(n,0), deg(n);
     queue<int> q;
@@ -50,5 +51,5 @@ signed main()
         h[p] = max(h[p], h[v] + 1); // 更新深度
         if(--deg[p] == 0) q.push(p);    // 父節點拔掉子結點後變葉節點
     }
-    cout << r << "\n" << sum << "\n";
+    cout << r << endl << sum << endl;
 }

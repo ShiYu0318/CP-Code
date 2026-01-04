@@ -26,7 +26,7 @@ signed main() {
         y2 = b[3 * k2 - 1];
         x3 = b[3 * k3 - 2];
         y3 = b[3 * k3 - 1];
-        // cout << x1 << " " << y1 << "\n" << x2 << " " << y2 << "\n" << x3 << " " << y3 << "\n";
+        // cout << x1 << " " << y1 << '\n' << x2 << " " << y2 << '\n' << x3 << " " << y3 << '\n';
         ans = 1;
         if(x1 == x2)
         {
@@ -75,7 +75,7 @@ signed main() {
             {
                 if(b[i]==x4 && b[i+1]==y4)
                 {
-                    cout << "Find ghost key: " << b[i-1] << "\n";
+                    cout << "Find ghost key: " << b[i-1] << '\n';
                 }
         	}
         }else cout << "Not ghost key condition!\n";

@@ -13,5 +13,5 @@ int main()
         if(v[i] < v[j]) ++i;
         else --j;
     }
-    cout << mx << "\n";
+    cout << mx << '\n';
 }

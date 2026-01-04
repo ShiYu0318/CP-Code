@@ -90,11 +90,11 @@ int main() {
 //         if(day[i].F <= r) r = max(r, day[i].S);
 //         else
 //         {
-//             cout << l << " " << r << "\n";
+//             cout << l << " " << r << '\n';
 //             sum += r - l;
 //             l = day[i].F;
 //             r = day[i].S;
 //         }
 //     }
-//     cout << "Total Duration: " << sum << "\n";
+//     cout << "Total Duration: " << sum << '\n';
 // }

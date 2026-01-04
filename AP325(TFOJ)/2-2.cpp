@@ -23,6 +23,7 @@ using namespace std;
 
 signed main()
 {
+    ShiYu;
     int n; cin >> n;
     int ori[n], res[n]; vi d(n);
     RPT(i,n)

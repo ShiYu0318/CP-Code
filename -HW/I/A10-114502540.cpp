@@ -26,7 +26,7 @@ signed main()
     }
 
     // N=0 的情況
-    if(!N) { cout << fixed << setprecision(2) << 0.0 << "\n" << w << "\n" << b << "\n"; return 0; }
+    if(!N) { cout << fixed << setprecision(2) << 0.0 << '\n' << w << '\n' << b << '\n'; return 0; }
     
     double best_loss = DBL_MAX, pre_loss, best_w = w, best_b = b;
     for(int i=0; i<K; ++i)
@@ -63,5 +63,5 @@ signed main()
         w = w - LR * grad_w;
         b = b - LR * grad_b;
     }
-    cout << fixed << setprecision(2) << best_loss << "\n" << best_w << "\n" << best_b << "\n\n";
+    cout << fixed << setprecision(2) << best_loss << '\n' << best_w << '\n' << best_b << "\n\n";
 }

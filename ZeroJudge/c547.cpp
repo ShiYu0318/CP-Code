@@ -15,6 +15,6 @@ int main()
     int n;
     while(cin >> n)
     {
-        cout << dp[n] << "\n";
+        cout << dp[n] << '\n';
     }
 }

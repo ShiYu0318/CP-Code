@@ -36,14 +36,14 @@ signed main()
         {
             if(v[i].a <= x && x <= v[i].c && v[i].d <= y && y <= v[i].b)
             {
-                cout << "Point " << p << " is contained in figure " << i+1 << "\n";
+                cout << "Point " << p << " is contained in figure " << i+1 << '\n';
                 found = true; break;
             }
         }
         if(!found)
         {
             cout << "Point " << p << " is not contained in any figure";
-            cout << (p == 985 ? "" : " ") << "\n";
+            cout << (p == 985 ? "" : " ") << '\n';
         }
     }
 }

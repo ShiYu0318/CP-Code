@@ -39,6 +39,6 @@ int main()
             int idx = bisearch(ss);
             ans += tt[idx].S - v;
         }
-        cout << ans << "\n";
+        cout << ans << '\n';
     }
 }

@@ -27,5 +27,5 @@ int main()
             mi = v[i];
         }
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

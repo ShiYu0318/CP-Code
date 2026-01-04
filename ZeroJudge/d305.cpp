@@ -14,7 +14,7 @@ int main()
             dp[i][j] = dp[i-1][(j+1)%n] + dp[i-1][(j-1+n)%n];
         }
     }
-    cout << dp[m][0] << "\n";
+    cout << dp[m][0] << '\n';
 }
 
 
@@ -34,5 +34,5 @@ int main()
 // int main()
 // {
 //     cin >> n >> m;
-//     cout << f(0,0) << "\n";
+//     cout << f(0,0) << '\n';
 // }

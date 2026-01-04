@@ -9,7 +9,7 @@ using namespace std;
 #define S second
 #define MP make_pair
 #define EB emplace_back
-#define endl "\n"
+#define endl '\n'
 #define SZ(x) ((int)x.size())
 #define all(x) x.begin(), x.end()
 #define RPT(i,n) for(int i=0; i<n; ++i)
@@ -23,6 +23,7 @@ using namespace std;
 
 signed main()
 {
+    ShiYu;
     int n,m,t = 0; cin >> n >> m;
     vi p(n), q(m), ps(n+1); input(p); input(q);
     ps[0] = 0; RPT(i,n) ps[i+1] = ps[i] + p[i]; // 前綴和
@@ -31,5 +32,5 @@ signed main()
         if(ps[n] - ps[t] > i) t = lower_bound(ps.begin()+t, ps.end(), i + ps[t]) - ps.begin();
         else t = lower_bound(ps.begin(), ps.end(), i - (ps[n] - ps[t])) - ps.begin();
     }
-    cout << t << "\n";
+    cout << t << endl;
 }

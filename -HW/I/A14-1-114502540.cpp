@@ -18,5 +18,5 @@ int A(int m, int n)
 signed main()
 {
     fio; int m, n; cin >> m >> n;
-    cout << A(m, n) << "\n";    // 呼叫遞迴函數
+    cout << A(m, n) << '\n';    // 呼叫遞迴函數
 }

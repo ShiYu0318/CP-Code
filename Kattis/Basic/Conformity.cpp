@@ -32,5 +32,5 @@ int main()
             cnt = 1;
         }
     }
-    cout << ans << "\n";
+    cout << ans << '\n';
 }

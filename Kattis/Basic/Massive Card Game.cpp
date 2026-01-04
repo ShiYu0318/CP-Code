@@ -13,6 +13,6 @@ int main()
     while(q--)
     {
         int l,r; cin >> l >> r;
-        cout << upper_bound(all(v),r) - lower_bound(all(v),l) << "\n";
+        cout << upper_bound(all(v),r) - lower_bound(all(v),l) << '\n';
     }
 }

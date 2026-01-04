@@ -22,7 +22,7 @@
 //         while(m--)
 //         {
 //             cin >> x1 >> y1 >> x2 >> y2;
-//             cout << pre[x2][y2] - pre[x2][y1-1] - pre[x1-1][y2] + pre[x1-1][y1-1] << "\n";
+//             cout << pre[x2][y2] - pre[x2][y1-1] - pre[x1-1][y2] + pre[x1-1][y1-1] << '\n';
 //         }
 //     }
 // }
@@ -52,7 +52,7 @@ int main()
         while(m--)
         {
             cin >> x1 >> y1 >> x2 >> y2;
-            cout << A[x2][y2] - A[x2][y1-1] - A[x1-1][y2] + A[x1-1][y1-1] << "\n";
+            cout << A[x2][y2] - A[x2][y1-1] - A[x1-1][y2] + A[x1-1][y1-1] << '\n';
         }
     }
 }

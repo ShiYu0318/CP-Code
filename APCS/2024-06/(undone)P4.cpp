@@ -48,7 +48,7 @@ signed main()
         // cout << *it <<  j << endl;
         // cout << i << ' ' << n-j << ' ' << cl[i] << ' ' <<  cr[j] << endl;
         cout << i << ' ' << n-j << '\n';
-        cout << sl[i] << ' ' << *it << ' ' << sl[i] + *it << "\n";
+        cout << sl[i] << ' ' << *it << ' ' << sl[i] + *it << '\n';
         cout << cl[i] << ' ' << cr[j] << "\n\n";
         if((cl[i] + cr[j]) * 2 == i + (n-j)) ans = max(ans, sl[i] + *it);
     }

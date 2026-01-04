@@ -19,5 +19,5 @@ int main()
         if(i < idx) cnt++;
         idx = i;
     }
-    cout << cnt << "\n";
+    cout << cnt << '\n';
 }

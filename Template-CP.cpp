@@ -42,10 +42,10 @@ using namespace std;
 #define input(x) for(auto &i:x) cin >> i
 #define inputN(x,n) RPT(i,n) cin >> x[i]
 #define input2(x,a,b) RPT(i,a) RPT(j,b) cin >> x[i][j]
-#define output(x) for(auto i:x) cout << i << ' '; cout << '\n'
 #define outputN(x,n) RPT(i,n) cout << x[i] << " \n"[i == n-1];
+#define output(x) outputN(x,SZ(x))
 #define output2(x,a,b) RPT(i,a) RPT(j,b) cout << x[i][j] << " \n"[j == b-1]
-#define outputP(x) for(auto i:x) cout << i.F << " " << i.S << "\n";
+#define outputP(x) for(auto i:x) cout << i.F << " " << i.S << '\n';
 // YN ----------------------------------------------------------------------
 #define YN(x) cout << (x ? "YES" : "NO") << '\n'
 #define Yn(x) cout << (x ? "Yes" : "No") << '\n'
@@ -60,6 +60,7 @@ const double eps = 1e-8;
 void solve()
 {
 	int n; cin >> n;
+	
 }
 
 signed main()

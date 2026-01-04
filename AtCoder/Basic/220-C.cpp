@@ -16,7 +16,7 @@ int main()
         sum += v[i];
         if(sum > x)
         {
-            cout << i+1 << "\n";
+            cout << i+1 << '\n';
             return 0;
         }
     }
@@ -27,7 +27,7 @@ int main()
         ans++;
         if(sumb > x)
         {
-            cout << ans << "\n";
+            cout << ans << '\n';
             return 0;
         }
     }

@@ -12,7 +12,7 @@ int main()
         if(s.count(a)) cout << b << " account has been used\n";
         else
         {
-            cout << "welcome, " << b << "\n";
+            cout << "welcome, " << b << '\n';
             s.insert(a);
         }
     }

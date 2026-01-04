@@ -54,7 +54,7 @@ int main()
         while(m--)
         {
             cin >> l >> r;
-            cout << pre[r] - pre[l-1] << "\n";
+            cout << pre[r] - pre[l-1] << '\n';
         }
     }
 }

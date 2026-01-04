@@ -16,6 +16,6 @@ signed main()
         ll cnt = 0,i,r=sqrt(n);
         for(i=1; i<=r; ++i) cnt += (n/i - n/(i+1)) * i;
         for(i=1; i<=n/(r+1); ++i) cnt += n/i;
-        cout << cnt << "\n";
+        cout << cnt << '\n';
     }
 }

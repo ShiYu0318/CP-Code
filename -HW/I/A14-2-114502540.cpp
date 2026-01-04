@@ -18,5 +18,5 @@ string S(int n)
 signed main()
 {
     fio; int n; cin >> n;
-    cout << S(n) << "\n";   // 呼叫遞迴函數
+    cout << S(n) << '\n';   // 呼叫遞迴函數
 }

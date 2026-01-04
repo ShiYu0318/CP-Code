@@ -28,11 +28,11 @@ int main()
         else rec[n] = i;
     }
     int r = i - rec[n];
-    if(!r) cout << n << "\n";
+    if(!r) cout << n << '\n';
     else
     {
         int lave = (k-i) % r;
         while(lave--) n = f(n);
-        cout << n << "\n";
+        cout << n << '\n';
     }
 }

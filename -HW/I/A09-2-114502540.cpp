@@ -20,9 +20,9 @@ signed main()
     {
         score = 50; 
         while(cin >> code && code) score = min(max(0, score + scores[code-1]), 100); // 持續輸出直到 code == 0 條件不成立退出 while，並用 min/max 限制 score 範圍 [0, 100]
-        cout << "Student "<< i+1 << " Final: " << score << "\nGrade: " << grades[max(0, score - 50) / 10] << "\n"; // 轉成十位數用查表的方式對應等第
+        cout << "Student "<< i+1 << " Final: " << score << "\nGrade: " << grades[max(0, score - 50) / 10] << '\n'; // 轉成十位數用查表的方式對應等第
         sum += score; pass += (score >= 60);    // 加總分數最後用來算平均；計算及格人數，不及格人數直接用扣的就好
         mx = max(mx, score); mi = min(mi, score); // 更新分數極值
     }
-    cout << "Students: " << N << "\nPassed: " << pass << "\nFailed: " << N - pass << "\nAverage: " << fixed << setprecision(2) << (double)sum / N << "\nHighest: " << mx << "\nLowest: " << mi << "\n";
+    cout << "Students: " << N << "\nPassed: " << pass << "\nFailed: " << N - pass << "\nAverage: " << fixed << setprecision(2) << (double)sum / N << "\nHighest: " << mx << "\nLowest: " << mi << '\n';
 }

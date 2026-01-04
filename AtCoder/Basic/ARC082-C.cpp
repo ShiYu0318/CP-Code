@@ -15,5 +15,5 @@ int main()
     }
     int mx = -1;
     for(int i=0; i<N; i++) mx = max(mx,cnt[i]);
-    cout << mx << "\n";
+    cout << mx << '\n';
 }

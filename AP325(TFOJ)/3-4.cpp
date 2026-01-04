@@ -9,7 +9,7 @@ using namespace std;
 #define S second
 #define MP make_pair
 #define EB emplace_back
-#define endl "\n"
+#define endl '\n'
 #define SZ(x) ((int)x.size())
 #define all(x) x.begin(), x.end()
 #define RPT(i,n) for(int i=0; i<n; ++i)
@@ -25,6 +25,7 @@ const int N = 1e7+5;
 
 signed main()
 {
+    ShiYu;
     stack<pii> sk; 
     sk.push({N,0});
     int n, sum = 0; cin >> n;
@@ -35,5 +36,5 @@ signed main()
         sum += i+1 - sk.top().S;
         sk.push({h,i+1});
     }
-    cout << sum << "\n";
+    cout << sum << endl;
 }

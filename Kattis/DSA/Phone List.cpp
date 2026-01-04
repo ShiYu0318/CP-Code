@@ -22,6 +22,6 @@ int main()
                 break;
             }
         }
-        cout << (ans ? "YES" : "NO") << "\n";
+        cout << (ans ? "YES" : "NO") << '\n';
     }
 }

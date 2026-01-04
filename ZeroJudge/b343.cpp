@@ -46,6 +46,6 @@ signed main()
             cin >> z;
             ans += BFS(z);
         }
-        cout << ans << "\n";
+        cout << ans << '\n';
     }
 }

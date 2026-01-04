@@ -16,7 +16,7 @@ int main()
         else if(k == 2)
         {
             if(s.empty()) cout << "-1\n";
-            else cout << s.top() << "\n";
+            else cout << s.top() << '\n';
         }
         else if(!s.empty()) s.pop();
     }

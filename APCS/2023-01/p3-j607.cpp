@@ -66,5 +66,5 @@ int compute()
 signed main()
 {
     cin >> str;
-    cout << compute() << "\n";
+    cout << compute() << '\n';
 }

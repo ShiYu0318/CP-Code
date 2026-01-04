@@ -19,7 +19,7 @@ signed main()
     while(t--)
     {
         cin >> m >> n >> q;
-        cout << m << " " << n << " " << q << "\n";
+        cout << m << " " << n << " " << q << '\n';
         char A[N][N];
         RPT(i,m) RPT(j,n) cin >> A[i][j];
         while(q--)
@@ -39,7 +39,7 @@ signed main()
                 }
                 if(bk) ++ans;
             }
-            cout << ans * 2 + 1 << "\n";
+            cout << ans * 2 + 1 << '\n';
         }
     }
 }

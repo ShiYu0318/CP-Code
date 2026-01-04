@@ -16,5 +16,5 @@ int main()
             if(x > 0) dp[x][y][1] += dp[x-1][y][0];
         }
     }
-    cout << dp[m][n][0] + dp[m][n][1] << "\n";
+    cout << dp[m][n][0] + dp[m][n][1] << '\n';
 }

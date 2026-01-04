@@ -15,6 +15,6 @@ int main()
             else if(op == "west") { tmp = t; t = e; e = d; d = w; w = tmp; }
             else { tmp = t; t = w; w = d; d = e; e = tmp; }
         }
-        cout << t << "\n";
+        cout << t << '\n';
     }
 }

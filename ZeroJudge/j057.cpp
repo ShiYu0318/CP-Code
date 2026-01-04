@@ -20,6 +20,6 @@ signed main()
             n %= 10000;
             ++ans;
         }
-        cout << ans << "\n";
+        cout << ans << '\n';
     }
 }

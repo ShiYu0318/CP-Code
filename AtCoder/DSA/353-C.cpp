@@ -22,5 +22,5 @@ signed main()
         while(l < r-1 && v[l] + v[r-1] >= 1e8) r--;
         cnt += n - r;
     }
-    cout << sum - cnt * 100000000 << "\n";
+    cout << sum - cnt * 100000000 << '\n';
 }

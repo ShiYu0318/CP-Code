@@ -17,7 +17,7 @@ signed main() {
         {
             sum += abs(k - a[i-1]) + (k + a[i-1]);
         }
-        cout << sum << "\n";
+        cout << sum << '\n';
     }
 
 	return 0;

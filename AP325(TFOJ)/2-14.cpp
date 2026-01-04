@@ -9,7 +9,7 @@ using namespace std;
 #define S second
 #define MP make_pair
 #define EB emplace_back 
-#define endl "\n"
+#define endl '\n'
 #define SZ(x) ((int)x.size())
 #define all(x) x.begin(), x.end()
 #define RPT(i,n) for(int i=0; i<n; ++i)
@@ -65,6 +65,7 @@ void rec(int l, int r, int w)   // 比提示少維護一個注水點參數是因
 
 signed main()
 {
+    ShiYu;
     int n,w; cin >> n >> b >> w;
     h.resize(n); v.resize(n-1);
     RPT(i,n)

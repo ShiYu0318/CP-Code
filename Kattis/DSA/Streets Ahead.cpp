@@ -26,6 +26,6 @@ int main()
     while(q--)
     {
         string l,r; cin >> l >> r;
-        cout << abs(bisearch(l) - bisearch(r)) - 1 << "\n";
+        cout << abs(bisearch(l) - bisearch(r)) - 1 << '\n';
     }
 }

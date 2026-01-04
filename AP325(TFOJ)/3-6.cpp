@@ -1,0 +1,45 @@
+// 20260104
+#include <bits/stdc++.h>
+using namespace std;
+#define ShiYu ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
+#define int long long
+#define vi vector<int>
+#define pii pair<int,int>
+#define F first
+#define S second
+#define MP make_pair
+#define EB emplace_back
+#define endl '\n'
+#define SZ(x) ((int)x.size())
+#define all(x) x.begin(), x.end()
+#define RPT(i,n) for(int i=0; i<n; ++i)
+#define FOR(i,a,b) for(int i=a; i<b; ++i)
+#define rFOR(i,n) for(int i=n-1; i>=0; --i)
+#define input(x) for(auto &i:x) cin >> i
+#define output(x) for(auto i:x) cout << i << ' '; cout << endl;
+
+// 例題 P-3-6. 砍樹 (APCS202001)
+// 單調佇列
+
+signed main()
+{
+    ShiYu;
+    int n, l; cin >> n >> l;
+    vi p(n), h(n); input(p); input(h);
+    stack<int> mono;    // 存 idx, h[i] 是單調遞減
+    int cnt = 0, mx = -1;
+    RPT(i,n)
+    {
+        // mono 裡的樹向右有空間就倒
+        while(!mono.empty() && p[i] - p[mono.top()] >= h[mono.top()])
+        {
+            mx = max(mx, h[mono.top()]);
+            ++cnt; mono.pop();
+        }
+        // 要進來的樹向左有空間就倒
+        int ls = mono.empty() ? p[i] : p[i] - p[mono.top()];
+        if((ls >= h[i])) { mx = max(mx, h[i]); ++cnt; }
+        else mono.push(i);  // 否則進 mono 等右邊有空間
+    }
+    cout << cnt << endl << mx << endl;
+}

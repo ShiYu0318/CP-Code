@@ -9,7 +9,7 @@ using namespace std;
 #define S second
 #define MP make_pair
 #define EB emplace_back
-#define endl "\n"
+#define endl '\n'
 #define SZ(x) ((int)x.size())
 #define all(x) x.begin(), x.end()
 #define RPT(i,n) for(int i=0; i<n; ++i)
@@ -34,6 +34,7 @@ const int N = 1e8;
 
 signed main()
 {
+    ShiYu;
     int n; cin >> n;
     vi h(n), p(n), mono, idx; input(h); input(p);
     mono.EB(N); idx.EB(-1); // 守衛
@@ -50,5 +51,5 @@ signed main()
         mono.EB(h[i]);
         idx.EB(i);
     }
-    cout << ans << "\n";
+    cout << ans << endl;
 }

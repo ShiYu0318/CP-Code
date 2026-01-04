@@ -23,6 +23,6 @@ signed main()
         if(a > b) swap(a, b);
         int mx = -1;
         for(int i=a; i<=b; ++i) mx = max(mx, f(i));
-        cout << aa << " " << bb << " " << mx << "\n";
+        cout << aa << " " << bb << " " << mx << '\n';
     }
 }

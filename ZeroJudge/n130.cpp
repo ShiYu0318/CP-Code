@@ -30,6 +30,6 @@ signed main()
     RPT(i,r) 
     {
         RPT(j,c) cout << tb[i][j];
-        cout << "\n";
+        cout << '\n';
     }
 }

@@ -12,7 +12,7 @@ int main()
     for(int i=0,j=0; i < n; ++i)
     {
         ans[i] = v[j];
-        // cout << i << ' ' << j << "\n";
+        // cout << i << ' ' << j << '\n';
         if(i % 2) j = n - j;
         else j = n - j - 1;
 

@@ -38,5 +38,5 @@ signed main()
         }
         else if(sum == ans) ++cnt;
     }
-    cout << ans << '\n' << 
+    cout << ans << '\n' << cnt << '\n';
 }

@@ -9,7 +9,6 @@ using namespace std;
 #define S second
 #define MP make_pair
 #define EB emplace_back
-#define endl '\n'
 #define SZ(x) ((int)x.size())
 #define all(x) x.begin(), x.end()
 #define RPT(i,n) for(int i=0; i<n; ++i)
@@ -32,5 +31,5 @@ signed main()
         if(ps[n] - ps[t] > i) t = lower_bound(ps.begin()+t, ps.end(), i + ps[t]) - ps.begin();
         else t = lower_bound(ps.begin(), ps.end(), i - (ps[n] - ps[t])) - ps.begin();
     }
-    cout << t << endl;
+    cout << t << '\n';
 }

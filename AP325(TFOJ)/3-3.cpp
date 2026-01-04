@@ -9,7 +9,6 @@ using namespace std;
 #define S second
 #define MP make_pair
 #define EB emplace_back
-#define endl '\n'
 #define SZ(x) ((int)x.size())
 #define all(x) x.begin(), x.end()
 #define RPT(i,n) for(int i=0; i<n; ++i)
@@ -35,5 +34,5 @@ signed main()
     }
     int sum = 0;
     while(!q.empty()) { sum += q.front(); q.pop(); }
-    cout << sum << endl; 
+    cout << sum << '\n'; 
 }

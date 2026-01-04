@@ -7,7 +7,6 @@ using namespace std;
 #define F first
 #define S second
 #define EB emplace_back
-#define endl '\n'
 #define SZ(x) ((int)x.size())
 #define all(x) x.begin(), x.end()
 #define RPT(i,n) for(int i=0; i<n; ++i)
@@ -46,5 +45,5 @@ signed main()
             st.insert(sum);
         }
     }
-    cout << ans << endl;
+    cout << ans << '\n';
 }

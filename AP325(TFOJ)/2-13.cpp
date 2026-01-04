@@ -9,7 +9,6 @@ using namespace std;
 #define S second
 #define MP make_pair
 #define EB emplace_back
-#define endl '\n'
 #define SZ(x) ((int)x.size())
 #define all(x) x.begin(), x.end()
 #define RPT(i,n) for(int i=0; i<n; ++i)
@@ -43,5 +42,5 @@ signed main()
     ShiYu;
     int x,y,n; cin >> x >> y >> n;
     pii z = fpow(MP(x,y),n);
-    cout << z.F %p << " " << z.S %p << endl;
+    cout << z.F %p << ' ' << z.S %p << '\n';
 }

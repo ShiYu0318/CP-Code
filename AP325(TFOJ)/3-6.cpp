@@ -9,7 +9,6 @@ using namespace std;
 #define S second
 #define MP make_pair
 #define EB emplace_back
-#define endl '\n'
 #define SZ(x) ((int)x.size())
 #define all(x) x.begin(), x.end()
 #define RPT(i,n) for(int i=0; i<n; ++i)
@@ -26,7 +25,7 @@ signed main()
     ShiYu;
     int n, l; cin >> n >> l;
     vi p(n), h(n); input(p); input(h);
-    stack<int> mono;    // 存 idx, h[i] 是單調遞減
+    stack<int> mono;    // 存 idx, h[mono[i]] 是單調遞減
     int cnt = 0, mx = -1;
     RPT(i,n)
     {
@@ -41,5 +40,5 @@ signed main()
         if((ls >= h[i])) { mx = max(mx, h[i]); ++cnt; }
         else mono.push(i);  // 否則進 mono 等右邊有空間
     }
-    cout << cnt << endl << mx << endl;
+    cout << cnt << '\n' << mx << '\n';
 }

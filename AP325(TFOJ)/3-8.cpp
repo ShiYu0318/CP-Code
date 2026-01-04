@@ -28,9 +28,9 @@ signed main()
     int n,l; cin >> n >> l;
     vi v(n); input(v);
     //        單調遞減 單調遞增
-    deque<int> dq_mx{0}, dq_mi{0};
+    deque<int> dq_mx{0}, dq_mi{0};  // 先放 0 避免後面特判
     int ans = -1;
-    for(int i=1; i<n; ++i)
+    for(int i=1; i<n; ++i)  // 可以從 1 開始而不是到區間長為 L 是因為短區間極值差不會比較大 會影響極值差只有新增和刪除的時候（窗口滑動）而短區間到長區間只有新增沒有刪除 原極值還是會在
     {
         if(dq_mx.front() <= i-l) dq_mx.pop_front();    // 若目前最大值從左端離開區間則更新
         while(!dq_mx.empty() && v[dq_mx.back()] <= v[i]) dq_mx.pop_back();  // 當窗戶的右端推到 i 時,在 i 之前所有 <= v[i] 的元素, 對未來找最大值都是沒有用的, 因為會被 i 取代

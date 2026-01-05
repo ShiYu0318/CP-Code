@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
-// O(n) 雙指標
+
+// O(n) 雙指針 greedy
+
 int main()
 {
     int n; cin >> n;

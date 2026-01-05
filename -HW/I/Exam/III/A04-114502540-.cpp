@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 // O(n^2) 會過 助教測資出弱了
+
 int main()
 {
     int n; cin >> n;

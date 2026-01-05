@@ -49,7 +49,7 @@ signed main()
     lead.resize(n+1); cnt.resize(n+1,1); iota(all(lead),0);
     vector<Edge> e(m);
     RPT(i,m) {cin >> e[i].a >> e[i].b >> e[i].w; e[i].o = i;}
-    sort(all(e), cmp);  // 將 Edge 以權重由小到大排序 達到最小生成樹
+    sort(all(e), cmp);  // 將 Edge 以權重升冪排序 達到最小生成樹
     for(int i=0; i<m && edge_cnt<n; ++i) join(e[i]);
     // if(edge_cnt != n-1)  // 可檢查是否成立
     cout << ans << endl;

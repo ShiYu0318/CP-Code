@@ -9,7 +9,7 @@
 輸入共一行包含兩個數字n, m(n<m, n>0, m<=1000000)，代表所有尋找 armstrong number 的範圍
 
 輸出說明
-將所有範圍內的 armstrong number 依序由小到大輸出，如果沒有找到請輸出 none.
+將所有範圍內的 armstrong number 升冪輸出，如果沒有找到請輸出 none.
 """
 min, max = map(int, input().split())
 nums = []

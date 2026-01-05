@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// 費氏進位 greedy
+
 const int MN = 1e9;
 
 int main()

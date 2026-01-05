@@ -23,6 +23,7 @@ using namespace std;
 // 延伸版 例題 P-3-9. 最多色彩帶
 // 滑動窗口 + bucket 分桶 + 離散化 + 二分搜
 // 彩帶編號不連續且數字大 用離散化重新編號並用二分搜找對應位置
+// 其實這題順序不重要 可以用 unordered_map 離散化
 
 signed main()
 {
@@ -35,10 +36,10 @@ signed main()
     vi bk(SZ(uni),0);
     int cnt = 0, ans = n+1;
     for(int l=0, r=0; r<n; ++r)
-    {
+    {   // 滑動窗口
         if(bk[v[r]]++ == 0) ++cnt;
         while(cnt == SZ(uni))
-        {   // 當全滿時更新最小區間長 並持續移動左界直到不合法
+        {   // 當全滿時更新最小區間長 並持續右移左界直到不合法
             ans = min(ans, r-l+1);
             bk[v[l]] -= 1;
             if(bk[v[l]] == 0) --cnt;

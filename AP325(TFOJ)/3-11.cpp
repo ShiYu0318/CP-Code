@@ -21,7 +21,7 @@ using namespace std;
 
 // 習題 Q-3-11. 最長的相異色彩帶
 // 簡單版 例題 P-3-9. 最多色彩帶
-// 滑動窗口
+// 滑動窗口 + bucket 分桶
 
 signed main()
 {
@@ -30,10 +30,10 @@ signed main()
     vi v(n), bk(n,0); input(v);
     int ans = 0;
     for(int l=0, r=0; r<n; ++r)
-    {   // 當右界右移遇到區間重複元素 則持續右移左界直到不重複
+    {   // 當右界右移後遇到區間重複元素 則持續右移左界直到不重複
         if(++bk[v[r]] == 2)
         {
-            do { bk[v[l]]--; ++l; } while(bk[v[r]] == 2);
+            while(bk[v[r]] > 1) bk[v[l++]]--;
         }
         ans = max(ans, r-l+1);
     }

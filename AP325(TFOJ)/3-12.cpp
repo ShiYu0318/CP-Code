@@ -20,10 +20,24 @@ using namespace std;
 #define output(x) outputN(x,SZ(x))
 
 // 習題 Q-3-12. 完美彩帶 (同 Q-5-8 ，分治版) (APCS201906)
-//  例題 P-3-9. 最多色彩帶
+// 例題 P-3-10. 全彩彩帶 (需離散化或字典) (@@)  + 習題 Q-3-11. 最長的相異色彩帶
+// 滑動窗口 + bucket 分桶 + unordered_map 離散化
 
 signed main()
 {
     ShiYu;
-
+    int m, n; cin >> m >> n;
+    vi v(n); input(v);
+    unordered_map<int,int> bk;
+    int ans = 0, cnt = 0;
+    for(int l=0, r=0; r<n; ++r)
+    {   
+        if(++bk[v[r]] == 1) ++cnt;  // 相異顏色數量
+        while(bk[v[r]] > 1)
+        {   // 當右界右移後遇到區間重複元素 則持續右移左界直到不重複
+            if(--bk[v[l++]] == 0) --cnt;
+        }   // 算 長度為 m 且有 m 個相異顏色的彩帶 數量
+        if(r-l+1 == m && cnt == m) ++ans;   
+    }
+    cout << ans << '\n';
 }

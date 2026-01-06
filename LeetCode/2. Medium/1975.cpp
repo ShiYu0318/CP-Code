@@ -1,5 +1,7 @@
-class Solution {    // 20260105
-public:     // 無限次操作 最後只會剩下 0 或 1 個負數 那個負數可以轉移到最小絕對值
+class Solution {    
+// 20260105 O(n^2)
+// 無限次操作 最後只會剩下 0 或 1 個負數 那個負數可以轉移到最小絕對值
+public:
     long long maxMatrixSum(vector<vector<int>>& matrix) {
         long long sum = 0, mi = INT_MAX, cnt = 0;
         for(auto i:matrix)

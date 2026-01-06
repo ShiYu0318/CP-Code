@@ -1,4 +1,5 @@
-class Solution {    // 20260101 3ms
+class Solution {    
+// 20260101 3ms O(n) 大數加法
 public:
     vector<int> plusOne(vector<int>& digits) {
         digits[digits.size() - 1]++;

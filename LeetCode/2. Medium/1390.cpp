@@ -1,4 +1,6 @@
-class Solution {    // 20260104 22ms
+class Solution {    
+// 20260104 22ms 算因數
+// O(n√m)   m = max(num) 
 public:
     int sumFourDivisors(vector<int>& nums) {
         int ans = 0;

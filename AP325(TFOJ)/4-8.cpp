@@ -20,7 +20,7 @@ using namespace std;
 #define output(x) outputN(x,SZ(x))
 
 // Q-4-8. 先到先服務 (*)
-// Greedy 
+// Greedy 優先佇列維護最小完成時間櫃檯
 
 signed main()
 {

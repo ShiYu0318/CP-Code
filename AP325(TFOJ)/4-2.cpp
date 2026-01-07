@@ -20,7 +20,7 @@ using namespace std;
 #define output(x) outputN(x,SZ(x))
 
 // 例題 P-4-2. 笑傲江湖之三戰
-// gready
+// Greedy
 
 signed main()
 {

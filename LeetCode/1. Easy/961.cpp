@@ -1,5 +1,5 @@
 class Solution {    
-// 20260102 0ms O(n)
+// 20260102 O(n)
 // 用 bucket 找重複 + bitset 優化
 public:
     int repeatedNTimes(vector<int>& nums) {

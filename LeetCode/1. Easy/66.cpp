@@ -1,5 +1,5 @@
 class Solution {    
-// 20260101 3ms O(n) 大數加法
+// 20260101 O(n) 大數加法
 public:
     vector<int> plusOne(vector<int>& digits) {
         digits[digits.size() - 1]++;
@@ -18,7 +18,6 @@ public:
     }
 };
 
-// 0ms
 // class Solution {
 // public:
 //     vector<int> plusOne(vector<int>& digits) {

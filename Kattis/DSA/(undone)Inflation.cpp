@@ -13,7 +13,7 @@ using namespace std;
 #define F first
 #define S second
 
-// greedy
+// Greedy
 
 signed main()
 {

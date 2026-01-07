@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// O(n) 雙指針 greedy
+// O(n) 雙指針 Greedy
 
 int main()
 {

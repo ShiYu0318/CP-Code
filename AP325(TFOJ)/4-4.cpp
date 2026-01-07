@@ -20,7 +20,7 @@ using namespace std;
 #define output(x) outputN(x,SZ(x))
 
 // 例題 P-4-4. 幾場華山論劍 (activity selection)
-// greedy
+// Greedy
 // 依結束時間排序 挑選開始時間大於上一場結束時間的
 
 signed main()

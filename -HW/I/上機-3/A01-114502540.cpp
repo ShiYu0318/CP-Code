@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// 費氏進位 greedy
+// 費氏進位 Greedy
 
 const int MN = 1e9;
 

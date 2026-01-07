@@ -20,7 +20,7 @@ using namespace std;
 #define output(x) outputN(x,SZ(x))
 
 // 例題 P-4-1. 少林寺的代幣
-// greedy
+// Greedy
 
 const int C[4] = {1, 5, 10, 50};
 

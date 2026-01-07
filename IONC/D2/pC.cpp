@@ -44,7 +44,7 @@ signed main()
     for(auto i:v) sum += i;
     cout << x - (sum - x) << endl;
 
-    // greedy 爛掉
+    // Greedy 爛掉
     // int l = 0, r = n-1, x = 0, y = 0, t = 1;
     // while(l <= r)
     // {

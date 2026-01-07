@@ -20,7 +20,7 @@ using namespace std;
 #define output(x) outputN(x,SZ(x))
 
 // 例題 P-4-3. 十年磨一劍 (最少完成時間)
-// greedy
+// Greedy
 
 signed main()
 {

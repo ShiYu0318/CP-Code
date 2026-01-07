@@ -1,4 +1,4 @@
-// 2026
+// 20260107
 #include <bits/stdc++.h>
 using namespace std;
 #define ShiYu ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
@@ -19,10 +19,23 @@ using namespace std;
 #define outputN(x,n) RPT(i,n) cout << x[i] << " \n"[i == n-1];
 #define output(x) outputN(x,SZ(x))
 
-// 
+// Q-4-6. 少林寺的自動寄物櫃 (APCS201710)
+// Greedy 單調性 依比值升冪排序
 
 signed main()
 {
     ShiYu;
-    
+    int n; cin >> n;
+    vector<pair<double,pii>> v(n); // (t/w,(t,w))
+    for(auto &i:v) cin >> i.S.F;
+    for(auto &i:v) cin >> i.S.S;
+    for(auto &i:v) i.F = (double)i.S.F / i.S.S;
+    sort(all(v));
+    int ans = 0, t = 0;
+    for(auto i:v)
+    {
+        ans += t * i.S.S;
+        t += i.S.F;
+    }
+    cout << ans << '\n';
 }

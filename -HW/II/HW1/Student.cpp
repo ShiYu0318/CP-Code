@@ -55,18 +55,33 @@ int findByName(const vector<Contact>& book, const string& name) {
 }
 
 bool insertContact(vector<Contact>& book, const string& name, const string& phone) {  //You need to code
-
+    for (auto c : book) {
+        if (c.name == name) {
+            return false;
+        }
+    }
+    book.push_back({name, phone});
     return true;
 }
 
 bool updateContact(vector<Contact>& book, const string& name, const string& newPhone) { //You need to code
-    
-    return true;
+    for (auto &c : book) {
+        if (c.name == name) {
+            c.phone = newPhone;
+            return true;
+        }
+    }
+    return false; 
 }
 
 bool deleteContact(vector<Contact>& book, const string& name) { //You need to code
-    
-    return true;
+    for (auto it = book.begin(); it != book.end(); ++it) {
+        if (it->name == name) {
+            book.erase(it);
+            return true;
+        }
+    }
+    return false;
 }
 
 void listAll(const vector<Contact>& book) {

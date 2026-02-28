@@ -5,4 +5,5 @@
 ztest
 *.bin
 *.txt
+*.tex
 -Polygon

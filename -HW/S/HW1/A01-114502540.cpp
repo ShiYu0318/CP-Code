@@ -10,7 +10,7 @@ struct Contact {
     string phone;
 };
 
-const string FILENAME = "kpop_case2.txt";
+const string FILENAME = "kpop.txt";
 
 bool isValidPhone10(const string& phone) {
     if (phone.size() != 10) return false;

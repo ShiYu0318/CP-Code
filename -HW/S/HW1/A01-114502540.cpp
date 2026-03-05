@@ -10,7 +10,7 @@ struct Contact {
     string phone;
 };
 
-const string FILENAME = "kpop.txt";
+const string FILENAME = "kpop_case2.txt";
 
 bool isValidPhone10(const string& phone) {
     if (phone.size() != 10) return false;
@@ -55,21 +55,18 @@ int findByName(const vector<Contact>& book, const string& name) {
 }
 
 bool insertContact(vector<Contact>& book, const string& name, const string& phone) {  //You need to code
-    for (auto c : book) {
-        if (c.name == name) {
-            return false;
-        }
+    if (findByName(book, name) == -1) {
+        book.push_back({name, phone});
+        return true;
     }
-    book.push_back({name, phone});
-    return true;
+    return false;
 }
 
 bool updateContact(vector<Contact>& book, const string& name, const string& newPhone) { //You need to code
-    for (auto &c : book) {
-        if (c.name == name) {
-            c.phone = newPhone;
-            return true;
-        }
+    int idx = findByName(book, name);
+    if (idx != -1) {
+        book[idx].phone = newPhone;
+        return true;
     }
     return false; 
 }

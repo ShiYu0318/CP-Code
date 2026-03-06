@@ -63,7 +63,7 @@ int main()
     s2.insertElement(2);
 
     s3 = s1.unionOfSets(s2);
-    s4 = s2.intersectionOfSets(s2);
+    s4 = s1.intersectionOfSets(s2);
 
     cout << "After insert element in s1: " << endl;
     s1.printSet();

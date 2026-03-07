@@ -7,7 +7,7 @@ public class syntax
     public static void main(String[] args)
     {
         String s1 = "Hello, ", s2 = "Java!";
-        Boolean b = true;
+        boolean b = true;
         final double PI = 3.1415926;
 
 

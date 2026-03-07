@@ -22,7 +22,6 @@ class IntegerSet
     IntegerSet unionOfSets(IntegerSet s)
     {
         IntegerSet ss;
-        // ss.IntegerSet();
         for(int i=0; i<100; ++i)
         {
             if(arr[i] || s.arr[i]) ss.arr[i] = true;
@@ -34,7 +33,6 @@ class IntegerSet
     IntegerSet intersectionOfSets(IntegerSet s)
     {
         IntegerSet ss;
-        // ss.IntegerSet();
         for(int i=0; i<100; ++i)
         {
             if(arr[i] && s.arr[i]) ss.arr[i] = true;

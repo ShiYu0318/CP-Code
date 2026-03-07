@@ -9,37 +9,52 @@ class IntegerSet
 //  Default constructor to initialize set
     IntegerSet()
     {
-
+        for(int i=0; i<100; ++i) arr[i] = false;
     }
 
 //  Method to set values of a set
     void setValues(int val[], int size)
     {
-
+        for(int i=0; i<size; ++i) arr[val[i]] = true;
     }
 
 //  Method to implement union between two sets
     IntegerSet unionOfSets(IntegerSet s)
     {
-
+        IntegerSet ss;
+        // ss.IntegerSet();
+        for(int i=0; i<100; ++i)
+        {
+            if(arr[i] || s.arr[i]) ss.arr[i] = true;
+        }
+        return ss;
     }
 
 //  Method to implement intersection between two sets
     IntegerSet intersectionOfSets(IntegerSet s)
     {
-
+        IntegerSet ss;
+        // ss.IntegerSet();
+        for(int i=0; i<100; ++i)
+        {
+            if(arr[i] && s.arr[i]) ss.arr[i] = true;
+        }
+        return ss;
     }
 
 //  Method to insert element in set
     void insertElement(int k)
     {
-
+        arr[k] = true;
     }
 
 //  Method to print set values
     void printSet()
     {
-
+        for(int i=0; i<100; ++i)
+        {
+            if(arr[i]) cout << i << " \n"[i == 99];
+        }
     }
 };
 int main()

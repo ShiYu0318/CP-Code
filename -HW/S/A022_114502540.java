@@ -39,6 +39,6 @@ public class A022_114502540
 
         double sum = 0;
         for(double i:score) sum += i;
-        System.out.printf("%.1f\n",sum - fall);
+        System.out.printf("%.1f%n",sum - fall);
     }
 }

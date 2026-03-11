@@ -6,3 +6,4 @@ ztest
 *.bin
 *.tex
 -Polygon
+extensions.txt

@@ -56,30 +56,23 @@ int findByName(const vector<Contact>& book, const string& name) {
 }
 
 bool insertContact(vector<Contact>& book, const string& name, const string& phone) {  //You need to code
-    if (findByName(book, name) == -1) {
-        book.push_back({name, phone});
-        return true;
-    }
-    return false;
+    if (findByName(book, name) != -1) return false;
+    book.push_back({name, phone});
+    return true;
 }
 
 bool updateContact(vector<Contact>& book, const string& name, const string& newPhone) { //You need to code
     int idx = findByName(book, name);
-    if (idx != -1) {
-        book[idx].phone = newPhone;
-        return true;
-    }
-    return false; 
+    if (idx == -1) return false; 
+    book[idx].phone = newPhone;
+    return true;
 }
 
 bool deleteContact(vector<Contact>& book, const string& name) { //You need to code
-    for (auto it = book.begin(); it != book.end(); ++it) {
-        if (it->name == name) {
-            book.erase(it);
-            return true;
-        }
-    }
-    return false;
+    int idx = findByName(book, name);
+    if (idx == -1) return false; 
+    book.erase(book.begin() + idx);
+    return true;
 }
 
 void listAll(const vector<Contact>& book) {

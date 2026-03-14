@@ -4,7 +4,7 @@ int PersonalAccount::nextAccountNo = 10000;
 int PersonalAccount::activeAccountCount = 0;
 
 TimeStamp::TimeStamp() {
-    // [ ] // TODO 1
+    // TODO 1
     // Complete this constructor.
     // Goal:
     // - Get current system time
@@ -40,7 +40,7 @@ void Transaction::print() const {
 }
 
 PersonalAccount::PersonalAccount(string owner, string group, double initialDeposit) {
-    // [ ] // TODO 2
+    // TODO 2
     // Complete this constructor.
     // Goal:
     // - Generate account number using static nextAccountNo
@@ -53,7 +53,7 @@ PersonalAccount::PersonalAccount(string owner, string group, double initialDepos
 }
 
 void PersonalAccount::deposit(double amount) {
-    // [ ] // TODO 3
+    // TODO 3
     // Complete this function.
     // Goal:
     // - Check whether account is active
@@ -64,7 +64,7 @@ void PersonalAccount::deposit(double amount) {
 }
 
 bool PersonalAccount::withdraw(double amount) {
-    // [ ] // TODO 4
+    // TODO 4
     // Complete this function.
     // Goal:
     // - Check whether account is active
@@ -79,7 +79,7 @@ bool PersonalAccount::withdraw(double amount) {
 
 void PersonalAccount::closeAccount() {
     // write your code here
-    // [ ] // TODO 5
+    // TODO 5
     // Complete this function.
     // Goal:
     // - Check whether account is already closed
@@ -157,7 +157,7 @@ BankAccountSummary::BankAccountSummary() {
 }
 
 void BankAccountSummary::buildSummary(const vector<PersonalAccount>& accounts, double lowBalanceLimit) {
-    // [ ] // TODO 6
+    // TODO 6
     // Complete this function.
     // Goal:
     // - Calculate totalAccounts
@@ -180,7 +180,7 @@ KpopBank::KpopBank(string name) {
 }
 
 PersonalAccount* KpopBank::findAccount(int accountNo) {    
-    // [ ] // TODO 7
+    // TODO 7
     // Complete this function.
     // Goal:
     // - Search for the account by account number
@@ -239,7 +239,7 @@ void KpopBank::viewAllAccounts() const {
 }
 
 void KpopBank::viewLowBalanceAccounts(double limit) const {
-    // [ ] // TODO 8
+    // TODO 8
     // Complete this function.
     // Goal:
     // - Print all active accounts with balance lower than limit
@@ -247,7 +247,7 @@ void KpopBank::viewLowBalanceAccounts(double limit) const {
 }
 
 void KpopBank::viewBankSummary() {
-    // [ ] // TODO 9
+    // TODO 9
     // Complete this function.
     // Goal:
     // - Call buildSummary()
@@ -294,7 +294,7 @@ void KpopBank::generalUserMenu() {
         }
 
         case 3:
-            cout << "Current balance: " << acc->getBalance() << "\n";
+            cout << "Current balance: "<< fixed << setprecision(2)<< acc->getBalance() << "\n";
             break;
 
         case 4:

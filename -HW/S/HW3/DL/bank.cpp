@@ -294,7 +294,7 @@ void KpopBank::generalUserMenu() {
         }
 
         case 3:
-            cout << "Current balance: " << acc->getBalance() << "\n";
+            cout << "Current balance: "<< fixed << setprecision(2)<< acc->getBalance() << "\n";
             break;
 
         case 4:

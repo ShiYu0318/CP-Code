@@ -1,415 +1,133 @@
-#include "bank.h"						|       #include "bank.h"
-								|       
-int PersonalAccount::nextAccountNo = 10000;			|       int PersonalAccount::nextAccountNo = 10000;
-int PersonalAccount::activeAccountCount = 0;			|       int PersonalAccount::activeAccountCount = 0;
-								|       
-TimeStamp::TimeStamp() {					|       TimeStamp::TimeStamp() {
-    // TODO 1							|           // TODO 1
-    // Complete this constructor.				|           // Complete this constructor.
-    // Goal:							|           // Goal:
-    // - Get current system time				|           // - Get current system time
-    // - Store year, month, day, hour, minute, second		|           // - Store year, month, day, hour, minute, second
-    // write your code here					|           // write your code here
-}								|           time_t t = time(nullptr);
-								|           tm* lt = localtime(&t);
-string TimeStamp::toString() const {				|           year = lt->tm_year + 1900;
-    stringstream ss;						|           month = lt->tm_mon + 1;
-    ss << setfill('0')						|           day = lt->tm_mday;
-       << year << "-"						|           hour = lt->tm_hour;
-       << setw(2) << month << "-"				|           minute = lt->tm_min;
-       << setw(2) << day << " "					|           second = lt->tm_sec;
-       << setw(2) << hour << ":"				|       }
-       << setw(2) << minute << ":"				|       
-       << setw(2) << second;					|       string TimeStamp::toString() const {
-    return ss.str();						|           stringstream ss;
-}								|           ss << setfill('0')
-								|              << year << "-"
-Transaction::Transaction(string t, double a, double b, st       |              << setw(2) << month << "-"
-    type = t;							|              << setw(2) << day << " "
-    amount = a;							|              << setw(2) << hour << ":"
-    balanceAfter = b;						|              << setw(2) << minute << ":"
-    note = n;							|              << setw(2) << second;
-}								|           return ss.str();
-								|       }
-void Transaction::print() const {				|       
-    cout << left << setw(12) << type				|       Transaction::Transaction(string t, double a, double b, st
-         << right << setw(12) << fixed << setprecision(2)       |           type = t;
-         << setw(14) << balanceAfter << "   "			|           amount = a;
-         << left << setw(22) << time.toString()			|           balanceAfter = b;
-         << note << "\n";					|           note = n;
-}								|       }
-								|       
-PersonalAccount::PersonalAccount(string owner, string gro       |       void Transaction::print() const {
-    // TODO 2							|           cout << left << setw(12) << type
-    // Complete this constructor.				|                << right << setw(12) << fixed << setprecision(2)
-    // Goal:							|                << setw(14) << balanceAfter << "   "
-    // - Generate account number using static nextAccount       |                << left << setw(22) << time.toString()
-    // - Save owner name and favorite group			|                << note << "\n";
-    // - Set active = true					|       }
-    // - Set initial balance					|       
-    // - Increase activeAccountCount				|       PersonalAccount::PersonalAccount(string owner, string gro
-    // - Add one OPEN transaction into history			|           // TODO 2
-    // write your code here					|           // Complete this constructor.
-}								|           // Goal:
-								|           // - Generate account number using static nextAccount
-void PersonalAccount::deposit(double amount) {			|           // - Save owner name and favorite group
-    // TODO 3							|           // - Set active = true
-    // Complete this function.					|           // - Set initial balance
-    // Goal:							|           // - Increase activeAccountCount
-    // - Check whether account is active			|           // - Add one OPEN transaction into history
-    // - Check whether amount > 0				|           // write your code here
-    // - Add amount to balance					|           accountNo = ++nextAccountNo;
-    // - Record a DEPOSIT transaction				|           ownerName = owner;
-    // write your code here					|           favoriteGroup = group;
-}								|           active = true;
-								|           balance = initialDeposit;
-bool PersonalAccount::withdraw(double amount) {			|           ++activeAccountCount;
-    // TODO 4							|           history.emplace_back(Transaction("OPEN", initialDepos
-    // Complete this function.					|       }
-    // Goal:							|       
-    // - Check whether account is active			|       void PersonalAccount::deposit(double amount) {
-    // - Check whether amount > 0				|           // TODO 3
-    // - Check whether balance is enough			|           // Complete this function.
-    // - Subtract amount from balance				|           // Goal:
-    // - Record a WITHDRAW transaction				|           // - Check whether account is active
-    // - Return true if success, false if failed		|           // - Check whether amount > 0
-    // write your code here					|           // - Add amount to balance
-    return false;						|           // - Record a DEPOSIT transaction
-}								|           // write your code here
-								|           if(!active) { cout << "This account is closed.\n"; re
-void PersonalAccount::closeAccount() {				|           if(amount <= 0) return;
-    // write your code here					|           balance += amount;
-    // TODO 5							|           cout << "Deposit successful.\n";
-    // Complete this function.					|           history.emplace_back(Transaction("DEPOSIT", amount, b
-    // Goal:							|       }
-    // - Check whether account is already closed		|       
-    // - Set active = false					|       bool PersonalAccount::withdraw(double amount) {
-    // - Decrease activeAccountCount				|           // TODO 4
-    // - Record a CLOSE transaction				|           // Complete this function.
-    history.push_back(Transaction("CLOSE", 0.0, balance,        |           // Goal:
-    cout << "Account closed successfully.\n";			|           // - Check whether account is active
-}								|           // - Check whether amount > 0
-								|           // - Check whether balance is enough
-void PersonalAccount::printBasicInfo() const {			|           // - Subtract amount from balance
-    cout << "Account No : " << accountNo << "\n";		|           // - Record a WITHDRAW transaction
-    cout << "Owner      : " << ownerName << "\n";		|           // - Return true if success, false if failed
-    cout << "Favorite   : " << favoriteGroup << "\n";		|           // write your code here
-    cout << "Balance    : " << fixed << setprecision(2) <       |           if(!active) { cout << "This account is closed.\n"; re
-    cout << "Status     : " << (active ? "Active" : "Clos       |           if(amount <= 0) return false;
-    cout << "------------------------------------------\n       |           if(balance < amount) { cout << "Insufficient balance.
-}								|           balance -= amount;
-								|           cout << "Withdraw successful.\n";
-void PersonalAccount::printStatement() const {			|           history.emplace_back(Transaction("WITHDRAW", amount, 
-    cout << "\n========== Statement ==========\n";		|           return true;
-    cout << "Account No : " << accountNo << "\n";		|       }
-    cout << "Owner      : " << ownerName << "\n";		|       
-    cout << "Favorite   : " << favoriteGroup << "\n";		|       void PersonalAccount::closeAccount() {
-    cout << "Status     : " << (active ? "Active" : "Clos       |           // write your code here
-    cout << "Current Balance: " << fixed << setprecision(       |           // TODO 5
-								|           // Complete this function.
-    cout << left << setw(12) << "Type"				|           // Goal:
-         << right << setw(12) << "Amount"			|           // - Check whether account is already closed
-         << setw(14) << "Balance"				|           // - Set active = false
-         << "   " << left << setw(22) << "Time"			|           // - Decrease activeAccountCount
-         << "Note\n";						|           // - Record a CLOSE transaction
-								|           if(!active) { cout << "This account is closed.\n"; re
-    cout << string(75, '-') << "\n";				|           active = false;
-								|           --activeAccountCount;
-    for (size_t i = 0; i < history.size(); i++)			|           history.push_back(Transaction("CLOSE", 0.0, balance, 
-        history[i].print();					|           cout << "Account closed successfully.\n";
-								|       }
-    cout << string(75, '-') << "\n";				|       
-}								|       void PersonalAccount::printBasicInfo() const {
-								|           cout << "Account No : " << accountNo << "\n";
-int PersonalAccount::getAccountNo() const {			|           cout << "Owner      : " << ownerName << "\n";
-    return accountNo;						|           cout << "Favorite   : " << favoriteGroup << "\n";
-}								|           cout << "Balance    : " << fixed << setprecision(2) <
-								|           cout << "Status     : " << (active ? "Active" : "Clos
-string PersonalAccount::getOwnerName() const {			|           cout << "------------------------------------------\n
-    return ownerName;						|       }
-}								|       
-								|       void PersonalAccount::printStatement() const {
-string PersonalAccount::getFavoriteGroup() const {		|           cout << "\n========== Statement ==========\n";
-    return favoriteGroup;					|           cout << "Account No : " << accountNo << "\n";
-}								|           cout << "Owner      : " << ownerName << "\n";
-								|           cout << "Favorite   : " << favoriteGroup << "\n";
-double PersonalAccount::getBalance() const {			|           cout << "Status     : " << (active ? "Active" : "Clos
-    return balance;						|           cout << "Current Balance: " << fixed << setprecision(
-}								|       
-								|           cout << left << setw(12) << "Type"
-bool PersonalAccount::isActive() const {			|                << right << setw(12) << "Amount"
-    return active;						|                << setw(14) << "Balance"
-}								|                << "   " << left << setw(22) << "Time"
-								|                << "Note\n";
-bool PersonalAccount::isLowBalance(double limit) const {	|       
-    return active && balance < limit;				|           cout << string(75, '-') << "\n";
-}								|       
-								|           for (size_t i = 0; i < history.size(); i++)
-int PersonalAccount::getActiveAccountCount() {			|               history[i].print();
-    return activeAccountCount;					|       
-}								|           cout << string(75, '-') << "\n";
-								|       }
-BankAccountSummary::BankAccountSummary() {			|       
-    totalAccounts = 0;						|       int PersonalAccount::getAccountNo() const {
-    activeAccounts = 0;						|           return accountNo;
-    lowBalanceAccounts = 0;					|       }
-    totalBalance = 0.0;						|       
-}								|       string PersonalAccount::getOwnerName() const {
-								|           return ownerName;
-void BankAccountSummary::buildSummary(const vector<Person       |       }
-    // TODO 6							|       
-    // Complete this function.					|       string PersonalAccount::getFavoriteGroup() const {
-    // Goal:							|           return favoriteGroup;
-    // - Calculate totalAccounts				|       }
-    // - Calculate activeAccounts				|       
-    // - Calculate lowBalanceAccounts				|       double PersonalAccount::getBalance() const {
-    // - Calculate totalBalance					|           return balance;
-    // write your code here					|       }
-}								|       
-								|       bool PersonalAccount::isActive() const {
-void BankAccountSummary::printSummary() const {			|           return active;
-    cout << "\n========== Bank Summary ==========\n";		|       }
-    cout << "Total Accounts       : " << totalAccounts <<       |       
-    cout << "Active Accounts      : " << activeAccounts <       |       bool PersonalAccount::isLowBalance(double limit) const {
-    cout << "Low Balance Accounts : " << lowBalanceAccoun       |           return active && balance < limit;
-    cout << "Total Balance        : " << fixed << setprec       |       }
-}								|       
-								|       int PersonalAccount::getActiveAccountCount() {
-KpopBank::KpopBank(string name) {				|           return activeAccountCount;
-    bankName = name;						|       }
-}								|       
-								|       BankAccountSummary::BankAccountSummary() {
-PersonalAccount* KpopBank::findAccount(int accountNo) {         |           totalAccounts = 0;
-    // TODO 7							|           activeAccounts = 0;
-    // Complete this function.					|           lowBalanceAccounts = 0;
-    // Goal:							|           totalBalance = 0.0;
-    // - Search for the account by account number		|       }
-    // - Return pointer to that account if found		|       
-    // - Return nullptr if not found				|       void BankAccountSummary::buildSummary(const vector<Person
-    // write your code here					|           // TODO 6
-    return nullptr;						|           // Complete this function.
-}								|           // Goal:
-								|           // - Calculate totalAccounts
-void KpopBank::openNewAccount() {				|           // - Calculate activeAccounts
-    string ownerName;						|           // - Calculate lowBalanceAccounts
-    string favoriteGroup;					|           // - Calculate totalBalance
-    double initialDeposit;					|           // write your code here
-								|           totalAccounts = (int)accounts.size();
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');	|           activeAccounts = 0;
-								|           lowBalanceAccounts = 0;
-    cout << "Enter owner name: ";				|           totalBalance = 0.0;
-    getline(cin, ownerName);					|       
-								|           for(int i=0; i<totalAccounts; ++i)
-    cout << "Enter favorite K-pop group: ";			|           {
-    getline(cin, favoriteGroup);				|               if(accounts[i].isActive())
-								|               {
-    cout << "Enter initial deposit: ";				|                   ++activeAccounts;
-    cin >> initialDeposit;					|                   totalBalance += accounts[i].getBalance();
-								|                   if(accounts[i].isLowBalance(lowBalanceLimit))
-    PersonalAccount newAccount(ownerName, favoriteGroup,        |               }
-    accounts.push_back(newAccount);				|           }
-								|       
-    cout << "\nNew account opened successfully!\n";		|       }
-    cout << "New Account Number: " << accounts.back().get       |       
-}								|       void BankAccountSummary::printSummary() const {
-								|           cout << "\n========== Bank Summary ==========\n";
-void KpopBank::closeAccount() {					|           cout << "Total Accounts       : " << totalAccounts <<
-    int accountNo;						|           cout << "Active Accounts      : " << activeAccounts <
-    cout << "Enter account number to close: ";			|           cout << "Low Balance Accounts : " << lowBalanceAccoun
-    cin >> accountNo;						|           cout << "Total Balance        : " << fixed << setprec
-								|       }
-    PersonalAccount* acc = findAccount(accountNo);		|       
-								|       KpopBank::KpopBank(string name) {
-    if (acc == nullptr) {					|           bankName = name;
-        cout << "Account not found.\n";				|       }
-        return;							|       
-    }								|       PersonalAccount* KpopBank::findAccount(int accountNo) {  
-								|           // TODO 7
-    acc->closeAccount();					|           // Complete this function.
-}								|           // Goal:
-								|           // - Search for the account by account number
-void KpopBank::viewAllAccounts() const {			|           // - Return pointer to that account if found
-    if (accounts.empty()) {					|           // - Return nullptr if not found
-        cout << "No accounts in bank.\n";			|           // write your code here
-        return;							|           for(auto &i:accounts)
-    }								|           {
-								|               if(i.getAccountNo() == accountNo) return &i;
-    for (size_t i = 0; i < accounts.size(); i++)		|           }
-        accounts[i].printBasicInfo();				|           return nullptr;
-}								|       }
-								|       
-void KpopBank::viewLowBalanceAccounts(double limit) const       |       void KpopBank::openNewAccount() {
-    // TODO 8							|           string ownerName;
-    // Complete this function.					|           string favoriteGroup;
-    // Goal:							|           double initialDeposit;
-    // - Print all active accounts with balance lower tha       |       
-    // write your code here					|           cin.ignore(numeric_limits<streamsize>::max(), '\n');
-}								|       
-								|           cout << "Enter owner name: ";
-void KpopBank::viewBankSummary() {				|           getline(cin, ownerName);
-    // TODO 9							|       
-    // Complete this function.					|           cout << "Enter favorite K-pop group: ";
-    // Goal:							|           getline(cin, favoriteGroup);
-    // - Call buildSummary()					|       
-    // - Call printSummary()					|           cout << "Enter initial deposit: ";
-    // write your code here					|           cin >> initialDeposit;
-}								|       
-								|           PersonalAccount newAccount(ownerName, favoriteGroup, 
-void KpopBank::generalUserMenu() {				|           accounts.push_back(newAccount);
-    int accountNo;						|       
-    cout << "\nEnter your account number: ";			|           cout << "\nNew account opened successfully!\n";
-    cin >> accountNo;						|           cout << "New Account Number: " << accounts.back().get
-								|       }
-    PersonalAccount* acc = findAccount(accountNo);		|       
-								|       void KpopBank::closeAccount() {
-    if (acc == nullptr) {					|           int accountNo;
-        cout << "Account not found.\n";				|           cout << "Enter account number to close: ";
-        return;							|           cin >> accountNo;
-    }								|       
-								|           PersonalAccount* acc = findAccount(accountNo);
-    int choice;							|       
-								|           if (acc == nullptr) {
-    do {							|               cout << "Account not found.\n";
-								|               return;
-        cout << "\n1. Deposit\n2. Withdraw\n3. Check Bala       |           }
-        cout << "Choose: ";					|       
-        cin >> choice;						|           acc->closeAccount();
-								|       }
-        switch (choice) {					|       
-								|       void KpopBank::viewAllAccounts() const {
-        case 1: {						|           if (accounts.empty()) {
-            double amount;					|               cout << "No accounts in bank.\n";
-            cout << "Enter deposit amount: ";			|               return;
-            cin >> amount;					|           }
-            acc->deposit(amount);				|       
-            break;						|           for (size_t i = 0; i < accounts.size(); i++)
-        }							|               accounts[i].printBasicInfo();
-								|       }
-        case 2: {						|       
-            double amount;					|       void KpopBank::viewLowBalanceAccounts(double limit) const
-            cout << "Enter withdraw amount: ";			|           // TODO 8
-            cin >> amount;					|           // Complete this function.
-            acc->withdraw(amount);				|           // Goal:
-            break;						|           // - Print all active accounts with balance lower tha
-        }							|           // write your code here
-								|           for(auto i:accounts)
-        case 3:							|           {
-            cout << "Current balance: "<< fixed << setpre       |               if(i.isLowBalance(limit)) i.printBasicInfo();
-            break;						|           }
-								|       }
-        case 4:							|       
-            acc->printStatement();				|       void KpopBank::viewBankSummary() {
-            break;						|           // TODO 9
-								|           // Complete this function.
-        }							|           // Goal:
-								|           // - Call buildSummary()
-    } while (choice != 0);					|           // - Call printSummary()
-}								|           // write your code here
-								|           summary.buildSummary(accounts, 5000);
-void KpopBank::bankStaffMenu() {				|           summary.printSummary();
-    int choice;							|       }
-								|       
-    do {							|       void KpopBank::generalUserMenu() {
-								|           int accountNo;
-        cout << "\n1. Open New Account\n2. Close Account\       |           cout << "\nEnter your account number: ";
-        cout << "Choose: ";					|           cin >> accountNo;
-        cin >> choice;						|       
-								|           PersonalAccount* acc = findAccount(accountNo);
-        switch (choice) {					|       
-								|           if (acc == nullptr) {
-        case 1: openNewAccount(); break;			|               cout << "Account not found.\n";
-        case 2: closeAccount(); break;				|               return;
-        case 3: viewAllAccounts(); break;			|           }
-        case 4: viewLowBalanceAccounts(5000.0); break;		|       
-        case 5: viewBankSummary(); break;			|           int choice;
-								|       
-        }							|           do {
-								|       
-    } while (choice != 0);					|               cout << "\n1. Deposit\n2. Withdraw\n3. Check Bala
-}								|               cout << "Choose: ";
-								|               cin >> choice;
-void KpopBank::mainMenu() {					|       
-    int choice;							|               switch (choice) {
-    do {							|       
-        cout << "\n==================================\n";       |               case 1: {
-        cout << " Welcome to " << bankName << "\n";		|                   double amount;
-        cout << "==================================\n";		|                   cout << "Enter deposit amount: ";
-        cout << "1. General User\n";				|                   cin >> amount;
-        cout << "2. Bank Staff\n";				|                   acc->deposit(amount);
-        cout << "0. Exit\n";					|                   break;
-        cout << "Choose: ";					|               }
-        cin >> choice;						|       
-								|               case 2: {
-        switch (choice) {					|                   double amount;
-        case 1:							|                   cout << "Enter withdraw amount: ";
-            generalUserMenu();					|                   cin >> amount;
-            break;						|                   acc->withdraw(amount);
-        case 2:							|                   break;
-            bankStaffMenu();					|               }
-            break;						|       
-        case 0:							|               case 3:
-            cout << "Thank you for using K-POP Bank!\n";	|                   cout << "Current balance: "<< fixed << setpre
-            break;						|                   break;
-        default:						|       
-            cout << "Invalid choice.\n";			|               case 4:
-        }							|                   acc->printStatement();
-    } while (choice != 0);					|                   break;
-								>       
-								>               }
-								>       
-								>           } while (choice != 0);
-								>       }
-								>       
-								>       void KpopBank::bankStaffMenu() {
-								>           int choice;
-								>       
-								>           do {
-								>       
-								>               cout << "\n1. Open New Account\n2. Close Account\
-								>               cout << "Choose: ";
-								>               cin >> choice;
-								>       
-								>               switch (choice) {
-								>       
-								>               case 1: openNewAccount(); break;
-								>               case 2: closeAccount(); break;
-								>               case 3: viewAllAccounts(); break;
-								>               case 4: viewLowBalanceAccounts(5000.0); break;
-								>               case 5: viewBankSummary(); break;
-								>       
-								>               }
-								>       
-								>           } while (choice != 0);
-								>       }
-								>       
-								>       void KpopBank::mainMenu() {
-								>           int choice;
-								>           do {
-								>               cout << "\n==================================\n";
-								>               cout << " Welcome to " << bankName << "\n";
-								>               cout << "==================================\n";
-								>               cout << "1. General User\n";
-								>               cout << "2. Bank Staff\n";
-								>               cout << "0. Exit\n";
-								>               cout << "Choose: ";
-								>               cin >> choice;
-								>       
-								>               switch (choice) {
-								>               case 1:
-								>                   generalUserMenu();
-								>                   break;
-								>               case 2:
-								>                   bankStaffMenu();
-								>                   break;
-								>               case 0:
-								>                   cout << "Thank you for using K-POP Bank!\n";
-								>                   break;
-								>               default:
-								>                   cout << "Invalid choice.\n";
-								>               }
-								>           } while (choice != 0);
-}
+--- DL/bank.cpp	2026-03-13 21:14:15
++++ UL/A03_114502540.cpp	2026-03-19 14:28:34
+@@ -10,6 +10,14 @@
+     // - Get current system time
+     // - Store year, month, day, hour, minute, second
+     // write your code here
++    time_t t = time(nullptr);
++    tm* lt = localtime(&t);
++    year = lt->tm_year + 1900;
++    month = lt->tm_mon + 1;
++    day = lt->tm_mday;
++    hour = lt->tm_hour;
++    minute = lt->tm_min;
++    second = lt->tm_sec;
+ }
+ 
+ string TimeStamp::toString() const {
 \ No newline at end of file
-									}
+@@ -50,6 +58,13 @@
+     // - Increase activeAccountCount
+     // - Add one OPEN transaction into history
+     // write your code here
++    accountNo = ++nextAccountNo;
++    ownerName = owner;
++    favoriteGroup = group;
++    active = true;
++    balance = initialDeposit;
++    ++activeAccountCount;
++    history.emplace_back(Transaction("OPEN", initialDeposit, balance, "Account opened"));
+ }
+ 
+ void PersonalAccount::deposit(double amount) {
 \ No newline at end of file
-
+@@ -61,6 +76,11 @@
+     // - Add amount to balance
+     // - Record a DEPOSIT transaction
+     // write your code here
++    if(!active) { cout << "This account is closed.\n"; return; }
++    if(amount <= 0) return;
++    balance += amount;
++    cout << "Deposit successful.\n";
++    history.emplace_back(Transaction("DEPOSIT", amount, balance, "Deposit"));
+ }
+ 
+ bool PersonalAccount::withdraw(double amount) {
+\ No newline at end of file
+@@ -74,7 +94,13 @@
+     // - Record a WITHDRAW transaction
+     // - Return true if success, false if failed
+     // write your code here
+-    return false;
++    if(!active) { cout << "This account is closed.\n"; return false; }
++    if(amount <= 0) return false;
++    if(balance < amount) { cout << "Insufficient balance.\n"; return false; }
++    balance -= amount;
++    cout << "Withdraw successful.\n";
++    history.emplace_back(Transaction("WITHDRAW", amount, balance, "Withdraw"));
++    return true;
+ }
+ 
+ void PersonalAccount::closeAccount() {
+\ No newline at end of file
+@@ -86,6 +112,9 @@
+     // - Set active = false
+     // - Decrease activeAccountCount
+     // - Record a CLOSE transaction
++    if(!active) { cout << "This account is closed.\n"; return; }
++    active = false;
++    --activeAccountCount;
+     history.push_back(Transaction("CLOSE", 0.0, balance, "Account closed"));
+     cout << "Account closed successfully.\n";
+ }
+\ No newline at end of file
+@@ -165,8 +194,23 @@
+     // - Calculate lowBalanceAccounts
+     // - Calculate totalBalance
+     // write your code here
++    totalAccounts = (int)accounts.size();
++    activeAccounts = 0;
++    lowBalanceAccounts = 0;
++    totalBalance = 0.0;
++
++    for(int i=0; i<totalAccounts; ++i)
++    {
++        if(accounts[i].isActive())
++        {
++            ++activeAccounts;
++            totalBalance += accounts[i].getBalance();
++            if(accounts[i].isLowBalance(lowBalanceLimit)) ++lowBalanceAccounts;
+ }
++    }
+ 
++}
++
+ void BankAccountSummary::printSummary() const {
+     cout << "\n========== Bank Summary ==========\n";
+     cout << "Total Accounts       : " << totalAccounts << "\n";
+\ No newline at end of file
+@@ -187,6 +231,10 @@
+     // - Return pointer to that account if found
+     // - Return nullptr if not found
+     // write your code here
++    for(auto &i:accounts)
++    {
++        if(i.getAccountNo() == accountNo) return &i;
++    }
+     return nullptr;
+ }
+ 
+\ No newline at end of file
+@@ -244,7 +292,11 @@
+     // Goal:
+     // - Print all active accounts with balance lower than limit
+     // write your code here
++    for(auto i:accounts)
++    {
++        if(i.isLowBalance(limit)) i.printBasicInfo();
+ }
++}
+ 
+ void KpopBank::viewBankSummary() {
+     // TODO 9
+\ No newline at end of file
+@@ -253,6 +305,8 @@
+     // - Call buildSummary()
+     // - Call printSummary()
+     // write your code here
++    summary.buildSummary(accounts, 5000);
++    summary.printSummary();
+ }
+ 
+ void KpopBank::generalUserMenu() {
+\ No newline at end of file

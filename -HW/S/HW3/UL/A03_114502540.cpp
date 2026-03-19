@@ -10,6 +10,14 @@ TimeStamp::TimeStamp() {
     // - Get current system time
     // - Store year, month, day, hour, minute, second
     // write your code here
+    time_t t = time(nullptr);
+    tm* lt = localtime(&t);
+    year = lt->tm_year + 1900;
+    month = lt->tm_mon + 1;
+    day = lt->tm_mday;
+    hour = lt->tm_hour;
+    minute = lt->tm_min;
+    second = lt->tm_sec;
 }
 
 string TimeStamp::toString() const {
@@ -50,6 +58,13 @@ PersonalAccount::PersonalAccount(string owner, string group, double initialDepos
     // - Increase activeAccountCount
     // - Add one OPEN transaction into history
     // write your code here
+    accountNo = ++nextAccountNo;
+    ownerName = owner;
+    favoriteGroup = group;
+    active = true;
+    balance = initialDeposit;
+    ++activeAccountCount;
+    history.emplace_back(Transaction("OPEN", initialDeposit, balance, "Account opened"));
 }
 
 void PersonalAccount::deposit(double amount) {
@@ -61,6 +76,11 @@ void PersonalAccount::deposit(double amount) {
     // - Add amount to balance
     // - Record a DEPOSIT transaction
     // write your code here
+    if(!active) { cout << "This account is closed.\n"; return; }
+    if(amount <= 0) { cout << "沒錢了\n"; return; }
+    balance += amount;
+    cout << "Deposit successful.\n";
+    history.emplace_back(Transaction("DEPOSIT", amount, balance, "Deposit"));
 }
 
 bool PersonalAccount::withdraw(double amount) {
@@ -74,7 +94,13 @@ bool PersonalAccount::withdraw(double amount) {
     // - Record a WITHDRAW transaction
     // - Return true if success, false if failed
     // write your code here
-    return false;
+    if(!active) { cout << "This account is closed.\n"; return false; }
+    if(amount <= 0) return false;
+    if(balance < amount) { cout << "Insufficient balance.\n"; return false; }
+    balance -= amount;
+    cout << "Withdraw successful.";
+    history.emplace_back(Transaction("WITHDRAW", amount, balance, "Withdraw"));
+    return true;
 }
 
 void PersonalAccount::closeAccount() {
@@ -86,6 +112,9 @@ void PersonalAccount::closeAccount() {
     // - Set active = false
     // - Decrease activeAccountCount
     // - Record a CLOSE transaction
+    if(!active) { cout << "This account is closed.\n"; return; }
+    active = false;
+    --activeAccountCount;
     history.push_back(Transaction("CLOSE", 0.0, balance, "Account closed"));
     cout << "Account closed successfully.\n";
 }
@@ -165,6 +194,21 @@ void BankAccountSummary::buildSummary(const vector<PersonalAccount>& accounts, d
     // - Calculate lowBalanceAccounts
     // - Calculate totalBalance
     // write your code here
+    totalAccounts = (int)accounts.size();
+    activeAccounts = 0;
+    lowBalanceAccounts = 0;
+    totalBalance = 0.0;
+
+    for(int i=0; i<totalAccounts; ++i)
+    {
+        if(accounts[i].isActive())
+        {
+            ++activeAccounts;
+            totalBalance += accounts[i].getBalance();
+            if(accounts[i].isLowBalance(lowBalanceLimit)) ++lowBalanceAccounts;
+        }
+    }
+
 }
 
 void BankAccountSummary::printSummary() const {
@@ -187,6 +231,10 @@ PersonalAccount* KpopBank::findAccount(int accountNo) {
     // - Return pointer to that account if found
     // - Return nullptr if not found
     // write your code here
+    for(auto &i:accounts)
+    {
+        if(i.getAccountNo() == accountNo) return &i;
+    }
     return nullptr;
 }
 
@@ -244,6 +292,10 @@ void KpopBank::viewLowBalanceAccounts(double limit) const {
     // Goal:
     // - Print all active accounts with balance lower than limit
     // write your code here
+    for(auto i:accounts)
+    {
+        if(i.isLowBalance()) i.printBasicInfo();
+    }
 }
 
 void KpopBank::viewBankSummary() {
@@ -253,6 +305,8 @@ void KpopBank::viewBankSummary() {
     // - Call buildSummary()
     // - Call printSummary()
     // write your code here
+    summary.buildSummary(accounts, 5000);
+    summary.printSummary();
 }
 
 void KpopBank::generalUserMenu() {

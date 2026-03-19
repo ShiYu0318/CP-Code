@@ -77,7 +77,7 @@ void PersonalAccount::deposit(double amount) {
     // - Record a DEPOSIT transaction
     // write your code here
     if(!active) { cout << "This account is closed.\n"; return; }
-    if(amount <= 0) { cout << "沒錢了\n"; return; }
+    if(amount <= 0) return;
     balance += amount;
     cout << "Deposit successful.\n";
     history.emplace_back(Transaction("DEPOSIT", amount, balance, "Deposit"));
@@ -98,7 +98,7 @@ bool PersonalAccount::withdraw(double amount) {
     if(amount <= 0) return false;
     if(balance < amount) { cout << "Insufficient balance.\n"; return false; }
     balance -= amount;
-    cout << "Withdraw successful.";
+    cout << "Withdraw successful.\n";
     history.emplace_back(Transaction("WITHDRAW", amount, balance, "Withdraw"));
     return true;
 }
@@ -294,7 +294,7 @@ void KpopBank::viewLowBalanceAccounts(double limit) const {
     // write your code here
     for(auto i:accounts)
     {
-        if(i.isLowBalance()) i.printBasicInfo();
+        if(i.isLowBalance(limit)) i.printBasicInfo();
     }
 }
 

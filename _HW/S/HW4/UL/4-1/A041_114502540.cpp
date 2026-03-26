@@ -6,7 +6,7 @@ using namespace std;
 int ReviewBox::findIndex(const string& song) {
     // TODO:
     // Return the index of song in names
-    for(int i=0; i<names.size(); ++i)
+    for(int i=0; i < (int)names.size(); ++i)
     {
         if(names[i] == song) return i;
     }
@@ -54,25 +54,18 @@ ReviewBox::~ReviewBox() {
     // (3) If still tied, the earlier song in names wins
     for(int i=0; i<10; ++i)
     {
-        if(reviewCount[i]) ++reviewedSongs;
-        totalReviews += reviewCount[i];
-        double avg = 1.0 * totalScore[i] / reviewCount[i];
-        bool upd = false;
-        if(avg > bestAvg) upd = true;
-        else if(avg == bestAvg)
+        if(reviewCount[i] > 0)
         {
-            if(reviewCount[i] > reviewCount[best]) upd = true;
-            else if(reviewCount[i] == reviewCount[best])
+            ++reviewedSongs;
+            totalReviews += reviewCount[i];
+            double avg = 1.0 * totalScore[i] / reviewCount[i];
+            if((best == -1) || (avg > bestAvg) || (avg == bestAvg && reviewCount[i] > reviewCount[best]))
             {
-                if(i > best) upd = true;
+                best = i;
+                bestAvg = avg;
             }
         }
-        if(upd)
-        {
-            best = i;
-            bestAvg = avg;
-        }
-    } 
+    }
 
     cout << "=== IVE Review Report ===\n";
     cout << "Reviewed songs: " << reviewedSongs << "\n";

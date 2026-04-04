@@ -15,15 +15,30 @@ fi
 
 mkdir -p "$OUTPUT_DIR"
 
-EXEC="$OUTPUT_DIR/main"
+FIRST_FILE="${FILES_ARR[0]}"
+EXT="${FIRST_FILE##*.}"
 
 echo "Compiling..."
-g++ --std=c++20 "${FILES[@]}" -o "$EXEC"
 
-if [ $? -ne 0 ]; then
-    echo "Error: Compilation failed"
-    exit 1
+if [ "$EXT" = "java" ]; then
+    javac -d "$OUTPUT_DIR" "${FILES_ARR[@]}"
+    if [ $? -ne 0 ]; then
+        echo "Error: Compilation failed"
+        exit 1
+    fi
+
+    MAIN_CLASS=$(grep -l 'public static void main' "${FILES_ARR[@]}" | head -1)
+    MAIN_CLASS=$(basename "$MAIN_CLASS" .java)
+
+else
+    EXEC="$OUTPUT_DIR/main"
+    g++ --std=c++20 "${FILES_ARR[@]}" -o "$EXEC"
+    if [ $? -ne 0 ]; then
+        echo "Error: Compilation failed"
+        exit 1
+    fi
 fi
+
 echo "Compilation Success!"
 echo ""
 
@@ -39,7 +54,11 @@ for infile in "$SAMPLE_DIR"/*.in; do
 
     echo -n "Test $base: "
 
-    "$EXEC" < "$infile" > "$outfile"
+    if [ "$EXT" = "java" ]; then
+        java -cp "$OUTPUT_DIR" "$MAIN_CLASS" < "$infile" > "$outfile"
+    else
+        "$OUTPUT_DIR/main" < "$infile" > "$outfile"
+    fi
 
     if diff -w "$outfile" "$ansfile" > /dev/null; then
         echo "< AC >"

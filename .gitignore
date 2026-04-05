@@ -5,7 +5,6 @@
 .cph
 *.bin
 *.tex
-ztest
 _Polygon
 _DSA_Template
 test.cpp

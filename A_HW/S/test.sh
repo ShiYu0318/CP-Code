@@ -66,7 +66,7 @@ for infile in "$SAMPLE_DIR"/*.in; do
     else
         echo "< WA >"
         echo "------ diff ------"
-        diff -u "$outfile" "$ansfile"
+        diff -u "$ansfile" "$outfile"
         echo "------------------"
     fi
 

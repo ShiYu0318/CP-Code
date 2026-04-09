@@ -7,6 +7,7 @@
 *.tex
 _Polygon
 _DSA_Template
+_HW
 test.cpp
 test.py
 cmp-A.txt

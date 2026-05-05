@@ -26,9 +26,9 @@ signed main()
 {
     ShiYu;
     int n; cin >> n;
-    vector<pair<int, int>> v(n);
-    for(pair<int, int> &i: v) cin >> i.F;
-    for(pair<int, int> &i: v) cin >> i.S;
+    vector<pii> v(n);
+    for(pii &i: v) cin >> i.F;
+    for(pii &i: v) cin >> i.S;
     sort(all(v));
     int mxy = -1, cnt = 0;
     rFOR(i,n)

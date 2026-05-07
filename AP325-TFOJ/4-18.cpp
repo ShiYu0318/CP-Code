@@ -21,20 +21,20 @@ using namespace std;
 
 // Q-4-18. 少林寺的櫃姐 (@@)(*)
 
-bool check()
+bool check(vi &v, int d, int k)
 {
     priority_queue<int, vector<int>, greater<int>> pq;
     while(k--) pq.emplace(0);
-    while(n--)
+    for(int i : v)
     {
-        cin >> t;
-        if(pq.top() + t > d) pq.emplace(t);
+        if(pq.top() + i > d) return false;
         else
         {
-            pq.emplace(t + pq.top());
+            pq.emplace(pq.top() + i);
             pq.pop();
         }
     }
+    return true;
 }
 
 signed main()
@@ -42,6 +42,12 @@ signed main()
     ShiYu;
     int n,d; cin >> n >> d;
     vi v(n); input(v);
-    
-    cout << << "\n";
+    int l=0, r = n;
+    while(l < r)
+    {
+        int mid = (l + r) / 2;
+        if(check(v, d, mid)) r = mid;
+        else l = mid + 1;
+    }
+    cout << r << "\n";
 }

@@ -31,7 +31,7 @@ signed main()
 {
     ShiYu;
     int n; cin >> n;
-    vector<pair<int, int>> vp(n);
+    vector<pii> vp(n);
     for(auto &[i,j] : vp) cin >> i >> j;
     sort(all(vp));
     // multimap<int, int> mp;

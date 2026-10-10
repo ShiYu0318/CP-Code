@@ -1,17 +1,27 @@
+# Operating system and environment
 .DS_Store
 .env
+
+# Editors and tools
 .vscode
 .VSCodeCounter
 .cph
-*.bin
-*.tex
-_Polygon
+
+# Projects and generated directories
 _DSA_Template
-NCU-CSIE-Intro2CS-HW
+_Polygon
 NCU-CSIE-Data-Structure-HW
+NCU-CSIE-Intro2CS-HW
 Sprout
-test.cpp
-test.py
+
+# Local test files
 cmp-A.txt
 cmp-B.txt
+test.cpp
+test.py
+
+# Generated and miscellaneous files
+*.bin
+*.sh
+*.tex
 extensions.txt
